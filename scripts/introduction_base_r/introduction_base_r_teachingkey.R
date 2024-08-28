@@ -100,192 +100,142 @@ c("Nicky", "Ariel", "Finn")
   
   olympics <- data.frame(city = olympic_cities, year = years)
   olympics
+  
+  # There are a few ways to quickly understand what your data frame looks like: View(), summary(), and head()
+  View(olympics)
+  summary(olympics)
+  head(olympics)
 
 # Try it yourself! --------------------------------------------------------
 # Create a data frame containing the year, President, and temperature for every presidential inauguration since 1989. Can you use seq() and rep() to reduce your typing?
+# Call your new data frame "pres"
 # Data at: https://www.weather.gov/lwx/events_Inauguration#Present-to-Past
 
   
 
-# Working with vectors.
-  # Subset the elements of a vector using [ ]
-  pres[3]
-  pres[c(3,5,7)]
-  pres[1:10]
+# So what is a data frame? It is just a series of vectors arranged into columns! This is why we access items of a data frame similarly to how we access items of a vector. We use the [ ], but now we have two dimensions instead of one, so we have to indicate rows AND columns like this: [rows,columns]
+  pres[5,3]
+  pres[2, c(1,2)]
+  pres[-1,]
+    # What happens when we leave either the rows or columns blank? That is the equivalent of saying "everything".
+  identical(pres,pres[,])
+  
+  # There is a very useful feature of a data frame, which is that we can get a single column (vector) of a data frame by name instead of number. We do this using the $ operator.
+  pres$Temperature
+  identical(temp, pres$Temperature)
+  
+  # And we can add new columns using the $ operator as well! Let's add a new column to our data frame that is the temperature in Celsius (instead of Fahrenheit).
+  pres$Celsius <- (pres$Temperature - 32) * (5/9)
+  
+  # We can modify existing columns in the same way. Let's use the round() function to round these temperatures to one decimal place.
+  pres$Celsius <- round(pres$Celsius, 1)
+  
 
-  # Put "-" before the number or c() to exclude those elements
-  pres[-3]
-  pres[-c(3,5,7)]
+# Try it yourself! --------------------------------------------------------
 
-  # To store a subset of an object, use the <- operator
-  pres_since_2000 <- pres[1:6]
+# Add a new column to the data frame that includes a description of the weather in just one or two words for each inauguration, e.g., "sunny", "rainy", "cloudy"
 
 
+  
+# It can be difficult to pick out the rows of our data frame that we want to see using just the row numbers alone. This is where R's logical operators are useful.
+  
+  # ==, !=, <, >, <=, >=, %in%
+    # These always return a value of TRUE or FALSE
+  # Note that equals is "==", not "="
+  # == means equals
+  5 == 6
+  (20/4) == 5
+  c("red", "blue", "red", "red", "blue") == "blue"
+  # != means NOT equal
+  5 != 6
+  (20/4) != 5
+  c("red", "blue", "red", "red", "blue") != "blue"
+  # < is less than
+  # > is greater than
+  # <= is less than or equal to
+  # >= is greater than or equal to
+  # %in% allows you to match an == to multiple values
+  rep(1:5, 2) %in% c(1,3,5)
+  
+# We can use logical operators to select particular rows of a data frame.
+  pres[pres$Temperature < 32,]
+  pres[pres$Year > 2004,]
+  
+# We can also use & (and) and | (or) to combine logical operators.
+  pres[pres$Temperture > 45 & Year > 2010,]
+  pres[pres$Year >= 2016 | pres$President == "George H.W. Bush",]
+
+# Try it yourself! --------------------------------------------------------
+
+# Select only the rows of the inauguration weather data frame for Democratic presidents (by name) and for whom the temperature is between 32 and 40 degrees (i.e. greater than or equal to 32 and less than or equal to 40).
+  
+
+  
 # What is a function? -----------------------------------------------------
 
 # A function is an operation applied to a vector
   # A function is always followed by ()
-  mean(temp)
+  max(pres$Temperature)
+  min(pres$Temperature)
 
   # Functions have "arguments", which are options you can apply to your function
-  mean(c(2,4,6,NA), na.rm = TRUE)
-
-  # Packages contain functions that you can use in addition to the functions that come pre-built in R
-  # To see this in action, let's install the {weathermetrics} package: https://cran.r-project.org/web/packages/weathermetrics/index.html
-  install.packages("weathermetrics")
-  library(weathermetrics)
-
-  fahrenheit.to.celsius(temp, round = 3)
+  min(c(2,4,6,NA))
+  min(c(2,4,6,NA), na.rm = TRUE)
   
-# Data frames --------------------------------------------------------------
-
-# A series of vectors in tabular form is called a data frame (also sometimes called a tibble, a type of data frame). Think Excel spreadsheet, but in R.
-  # You can make data frames by hand using data.frame()
-  inaugurations <- data.frame(pres, year, temp)
+  # To see the arguments for a function, use the "?" operator
+  ?max
   
-  # Some packages also have data pre-installed data frames
-  data(newhaven)
-  ?newhaven
+  # There are also data frames already built into R.
+  data(iris)
+  ?iris
   
-  # We will learn how to read data from .csv files and other sources later in the course.
+  # Packages also sometimes contain their own data as well.
   
-  # There are a few ways to quickly understand what your data frame looks like: View(), summary(), head(), and glimpse(). This last one comes from the tidyverse (remember library(tidyverse) from above?)
-  View(inaugurations)
-  summary(inaugurations)
-  head(inaugurations)
-  glimpse(inaugurations)
-
-  # We can subset data frames using [], just like vectors. Because data frames have two dimensions rather than one, our subsets [] need two numbers: [rows, columns]
-  inaugurations[18, 2]
-  inaugurations[18,]
-  inaugurations[,2]
-  inaugurations[,c(2, 3)]
-  inaugurations[-c(1:10),c(2, 3)]
-
-
-  # As you can see above, a data frame is just a series of vectors, and we give each of those vectors a name (a header, field name, variable name, column name, whatever you want to call it). You can call a single one of these vectors by name using $.
-  inaugurations$temp
+# Packages are collections of functions that aren't included in R itself. They must be downloaded and then loaded in order to use them. There are over 20,000 packages available on the Comprehensive R Archive Network, which is where most developers put their packages.
   
+  # To install a package, you can use install.packages()
+  install.packages("dplyr")
   
-
-# End of Day 1 ------------------------------------------------------------
-
-
-# Start of Day 2 ----------------------------------------------------------
-
-options(tibble.width = Inf)
-# Let's review some important information from last week's class.
+  # You only need to install a package one time per project.
+  # You will need to load a package each time you start an R session (usually you will only do this when you start the project for the first time, but if you need to restart your R session, you will need to re-load your packages; this is a good reason to keep track of all of your code in a .R file!)
+  library(dplyr)
   
-# install.packages() vs. library()
-  
-  # We use install.packages() once in each new project; we use library() once in each session of R
-  # This is one reason why we always record our code in the .R script rather than just typing away in the console below
-  # But wait: Posit Cloud restored everything from last week when I opened it - my objects, my loaded packages, even my console history. Why bother recording everything if nothing gets lost?
-  # Two reasons: when you share your code (e.g., with the professor for an assignment), the other user needs to be able to reproduce your work. Also, if your R session ever restarts, such as when you have a bug, you don't want to lose all your hard work and not know how to recreate it.
-  
-# The core building block of R is an object, and most objects are vectors.
-example <- c("this", "is", "a", "character", "vector")
-class(example)
-  
-  # We can subset vectors using [ ]
-    BostonMarathon <- c(1897:2023)
-    BostonMarathon[-c(length(1897:1918), length(1897:2020))]
-  
-# A data frame is a two-dimensional table of vectors
-  
-  # We subset data frames in two ways: [rows, columns] and $
-    year <- c(2018:2023)
-    winner <- c("Desiree Linden", "Worknesh Degefa", NA, "Edna Kiplagat", "Peres Jepchirchir", "Hellen Obiri")
-    BostonMarathon <- data.frame(year, winner)
-    glimpse(BostonMarathon)
-    BostonMarathon[,2]
-    BostonMarathon[6,]
-    BostonMarathon$winner
-
-  # We will talk a lot more about modifying data frames in the data wrangling portion of the course, but there are a few basic tasks you can carry out right now.
-
-    # Adding new columns using $
-    BostonMarathon$country <- c("United States", "Ethiopia", NA, rep("Kenya", 3))
-
-    # Modifying a column
-    BostonMarathon$winner[is.na(BostonMarathon$winner)] <- "Canceled due to the COVID-19 pandemic"
-    note <- "Canceled due to the COVID-19 pandemic"
-    BostonMarathon$country[is.na(BostonMarathon$country)] <- note
-
-    # Selecting rows using logical operators
-    BostonMarathon[BostonMarathon$country == "Kenya",]
-
-  # Important! Any changes you make need to be saved using an <- operator
-
+  # There is a function in {dplyr} called glimpse() that makes it very easy to quickly look at a data frame and get a sense of what is in there.
+  glimpse(pres)
 
 # Try it yourself! --------------------------------------------------------
 
-# First, install the "nycflights13" package and load it using library()
-install.packages("nycflights13")
-library(nycflights13)
+# First, install the "nycflights13" package
+  
+# Load the package using library()
 
 # Then, run the following to load the "flights" data frame
 data(flights)
 
 # Look at the help file for the data frame you just loaded
-?flights
+
 
 # Explore the data frame using glimpse()
-glimpse(flights)
 
-# Now we want to find out how many flights were delayed by 30 minutes or more when departing JFK airport. First, subset the data frame to only those rows where the origin airport is "JFK"
-flights <- flights[flights$origin == "JFK",]
 
-# Now subset the data frame again, to only those rows where the departure delay is greater than or equal to 30.
-flights <- flights[flights$dep_delay >= 30,]
+# Now we want to find out how many flights were delayed by 30 minutes or more when departing JFK airport. First, create a new data frame with only those rows where the origin airport is "JFK" and where the departure delay is greater than or equal to 30. (Save your result as a new object.)
 
 # Use the nrow() function to get the number of rows in the resulting data frame (flights from JFK with departure delays of at least 30 minutes).
-nrow(flights)
 
 # Create a new column that represents the departure delay in hours rather than minutes (i.e., divide departure delay by 60).
-flights$dep_delay_hours <- flights$dep_delay/60
 
-# What is the average departure delay of these flights in hours? Hint: look at the help file for "mean". How can you ask this function to ignore the flights where the departure delay is NA (because the flight was cancelled)?
-mean(flights$dep_delay_hours, na.rm= TRUE)
+# What is the average departure delay of these flights in hours? Hint: look at the help file for "mean()". How can you ask this function to ignore the flights where the departure delay is NA (because the flight was cancelled)?
     
 
-# More Base R Tips and Tricks ---------------------------------------------
-
-# %in% operator
-  # Let's say we wanted to limit our data to only the "Big Three" U.S. airlines: American, Delta, and United
-  major_airlines <- flights[flights$carrier == c("AA", "DL", "UA"),]
-  nrow(major_airlines)
-  major_airlines <- flights[flights$carrier %in% c("AA", "DL", "UA"),]
-  nrow(major_airlines)
   
-# table() for quick checks
-  table(flights$month)
-  table(flights$month, flights$origin)
+# ifelse for if... else... choices: ifelse(logical operation, value if true, value if false)
+  flights$late <- ifelse(flights$arr_delay >= 0, TRUE, FALSE)
+  table(flights$late)
   
-# & and | for multiple conditions
-  flights[flights$dep_delay > 0 & flights$ arr_delay <= 0,]
-  flights[flights$dep_delay > 0 | is.na(flights$dep_delay),]
-
-#! for "not" conditions
-  # Remember that != is "does not equal"
-  flights[flights$month != 2 & flights$day != 8 & flights$day != 9,]
-  # We can also use ! to negate entire expressions or functions
-  flights[flights$month != 2 & !(flights$day %in% c(8, 9)),]
-  flights[!is.na(flights$dep_delay),]
-
-# ifelse for if... else... choices
-  flights$late <- ifelse(flights$arr_delay >= 0 & !is.na(flights$arr_delay), TRUE, FALSE)
-  prop.table(table(flights$late))
+# A common use of ifelse is to find rows that do or do not have an NA value. For example, if the "arr_delay" field is NA, that means that the flight was cancelled.
+  flights$cancelled <- ifelse(is.na(flights$arr_delay), TRUE, FALSE)
+  table(flights$cancelled)
   
 # Try it yourself! --------------------------------------------------------
   
-# Looking only at airports actually located in New York City (JFK and LGA) and flights that were not cancelled, create a column that is 1 if the flight left on time or early but arrived late and 0 otherwise.
-  
-dta <- flights[flights$origin %in% c("JFK", "LGA") & !is.na(flights$dep_delay),]
-dta$dest_delay <- ifelse(dta$dep_delay <= 0 & dta$arr_delay > 0, 1, 0)
-
-# How many flights left on time or early but arrived late?
-table(dta$dest_delay)
-
-# What proportion of flights left on time or early but arrived late?
-mean(dta$dest_delay, na.rm = T)
+# Looking only at airports actually located in New York City (JFK and LGA) and flights that were NOT cancelled, create a column that is 1 if the flight left on time or early but arrived late and 0 otherwise. How many flights left on time or early but arrived late?
