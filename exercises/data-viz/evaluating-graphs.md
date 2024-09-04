@@ -1,4 +1,6 @@
-## Evaluating Graphs ##
+---
+title: Evaluating Graphs
+---
 
 1. Make a note of the first few things you see
 2. Make a note of the first idea that forms in your mind and then search for more
@@ -6,12 +8,45 @@
 4. Find three things you'd change and briefly say why
 
 <center>
-<img src="wapo_graduates.jpg" height="400">
-<hr style="height:1px;border:none;color:#000000;background-color:#000000;border-top:solid;">
-<hr style="height:1px;border:none;color:#000000;background-color:#000000;border-top:solid;">
-<hr style="height:1px;border:none;color:#000000;background-color:#000000;border-top:solid;">
-
-<img src="gun_violence.jpg" width="300">
-<hr style="height:1px;border:none;color:#000000;background-color:#000000;border-top:solid;">
-<hr style="height:1px;border:none;color:#000000;background-color:#000000;border-top:solid;">
-<hr style="height:1px;border:none;color:#000000;background-color:#000000;border-top:solid;">
+<table>
+<tr>
+<td>
+1. ____________________________________________ <br>
+____________________________________________ <br>
+____________________________________________ <br>
+2. ____________________________________________ <br>
+____________________________________________ <br>
+____________________________________________ <br>
+3. ____________________________________________ <br>
+____________________________________________ <br>
+____________________________________________ <br>
+4. ____________________________________________ <br>
+____________________________________________ <br>
+____________________________________________ <br>
+</td>
+<td>
+<img src="wapo_graduates.jpg" height="500">
+</td>
+</tr>
+<tr><td><br><br></td></tr>
+<tr>
+<td>
+1. ____________________________________________ <br>
+____________________________________________ <br>
+____________________________________________ <br>
+2. ____________________________________________ <br>
+____________________________________________ <br>
+____________________________________________ <br>
+3. ____________________________________________ <br>
+____________________________________________ <br>
+____________________________________________ <br>
+4. ____________________________________________ <br>
+____________________________________________ <br>
+____________________________________________ <br>
+</td>
+<td>
+&nbsp;&nbsp;<img src="gun_violence.jpg" width="350">
+</td>
+</tr>
+</table>
+</center>
