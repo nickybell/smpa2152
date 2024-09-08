@@ -20,3 +20,6 @@ df <- data.frame(month = months, name = month.name, days = days)
 
 # This year is a leap year. Change the number of days for February from 28 to 29 in your data frame.
 df[2,3] <- 29
+
+# Create a new column called "weeks" that is the number of weeks in each month (divide the number of days by 7).
+df$weeks <- df$days/7

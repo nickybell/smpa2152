@@ -15,3 +15,5 @@ month.name
 # Make a data frame containing columns for the months (by number and name) and the number of days in each month. (Hint: Look at how we made the data frame of Presidential inauguration temperatures)
 
 # This year is a leap year. Change the number of days for February from 28 to 29 in your data frame.
+
+# Create a new column called "weeks" that is the number of weeks in each month (divide the number of days by 7).
