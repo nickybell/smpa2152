@@ -12,8 +12,8 @@ format:
          \DefineVerbatimEnvironment{OutputCode}{Verbatim}{breaklines=true, breakanywhere=true, breaksymbol=, breakanywheresymbolpre=,commandchars=\\\{\}}
 # format: gfm
 execute:
-  echo: true
-  include: true
+  echo: false
+  include: false
   warning: false
   message: false
 editor_options: 
@@ -21,7 +21,7 @@ editor_options:
 ---
 \vspace{-3em}
 
-For this homework, please use the "assignment1_template.R" script.
+For this homework, please use the `assignment1_template.R` script. Please submit your completed `.R` script via Blackboard. In addition, please submit a Word document or PDF containing the visualizations for questions 5 and 6.
 
 You may complete the assignments on your own or in collaboration with other students. This means that you may work together to write code and/or solve problems. **Do not split up the questions or combine independent work.**
 
@@ -75,6 +75,7 @@ mean(jfk_delays$dep_delay_hours, na.rm = TRUE)
 5. Create a histogram showing the departure delays from JFK airport in hours. Each bar should represent 20 minutes (i.e., 1/3 of an hour). Your graph should include a theme, a title, proper axis labels, and a caption.
 
 ```{r}
+library(ggplot2)
 ggplot(data = jfk_delays) +
   geom_histogram(mapping = aes(x = dep_delay_hours), binwidth = .33) +
   theme_classic() +
