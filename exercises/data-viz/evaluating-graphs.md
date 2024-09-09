@@ -47,17 +47,8 @@ ____________________________________________ <br>
 ____________________________________________ <br>
 </td>
 <td>
-&nbsp;&nbsp;<img src="gun_violence.jpg" width="350">
+&nbsp;&nbsp;<img src="trump_support.jpg" width="350">
 </td>
 </tr>
 </table>
 </center>
-<img src="wapo_graduates.jpg" height="400">
-<hr style="height:1px;border:none;color:#000000;background-color:#000000;border-top:solid;">
-<hr style="height:1px;border:none;color:#000000;background-color:#000000;border-top:solid;">
-<hr style="height:1px;border:none;color:#000000;background-color:#000000;border-top:solid;">
-
-<img src="gun_violence.jpg" width="300">
-<hr style="height:1px;border:none;color:#000000;background-color:#000000;border-top:solid;">
-<hr style="height:1px;border:none;color:#000000;background-color:#000000;border-top:solid;">
-<hr style="height:1px;border:none;color:#000000;background-color:#000000;border-top:solid;">
