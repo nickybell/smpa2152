@@ -47,3 +47,10 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+
+# DS Store
+.DS_Store
+
+# Rendered markdown and Quarto files
+*.pdf
+*.html
