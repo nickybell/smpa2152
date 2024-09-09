@@ -1,16 +1,16 @@
 ---
 title: "Assignment #1"
 author: "SMPA 2152 (Prof. Bell)"
-# format:
-#   pdf:
-#     mainfont: "Arial"
-#     keep-tex: true
-#     include-in-header: 
-#        text: |
-#          \usepackage{fvextra}
-#          \DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines=true, breakanywhere=true, breaksymbol=, breakanywheresymbolpre=,commandchars=\\\{\}}
-#          \DefineVerbatimEnvironment{OutputCode}{Verbatim}{breaklines=true, breakanywhere=true, breaksymbol=, breakanywheresymbolpre=,commandchars=\\\{\}}
-format: gfm
+format:
+  pdf:
+    mainfont: "Arial"
+    keep-tex: true
+    include-in-header:
+       text: |
+         \usepackage{fvextra}
+         \DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines=true, breakanywhere=true, breaksymbol=, breakanywheresymbolpre=,commandchars=\\\{\}}
+         \DefineVerbatimEnvironment{OutputCode}{Verbatim}{breaklines=true, breakanywhere=true, breaksymbol=, breakanywheresymbolpre=,commandchars=\\\{\}}
+# format: gfm
 execute:
   echo: true
   include: true
@@ -72,3 +72,29 @@ jfk_delays$dep_delay_hours <- jfk_delays$dep_delay/60
 mean(jfk_delays$dep_delay_hours, na.rm = TRUE)
 ```
 
+5. Create a histogram showing the departure delays from JFK airport in hours. Each bar should represent 20 minutes (i.e., 1/3 of an hour). Your graph should include a theme, a title, proper axis labels, and a caption.
+
+```{r}
+ggplot(data = jfk_delays) +
+  geom_histogram(mapping = aes(x = dep_delay_hours), binwidth = .33) +
+  theme_classic() +
+  labs(x = "Departure Delay (hours)",
+       y = "Count",
+       title = "JFK Departure Delays",
+       caption = "Source: {nycflights13} package.") +
+  theme(plot.title = element_text(hjust = .5))
+```
+
+6. Let's return to the original `flights` data frame now. Limit the data frame to only the three major airlines (`AA` for American Airlines, `DL` for Delta Airlines, and `UA` for United Airlines). Create a bar graph showing how many flights each airline took from each of the three NYC airports (JFK, LGA, and EWR). Your graph should include a theme, a title, proper axis labels, and a caption.
+
+```{r}
+ggplot(data = flights[flights$carrier %in% c("AA", "DL", "UA"),]) +
+  geom_bar(mapping = aes(x = origin, fill = carrier), position = "dodge") +
+  theme_classic() +
+  labs(x = "Airport",
+       y = "Count",
+       fill = "Airline",
+       title = "Which Major Airlines Fly from NYC Airports?",
+       caption = "Source: {nycflights13} package.") +
+  theme(plot.title = element_text(hjust = .5))
+```
