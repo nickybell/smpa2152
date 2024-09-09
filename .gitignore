@@ -54,3 +54,4 @@ rsconnect/
 # Rendered markdown and Quarto files
 *.pdf
 *.html
+*.tex
