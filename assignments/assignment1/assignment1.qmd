@@ -1,0 +1,74 @@
+---
+title: "Assignment #1"
+author: "SMPA 2152 (Prof. Bell)"
+# format:
+#   pdf:
+#     mainfont: "Arial"
+#     keep-tex: true
+#     include-in-header: 
+#        text: |
+#          \usepackage{fvextra}
+#          \DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines=true, breakanywhere=true, breaksymbol=, breakanywheresymbolpre=,commandchars=\\\{\}}
+#          \DefineVerbatimEnvironment{OutputCode}{Verbatim}{breaklines=true, breakanywhere=true, breaksymbol=, breakanywheresymbolpre=,commandchars=\\\{\}}
+format: gfm
+execute:
+  echo: true
+  include: true
+  warning: false
+  message: false
+editor_options: 
+  chunk_output_type: console
+---
+\vspace{-3em}
+
+For this homework, please use the "assignment1_template.R" script.
+
+You may complete the assignments on your own or in collaboration with other students. This means that you may work together to write code and/or solve problems. **Do not split up the questions or combine independent work.**
+
+If you work with other students, please indicate their names at the top of your submission. Each student must submit an assignment on Blackboard.
+\vspace{-1em}
+
+---
+
+1. Install the `{nycflights13}` package and load the `flights` data frame.
+
+```{r}
+# Install the "nycflights13" package. I have this line commented out because I only need to install the package once.
+# install.packages("nycflights13")
+library(nycflights13)
+data(flights)
+```
+
+2. Explore the data frame using `glimpse()`. (Remember to load the `{dplyr}` package first.) If we wanted to calculate the departure delay, can we subtract `dep_time` from `sched_dep_time`? Why or why not?
+
+```{r}
+library(dplyr)
+glimpse(flights)
+```
+
+```{r}
+flights$new_dep_delay <- flights$dep_time - flights$sched_dep_time
+identical(flights$new_dep_delay, flights$dep_delay)
+```
+
+```{r}
+#| output: asis
+#| echo: false
+
+cat("`dep_time` and `sched_dep_time` are integers, not times (e.g., `600-557` is `43`, not `3` minutes).")
+```
+
+3. Now we want to find out how many flights were delayed by 30 minutes or more when departing JFK airport. First, create a new data frame with only those rows where the origin airport is "JFK" and where the departure delay is greater than or equal to 30. Then, use the `nrow()` function to get the number of rows in the resulting data frame.
+
+```{r}
+jfk_delays <- flights[flights$origin == "JFK" & flights$dep_delay >= 30,]
+nrow(jfk_delays)
+```
+
+4. In your new data frame, create a new column that represents the departure delay in hours rather than minutes (i.e., divide departure delay by 60). What is the average departure delay of these flights in hours? Hint: look at the help file for `mean()`. How can you ask this function to ignore the flights where the departure delay is `NA` (because the flight was cancelled)?
+
+```{r}
+jfk_delays$dep_delay_hours <- jfk_delays$dep_delay/60
+mean(jfk_delays$dep_delay_hours, na.rm = TRUE)
+```
+
