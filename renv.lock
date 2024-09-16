@@ -61,6 +61,16 @@
       ],
       "Hash": "45f0398006e83a5b10b72a90663d8d8c"
     },
+    "backports": {
+      "Package": "backports",
+      "Version": "1.5.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R"
+      ],
+      "Hash": "e1e1b9d75c37401117b636b7ae50827a"
+    },
     "base64enc": {
       "Package": "base64enc",
       "Version": "0.1-3",
@@ -70,6 +80,26 @@
         "R"
       ],
       "Hash": "543776ae6848fde2f48ff3816d0628bc"
+    },
+    "broom": {
+      "Package": "broom",
+      "Version": "1.0.6",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "backports",
+        "dplyr",
+        "generics",
+        "glue",
+        "lifecycle",
+        "purrr",
+        "rlang",
+        "stringr",
+        "tibble",
+        "tidyr"
+      ],
+      "Hash": "a4652c36d1f8abfc3ddf4774f768c934"
     },
     "bslib": {
       "Package": "bslib",
@@ -128,6 +158,16 @@
         "stats"
       ],
       "Hash": "d954cb1c57e8d8b756165d7ba18aa55a"
+    },
+    "cpp11": {
+      "Package": "cpp11",
+      "Version": "0.5.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R"
+      ],
+      "Hash": "91570bba75d0c9d3f1040c835cee8fba"
     },
     "digest": {
       "Package": "digest",
@@ -211,6 +251,19 @@
         "rlang"
       ],
       "Hash": "c2efdd5f0bcd1ea861c2d4e2a883a67d"
+    },
+    "formula.tools": {
+      "Package": "formula.tools",
+      "Version": "1.7.1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "methods",
+        "operator.tools",
+        "utils"
+      ],
+      "Hash": "935ab0bce1a92340866983f3a97e09de"
     },
     "fs": {
       "Package": "fs",
@@ -296,6 +349,20 @@
       ],
       "Hash": "d65ba49117ca223614f71b60d85b8ab7"
     },
+    "hms": {
+      "Package": "hms",
+      "Version": "1.1.3",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "lifecycle",
+        "methods",
+        "pkgconfig",
+        "rlang",
+        "vctrs"
+      ],
+      "Hash": "b59377caa7ed00fa41808342002138f9"
+    },
     "htmltools": {
       "Package": "htmltools",
       "Version": "0.5.8.1",
@@ -312,6 +379,32 @@
       ],
       "Hash": "81d371a9cc60640e74e4ab6ac46dcedc"
     },
+    "infer": {
+      "Package": "infer",
+      "Version": "1.0.7",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "broom",
+        "cli",
+        "dplyr",
+        "generics",
+        "ggplot2",
+        "glue",
+        "grDevices",
+        "lifecycle",
+        "magrittr",
+        "methods",
+        "patchwork",
+        "purrr",
+        "rlang",
+        "tibble",
+        "tidyr",
+        "vctrs"
+      ],
+      "Hash": "8d30ac9c5e21efd8575f934bdb5c3029"
+    },
     "isoband": {
       "Package": "isoband",
       "Version": "0.2.7",
@@ -322,6 +415,28 @@
         "utils"
       ],
       "Hash": "0080607b4a1a7b28979aecef976d8bc2"
+    },
+    "janitor": {
+      "Package": "janitor",
+      "Version": "2.2.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "dplyr",
+        "hms",
+        "lifecycle",
+        "lubridate",
+        "magrittr",
+        "purrr",
+        "rlang",
+        "snakecase",
+        "stringi",
+        "stringr",
+        "tidyr",
+        "tidyselect"
+      ],
+      "Hash": "5baae149f1082f466df9d1442ba7aa65"
     },
     "jquerylib": {
       "Package": "jquerylib",
@@ -398,6 +513,19 @@
       ],
       "Hash": "b8552d117e1b808b09a832f589b79035"
     },
+    "lubridate": {
+      "Package": "lubridate",
+      "Version": "1.9.3",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "generics",
+        "methods",
+        "timechange"
+      ],
+      "Hash": "680ad542fbcf801442c83a6ac5a2126c"
+    },
     "magrittr": {
       "Package": "magrittr",
       "Version": "2.0.3",
@@ -445,6 +573,30 @@
         "tools"
       ],
       "Hash": "18e9c28c1d3ca1560ce30658b22ce104"
+    },
+    "moderndive": {
+      "Package": "moderndive",
+      "Version": "0.7.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "broom",
+        "dplyr",
+        "formula.tools",
+        "ggplot2",
+        "glue",
+        "infer",
+        "janitor",
+        "knitr",
+        "magrittr",
+        "purrr",
+        "rlang",
+        "stringr",
+        "tibble",
+        "tidyr"
+      ],
+      "Hash": "35dad0e05fab337a7b8044e88e16b70d"
     },
     "munsell": {
       "Package": "munsell",
@@ -498,6 +650,16 @@
       ],
       "Hash": "61eb941328b49a62d7f9816dfed7d959"
     },
+    "operator.tools": {
+      "Package": "operator.tools",
+      "Version": "1.6.3",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "utils"
+      ],
+      "Hash": "bd93354f4a2ee4e096e3d7ad33e08b72"
+    },
     "palmerpenguins": {
       "Package": "palmerpenguins",
       "Version": "0.1.1",
@@ -507,6 +669,24 @@
         "R"
       ],
       "Hash": "6c6861efbc13c1d543749e9c7be4a592"
+    },
+    "patchwork": {
+      "Package": "patchwork",
+      "Version": "1.2.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "cli",
+        "ggplot2",
+        "grDevices",
+        "graphics",
+        "grid",
+        "gtable",
+        "rlang",
+        "stats",
+        "utils"
+      ],
+      "Hash": "9c8ab14c00ac07e9e04d1664c0b74486"
     },
     "pillar": {
       "Package": "pillar",
@@ -659,6 +839,48 @@
       ],
       "Hash": "c19df082ba346b0ffa6f833e92de34d1"
     },
+    "snakecase": {
+      "Package": "snakecase",
+      "Version": "0.11.1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "stringi",
+        "stringr"
+      ],
+      "Hash": "58767e44739b76965332e8a4fe3f91f1"
+    },
+    "stringi": {
+      "Package": "stringi",
+      "Version": "1.8.4",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "stats",
+        "tools",
+        "utils"
+      ],
+      "Hash": "39e1144fd75428983dc3f63aa53dfa91"
+    },
+    "stringr": {
+      "Package": "stringr",
+      "Version": "1.5.1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "cli",
+        "glue",
+        "lifecycle",
+        "magrittr",
+        "rlang",
+        "stringi",
+        "vctrs"
+      ],
+      "Hash": "960e2ae9e09656611e0b8214ad543207"
+    },
     "tibble": {
       "Package": "tibble",
       "Version": "3.2.1",
@@ -678,6 +900,29 @@
       ],
       "Hash": "a84e2cc86d07289b3b6f5069df7a004c"
     },
+    "tidyr": {
+      "Package": "tidyr",
+      "Version": "1.3.1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "cli",
+        "cpp11",
+        "dplyr",
+        "glue",
+        "lifecycle",
+        "magrittr",
+        "purrr",
+        "rlang",
+        "stringr",
+        "tibble",
+        "tidyselect",
+        "utils",
+        "vctrs"
+      ],
+      "Hash": "915fb7ce036c22a6a33b5a8adb712eb1"
+    },
     "tidyselect": {
       "Package": "tidyselect",
       "Version": "1.2.1",
@@ -694,15 +939,26 @@
       ],
       "Hash": "829f27b9c4919c16b593794a6344d6c0"
     },
+    "timechange": {
+      "Package": "timechange",
+      "Version": "0.3.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "cpp11"
+      ],
+      "Hash": "c5f3c201b931cd6474d17d8700ccb1c8"
+    },
     "tinytex": {
       "Package": "tinytex",
-      "Version": "0.52",
+      "Version": "0.53",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
         "xfun"
       ],
-      "Hash": "cfbad971a71f0e27cec22e544a08bc3b"
+      "Hash": "9db859e8aabbb474293dde3097839420"
     },
     "utf8": {
       "Package": "utf8",
