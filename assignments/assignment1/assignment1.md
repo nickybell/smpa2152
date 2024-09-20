@@ -1,7 +1,10 @@
 # Assignment \#1
 SMPA 2152 (Prof. Bell)
 
-For this homework, please use the “assignment1_template.R” script.
+For this homework, please use the `assignment1_template.R` script.
+Please submit your completed `.R` script via Blackboard. In addition,
+please submit a Word document or PDF containing the visualizations for
+questions 5 and 6.
 
 You may complete the assignments on your own or in collaboration with
 other students. This means that you may work together to write code
@@ -93,3 +96,43 @@ mean(jfk_delays$dep_delay_hours, na.rm = TRUE)
 ```
 
     [1] 1.413193
+
+5.  Create a histogram showing the departure delays from JFK airport in
+    hours. Each bar should represent 20 minutes (i.e., 1/3 of an hour).
+    Your graph should include a theme, a title, proper axis labels, and
+    a caption.
+
+``` r
+library(ggplot2)
+ggplot(data = jfk_delays) +
+  geom_histogram(mapping = aes(x = dep_delay_hours), binwidth = .33) +
+  theme_classic() +
+  labs(x = "Departure Delay (hours)",
+       y = "Count",
+       title = "JFK Departure Delays",
+       caption = "Source: {nycflights13} package.") +
+  theme(plot.title = element_text(hjust = .5))
+```
+
+![](assignment1_files/figure-commonmark/unnamed-chunk-7-1.png)
+
+6.  Let’s return to the original `flights` data frame now. Limit the
+    data frame to only the three major airlines (`AA` for American
+    Airlines, `DL` for Delta Airlines, and `UA` for United Airlines).
+    Create a bar graph showing how many flights each airline took from
+    each of the three NYC airports (JFK, LGA, and EWR). Your graph
+    should include a theme, a title, proper axis labels, and a caption.
+
+``` r
+ggplot(data = flights[flights$carrier %in% c("AA", "DL", "UA"),]) +
+  geom_bar(mapping = aes(x = origin, fill = carrier), position = "dodge") +
+  theme_classic() +
+  labs(x = "Airport",
+       y = "Count",
+       fill = "Airline",
+       title = "Which Major Airlines Fly from NYC Airports?",
+       caption = "Source: {nycflights13} package.") +
+  theme(plot.title = element_text(hjust = .5))
+```
+
+![](assignment1_files/figure-commonmark/unnamed-chunk-8-1.png)

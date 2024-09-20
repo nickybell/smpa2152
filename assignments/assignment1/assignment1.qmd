@@ -12,8 +12,8 @@ format:
          \DefineVerbatimEnvironment{OutputCode}{Verbatim}{breaklines=true, breakanywhere=true, breaksymbol=, breakanywheresymbolpre=,commandchars=\\\{\}}
 # format: gfm
 execute:
-  echo: false
-  include: false
+  echo: true
+  include: true
   warning: false
   message: false
 editor_options: 
