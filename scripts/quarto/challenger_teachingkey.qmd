@@ -1,7 +1,9 @@
 ---
 title: "The Challenger Space Shuttle Disaster"
 author: "Prof. Bell (worked with Finn)"
-# format: html
+# format:
+#   html:
+#     embed-resources: true
 format: gfm
 ---
 
