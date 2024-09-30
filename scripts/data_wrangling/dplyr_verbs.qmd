@@ -1,0 +1,201 @@
+---
+title: "Data Wrangling"
+author: "Prof. Bell"
+format:
+  html:
+    self-contained: true
+editor_options: 
+  chunk_output_type: console
+---
+
+So far, we have learned how to make changes to our data using base R, like this:
+
+```{r}
+library(nycflights13)
+data(flights)
+jfk_flights <- flights[flights$origin == "JFK",]
+```
+
+While base R is very powerful, there is a popular set of tools known as the `tidyverse` that makes **data wrangling** code easier to write and understand. There are dozens of `tidyverse` packages, and they are largely maintained by Posit, the creators of RStudio and Posit Cloud. The core `tidyverse` packages are:
+
+* `ggplot2`, for data visualization.
+* `dplyr`, for data manipulation.
+* `tidyr`, for data tidying.
+* `readr`, for data import.
+* `stringr`, for strings.
+* `forcats`, for factors.
+* `lubridate`, for date/times.
+* `purrr`, for functional programming.
+* `tibble`, for tibbles, a modern re-imagining of data frames.
+
+We will learn how to work with most of these packages over the next few weeks. Because all of these packages are part of the `tidyverse`, they also tend to work together very nicely. For that reason, there is an easy way to install all of the packages of the `tidyverse` and load them all at once:
+
+```{r}
+#| label: setup
+#| message: false
+
+# I never run install.packages() when rendering a .qmd script!
+# install.packages("tidyverse")
+library(tidyverse)
+```
+
+Once we've run `library(tidyverse)`, we have access to all of those packages, including the one we will focus on today: `dplyr`. This package uses "dplyr verbs" to manipulate data frames, and there are six that you really need to know:
+
+* `filter()`, for choosing rows.
+* `select()`, for choosing columns.
+* `mutate()`, for adding or changing data.
+* `arrange()`, for sorting data.
+* `summarize()` and it's best friend `group_by()`, for generating summary statistics.
+
+If you ever need a reminder about these "dplyr verbs", you can access the cheat sheet from the "Help" button on the toolbar.
+
+We'll work through these one-by-one, but first, we need some data to work with. Up until now, we've only worked with data that came pre-loaded with packages. Now, we will work with external data sources, like `.csv` files. We'll use the `readr` package to load a `.csv`. This is important: **Quarto will always look for files starting from the folder where the .qmd lives.**
+
+```{r}
+
+
+```
+
+Now that we have our data, we can start working with the "dplyr verbs".
+
+### `filter()`
+
+`filter()` uses logical statements to indicate what rows we would like to keep in the data frame. Think of a coffee filter; it acts a sieve to only allow what we want (the coffee) to drip through.
+
+So let's say we wanted to keep only the rows from 2022:
+
+```{r}
+
+
+```
+
+Already, you can see some of the advantages of coding in the tidyverse. First, we've done away with the `$` operator so that we can call our columns by name in a `tidyverse` function. In addition, every "dplyr verb" has the same basic formula:
+
+`function(dataframe, operation)`
+
+One of the other advantages of `filter()` over base R is that `filter()` automatically excludes rows where the variables in your logical statements are `NA`. Compare, for example:
+
+```{r}
+nrow(filter(kn22, total_expenses > 10000000 & student_fees == 0))
+nrow(kn22[kn22$total_expenses > 10000000 & kn22$student_fees == 0,])
+```
+
+Notice how you can use multiple logical statements combined with `&` and `|` in a `filter()` function.
+
+### `select()`
+
+`select()` is for choosing which columns of your data frame to keep.
+
+```{r}
+
+
+```
+
+Generally speaking, we do not need to remove columns from our data frame in order to do analyses, but it can be useful for generating tables in a Quarto document. If you do want to present data as a table, be sure to include `kable()` from the `knitr` package to print the table nicely.
+
+```{r}
+
+
+```
+
+### `mutate()`
+
+`mutate()` is the workhorse function of `dplyr`. We use `mutate()` when we want to add or change a column in our data frame. Remember, only changes that are assigned to an object with `<-` are saved!
+
+Let's start by calculating the percentage of each school's athletics expenses that come from coaches' compensation:
+
+```{r}
+
+
+```
+
+Now let's keep only the rows in 2022 where paying coaches is at least 25% of a school's athletics expenses:
+
+```{r}
+
+
+```
+
+Notice that we used three functions to get to this table: `mutate()`, `filter()`, and `select()`. We executed each function separately, which is a bit clumsy. There is a way to combine all of these functions into one execution ("paragraph") using pipes (`|>`).
+
+::: {.callout-note}
+Note: You might also see the pipe operator written as `%>%`. The `%>%` pipe was developed by the `tidyverse` team and specifically is part of a package called `magrittr`, and you will see it used a lot. However, in a recent release of base R, the developers added the "native pipe" (`|>`) that we will use in this course.
+:::
+
+```{r}
+
+
+```
+
+The `|>` operator says, "Take the data frame that is on the left hand side of the pipe, and use it as the first argument (the data, usually) in the right hand side of the pipe." So here, I am:
+
+1. Passing `kn22` as the data frame to `mutate()`.
+2. Taking the data frame with my new column `coaches_comp_perc` and passing it to `filter()`.
+3. Keeping only the rows where `coaches_comp_perc` is greater than or equal to 25, and passing these rows to `select()`.
+4. Choosing only the `school` and `coaches_comp_perc` columns, and then providing that data to `kable()`.
+
+**Notice that I do not put the name of the data frame as the first argument in the `dplyr` verb functions.** The pipe operator is taking care of that for me!
+
+Okay, let's go back to our `mutate()` function now. The other thing I want you to know about `mutate()` is that you can make as many changes and additions in a single `mutate()` as you would like. `mutate()` will be able to see the columns that are changed/created earlier in the function. For example:
+
+```{r}
+
+
+```
+
+### `arrange()`
+
+`arrange()` puts rows in order -- alphabetical or numeric. For example, which schools spend the smallest percentage of their overall budget on athletics?
+
+```{r}
+
+
+```
+
+By default, `arrange()` sorts in ascending order. What if we want to see the schools that get the largest return on athletics spending? Now we need to sort in descending order by adding in the `desc()` function.
+
+```{r}
+
+
+```
+
+We can also arrange using more than group.
+
+```{r}
+
+
+```
+
+### `group_by()` and `summarize()`
+
+We can use `summarize()` all by itself to get summary statistics about the entire data frame. For example, if I want to know the amounts of the largest and smallest athletic budgets in the data set, I could do:
+
+```{r}
+
+
+```
+
+But often, we want to know these statistics for particular *groups*. For example, what if I want to know which athletic conference generates the most money from media rights for its schools? `group_by()` tells R that it should calculate the summary statistics (or do any other operation) by group. This means that `summarize()` will produce one row per group, rather than one row for the entire data frame.
+
+```{r}
+
+
+```
+
+This is a case where piping into a `ggplot` is particularly useful. Let's say that we want to show how the average profit from athletics has changed over time. Our `group_by()` and `summarize()` will generate a new data frame -- we can just pass it in as the data to `ggplot()` using the pipe.
+
+```{r}
+
+
+```
+
+Now, what if I want to show how this is different for each conference? Notice that my summarized data frame no longer has information about conference in it -- I get one row per group, and conference isn't a group, so I can't add that as a variable to my ggplot.
+
+Instead, we want one row for each *year and conference* combination. Then we have a data frame appropriate for this graph:
+
+```{r}
+
+
+```
+
+From these graphs, I am led to the conclusion that for most conferences, athletics is about a break even proposition (or schools are not reporting their profit and loss honestly).
