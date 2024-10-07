@@ -9,17 +9,17 @@ University), David Macpherson (Trinity University), and William Even
 
 You will find the following columns in the data:
 
-| variable | class | description |
-|:---|:---|:---|
-| state_census_code | double | Census state code used in CPS |
-| state | character | State name |
-| employment | double | Wage and salary employment in thousands |
-| members | double | Employed workers who are union members in thousands |
-| state_abbreviation | character | State abbreviation |
-| year | double | Year of the survey |
+| variable           | class     | description                                         |
+|:-------------------|:----------|:----------------------------------------------------|
+| state_census_code  | double    | Census state code used in CPS                       |
+| state              | character | State name                                          |
+| employment         | double    | Wage and salary employment in thousands             |
+| members            | double    | Employed workers who are union members in thousands |
+| state_abbreviation | character | State abbreviation                                  |
+| year               | double    | Year of the survey                                  |
 
 For this homework, please submit a `.qmd` file as well as a rendered
-`.html` (with the proper header using `self-contained: true`) or `.pdf`
+`.html` (with the proper header using `embed-resources: true`) or `.pdf`
 file. If you are unable to successfully render your `.qmd` script, you
 should still submit it for partial credit.
 

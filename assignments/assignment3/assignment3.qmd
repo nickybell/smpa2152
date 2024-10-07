@@ -7,9 +7,6 @@ author: "SMPA 2152 (Prof. Bell)"
 #     keep-tex: true
 #     include-in-header:
 #        text: |
-#          \usepackage{fvextra}
-#          \DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines=true, breakanywhere=true, breaksymbol=, breakanywheresymbolpre=,commandchars=\\\{\}}
-#          \DefineVerbatimEnvironment{OutputCode}{Verbatim}{breaklines=true, breakanywhere=true, breaksymbol=, breakanywheresymbolpre=,commandchars=\\\{\}}
 format: gfm
 execute:
   echo: true
@@ -34,7 +31,7 @@ You will find the following columns in the data:
 |state_abbreviation |character |State abbreviation |
 |year               |double    |Year of the survey |
 
-For this homework, please submit a `.qmd` file as well as a rendered `.html` (with the proper header using `self-contained: true`) or `.pdf` file. If you are unable to successfully render your `.qmd` script, you should still submit it for partial credit.
+For this homework, please submit a `.qmd` file as well as a rendered `.html` (with the proper header using `embed-resources: true`) or `.pdf` file. If you are unable to successfully render your `.qmd` script, you should still submit it for partial credit.
 
 You may complete the assignments on your own or in collaboration with other students. This means that you may work together to write code and/or solve problems. **Do not split up the questions or combine independent work.**
 
