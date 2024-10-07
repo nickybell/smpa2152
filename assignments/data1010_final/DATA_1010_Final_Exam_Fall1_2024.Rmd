@@ -2,7 +2,7 @@
 title: "Final Exam"
 author: "DATA 1010"
 date: "Due October 21, 2023 at 11:59pm Eastern"
-output: pdf_document
+output: github_document
 urlcolor: blue
 editor_options: 
   chunk_output_type: console
@@ -24,7 +24,7 @@ For the final exam, we are going to use polling for the 2024 Presidential electi
 * Results of the 2020 Presidential election compiled by the [MIT Election Data + Science Lab](https://electionlab.mit.edu/). This is posted on Canvas as `2020-president.csv`.
 
 ```{r, setup, include = FALSE}
-knitr::opts_chunk$set(include = FALSE)
+# knitr::opts_chunk$set(include = FALSE)
 library(tidyverse)
 library(maps)
 library(mapdata)
