@@ -149,3 +149,54 @@ rc |>
 ### Dates ###
 #############
 
+# Sometimes, we're able to use raw numbers to represent dates (for example, months or years) without an issue. However, R has a built in type of variable called a <date> (or <dttm> for date-time) that makes it easier to use dates. Today, we will learn:
+
+# 1. How to make dates from character strings
+# 2. How to use dates as a scale on a ggplot
+
+# There are a bunch of functions in the {lubridate} package to make dates from combinations of year, month, and day, like ymd(), mdy(), and my().
+# It is important to specify the type of date format because some dates are ambiguous, like 10-11-12. Is this October 11, 2012, or November 10, 2012, or November 12, 2010?
+# If you use functions like "as.Date()", R will try to make a guess, but will not always be successful.
+
+ymd("10-11-12")
+dmy("121110")
+my("11/10")
+
+# So, what if we want to show the average number of bills voted on by the House in each month of the 118th Congress?
+# ?strftime
+
+rc |>
+  filter(chamber == "HOUSE") |>
+  group_by(month, year) |>
+  summarize(n = n_distinct(bill_number)) |>
+  mutate(date = str_c(month, year, sep = "-"),
+         date = my(date)) |>
+  ggplot(aes(x = date, y = n)) +
+  geom_line() +
+  geom_point() +
+  scale_x_date(date_breaks = "2 months", date_labels = "%b %y")
+
+# If we want to skip the str_c() step, we can use make_date():
+
+rc |>
+  filter(chamber == "HOUSE") |>
+  group_by(month, year) |>
+  summarize(n = n_distinct(bill_number)) |>
+  mutate(date = make_date(year, month)) |>
+  ggplot(aes(x = date, y = n)) +
+  geom_line() +
+  geom_point() +
+  scale_x_date(date_breaks = "2 months", date_labels = "%b %y")
+
+# You can also extract elements of dates using functions like month(), day(), year(), and even wday().
+wday(ymd("20241014"), label = TRUE)
+
+# What is the most common day for votes in the House?
+rc |>
+  filter(chamber == "HOUSE") |>
+  mutate(date = make_date(year, month, day),
+         weekday = wday(date, label = TRUE)) |>
+  group_by(weekday, .drop = F) |>
+  summarize(n = n()) |>
+  ggplot() +
+  geom_col(aes(x = weekday, y = n))
