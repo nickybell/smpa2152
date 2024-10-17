@@ -1,0 +1,135 @@
+---
+title: "Date and Time Variables Homework"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(nycflights13)
+```
+
+1. Download the data on Joe Biden’s approval rating posted on Canvas. Plot the approval (`approve_estimate`) of the President over time. It might also be helpful to add the disapproval estimate to the same plot for extra context.
+
+We will want to use `pivot_longer()` to turn this dataset into tidy data. Think about what a `ggplot` would require for this graph, specifically a single variable representing the category of data (approval or disapproval) and another variable with the values that we want to display on the graph. In this dataset, `approve_estimate` and `disapprove_estimate` are in separate variables, so we would not be able to plot them using a `color` or `linetype` aesthetic in our `ggplot`.
+
+```{r, message=F}
+approval <- read_csv("approval_topline.csv")
+
+approval |>
+  pivot_longer(c(approve_estimate, disapprove_estimate), names_to = "estimate", values_to = "pct") |>
+  mutate(estimate = ifelse(estimate == "approve_estimate", "Approval", "Disapproval")) |>
+  ggplot(aes(x = end_date, y = pct, color = estimate)) +
+  geom_line() +
+  scale_color_manual(values = c("blue", "red")) +
+  scale_x_date(date_breaks = "2 months", date_labels = "%b %Y") +
+  labs(title = "President Biden's Approval Rating",
+       x = "Date",
+       y = "Rating (%)",
+       color = "Rating") +
+  theme_classic() +
+  theme(plot.title = element_text(hjust = .5),
+        axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1),
+        legend.position = "bottom")
+
+```
+
+a. Next, pick a period where approval ratings are out of the ordinary, or display some sort of unusual trend. Explain this trend using the events of that time period.
+
+In summer 2022, there was a reversal in what had been a steady decline in President Biden's job approval rating. According to an [article from the Los Angeles Times](https://www.latimes.com/world-nation/story/2022-09-15/biden-approval-rises-sharply-ahead-of-midterms-new-poll-shows), some of the reasons for this might be falling gas prices, legislative achievements by Democrats in Congress, and the reemergence of Donald Trump on the national stage.
+
+2. In the flights data, are delays more likely on certain days of the week? This requires knowing how many flights leave each day.
+
+First, let’s load in the flights data and make the year, month, and day columns into a  variable, similar to what we did in the lesson. We’ll use the `make_date()` function because we aren’t worried about the times. Then, we’ll find the day of the week that a specific date was on. Let’s also create an indicator variable that records if a flight has a departure and arrival delay. Finally, we will group by weekday and calculate the proportion of flights on each day that depart late.
+
+```{r}
+data(flights)
+flights |>
+  mutate(date = make_date(year, month, day), 
+         weekday = wday(date, label = T), 
+         dep_late = ifelse(dep_delay > 0, 1, 0), 
+         arr_late = ifelse(arr_delay > 0, 1, 0)) |>
+  group_by(weekday) |>
+  summarize(pct.dep.late = mean(dep_late, na.rm = T), 
+            pct.arr.late = mean(arr_late, na.rm = T),
+            n.flights=n())
+```
+
+We see that flights leaving on Thursday have the highest probability of both departure and arrival delays, and flights leaving on Saturday have the lowest. The Saturday one is easiest: there are the fewest flights, with fewer business travelers wanting to fly on a Saturday (some people probably fly on Sundays if they have early Monday meetings). There’s no obvious answer for why Thursdays are more likely to be delayed.
+
+3. At what time of day is your flight most likely to be cancelled? Group the flights into 15 minute intervals, and then plot when your flight is most likely to be cancelled. For simplicity, use the `update()` function to set all of the flights to the same day so that you can calculate the cancellation rate for each 15 minute interval across the entire data frame.
+
+To solve this problem, let’s simplify the days of each flights to 1/1/2013, since we’re only looking at the times. We’ll first make a similar date variable to the one that we used above, but this time, let’s include hour and minute with the make_datetime() function. Then, we’re going to use the rounding functions, as well as `update()`, to first make all the dates 1 (because we only care about the times for this question) and then group them into 15-minute intervals. Then, summarize to find the percentage of flights that were cancelled and plot the data. We may want to remove an outlying observation at approximately midnight that makes it hard to read the graph.
+
+```{r}
+flights |>
+  mutate(date = make_datetime(year, month, day, hour, minute), 
+         date = update(date, yday = 1),
+         date.15 = floor_date(date, unit = "15 minutes"), 
+         cancelled = ifelse(is.na(arr_time), 1, 0)) |>
+  filter(sched_dep_time >= 500) |>
+  group_by(date.15) |>
+  summarize(pct.can = 100*mean(cancelled)) |>
+  ggplot() + 
+  geom_point(mapping = aes(x = date.15, y = pct.can)) + 
+  theme_classic() + 
+  labs(x = "Departure Time",
+       y = "Percent Cancelled")
+```
+
+We notice that flights in the late evening are cancelled more often - flying early in the morning or late at night seems to be a safer bet. This is also consistent with what we found above that flights are more likely to be delayed around 8 PM as well. The old adage is true: if you want to minimize delays and cancellations, fly early in the morning.
+
+4. Download stock data for the last few years from Apple (AAPL) and Microsoft (MSFT) using the code below, grabbing the stock prices by day using the `{tidyquant}` package. This package allows you to super easily pull stock price data into R directly from Yahoo Finance’s API.
+
+```{r, message=F, warning=F}
+library(tidyquant)
+prices <- tq_get(c('AAPL','MSFT'),
+                 from = "2019-01-01",
+                 to = "2024-10-06",
+                 get = "stock.prices")
+```
+
+a. Plot the Apple and Microsoft stock prices over time. Feel free to use the open, high, low, close, or adjusted prices for your plot. Just make sure to label your chart appropriately so we know what we’re looking at!
+
+```{r}
+ggplot(prices, aes(x = date, y = close)) + 
+  geom_line(aes(color = symbol)) + 
+  theme_classic() + 
+  labs(x = "", 
+       y = "Closing Price",
+       title = "Apple and Microsoft Stock Prices Over Time",
+       color = "Stock Symbol") +
+  scale_y_continuous(labels=scales::dollar) +
+  scale_x_date(date_breaks = "3 months", date_labels = "%b %Y") +
+  theme(plot.title = element_text(hjust = .5),
+        axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1),
+        legend.position = "bottom")
+```
+
+b. Now, pick two other stocks and look at their performance over the past year. Try to pick one stock that you would expect has gone up in price over this time period and one that you would expect has gone down over this time period and explain why that might be the case. You can look up a company’s stock symbol using Google Finance.
+
+```{r}
+prices <- tq_get(c('NVDA','ZM'),
+                 from = "2023-10-17",
+                 to = "2024-10-16",
+                 get = "stock.prices")
+
+ggplot(prices, aes(x = date, y = close)) + 
+  geom_line(aes(color = symbol)) + 
+  theme_classic() + 
+  labs(x = "", 
+       y = "Closing Price",
+       title = "NVIDIA and Zoom Stock Prices",
+       color = "Stock Symbol") +
+  scale_y_continuous(labels=scales::dollar) +
+  scale_x_date(date_breaks = "1 month", date_labels = "%b %Y") +
+  theme(plot.title = element_text(hjust = .5),
+        axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1),
+        legend.position = "bottom")
+```
+
+"NVDA" is NVIDIA, a company that makes computer chips for training artificial intelligence models. With the explosion of interest in AI by companies in the past year, NVIDIA's chips have become a hot commodity so their stock has boomed. On the other hand, as more companies return their employees to the office, Zoom ("ZM") is likely losing customers. Their stock has not declined over the past year, but it hasn't grown either.
+
+## Appendix: All code used to make this document 
+
+```{r ref.label=knitr::all_labels(), echo = T, eval = F}
+```

@@ -55,6 +55,7 @@ rsconnect/
 *.pdf
 *.html
 *.tex
+*.docx
 # with exceptions for lecture files
 !lectures/*/*.pdf
 !lectures/*/Overleaf/main.tex
