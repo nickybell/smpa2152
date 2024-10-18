@@ -1,0 +1,300 @@
+\documentclass[xcolor=dvipsnames]{beamer} % dvipsnames gives more built-in colors
+\mode<presentation>
+
+\usetheme{Boadilla}
+
+\definecolor{GWdarkblue}{HTML}{033C5A}
+
+\usecolortheme[named=GWdarkblue]{structure}
+
+% Sets the font
+\usepackage[defaultfam,tabular,lining]{montserrat}
+\setbeamerfont{title}{shape=\scshape}
+\setbeamerfont{frametitle}{shape=\scshape}
+%Remove "Figure" from captions
+\setbeamertemplate{caption}{\raggedright\insertcaption\par}
+
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{hyperref}
+
+\title[Political Polling]{Political Polling}
+\author[SMPA 2152]{Data Analysis for Journalism and Political Communication (Fall 2024)}
+\date{Prof. Bell}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{
+\titlepage
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{\frametitle{When Polling Misses}
+
+\only<1>{
+\centering
+\includegraphics[width = .9\textwidth]{pollsters_political_cartoon.jpg}}
+
+\only<2>{
+\centering
+\includegraphics[width=.9\textwidth]{literary_digest_landon_roosevelt.png}}
+
+\only<3>{
+\begin{columns}[c, onlytextwidth]
+    \begin{column}{.6\textwidth}
+        \includegraphics[height=.9\textheight]{1936nyt.jpg}
+    \end{column}
+    \begin{column}{.4\textwidth}
+    \begin{center}
+        \includegraphics[width=.9\textwidth]{literary_digest_face_red.jpg}
+    \end{center}
+    \end{column}
+\end{columns}}
+
+\only<4>{
+\centering
+\includegraphics[width=.9\textwidth]{1936_gallup_polls.png}}
+
+\only<5>{
+\centering
+\includegraphics[width = .9\textwidth]{1948GallupPolls.jpg}}
+
+\only<6>{
+\centering
+\includegraphics[width = .9\textwidth]{dewey_defeats_truman.jpg}}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{\frametitle{The 2016 Election Polls}
+
+\only<1>{
+\centering
+\includegraphics[width = .9\textwidth]{RCP2016Election.png}}
+
+\only<2,4>{
+\begin{enumerate}[<+(1)->]
+    \item The polls weren't that wrong
+    \item<4> The polls were wrong due to non-response bias, a form of selection bias
+\end{enumerate}}
+
+\only<3>{
+\centering
+\includegraphics[width = .8\textwidth]{538_PollsGood2016.png}}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{\frametitle{Types of Missing Data}
+
+\only<1-4,6->{
+\begin{itemize}[<+->]
+    \item \textbf{Missing Completely at Random (MCAR)}: Observations are missing for non-systematic reasons
+    \item \textbf{Missing at Random (MAR)}: Missing observations are correlated with a factor other than the outcome that is being measured
+    \begin{itemize}
+        \item MAR data can be resolved using a statistical technique called ``weighting'' in which answers from less-responsive groups are counted more, and answers from more-responsive groups are counted less
+        \item Like making a ``public opinion soup'' but can go wrong (e.g., LA Times)
+    \end{itemize}
+    \item<6-> \textbf{Missing Not at Random (MNAR)}: Missing outcomes are correlated with the outcome that is being measured
+    \begin{itemize}
+        \item<7-> MNAR data is a challenge because the only thing that predicts what data is missing is the fact that it is missing
+    \end{itemize}
+\end{itemize}
+}
+
+\only<5>{
+\centering
+\includegraphics[width = .9\textwidth]{latimes.png}}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{\frametitle{The 2016 Election Polls}
+
+\only<1>{
+\begin{enumerate}
+    \item The polls weren't that wrong
+    \item The polls were wrong due to \textbf{missing at random (MAR)} non-response bias by education
+\end{enumerate}}
+
+\only<2>{
+\centering
+\includegraphics[width = .9\textwidth]{2016_education_votechoice.png}}
+
+\only<3>{
+\centering
+\includegraphics[width = .65\textwidth]{2016_education_weighting.png}}
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{\frametitle{The 2020 Election Polls}
+
+\only<1>{
+\centering
+\includegraphics[width = .9\textwidth]{pollsters_trust_us_again.jpg}}
+
+\only<2>{
+\centering
+\includegraphics[width = .9\textwidth]{RCP2020Election.png}}
+
+\only<3-5,7-8,10>{
+    \begin{enumerate}[<+(2)->]
+        \item The polls weren't that wrong (again)
+        \item It is challenging to poll during a pandemic and with record-high turnout (the models were wrong)
+        \item The polls were wrong due to missing at random (MAR) non-response bias (again)
+        \item<7-> The polls were wrong due to \textbf{missing not at random (MNAR)} non-response bias
+        \begin{itemize}[<+->]
+            \item<8-> ``Shy Trump voters'' theory
+            \item<10> Trump voters are less likely to respond to surveys
+        \end{itemize}
+    \end{enumerate}
+}
+
+\only<6>{
+\centering
+\includegraphics[height = .8\textheight]{social_ties.png}}
+
+\only<9>{
+\centering
+\includegraphics[width = .9\textwidth]{shy_trump.png}}
+
+\only<11>{
+\centering
+\includegraphics[width = .5\textwidth]{phone_response_rate.png}}
+
+\only<12>{
+\centering
+\includegraphics[width = .5\textwidth]{ATP_fewer_republicans.png}}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{\frametitle{The 2022 Election Polls}
+
+\only<2>{
+    \centering
+    \includegraphics[width = .9\textwidth]{partisan_polls.png}
+}
+
+\only<3>{
+    \centering
+    \includegraphics[width = .9\textwidth]{patty_murray.png}
+}
+
+\only<5>{
+    \centering
+    \includegraphics[height = .8\textheight]{herding.png}
+}
+
+\only<8>{
+    \centering
+    \includegraphics[height = .8\textheight]{issue_polling.png}
+}
+
+\only<1,4,6-7>{
+    \begin{enumerate}[<+->]
+        \item Republican-aligned pollsters were over-represented in polling averages, creating an expectation of a ``red wave''
+        \item<4-> Pollsters engaged in \textbf{herding} -- adjusting the results of their findings to more closely match the results of other polls (or not releasing outlying polls at all) -- to avoid being wrong
+        \item<6-> Something is unique about elections in which Donald Trump is a candidate
+        \begin{itemize}
+            \item<7-> Issue polling seems to be unaffected by biases influencing horse race polling
+        \end{itemize}
+    \end{enumerate}
+}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{\frametitle{Can We Trust the 2024 Polls?}
+
+\only<1-3> {
+    \begin{itemize}[<+->]
+        \item Not much evidence of herding
+        \item Pollsters are trying new techniques to address partisan non-response, like weighting on recalled vote (controversial)
+    \end{itemize}
+}
+
+\only<3> {
+    \centering
+    ~\\
+    \fbox{\includegraphics[width = .604\textwidth]{recalled_vote.png}}
+    \fbox{\includegraphics[width = .31\textwidth]{siena_polls.jpeg}}
+}
+
+\only<4-6,8>{
+    \begin{itemize}[<+(3)->]
+        \item But there is no guarantee that the polling error will be in the same direction or magnitude as 2016 or 2020.
+        \item The polling error could also be bigger. Some researchers suggest that the margin of error should be doubled to account for uncertainty due to response bias and other measurement error.
+        \item There is already some evidence that 2024 polls are exhibiting unusual variability.
+        \item<8> You won't know all of the ways the polls might be wrong until Election Day.
+    \end{itemize}
+}
+
+\only<7>{
+    \centering
+    \includegraphics[height = .8\textheight]{survey_method_effect.png}
+}
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{\frametitle{Writing Good Surveys}
+
+\only<1-2, 4>{
+    \begin{itemize}[<+->]
+        \item As with data visualization, we have to assume that we have a limited amount of the respondent's attention
+        \item The goal of survey design is to \textit{minimize} cognitive load and \textit{maximize} specificity, but these two goals are often in tension
+        \item<4-> When the cognitive load on respondents is too high, they are likely to engage in \textbf{satisficing} or exit the survey entirely (known as survey attrition).
+    \end{itemize}
+}
+
+\only<3>{
+    \centering
+    \fbox{\includegraphics[width = .45\textwidth]{gaza1.png}}
+    \fbox{\includegraphics[width = .45\textwidth]{gaza2.png}}
+    \\~\\
+    \scriptsize Source: Harvard IOP Youth Poll
+}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{\frametitle{Writing Good Surveys}
+\begin{block}{Satisficing}
+Occurs when respondents do not expend the mental effort necessary to generate optimal answers to survey questions
+\end{block}
+\pause
+~\\
+Jon Krosnick (1991) identifies several types of satisficing:
+\begin{enumerate}[<+->]
+    \item Picking the first or last answer
+    \item Agreeing/acquiescing
+    \item ``Straight-lining''
+    \item Saying ``don't know''
+    \item Mental coin-flipping
+\end{enumerate}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{\frametitle{How Can We Avoid Satisficing?}
+
+\only<1>{
+    \href{https://www.youtube.com/watch?v=eFzGdQrr2K8}{Methods 101: Question Wording (Pew Research Center)}
+}
+
+\only<2-9>{
+    \begin{enumerate}[<+(1)->]
+        \item Keep question and survey length to a minimum
+        \item Put high-cognition questions earlier in the survey, and low-cognition questions (like demographics) at the end of the survey
+        \item Use simple, unambiguous language
+        \item Avoid leading questions or putting questions in an order that ``primes'' the respondent to think a particular way
+        \item Avoid double-barreled questions (``To what extent do you agree with the Biden Administration's plan to forgive \$20,000 of student loans for Pell Grant recipients and \$10,000 of student loans for most other borrowers?'')
+        \item Use a concise, mutually-exclusive, and complete set of response options (e.g., Likert scale)
+        \item Use open-ended questions judiciously
+        \item Pre-test your survey
+    \end{enumerate}
+}
+
+\only<10>{
+    \centering
+    \includegraphics[width = .8\textwidth]{survey_chaos.png}
+}
+}
+
+\end{document}
