@@ -59,4 +59,3 @@ The mid-term exam will consist of three parts:
 * Weighting
 * Herding
 * Satisficing
-
