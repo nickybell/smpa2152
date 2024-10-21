@@ -1,0 +1,19 @@
+CONFIRMATION: The type of bias that occurs when we privilege evidence that supports our existing beliefs
+BELMONTREPORT: Published in 1978 and lays out the guidelines for ethical research involving human subjects
+COUNTERFACTUAL: Required for making causal claims
+CORRELATION: The absolute rate of change in two variables is similar
+REVERSE: ______ causation is when the explanatory variable precedes the outcome
+CONFOUNDER: Other variable that could explain change in both the explanatory and outcome variables
+PVALUE: The odds of committing Type I error
+AVAILABILITY: The type of bias that occurs when we give greater weight to evidence that is most memorable
+SATISFICING: Includes acquiescing, straight-lining, and mental coin-flipping
+SELECTION: The type of bias that occurs when some units have a higher chance of being drawn than others
+ANONYMITY: No one is aware of subjects' identities
+CONFIDENTIALITY: No one other than the researcher is aware of subjects' identities
+OPERATIONALIZATION: Should be unambiguous, concise, familiar, and available
+INFORMEDCONSENT: Subjects must agree to participate and have full information about participation
+WEIGHTING: A statistical method for addressing missing at random data in a poll
+EDWARDTUFTE: "Above all else, show the data."
+SYSTEMATIC: The type of sampling used in exit polls
+HERDING: When pollsters adjust or do not release outlying polls
+RDD: Abbreviation for the type of sampling used to ensure that cell phones are included in survey samples
