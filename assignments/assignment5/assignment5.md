@@ -1,47 +1,37 @@
----
-title: "Assignment #5"
-author: "SMPA 2152 (Prof. Bell)"
-# format:
-#   pdf:
-#     mainfont: "Arial"
-#     keep-tex: true
-#     include-in-header:
-#        text: |
-format: gfm
-execute:
-  echo: true
-  include: true
-  warning: false
-  message: false
-editor_options: 
-  chunk_output_type: inline
----
-\vspace{-3em}
+# Assignment \#5
+SMPA 2152 (Prof. Bell)
 
-For this week's homework, we are going to explore how well the polls did in predicting the results of the 2020 Presidential Election. We will be using two datasets:
+For this week’s homework, we are going to explore how well the polls did
+in predicting the results of the 2020 Presidential Election. We will be
+using two datasets:
 
-- Data on 2020 election polls collected by [FiveThirtyEight](https://abcnews.go.com/538). This data is available on Blackboard as `presidential_polls_2020.csv`.
+- Data on 2020 election polls collected by
+  [FiveThirtyEight](https://abcnews.go.com/538). This data is available
+  on Blackboard as `presidential_polls_2020.csv`.
 
-- Results of the 2020 Presidential election compiled by the [MIT Election Data + Science Lab](https://electionlab.mit.edu/). This data is available on Blackboard as `2020-president.csv`.
-    
----
+- Results of the 2020 Presidential election compiled by the [MIT
+  Election Data + Science Lab](https://electionlab.mit.edu/). This data
+  is available on Blackboard as `2020-president.csv`.
 
-```{r}
-#| label: setup
+------------------------------------------------------------------------
 
+``` r
 library(tidyverse)
 polls <- read_csv("presidential_polls_2020.csv")
 ```
 
-1. Make a nicely-formatted graph showing the average support for Joe Biden and Donald Trump in each month over the course of the race. 
+1.  Make a nicely-formatted graph showing the average support for Joe
+    Biden and Donald Trump in each month over the course of the race.
 
-    1. Use the column `end_date` to represent the date of the poll.
-    2. Use only polls that are national polls (i.e., are not state polls).
-    3. Use only pollsters with a rating from 538 of 2.0 or higher.
+    1.  Use the column `end_date` to represent the date of the poll.
+    2.  Use only polls that are national polls (i.e., are not state
+        polls).
+    3.  Use only pollsters with a rating from 538 of 2.0 or higher.
 
-    *Hint: you may need to use pivot_wider() and pivot_longer() to answer this question.*
-    
-```{r}
+    *Hint: you may need to use pivot_wider() and pivot_longer() to
+    answer this question.*
+
+``` r
 polls |>
   filter(answer %in% c("Biden", "Trump") & numeric_grade >= 2 & !is.na(state)) |>
   pivot_wider(id_cols = c(end_date, question_id), names_from = answer, values_from = pct) |>
@@ -66,9 +56,16 @@ polls |>
   theme(plot.title = element_text(hjust = .5))
 ```
 
-2. Some people believe that polls with live interviews produce more accurate results than other types of polls. Create the same graph as above, but this time, include a comparison between polls that use at least some `"Live Phone"` interviews and those that do not. Do you believe that Live Phone polls produce different polling results than non-Live Phone polls?
+![](assignment5_files/figure-commonmark/unnamed-chunk-2-1.png)
 
-```{r}
+2.  Some people believe that polls with live interviews produce more
+    accurate results than other types of polls. Create the same graph as
+    above, but this time, include a comparison between polls that use at
+    least some `"Live Phone"` interviews and those that do not. Do you
+    believe that Live Phone polls produce different polling results than
+    non-Live Phone polls?
+
+``` r
 polls |>
   filter(answer %in% c("Biden", "Trump") & numeric_grade >= 2 & !is.na(state)) |>
   pivot_wider(names_from = answer, values_from = pct) |>
@@ -95,25 +92,28 @@ polls |>
   facet_wrap(~ live)
 ```
 
-```{r}
-#| output: asis
-#| echo: false
+![](assignment5_files/figure-commonmark/unnamed-chunk-3-1.png)
 
-writeLines("> Polls with live phone interviews were better at capturing late movement towards Trump than non-live phone interview polls.")
-```
+> Polls with live phone interviews were better at capturing late
+> movement towards Trump than non-live phone interview polls.
 
-3. Estimate the polling error in each state by comparing the average two-party vote share for Biden in each state according to the polling vs. the actual two-party vote share for Biden in the election results. The two party vote share is:
+3.  Estimate the polling error in each state by comparing the average
+    two-party vote share for Biden in each state according to the
+    polling vs. the actual two-party vote share for Biden in the
+    election results. The two party vote share is:
 
     $BidenPct/(BidenPct + TrumpPct)$
-    
+
     Use only polls where:
 
-    1. The `end_date` is on or after October 15, 2020.
-    2. The pollster has a rating from 538 of 2.0 or higher.
+    1.  The `end_date` is on or after October 15, 2020.
+    2.  The pollster has a rating from 538 of 2.0 or higher.
 
-Make a nicely-formatted graph showing the polling error in each state arranged from largest to smallest polling error. Comment on the graph. What does this graph tell you about state polling in the 2020 election?
+Make a nicely-formatted graph showing the polling error in each state
+arranged from largest to smallest polling error. Comment on the graph.
+What does this graph tell you about state polling in the 2020 election?
 
-```{r}
+``` r
 elec <- read_csv("2020-president.csv")
 elec <- elec |>
   filter(candidate_name == "Biden") |>
@@ -145,9 +145,10 @@ polls |>
   theme(plot.title = element_text(hjust = .5))
 ```
 
-```{r}
-#| output: asis
-#| echo: false
+![](assignment5_files/figure-commonmark/unnamed-chunk-5-1.png)
 
-writeLines("> Some of the largest polling errors were in states that are not competitive, meaning that there probably was not much polling in those states. However, most states have a polling error which overestimates Biden's vote share, suggesting a general pattern in 2020 election polling to overestimate Biden.")
-```
+> Some of the largest polling errors were in states that are not
+> competitive, meaning that there probably was not much polling in those
+> states. However, most states have a polling error which overestimates
+> Biden’s vote share, suggesting a general pattern in 2020 election
+> polling to overestimate Biden.
