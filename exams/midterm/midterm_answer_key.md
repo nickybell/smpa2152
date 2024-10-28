@@ -52,6 +52,7 @@ output:
     > * The jagged lines are harder to follow than smooth lines (continuity).
     > * Contrasting colors would be more perceptible than a light blue area vs. a dark blue background.
     > * No axis labels, source, or legend.
+    > * There is a fair bit of chartjunk on this graph.
     
 ### Essay
 
