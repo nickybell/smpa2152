@@ -44,15 +44,13 @@ polls <- read_csv("presidential_polls_2020.csv")
 ```{r}
 polls |>
   filter(answer %in% c("Biden", "Trump") & numeric_grade >= 2 & !is.na(state)) |>
-  pivot_wider(id_cols = c(end_date, question_id), names_from = answer, values_from = pct) |>
-  separate_wider_delim(end_date, "/", names = c("month", "day", "year")) |>
-  group_by(month, year) |>
-  summarize(Biden = mean(Biden, na.rm = T),
-            Trump = mean(Trump, na.rm = T)) |>
-  mutate(date = str_c(year, month, sep = "-"),
-         date = ym(date)) |>
-  pivot_longer(c(Biden, Trump), names_to = "candidate", values_to = "pct") |>
-  ggplot(aes(x = date, y = pct, color = candidate)) +
+  mutate(end_date = mdy(end_date),
+         month = month(end_date),
+         year = year(end_date)) |>
+  group_by(answer, month, year) |>
+  summarize(pct = mean(pct, na.rm = T)) |>
+  mutate(date = make_date(year, month)) |>
+  ggplot(aes(x = date, y = pct, color = answer)) +
   geom_point() +
   geom_line() +
   scale_x_date(date_breaks = "2 months", date_labels = "%b %y") +
