@@ -57,7 +57,7 @@ ggplot(dta) +
     “Do you see the decline of democracy around the world as a critical
     threat, an important but not critical threat, or not an important
     threat at all to the vital interest of the United States in the next
-    10 years?” (variable `Q5_NEW_8a`). Be sure to include the margin of
+    10 years?” (variable `Q5_NEW_38`). Be sure to include the margin of
     error on the graph.
 
     Visually, can you conclude that the percentage of respondents who
