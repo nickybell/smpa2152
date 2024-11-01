@@ -42,6 +42,7 @@ polls |>
   geom_line() +
   scale_x_date(date_breaks = "2 months", date_labels = "%b %y") +
   scale_y_continuous(limits = c(0,100)) +
+  scale_color_manual(values = c("#0671B0", "#CA0120")) +
   labs(x = "Month",
        y = "Polling Average (%)",
        color = "Candidate",
@@ -63,20 +64,19 @@ polls |>
 ``` r
 polls |>
   filter(answer %in% c("Biden", "Trump") & numeric_grade >= 2 & !is.na(state)) |>
-  pivot_wider(names_from = answer, values_from = pct) |>
-  separate_wider_delim(end_date, "/", names = c("month", "day", "year")) |>
-  mutate(live = str_detect(methodology, "Live Phone")) |>
-  group_by(month, year, live) |>
-  summarize(Biden = mean(Biden, na.rm = T),
-            Trump = mean(Trump, na.rm = T)) |>
-  mutate(date = str_c(year, month, sep = "-"),
-         date = ym(date)) |>
-  pivot_longer(c(Biden, Trump), names_to = "candidate", values_to = "pct") |>
-  ggplot(aes(x = date, y = pct, color = candidate)) +
+  mutate(end_date = mdy(end_date),
+         month = month(end_date),
+         year = year(end_date),
+         live = str_detect(methodology, "Live Phone")) |>
+  group_by(live, answer, month, year) |>
+  summarize(pct = mean(pct, na.rm = T)) |>
+  mutate(date = make_date(year, month)) |>
+  ggplot(aes(x = date, y = pct, color = answer)) +
   geom_point() +
   geom_line() +
   scale_x_date(date_breaks = "2 months", date_labels = "%b %y") +
   scale_y_continuous(limits = c(0,100)) +
+  scale_color_manual(values = c("#0671B0", "#CA0120")) +
   labs(x = "Month",
        y = "Polling Average (%)",
        color = "Candidate",
@@ -107,6 +107,8 @@ polls |>
 Make a nicely-formatted graph showing the polling error in each state
 arranged from largest to smallest polling error. Comment on the graph.
 What does this graph tell you about state polling in the 2020 election?
+
+*Hint: You may need to use pivot_wider() to answer this question.*
 
 ``` r
 elec <- read_csv("2020-president.csv")
