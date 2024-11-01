@@ -28,9 +28,6 @@ polls <- read_csv("presidential_polls_2020.csv")
         polls).
     3.  Use only pollsters with a rating from 538 of 2.0 or higher.
 
-    *Hint: you may need to use pivot_wider() and pivot_longer() to
-    answer this question.*
-
 ``` r
 polls |>
   filter(answer %in% c("Biden", "Trump") & numeric_grade >= 2 & !is.na(state)) |>
