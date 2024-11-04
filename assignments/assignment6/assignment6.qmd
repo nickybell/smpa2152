@@ -1,13 +1,13 @@
 ---
 title: "Assignment #6"
 author: "SMPA 2152 (Prof. Bell)"
-# format:
-#   pdf:
-#     mainfont: "Arial"
-#     keep-tex: true
-#     include-in-header:
-#        text: |
-format: gfm
+format:
+  pdf:
+    mainfont: "Arial"
+    keep-tex: true
+    include-in-header:
+       text: |
+# format: gfm
 execute:
   echo: true
   include: true
@@ -133,8 +133,12 @@ dta |>
          total = sum(n),
          moe = 1.96 * sqrt((prop * (1 - prop))/total)) |>
   ggplot() +
-  geom_col(aes(x = ppagect4, y = prop, fill = Q5_NEW_38), color = "black", position = "dodge") +
-  geom_errorbar(aes(x = ppagect4, ymin = prop-moe, ymax = prop+moe, group = Q5_NEW_38), position = position_dodge(.9), width = .2) +
+  geom_col(aes(x = ppagect4, y = prop, fill = Q5_NEW_38),
+           color = "black",
+           position = "dodge") +
+  geom_errorbar(aes(x = ppagect4, ymin = prop-moe, ymax = prop+moe, group = Q5_NEW_38),
+                position = position_dodge(.9),
+                width = .2) +
   scale_y_continuous(limits = c(0,1), labels = scales::percent_format()) +
   labs(x = "Response",
        y = "Percent",
