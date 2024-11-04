@@ -1,13 +1,13 @@
 ---
 title: "Assignment #6"
 author: "SMPA 2152 (Prof. Bell)"
-format:
-  pdf:
-    mainfont: "Arial"
-    keep-tex: true
-    include-in-header:
-       text: |
-# format: gfm
+# format:
+#   pdf:
+#     mainfont: "Arial"
+#     keep-tex: true
+#     include-in-header:
+#        text: |
+format: gfm
 execute:
   echo: true
   include: true
@@ -142,10 +142,12 @@ dta |>
   scale_y_continuous(limits = c(0,1), labels = scales::percent_format()) +
   labs(x = "Response",
        y = "Percent",
+       fill = "Answer",
        title = "How Critical is Democratic Decline to U.S. Vital Interests?",
        caption = "Source: 2022 Chicago Council survey") +
   theme_classic() +
-  theme(plot.title = element_text(hjust = .5))
+  theme(plot.title = element_text(hjust = .5),
+        legend.position = "bottom")
 ```
 
 ```{r}
