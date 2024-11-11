@@ -1,6 +1,7 @@
 ### This script is for the swing states prediction exercise
 
 library(tidyverse)
+library(googlesheets4)
 bids <- read_sheet("1LXF7GD48oONxRinGpLcEGeK4wvD38JCFvTzmAoY2MQw")
 
 # Weighted predictions
@@ -29,3 +30,14 @@ bids |>
         plot.background = element_rect(fill = "white"))
 ggsave("~/smpa2152/exercises/predictive_models/swing_state_predictions.png", width = 6, height = 4)
 
+
+# Results -----------------------------------------------------------------
+
+bids |>
+  mutate(Bid = ifelse(Result == "Trump", Bid, 0)) |>
+  group_by(Student) |>
+  summarize(Total = sum(Bid, na.rm = T)) |>
+  arrange(desc(Total)) |>
+  mutate(Rank = min_rank(desc(Total))) |>
+  relocate(Rank, .before = 0) |>
+  write_sheet(ss = "1LXF7GD48oONxRinGpLcEGeK4wvD38JCFvTzmAoY2MQw", sheet = "Results")
