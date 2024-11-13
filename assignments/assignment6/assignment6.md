@@ -136,15 +136,21 @@ dta |>
          total = sum(n),
          moe = 1.96 * sqrt((prop * (1 - prop))/total)) |>
   ggplot() +
-  geom_col(aes(x = ppagect4, y = prop, fill = Q5_NEW_38), color = "black", position = "dodge") +
-  geom_errorbar(aes(x = ppagect4, ymin = prop-moe, ymax = prop+moe, group = Q5_NEW_38), position = position_dodge(.9), width = .2) +
+  geom_col(aes(x = ppagect4, y = prop, fill = Q5_NEW_38),
+           color = "black",
+           position = "dodge") +
+  geom_errorbar(aes(x = ppagect4, ymin = prop-moe, ymax = prop+moe, group = Q5_NEW_38),
+                position = position_dodge(.9),
+                width = .2) +
   scale_y_continuous(limits = c(0,1), labels = scales::percent_format()) +
   labs(x = "Response",
        y = "Percent",
+       fill = "Answer",
        title = "How Critical is Democratic Decline to U.S. Vital Interests?",
        caption = "Source: 2022 Chicago Council survey") +
   theme_classic() +
-  theme(plot.title = element_text(hjust = .5))
+  theme(plot.title = element_text(hjust = .5),
+        legend.position = "bottom")
 ```
 
 ![](assignment6_files/figure-commonmark/unnamed-chunk-8-1.png)
