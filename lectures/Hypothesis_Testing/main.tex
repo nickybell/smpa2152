@@ -1,0 +1,131 @@
+\documentclass[xcolor=dvipsnames]{beamer} % dvipsnames gives more built-in colors
+\mode<presentation>
+
+\usetheme{Boadilla}
+
+\definecolor{GWdarkblue}{HTML}{033C5A}
+
+\usecolortheme[named=GWdarkblue]{structure}
+
+% Sets the font
+\usepackage[defaultfam,tabular,lining]{montserrat}
+\setbeamerfont{title}{shape=\scshape}
+\setbeamerfont{frametitle}{shape=\scshape}
+%Remove "Figure" from captions
+\setbeamertemplate{caption}{\raggedright\insertcaption\par}
+
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{hyperref}
+
+\usepackage{soul}
+\makeatletter
+\let\HL\hl
+\renewcommand\hl{%
+  \let\set@color\beamerorig@set@color
+  \let\reset@color\beamerorig@reset@color
+  \HL}
+\makeatother
+
+\title[Hypothesis Testing]{Hypothesis Testing}
+\author[SMPA 2152]{Data Analysis for Journalism and Political Communication (Fall 2024)}
+\date{Prof. Bell}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{
+\titlepage
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{\frametitle{Writing Hypotheses}
+
+Every hypothesis has \underline{two} opposing versions, both of which are critically important:
+
+\begin{enumerate}
+    \item The null hypothesis ($H_0$), also called ``H-naught''
+    \item The alternative hypothesis ($H_A$ or $H_1$)
+\end{enumerate}
+~\\
+\begin{itemize}[<+(1)->]
+    \item $H_0$ is the hypothesis of \textit{no difference}. For example:
+    \begin{itemize}
+        \item<.-> $H_0$: There is no difference in vote preference among voters who decided in the last month.
+    \end{itemize}
+    \item $H_A$ is the hypothesis of \textit{difference}. For example:
+    \begin{itemize}
+        \item<.-> $H_A$: Voters who decided in the last month were more likely to support Donald Trump than Joe Biden.
+    \end{itemize}
+\end{itemize}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{\frametitle{Let's Practice}
+
+Identify whether each of these hypotheses is $H_0$ or $H_A$, and provide it's opposite:
+
+\begin{enumerate}
+    \item \only<2->{$H_0$: }Global temperatures are no different today than they were 50 years ago.
+        \only<2->{~\\\hl{$H_A$: Global temperatures are higher today than they were 50 years ago.}}
+    \item \only<3->{$H_A$: }Regular viewers of 24-hour news channels are more partisan than non-viewers.
+        \only<3->{~\\\hl{$H_0$: Regular viewers of 24-hour news channels are as partisan as non-viewers.}}
+    \item \only<4->{$H_A$: }The number of soldiers from a voter's area who are killed in Iraq is positively correlated with votes for John Kerry in the 2004 presidential election.
+        \only<4->{~\\\hl{$H_0$: The number of soldiers from a voter's area who are killed in Iraq is not correlated with votes for John Kerry in the 2004 presidential election.}}
+\end{enumerate}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{\frametitle{Intuition of Hypothesis Testing}
+
+\begin{itemize}[<+->]
+    \item Our goal is to show that $H_0$ is unlikely to be true.
+    \item Why? Because we want to avoid Type I error in which we incorrectly reject $H_0$ as false and accept $H_A$
+    \begin{itemize}
+        \item This is why we say that the criminal justice system has a presumption of innocence:
+        ~\\
+        ~\\ $H_0$: The person is not guilty.
+        ~\\ $H_A$: The person is guilty.
+    \end{itemize}
+    \item To do this, we assume a world in which $H_0$ is true, and place the burden on us (the prosecution) to show that this assumption is likely wrong.
+\end{itemize}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{
+In-class example
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{\frametitle{Types of Hypothesis Tests}
+
+\only<1>{
+\begin{block}{One-sample t-test}
+A difference-of-means test comparing an estimate of the mean to a specific alternative mean (often 0)
+\end{block}
+~\\
+~\\
+\begin{block}{Two-sample t-test}
+A difference-of-means test comparing estimates of the mean of two samples
+\end{block}
+}
+
+\only<2>{
+\begin{block}{One-tailed t-test}
+A difference-of-means test of whether an estimate of the mean is greater or less than an alternative (mean or sample)
+\end{block}
+~\\
+~\\
+\begin{block}{Two-tailed t-test}
+A difference-of-means test of whether an estimate of the mean is different than an alternative (mean or sample)
+\end{block}
+{\footnotesize $^*$Most researchers use two-tailed tests even when they hypothesize a directional difference (greater or lesser) because a two-tailed test is more conservative and less likely to result in Type 1 error.}
+}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{
+Return to the in-class example
+}
+
+\end{document}
