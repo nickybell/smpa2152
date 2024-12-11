@@ -18,8 +18,12 @@ dta2 <-
 				 											  treatment %in% c(3,6,9,12) & app == "app2" ~ "excellent"),
 				 pid = case_when(V212d %in% c(1:3) ~ "Democrat",
 				 								 V212d == 4 ~ "Independent",
-				 								 V212d %in% c(5:7) ~ "Republican")) %>%
+				 								 V212d %in% c(5:7) ~ "Republican"),
+				 age = if_else(!v207 %in% 9998:9999, 2010-v207, NA),
+				 gender = case_match(v208,
+				                     1 ~ "Male",
+				                     2 ~ "Female")) %>%
 	rename(bal_bud = app3) %>%
-	select(respondent_id, treatment, race, work_ethic, allocation, bal_bud, pid)
+	select(respondent_id, treatment, race, work_ethic, allocation, bal_bud, pid, age, gender)
 
 write_csv(dta2, "scripts/hypothesis_testing/desante2013_modified.csv")
