@@ -29,9 +29,12 @@ poll <-
     students who believe that colleges and universities should **allow**
     offensive political speech on campus is less than among non-college
     students (`Q11_4`). You must write both the $H_0$ and the $H_A$. How
-    do you interpret the results of your hypothesis test? The relevant
-    variable for college students is `Student1`. (Hint: Non-college
-    students are represented with the values `No` **and** `NA`.)
+    do you interpret the results of your hypothesis test?
+
+    Please note that **non**-college students are represented with the
+    values `No` *and* `NA` in the variable `Student1`; any other values
+    represent college students. You should have 4,186 non-college
+    students and 996 college students.
 
 - $H_0$: The proportion of college students who believe that colleges
   and universities should allow offensive political speech is greater
@@ -79,15 +82,15 @@ tab_model(reg,
           dv.labels = "Allow Offensive Speech on Campus")
 ```
 
-|  |  |  |
-|:--:|:--:|:--:|
-|   | Allow Offensive Speech on Campus |  |
-| Predictors | Estimates | p |
-| (Intercept) | 0.70 | **\<0.001** |
-| College: Not a student | *Reference* |  |
-| College: Student | -0.07 | **\<0.001** |
-| Observations | 5182 |  |
-| R<sup>2</sup> / R<sup>2</sup> adjusted | 0.003 / 0.003 |  |
+|                                        |                                  |             |
+|:--------------------------------------:|:--------------------------------:|:-----------:|
+|                                        | Allow Offensive Speech on Campus |             |
+|               Predictors               |            Estimates             |      p      |
+|              (Intercept)               |               0.70               | **\<0.001** |
+|         College: Not a student         |           *Reference*            |             |
+|            College: Student            |              -0.07               | **\<0.001** |
+|              Observations              |               5182               |             |
+| R<sup>2</sup> / R<sup>2</sup> adjusted |          0.003 / 0.003           |             |
 
 > With weights, college students are 7 percentage points less likely to
 > support allowing offensive political speech on campus, on average,
@@ -127,19 +130,19 @@ tab_model(reg,
           dv.labels = "Allow Offensive Speech on Campus")
 ```
 
-|  |  |  |
-|:--:|:--:|:--:|
-|   | Allow Offensive Speech on Campus |  |
-| Predictors | Estimates | p |
-| (Intercept) | 0.67 | **\<0.001** |
-| College: Not a student | *Reference* |  |
-| College: Student | -0.06 | **\<0.001** |
-| ppgenderMale | 0.09 | **\<0.001** |
-| QPID100: Independent | *Reference* |  |
-| QPID100: Democrat | -0.11 | **\<0.001** |
-| QPID100: Republican | 0.08 | **\<0.001** |
-| Observations | 5168 |  |
-| R<sup>2</sup> / R<sup>2</sup> adjusted | 0.040 / 0.039 |  |
+|                                        |                                  |             |
+|:--------------------------------------:|:--------------------------------:|:-----------:|
+|                                        | Allow Offensive Speech on Campus |             |
+|               Predictors               |            Estimates             |      p      |
+|              (Intercept)               |               0.67               | **\<0.001** |
+|         College: Not a student         |           *Reference*            |             |
+|            College: Student            |              -0.06               | **\<0.001** |
+|              ppgenderMale              |               0.09               | **\<0.001** |
+|          QPID100: Independent          |           *Reference*            |             |
+|           QPID100: Democrat            |              -0.11               | **\<0.001** |
+|          QPID100: Republican           |               0.08               | **\<0.001** |
+|              Observations              |               5168               |             |
+| R<sup>2</sup> / R<sup>2</sup> adjusted |          0.040 / 0.039           |             |
 
 > College students are about 6 percentage points less likely to support
 > allowing offensive political speech on campus, on average, controlling
