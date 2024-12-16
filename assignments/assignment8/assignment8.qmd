@@ -42,7 +42,9 @@ poll <-
                                Main_Weights))
 ```
 
-1. Conduct a hypothesis test showing whether the proportion of college students who believe that colleges and universities should **allow** offensive political speech on campus is less than among non-college students (`Q11_4`). You must write both the $H_0$ and the $H_A$. How do you interpret the results of your hypothesis test? The relevant variable for college students is `Student1`. (Hint: Non-college students are represented with the values `No` **and** `NA`.)
+1. Conduct a hypothesis test showing whether the proportion of college students who believe that colleges and universities should **allow** offensive political speech on campus is less than among non-college students (`Q11_4`). You must write both the $H_0$ and the $H_A$. How do you interpret the results of your hypothesis test?
+
+    Please note that **non**-college students are represented with the values `No` *and* `NA` in the variable `Student1`; any other values represent college students. You should have 4,186 non-college students and 996 college students.
 
 ```{r}
 #| label: hypotheses
