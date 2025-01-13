@@ -20,7 +20,7 @@
 \usepackage{hyperref}
 
 \title[Introduction]{Introduction to Data Analysis}
-\author[SMPA 2152]{Data Analysis for Journalism and Political Communication (Fall 2024)}
+\author[SMPA 2152]{Data Analysis for Journalism and Political Communication (Spring 2025)}
 \date{Prof. Bell}
 
 \begin{document}
@@ -28,6 +28,26 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \frame{
     \titlepage
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\frame{\frametitle{Expectations}
+\begin{itemize}
+    \item \textbf{An A effort}: Starts homework early and asks questions/attends office hours; reviews the professor's feedback; reads assignment instructions and grading rubrics carefully; attends class; being perfect at coding is not an expectation of an A effort.
+    \item \textbf{A B effort}: Completes all homework assignments; does not carefully read assignment instructions; uses outside resources to complete the homework; attends class; a B effort meets minimum expectations.
+    \item \textbf{A C effort or lower}: Does not complete all homework assignments; does not carefully read assignment instructions; does not communicate with the professor; does not consistently attend class; I will reach out if you meet these criteria.
+\end{itemize}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\frame{\frametitle{When You Get Stuck}
+\begin{enumerate}
+    \item Look back at the lecture materials. Everything required to complete the homework is in the lecture materials.
+    \item Google the error (this is different than Googling ``how do I do X?'').
+    \item Email the professor. Be sure to include enough code in your email that I can recreate the problem. 
+\end{enumerate}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -49,8 +69,10 @@
     \frametitle{Can you see the uncertainty?}
     \begin{itemize}[<+->]
         \item We rarely get a complete count of everything
+        \item How do we know that the \textbf{sample} we choose is a good representative of the whole \textbf{population}?
+        \item We will learn how to measure and communicate about uncertainty, which is both art and science
         \item Humans do not do well with probability \\
-            \only<3>{
+            \only<5>{
                 \begin{center}
                     \begin{minipage}{.8\textwidth}
                         \begin{block}{}
@@ -59,26 +81,33 @@
                     \end{minipage}
                 \end{center}
             }
-            \only<4>{
-                \includegraphics[height = .25\textwidth]{dc_lottery.png}
+            \only<6>{
+                \includegraphics[height = .35\textwidth]{dc_lottery.png}
             } 
-            \only<5->{
+            \only<7>{
                 ~\\
-                \includegraphics[height = .25\textwidth]{538_2016ElectionForecast.png}
-            } 
-        \item<6-> We will learn about how to measure and communicate about uncertainty
+                \includegraphics[height = .30\textwidth]{538_2016ElectionForecast.png}
+            }
+            \only<8>{
+                ~\\
+                \includegraphics[height = .35\textwidth]{fivethirtyeight_30oct.png}
+            }
+            \only<9>{
+                ~\\
+                \includegraphics[height = .35\textwidth]{split_ticket_30oct.png}
+            }
     \end{itemize}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \frame{
     \frametitle{Can we look beyond the averages?}
-    \only<1-2,5-6>{
+    \only<1-2,4-5>{
         \begin{itemize}[<+->]
             \item There is always a trade-off between accuracy and simplicity when working with data
             \item We aggregate data to make it easier to comprehend, but we may also lose important context
-            \item<5-> We will talk about using data visualization to communicate about data, as well as researcher choices and biases
-            \item<6-> We will also talk about the importance of theory in understanding data, especially correlation vs. causation \\
+            \item<4-> We will talk about using data visualization to communicate about data, as well as researcher choices and biases
+            \item<5-> We will also talk about the importance of theory in understanding data, especially correlation vs. causation \\
             ~\\
             \includegraphics[height = .3\textheight]{storks.png}
         \end{itemize}
@@ -86,11 +115,6 @@
     \only<3>{
         \centering
         \includegraphics[height = .8\textheight]{harris_donors.jpeg}
-    }
-    \only<4>{
-        \centering
-        \includegraphics[height = .8\textheight]{in_person_school.png}\\
-        \scriptsize Source: Fahle, et al. (2023). ``School District and Community Factors Associated With Learning Loss During the COVID-19 Pandemic.''
     }
 }
 
@@ -115,7 +139,7 @@
     }
     \only<7>{
         \centering
-        \includegraphics[height = .8\textheight]{immigration.jpeg}
+        \includegraphics[height = .8\textheight]{poll_questions.jpeg}
     }
     \only<9>{
         \centering
