@@ -29,10 +29,10 @@ print("Hello world!")
 # 2. Highlight the code and hit the "Run" button in the Script pane
 # 3. Cmd + Enter on Mac, Ctrl + Enter on PC moves code from the Script pane to the Console
 
-# One important thing to know: anything lines starts with "#" will not be treated as code, but as text! So nothing will happen if you try to run:
-# print("R is brat.")
+# One important thing to know: any lines starts with "#" will not be treated as code, but as text! So nothing will happen if you try to run:
+# print("R is very demure, very mindful.")
 # But if we remove the "#":
-print("R is brat.")
+print("R is very demure, very mindful.")
 
 # We'll start our R journey by establishing three ideas:
 # 1. R collects objects
@@ -65,7 +65,7 @@ c("Nicky", "Ariel", "Finn")
   c("X", "Y", "Z", NA, "A", "B", "C")
   
   # There are a couple of useful tools that can make vectors easier to create.
-  c(1:10)
+  1:10
   seq(from = 1, to = 25, by = 5)
     # Why didn't I need c() for this? Because seq() returns (outputs) a vector!
   rep("Gimme", 3)
@@ -75,12 +75,12 @@ c("Nicky", "Ariel", "Finn")
 
 # Create a vector that repeats the sequence 20, 40, 60, 80, 100 three times. Hint: we will nest our functions, like class(c())
   
+rep(seq(from = 20, to = 100, by = 20), 3)
   
 # What if we want to save our vectors to use them later? We will save them as "objects".
 
 # R collects objects using the "assignment operator": <-
   oscar_nominees <- c("Emma Stone", "Annette Bening", "Lily Gladstone", "Sanda Huller", "Carey Mulligan")
-  # Why do we not use = for assignment like in other programming languages?
 
 # Rules for object names
   # Letters, numbers, ".", and "_"
@@ -107,11 +107,13 @@ c("Nicky", "Ariel", "Finn")
   head(olympics)
 
 # Try it yourself! --------------------------------------------------------
-# Create a data frame containing the year, President, and temperature for every presidential inauguration since 1989. Can you use seq() and rep() to reduce your typing?
+  # Create a data frame containing the year and temperature for every presidential inauguration since 1937. Can you use seq() to reduce your typing?
 # Call your new data frame "pres"
 # Data at: https://www.weather.gov/lwx/events_Inauguration#Present-to-Past
 
-  
+Year <- seq(1937, 2021, 4)
+Temperature <- c(33, 29, 35, 38, 49, 44, 22, 38, 35, 42, 28, 55, 7, 51, 40, 34, 36, 35, 28, 45, 48, 42)
+pres <- data.frame(Year, Temperature)  
 
 # So what is a data frame? It is just a series of vectors arranged into columns! This is why we access items of a data frame similarly to how we access items of a vector. We use the [ ], but now we have two dimensions instead of one, so we have to indicate rows AND columns like this: [rows,columns]
   pres[5,3]
@@ -122,20 +124,12 @@ c("Nicky", "Ariel", "Finn")
   
   # There is a very useful feature of a data frame, which is that we can get a single column (vector) of a data frame by name instead of number. We do this using the $ operator.
   pres$Temperature
-  identical(temp, pres$Temperature)
   
   # And we can add new columns using the $ operator as well! Let's add a new column to our data frame that is the temperature in Celsius (instead of Fahrenheit).
   pres$Celsius <- (pres$Temperature - 32) * (5/9)
   
   # We can modify existing columns in the same way. Let's use the round() function to round these temperatures to one decimal place.
   pres$Celsius <- round(pres$Celsius, 1)
-  
-
-# Try it yourself! --------------------------------------------------------
-
-# Add a new column to the data frame that includes a description of the weather in just one or two words for each inauguration, e.g., "sunny", "rainy", "cloudy"
-
-
   
 # It can be difficult to pick out the rows of our data frame that we want to see using just the row numbers alone. This is where R's logical operators are useful.
   
@@ -162,14 +156,14 @@ c("Nicky", "Ariel", "Finn")
   pres[pres$Year > 2004,]
   
 # We can also use & (and) and | (or) to combine logical operators.
-  pres[pres$Temperture > 45 & Year > 2010,]
-  pres[pres$Year >= 2016 | pres$President == "George H.W. Bush",]
+  pres[pres$Temperature > 40 & pres$Year > 2000,]
+  pres[pres$Temperature <= 32 | pres$Temperature >= 50,]
 
 # Try it yourself! --------------------------------------------------------
 
-# Select only the rows of the inauguration weather data frame for Democratic presidents (by name) and for whom the temperature is between 32 and 40 degrees (i.e. greater than or equal to 32 and less than or equal to 40).
+# Since 1990, Democratic presidents have been inaugurated in 1993, 1997, 2009, 2013, and 2021. Select only the rows of the inauguration weather data frame for these Democratic presidents and for whom the temperature is less than 32 degrees.
   
-
+pres[pres$Year %in% c(1993, 1997, 2009, 2013, 2021) & pres$Temperature < 32,]
   
 # What is a function? -----------------------------------------------------
 
@@ -205,27 +199,26 @@ c("Nicky", "Ariel", "Finn")
 
 # Try it yourself! --------------------------------------------------------
 
-# First, install the "nycflights13" package
-  
-# Load the package using library()
-
-# Then, run the following to load the "flights" data frame
-data(flights)
-
-# Look at the help file for the data frame you just loaded
-
-
-# Explore the data frame using glimpse()
-
-
-# Now we want to find out how many flights were delayed by 30 minutes or more when departing JFK airport. First, create a new data frame with only those rows where the origin airport is "JFK" and where the departure delay is greater than or equal to 30. (Save your result as a new object.)
-
-# Use the nrow() function to get the number of rows in the resulting data frame (flights from JFK with departure delays of at least 30 minutes).
-
-# Create a new column that represents the departure delay in hours rather than minutes (i.e., divide departure delay by 60).
-
-# What is the average departure delay of these flights in hours? Hint: look at the help file for "mean()". How can you ask this function to ignore the flights where the departure delay is NA (because the flight was cancelled)?
+  # First, install the "nycflights13" package
+  install.packages("nycflights13")
     
+  # Load the package using library()
+  library(nycflights13)
+  
+  # Then, run the following to load the "flights" data frame
+  data(flights)
+  
+  # Look at the help file for the data frame you just loaded
+  ?flights
+  
+  # Explore the data frame using glimpse() (make sure you've loaded "dplyr")
+  glimpse(flights)
+  
+  # Create a new column that represents the departure delay in hours rather than minutes (i.e., divide departure delay by 60).
+  flights$dep_delay_hours <- flights$dep_delay/60
+    
+  # What is the average departure delay of these flights in hours? Hint: ignore the flights where the departure delay is NA (because the flight was cancelled).
+  mean(flights$dep_delay_hours, na.rm = TRUE)
 
   
 # ifelse for if... else... choices: ifelse(logical operation, value if true, value if false)
@@ -238,4 +231,7 @@ data(flights)
   
 # Try it yourself! --------------------------------------------------------
   
-# Looking only at airports actually located in New York City (JFK and LGA) and flights that were NOT cancelled, create a column that is 1 if the flight left on time or early but arrived late and 0 otherwise. How many flights left on time or early but arrived late?
+  # Looking only at airports (`origin` column) actually located in New York City (JFK and LGA) and flights that were NOT cancelled, create a column that is 1 if the flight left on time or early but arrived late and 0 otherwise. What percentage of flights are delayed while in flight? Hint: the mean of a vector of 0s and 1s is the proportion that are 1.
+  
+  flights$delayed_in_flight <- ifelse(flights$dep_delay <= 0 & flights$arr_delay > 0, 1, 0)
+  mean(flights$delayed_in_flight, na.rm = T)*100
