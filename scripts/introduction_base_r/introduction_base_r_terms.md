@@ -3,6 +3,8 @@
 ---
 
 * **Console**: the area at the bottom of the RStudio screen where R actually runs and code is executed
+* **Scripts pane**: the area at the top left of the RStudio screen where we write and save our code as .R files
+* **Environment pane**: the area at the top right of the RStudio screen where objects stored in R are listed
 * **vector**: a list of items with a length from 1 to infinity
 * **`c()`**: stands for "combine"; used to create vectors
 * **class**: all vectors have one and only one type, e.g.:
@@ -12,6 +14,7 @@
     * factor
     * datetime
 * **`seq()`**: creates a sequence of numbers
+* **`rep()`**: repeats a vector
 * **objects**: stored values created using the assignment operator (`<-`)
 * **`[ ]`**: used to extract or replace parts of a vector
 * **`[rows,columns]`**: used to extract or replace parts of a data frame
