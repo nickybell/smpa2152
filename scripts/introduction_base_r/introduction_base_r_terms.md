@@ -1,3 +1,47 @@
+### RStudio and Base R
+
+---
+
+* **Console**: the area at the bottom of the RStudio screen where R actually runs and code is executed
+* **Scripts pane**: the area at the top left of the RStudio screen where we write and save our code as .R files
+* **Environment pane**: the area at the top right of the RStudio screen where objects stored in R are listed
+* **vector**: a list of items with a length from 1 to infinity
+* **`c()`**: stands for "combine"; used to create vectors
+* **class**: all vectors have one and only one type, e.g.:
+    * numeric/integer/double
+    * character
+    * logical
+    * factor
+    * datetime
+* **`seq()`**: creates a sequence of numbers
+* **`rep()`**: repeats a vector
+* **objects**: stored values created using the assignment operator (`<-`)
+* **`[ ]`**: used to extract or replace parts of a vector
+* **`[rows,columns]`**: used to extract or replace parts of a data frame
+* **`View()`**: brings up the data viewer
+* **`head()`**: prints the first six elements or rows of an object
+* **data frame**: a series of vectors arranged into columns; can be created using `data.frame()`
+* **`$`**: calls a column of a data frame by name, e.g., `pres$temp`
+* **`round()`**: rounds digits to a certain number of decimal places
+* **logical operators**: return `TRUE`/`FALSE`, e.g.:
+    * `==`: equals
+    * `!=`: does not equal
+    * `>`: greater than
+    * `<`: less than
+    * `>=`: greater than or equal to
+    * `<=`: less than or equal to
+    * `%in%`: left-hand side equals any of the values on the right-hand side
+    * `&`: and
+    * `|`: or
+* **`min()`**: returns the minimum value of a vector
+* **`max()`**: returns the maximum value of a vector
+* **packages**: collections of functions that can be downloaded using `install.packages()` and loaded using `library()`
+* **`ifelse()`**: returns a different value depending on whether the logical operation is true or false
+* **`is.na()`**: returns `TRUE` if the value is missing (`NA`), otherwise `FALSE`
+
+### Code
+
+```
 # Introduction to R and RStudio -------------------------------------------
 
 # Posit Cloud is made up of "projects." You can create your own projects or open one of the professor's projects as a template. If you open one of the professor's projects, be sure to save a permanent copy so that you will be able to return to it later.
@@ -235,3 +279,4 @@ pres[pres$Year %in% c(1993, 1997, 2009, 2013, 2021) & pres$Temperature < 32,]
   
   flights$delayed_in_flight <- ifelse(flights$dep_delay <= 0 & flights$arr_delay > 0, 1, 0)
   mean(flights$delayed_in_flight, na.rm = T)*100
+```

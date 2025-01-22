@@ -9,17 +9,17 @@
 # If it is not already open, click on "introduction_base_r.R" in the Files pane on the right side of your screen.
 
 # Script pane
-  # Scripts save as .R files
+# Scripts save as .R files
 
-  # Always include a header at the top of your script as a helpful hint to your future self
-  
-  # File Name: 	  	  introduction_base_r.R
-  # File Purpose:  	  Introduction and Base R
-  # Author: 	    	  Nicholas Bell (nicholasbell@gwu.edu)
-  # Date Created:     2024-08-27
+# Always include a header at the top of your script as a helpful hint to your future self
+
+# File Name: 	  	  introduction_base_r.R
+# File Purpose:  	  Introduction and Base R
+# Author: 	    	  Nicholas Bell (nicholasbell@gwu.edu)
+# Date Created:     2024-08-27
 
 # Console
-  # This is where the R code is actually run
+# This is where the R code is actually run
 
 # We will talk about the other panes as we encounter them. But let's start using the Script pane and Console right away! Execute the following code:
 print("Hello world!")
@@ -29,10 +29,10 @@ print("Hello world!")
 # 2. Highlight the code and hit the "Run" button in the Script pane
 # 3. Cmd + Enter on Mac, Ctrl + Enter on PC moves code from the Script pane to the Console
 
-# One important thing to know: anything lines starts with "#" will not be treated as code, but as text! So nothing will happen if you try to run:
-# print("R is brat.")
+# One important thing to know: any lines starts with "#" will not be treated as code, but as text! So nothing will happen if you try to run:
+# print("R is very demure, very mindful.")
 # But if we remove the "#":
-print("R is brat.")
+print("R is very demure, very mindful.")
 
 # We'll start our R journey by establishing three ideas:
 # 1. R collects objects
@@ -72,8 +72,7 @@ print("R is brat.")
 # What if we want to save our vectors to use them later? We will save them as "objects".
 
 # R collects objects using the "assignment operator": <-
-
-  # Why do we not use = for assignment like in other programming languages?
+  oscar_nominees <- c("Emma Stone", "Annette Bening", "Lily Gladstone", "Sanda Huller", "Carey Mulligan")
 
 # Rules for object names
   # Letters, numbers, ".", and "_"
@@ -92,7 +91,7 @@ print("R is brat.")
 
 
 # Try it yourself! --------------------------------------------------------
-# Create a data frame containing the year, President, and temperature for every presidential inauguration since 1989. Can you use seq() and rep() to reduce your typing?
+# Create a data frame containing the year and temperature for every presidential inauguration since 1937. Can you use seq() to reduce your typing?
 # Call your new data frame "pres"
 # Data at: https://www.weather.gov/lwx/events_Inauguration#Present-to-Past
 
@@ -110,13 +109,6 @@ print("R is brat.")
 
   
   # We can modify existing columns in the same way. Let's use the round() function to round these temperatures to one decimal place.
-
-  
-
-# Try it yourself! --------------------------------------------------------
-
-# Add a new column to the data frame that includes a description of the weather in just one or two words for each inauguration, e.g., "sunny", "rainy", "cloudy"
-
 
   
 # It can be difficult to pick out the rows of our data frame that we want to see using just the row numbers alone. This is where R's logical operators are useful.
@@ -145,7 +137,7 @@ print("R is brat.")
 
 # Try it yourself! --------------------------------------------------------
 
-# Select only the rows of the inauguration weather data frame for Democratic presidents (by name) and for whom the temperature is between 32 and 40 degrees (i.e. greater than or equal to 32 and less than or equal to 40).
+# Since 1990, Democratic presidents have been inaugurated in 1993, 1997, 2009, 2013, and 2021. Select only the rows of the inauguration weather data frame for these Democratic presidents and for whom the temperature is less than 32 degrees.
   
 
   
@@ -180,28 +172,21 @@ print("R is brat.")
 
 # Try it yourself! --------------------------------------------------------
 
-# First, install the "nycflights13" package
-  
-# Load the package using library()
-
-# Then, run the following to load the "flights" data frame
-data(flights)
-
-# Look at the help file for the data frame you just loaded
-
-
-# Explore the data frame using glimpse()
-
-
-# Now we want to find out how many flights were delayed by 30 minutes or more when departing JFK airport. First, create a new data frame with only those rows where the origin airport is "JFK" and where the departure delay is greater than or equal to 30. (Save your result as a new object.)
-
-# Use the nrow() function to get the number of rows in the resulting data frame (flights from JFK with departure delays of at least 30 minutes).
-
-# Create a new column that represents the departure delay in hours rather than minutes (i.e., divide departure delay by 60).
-
-# What is the average departure delay of these flights in hours? Hint: look at the help file for "mean()". How can you ask this function to ignore the flights where the departure delay is NA (because the flight was cancelled)?
+  # First, install the "nycflights13" package
     
+  # Load the package using library()
+  
+  # Then, run the following to load the "flights" data frame
+  data(flights)
+  
+  # Look at the help file for the data frame you just loaded
 
+  # Explore the data frame using glimpse()
+  
+  # Create a new column that represents the departure delay in hours rather than minutes (i.e., divide departure delay by 60).
+  
+  # What is the average departure delay of these flights in hours? Hint: ignore the flights where the departure delay is NA (because the flight was cancelled).
+    
   
 # ifelse for if... else... choices: ifelse(logical operation, value if true, value if false)
 
@@ -211,4 +196,4 @@ data(flights)
   
 # Try it yourself! --------------------------------------------------------
   
-# Looking only at airports actually located in New York City (JFK and LGA) and flights that were NOT cancelled, create a column that is 1 if the flight left on time or early but arrived late and 0 otherwise. How many flights left on time or early but arrived late?
+  # Looking only at airports (`origin` column) actually located in New York City (JFK and LGA) and flights that were NOT cancelled, create a column that is 1 if the flight left on time or early but arrived late and 0 otherwise. What percentage of flights are delayed while in flight? Hint: the mean of a vector of 0s and 1s is the proportion that are 1.
