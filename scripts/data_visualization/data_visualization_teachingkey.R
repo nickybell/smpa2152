@@ -1,7 +1,7 @@
 # File Name: 	  	  data_visualization_teachingkey.R
 # File Purpose:  	  Data Visualization
 # Author: 	    	  Nicholas Bell (nicholasbell@gwu.edu)
-# Date Created:     2024-09-08
+# Last Modified:    2025-01-26
 
 # Today, we are going to use the {ggplot2} package to make graphs. We will need to install {ggplot2}. We will also want to install the {palmerpenguins} package. We will be using the "penguins" data from the {palmerpenguins} package.
 install.packages("ggplot2")
@@ -71,6 +71,8 @@ ggplot(data = penguins) +
 
 # The data consists of three study years. How many penguins are studied in each year?
 
+ggplot(data = penguins) +
+  geom_bar(mapping = aes(x = year))
 
 #=====================================
 # Bivariate graphs
@@ -82,14 +84,20 @@ ggplot(data = penguins) +
 
 # What species of penguins live on each island?
 # It is useful to think of this like a table where you have a count for each combination of categories. Don't worry about how this code works for now, just run it to see the table.
-penguins |>
-  group_by(island, species) |>
-  summarize(n_species = n())
+library(dplyr)
+count(penguins, island, species, .drop = FALSE)
 
 # Bar graph
 
 ggplot(data = penguins) +
   geom_bar(aes(x = island, fill = species), position = "dodge")
+
+# Notice how geom_bar() does all of the counting for us - we just provide the data and the names of the variables. What if we want to be specific about which values to show? Then, we need to use geom_col(), which takes a *table of values* rather than the raw data itself.
+
+species_by_island <- count(penguins, island, species, .drop = FALSE)
+
+ggplot(data = species_by_island) +
+  geom_col(aes(x = island, y = n, fill = species), position = "dodge")
 
 # Let's add our first customization. There are some built in "themes" in {ggplot2} that can quickly turn a graph into something much more attractive.
 p <- ggplot(data = penguins) +
@@ -136,8 +144,11 @@ p +
 # Try it yourself! --------------------------------------------------------
 
 # Download the package {ggthemes} and load it. Use the following code to see all of the available themes in {ggthemes}. Choose one and apply it to our graph.
+install.packages("ggthemes")
+library(ggthemes)
 help(package = "ggthemes")
-
+p +
+  theme_tufte()
 
 #=====================================
 # 1 discrete variable, 1 continuous variable
@@ -147,7 +158,7 @@ help(package = "ggthemes")
 
 # Box and whisker plot
 
-p <- ggplot(data = penguins[!is.na(penguins$sex),]) +
+ggplot(data = penguins[!is.na(penguins$sex),]) +
   geom_boxplot(aes(x = sex, y = flipper_length_mm)) +
   labs(x = "Sex",
        y = "Bill Length (mm)",
@@ -155,7 +166,6 @@ p <- ggplot(data = penguins[!is.na(penguins$sex),]) +
        caption = "Source: {palmerpenguins} package") +
   theme_wsj() +
   theme(plot.title = element_text(hjust = .5))
-p
 
 # Violin plot
 
@@ -171,7 +181,15 @@ ggplot(data = penguins[!is.na(penguins$sex),]) +
 # So far, we've only changed the design of the graph; we haven't changed anything that relates to the data. But on this graph, the scale of the y-axis might be distorting differences to make them appear larger than they actually are. We can modify the way that the *data* is displayed using the scale functions.
 
 # The general format is scale_aesthetic_vartype, e.g., scale_y_continuous
-p +
+
+ggplot(data = penguins[!is.na(penguins$sex),]) +
+  geom_boxplot(aes(x = sex, y = flipper_length_mm)) +
+  labs(x = "Sex",
+       y = "Bill Length (mm)",
+       title = "Penguin Flipper Length by Sex",
+       caption = "Source: {palmerpenguins} package") +
+  theme_wsj() +
+  theme(plot.title = element_text(hjust = .5)) +
   scale_y_continuous(limits = c(0,250), breaks = seq(0, 250, 25)) +
   scale_x_discrete(labels = c("Female", "Male"))
 
@@ -179,6 +197,15 @@ p +
 
 # Make a violin plot of body mass by penguin species.
 
+ggplot(data = penguins) +
+  geom_violin(aes(x = species, y = body_mass_g, fill = species)) +
+  scale_y_continuous(limits = c(0,NA)) +
+  labs(x = "Species",
+       y = "Body Mass (g)",
+       title = "Penguin Body Mass by Species",
+       caption = "Source: {palmerpenguins} package") +
+  theme_fivethirtyeight() +
+  theme(plot.title = element_text(hjust = .5))
 
 #=====================================
 # 2 continuous variables
@@ -190,7 +217,7 @@ p +
 
 ggplot(data = penguins) +
   geom_point(aes(x = flipper_length_mm, y = body_mass_g)) +
-  geom_smooth(aes(x = flipper_length_mm, y = body_mass_g), method = "lm", se = F, linetype = "dashed", size = 2) +
+  geom_smooth(aes(x = flipper_length_mm, y = body_mass_g), method = "lm", se = F, linetype = "dashed", linewidth = 2) +
   theme_classic() +
   labs(x = "Flipper Length (mm)",
        y = "Body Mass (g)",
@@ -198,20 +225,26 @@ ggplot(data = penguins) +
        caption = "Source: {palmerpenguins} package") +
   theme(plot.title = element_text(hjust = .5))
 
-# Why is it acceptable to leave the axis values where they are rather than set them to 0? Because we are interested in the general direction of the relationship (positive or negative) between these variables rather than the values themselves. We would need statistics to measure the strength of the relationship.
+# Why is it acceptable to leave the axis values where they are rather than set them to 0? Because we are interested in the general direction of the relationship (positive or negative) between these variables rather than the values themselves. We would need statistics to measure the *strength* of the relationship.
 
 
 # Try it yourself! --------------------------------------------------------
 
 # Are bill length and bill depth related?
 
-
+ggplot(data = penguins) +
+  geom_point(aes(x = bill_length_mm, y = bill_depth_mm), color = "gold") +
+  geom_smooth(aes(x = bill_length_mm, y = bill_depth_mm), method = "lm", se = F, linetype = "dotted", linewidth = 2, color = "forestgreen") +
+  theme_classic() +
+  labs(x = "Bill Length (mm)",
+       y = "Bill Depth (mm)",
+       title = "Negative Correlation Between Bill Length and Depth",
+       caption = "Source: {palmerpenguins} package") +
+  theme(plot.title = element_text(hjust = .5))
 
 # Line graph
 # This usually occurs when the y-axis is ordered, like time. For example, let's create a data frame that shows the mean bill length for each year of the study. You'll learn how to understand this code in the next module of the course.
-number_penguins <- 
-  penguins |> 
-  count(year)
+number_penguins <- count(penguins, year)
 
 ggplot(data = number_penguins, mapping = aes(x = year, y = n)) +
   geom_line() +
@@ -222,7 +255,7 @@ ggplot(data = number_penguins, mapping = aes(x = year, y = n)) +
        y = "Number of Penguins",
        title = "Number of Penguins Each Year",
        caption = "Source: {palmerpenguins} package") +
-  theme_fivethirtyeight() +
+  theme_few() +
   theme(plot.title = element_text(hjust = .5))
 
 #=====================================
@@ -233,13 +266,14 @@ ggplot(data = number_penguins, mapping = aes(x = year, y = n)) +
 living_env <- 
   penguins |> 
   group_by(sex, island) |> 
-  summarize(mean_bill_length_mm = mean(bill_length_mm, na.rm = T))
+  summarize(mean_bill_length_mm = mean(bill_length_mm, na.rm = T)) |>
+  filter(!is.na(sex))
 
 # Add a new aesthetic mapping
 
-ggplot(data = living_env[!is.na(living_env$sex),]) +
-  geom_bar(aes(x = sex, y = mean_bill_length_mm, fill = island), position = "dodge", stat = "identity") +
-  scale_fill_discrete(type = c("palegreen4", "steelblue4", "salmon")) +
+ggplot(data = living_env) +
+  geom_col(aes(x = sex, y = mean_bill_length_mm, fill = island), position = "dodge") +
+  scale_fill_manual(values = c("palegreen4", "steelblue4", "salmon")) +
   scale_x_discrete(labels = c("Female", "Male")) +
   labs(x = "Sex",
        y = "Mean Bill Length (mm)",
@@ -247,14 +281,13 @@ ggplot(data = living_env[!is.na(living_env$sex),]) +
        title = "Biscoe Island Has Plump Penguins",
        caption = "Source: {palmerpenguins} package") +
   theme_economist() +
-  theme(legend.position = "bottom")
-
-# What is stat = "identity" and why do we need it? That is our way of telling geom_bar not to count the penguins
+  theme(plot.title = element_text(hjust = .5),
+        legend.position = "bottom")
 
 # Is the relationship between flipper length and body mass different by species?
-ggplot(penguins) +
-  geom_point(aes(x = flipper_length_mm, y = body_mass_g, color = species)) +
-  geom_smooth(aes(x = flipper_length_mm, y = body_mass_g, color = species), method = "lm", se = F) +
+ggplot(penguins, aes(x = flipper_length_mm, y = body_mass_g, color = species)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = F) +
   labs(x = "Flipper Length (mm)",
        y = "Body Mass (g)",
        color = "Species",
@@ -263,15 +296,15 @@ ggplot(penguins) +
   theme_bw() +
   theme(plot.title = element_text(hjust = .5))
   
-
 # Use facets
 
-ggplot(penguins) +
-  geom_point(aes(x = flipper_length_mm, y = body_mass_g)) +
-  geom_smooth(aes(x = flipper_length_mm, y = body_mass_g), method = "lm", se = F) +
+ggplot(penguins, aes(x = flipper_length_mm, y = body_mass_g)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = F) +
   facet_wrap(~ species) +
   labs(x = "Flipper Length (mm)",
        y = "Body Mass (g)",
+       color = "Species",
        title = "Flipper Length and Body Mass by Species",
        caption = "Source: {palmerpenguins} package") +
   theme_bw() +
@@ -280,3 +313,16 @@ ggplot(penguins) +
 # Try it yourself! --------------------------------------------------------
 
 # Using both an additional aesthetic mapping AND facets, make a graph with 4 variables: How are bill length and bill depth related, for both sexes of penguins, on each island?
+
+ggplot(penguins[!is.na(penguins$sex),], aes(x = bill_length_mm, y = bill_depth_mm, color = sex)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE, linetype = "dashed") +
+  facet_wrap(~ island) +
+  scale_color_manual(values = c("rosybrown", "dodgerblue")) +
+  labs(x = "Bill Length (mm)",
+       y = "Bill Depth (mm)",
+       color = "Sex",
+       title = "Bill Length and Depth by Sex and Island",
+       caption = "Source: {palmerpenguins} package") +
+  theme_classic() +
+  theme(plot.title = element_text(hjust = .5))

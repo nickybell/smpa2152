@@ -17,11 +17,12 @@
 * **`rep()`**: repeats a vector
 * **objects**: stored values created using the assignment operator (`<-`)
 * **`[ ]`**: used to extract or replace parts of a vector
+* **data frame**: a series of vectors arranged into columns; can be created using `data.frame()`
 * **`[rows,columns]`**: used to extract or replace parts of a data frame
+* **`$`**: calls a column of a data frame by name, e.g., `pres$temp`
 * **`View()`**: brings up the data viewer
 * **`head()`**: prints the first six elements or rows of an object
-* **data frame**: a series of vectors arranged into columns; can be created using `data.frame()`
-* **`$`**: calls a column of a data frame by name, e.g., `pres$temp`
+* **`glimpse()`**: function from the `{dplyr}` package that provides a nice overview of the data frame
 * **`round()`**: rounds digits to a certain number of decimal places
 * **logical operators**: return `TRUE`/`FALSE`, e.g.:
     * `==`: equals
@@ -33,11 +34,11 @@
     * `%in%`: left-hand side equals any of the values on the right-hand side
     * `&`: and
     * `|`: or
+* **`is.na()`**: returns `TRUE` if the value is missing (`NA`), otherwise `FALSE`
 * **`min()`**: returns the minimum value of a vector
 * **`max()`**: returns the maximum value of a vector
 * **packages**: collections of functions that can be downloaded using `install.packages()` and loaded using `library()`
 * **`ifelse()`**: returns a different value depending on whether the logical operation is true or false
-* **`is.na()`**: returns `TRUE` if the value is missing (`NA`), otherwise `FALSE`
 
 ### Code
 

@@ -2,8 +2,6 @@
 title: Evaluating Graphs
 ---
 
-## Evaluating Graphs ##
-
 1. Make a note of the first few things you see
 2. Make a note of the first idea that forms in your mind and then search for more
 3. Make notes on likes, dislikes, and wish-I-saws
@@ -27,7 +25,7 @@ ____________________________________________ <br>
 ____________________________________________ <br>
 </td>
 <td>
-<img src="wapo_graduates.jpg" height="500">
+<img src="wapo_graduates.jpg" height="475">
 </td>
 </tr>
 <tr><td><br><br></td></tr>
@@ -47,7 +45,7 @@ ____________________________________________ <br>
 ____________________________________________ <br>
 </td>
 <td>
-&nbsp;&nbsp;<img src="trump_support.jpg" width="350">
+&nbsp;&nbsp;<img src="wsj_pay.png" width="325">
 </td>
 </tr>
 </table>
