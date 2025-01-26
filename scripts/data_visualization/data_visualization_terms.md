@@ -1,3 +1,36 @@
+### Data Visualization
+
+---
+
+* Required `ggplot2` functions:
+  * **`ggplot()`**: starts a ggplot and takes the `data` argument
+  * **`geom_*()`**: layers the data on the graph in a particular form, e.g.,
+    * **`geom_bar()`**: a bar graph with the count (number) of x-axis categories
+    * **`geom_col()`**: a bar graph with provided x-axis and y-axis values
+    * **`geom_histogram()`**: a histogram
+    * **`geom_point()`**: a scatter plot
+    * **`geom_smooth(..., method = "lm", se = FALSE)`**: a best-fit line
+    * **`geom_line()`**: a line that connects individual data points
+    * **`geom_boxplot()`**: a box and whisker plot
+    * **`geom_violin()`**: a violin plot
+  * **`aes()`**: provides the aesthetics for `geom_*()` layer(s), e.g, `x`, `y`, `color`, `fill`, `shape`, `size`, `linetype`, `linewidth`, `alpha`
+* Optional `ggplot2` functions:
+  * **`theme_*()`**: applies a pre-defined set of design elements to a ggplot
+  * **`labs()`**: adds text labels to axes and legends, plot titles and subtitles, and captions
+  * **`scale_*_*()`**: modifies the way that data is represented on the graph, e.g.,
+    * `scale_x_discrete()`
+    * `scale_y_continuous()`
+    * `scale_fill_manual()`
+  * **`facet_wrap()`**: creates individual graphs for different categories, plotted on the same scale
+* **Discrete variable**: also known as categorical variables, variables whose values do not exist on the number line
+* **Continuous variable**: variable whose values exist on the number line
+* **Univariate graph**: graph that describes one variable
+* **Bivariate graph**: graph that describes the relationship between two variables
+* **Multivariate graph**: graph that describes the relationship between three or more variables
+
+### Code
+
+```
 # File Name: 	  	  data_visualization_teachingkey.R
 # File Purpose:  	  Data Visualization
 # Author: 	    	  Nicholas Bell (nicholasbell@gwu.edu)
@@ -326,3 +359,5 @@ ggplot(penguins[!is.na(penguins$sex),], aes(x = bill_length_mm, y = bill_depth_m
        caption = "Source: {palmerpenguins} package") +
   theme_classic() +
   theme(plot.title = element_text(hjust = .5))
+```
+  
