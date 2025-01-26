@@ -22,7 +22,7 @@
 \usepackage{marvosym}
 
 \title[Data Visualization]{Data Visualization}
-\author[SMPA 2152]{Data Analysis for Journalism and Political Communication (Fall 2024)}
+\author[SMPA 2152]{Data Analysis for Journalism and Political Communication (Spring 2025)}
 \date{Prof. Bell}
 
 \begin{document}
@@ -38,14 +38,6 @@
 \centering
 \only<1>{\includegraphics[width=\textheight]{florent_van_langren.png}}
 \only<2>{\includegraphics[width=\textheight]{florent_van_langren_overlay.jpg}}
-}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\frame{\frametitle{Fry, ``When Charts Are a Matter of Life and Death''}
-\begin{block}{}
-    \centering
-    ``Data visualization has progressed from a means of making things tractable and comprehensible on the page to an automated hunt for clusters and connections, with trained machines to do the searching. Patterns still emerge and drive our understanding of the world forward, even if they are no longer visible to the human eye.''
-\end{block}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -139,28 +131,25 @@
     \end{itemize}
 }
 
-\only<5-6,19>{
+\only<5-6,17>{
     {\Large \textbf{Perception}}
     \begin{itemize}[<+(4)->]
         \item Known as ``preattentive features''
         \item The brain is optimized to quickly identify contrasts in color and recognize groups
-        \item<19> After ``where do my eyes go first?'', the next question is: \textbf{what is the first idea that comes to mind?}
+        \item<17> After ``where do my eyes go first?'', the next question is: \textbf{what is the first idea that comes to mind?}
     \end{itemize}
 }
 
 \only<7>{\centering\large Color Contrasts\\~\\\includegraphics[height=.7\textheight]{cherry_blossoms.JPG}}
-\only<8>{\centering\large Proximity\\~\\\includegraphics[height=.7\textheight]{vaccination.JPG}}
-\only<9>{\centering\large Proximity\\~\\\includegraphics[height=.7\textheight]{ft_partisanship.PNG}}
-\only<10>{\centering\large Similarity\\~\\\includegraphics[height=.7\textheight]{solar_power.JPG}}
-\only<11>{\centering\large Connectedness\\~\\\includegraphics[height=.7\textheight]{wsj_pay.png}}
-\only<12>{\centering\large Connectedness\\~\\\includegraphics[height=.7\textheight]{nyt_admissions.jpg}}
-\only<13>{\centering\large Continuity\\~\\\includegraphics[height=.7\textheight]{nyt_antarctic_ice.png}}
-\only<14>{\centering\large Continuity\\~\\\includegraphics[height=.7\textheight]{wsj_minimum_wage.jpg}}
-\only<15>{\centering\large Closure\\~\\\includegraphics[height=.7\textheight]{ft_immigration.png}}
-\only<16>{\centering\large Closure\\~\\\includegraphics[height=.7\textheight]{nyt_candidate_histories.jpg}}
-\only<17>{\centering\large Closure\\~\\\includegraphics[height=.7\textheight]{wsj_wfh.png}}
-\only<18>{\centering\large Closure\\~\\\includegraphics[height=.7\textheight]{wfh_redesigned.png}}
-\only<20>{\centering\includegraphics[width=.9\textwidth]{economist_assasinations.png}}
+\only<8>{\centering\large Proximity and Distance\\~\\\includegraphics[height=.7\textheight]{vaccination.JPG}}
+\only<9>{\centering\large Proximity and Distance\\~\\\includegraphics[height=.7\textheight]{ft_partisanship.PNG}}
+\only<10>{\centering\large Similarity and Difference\\~\\\includegraphics[height=.7\textheight]{nyt_candidate_histories.jpg}}
+\only<11>{\centering\large Connectedness\\~\\\includegraphics[height=.7\textheight]{nyt_admissions.jpg}}
+\only<12>{\centering\large (Dis)Continuity\\~\\\includegraphics[height=.7\textheight]{nyt_antarctic_ice.png}}
+\only<13>{\centering\large (Dis)Continuity\\~\\\includegraphics[height=.7\textheight]{wsj_minimum_wage.jpg}}
+\only<14>{\centering\large Closure\\~\\\includegraphics[height=.7\textheight]{ft_immigration.png}}
+\only<15>{\centering\large Closure\\~\\\includegraphics[height=.7\textheight]{wsj_wfh.png}}
+\only<16>{\centering\includegraphics[width=.9\textwidth]{economist_assasinations.png}}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -175,19 +164,19 @@
 \column{0.4\textwidth}
 \begin{enumerate}[<+->]
         \item<1-> Show the context of the data
-        \item<2-> The main axis should show the scale of the data
+        \item<3-> The main axis should show the scale of the data
         \item<5-> Use conventional ordering and meanings
         \item<10-> Data visualizations are paragraphs about data
         \item<12-> Limit cognitive load
-        \item<14-> Pie charts should have no more than two slices
+        \item<14-> No pie charts
         \item<15-> Not all data should be in a chart
     \end{enumerate}
 \column{0.6\textwidth}
 \centering
-\only<1>{\includegraphics[width=\textwidth]{mlk_travel.jpg}}
-\only<2>{\includegraphics[width=\textwidth]{vaccine_take_up.jpg}}
-\only<3>{\includegraphics[width=\textwidth]{vaccine_take_up_response.png}}
-\only<4>{\includegraphics[width=\textwidth]{nba_covid.jpg}}
+\only<1>{\includegraphics[width=\textwidth]{holiday_travel.jpg}}
+\only<2>{\includegraphics[width=\textwidth]{nba_covid.jpg}}
+\only<3>{\includegraphics[width=\textwidth]{truncated_y_axis.jpeg}}
+\only<4>{\includegraphics[width=\textwidth]{nyt_vaccination.png}}
 \only<5>{\includegraphics[width=\textwidth]{nbc_boy_scouts.png}}
 \only<6>{\includegraphics[width=\textwidth]{vehicles_by_income.jpg}}
 \only<7>{\includegraphics[width=\textwidth]{stein_robinson_poll.jpeg}}
@@ -197,8 +186,9 @@
 \only<11>{\includegraphics[width=\textwidth]{wapo_80_degrees.jpeg}}
 \only<12>{\includegraphics[width=\textwidth]{wapo_second_choices.jpg}}
 \only<13>{\includegraphics[width=\textwidth]{wapo_gas_prices.JPG}}
-\only<14>{\includegraphics[width=\textwidth]{fedbudget2020.png}}
+\only<14>{\includegraphics[width=\textwidth]{pie_charts.jpeg}}
 \only<15>{\includegraphics[width=\textwidth]{nbc4_rain.jpg}}
+\only<16>{\includegraphics[width=\textwidth]{education_map.png}}
 \end{columns}
 }
 
@@ -216,6 +206,14 @@
 \centering
 \includegraphics[width=\textwidth]{reuters_guns.JPG}
 \end{columns}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{\frametitle{Discussion\\``When Charts Are a Matter of Life and Death''}
+\begin{block}{}
+    \centering
+    ``Data visualization has progressed from a means of making things tractable and comprehensible on the page to an automated hunt for clusters and connections, with trained machines to do the searching. Patterns still emerge and drive our understanding of the world forward, even if they are no longer visible to the human eye.''
+\end{block}
 }
 
 \end{document}

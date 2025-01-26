@@ -1,7 +1,7 @@
 # File Name: 	  	  data_visualization_teachingkey.R
 # File Purpose:  	  Data Visualization
 # Author: 	    	  Nicholas Bell (nicholasbell@gwu.edu)
-# Date Created:     2024-09-08
+# Last Modified:    2025-01-26
 
 # Today, we are going to use the {ggplot2} package to make graphs. We will need to install {ggplot2}. We will also want to install the {palmerpenguins} package. We will be using the "penguins" data from the {palmerpenguins} package.
 install.packages("ggplot2")
@@ -80,12 +80,15 @@ types_of_graphs()
 
 # What species of penguins live on each island?
 # It is useful to think of this like a table where you have a count for each combination of categories. Don't worry about how this code works for now, just run it to see the table.
-penguins |>
-  group_by(island, species) |>
-  summarize(n_species = n())
+library(dplyr)
+count(penguins, island, species, .drop = FALSE)
 
 # Bar graph
 
+
+# Notice how geom_bar() does all of the counting for us - we just provide the data and the names of the variables. What if we want to be specific about which values to show? Then, we need to use geom_col(), which takes a *table of values* rather than the raw data itself.
+
+species_by_island <- count(penguins, island, species, .drop = FALSE)
 
 
 # Let's add our first customization. There are some built in "themes" in {ggplot2} that can quickly turn a graph into something much more attractive.
@@ -101,6 +104,7 @@ penguins |>
 # Try it yourself! --------------------------------------------------------
 
 # Download the package {ggthemes} and load it. Use the following code to see all of the available themes in {ggthemes}. Choose one and apply it to our graph.
+
 help(package = "ggthemes")
 
 
@@ -137,7 +141,7 @@ help(package = "ggthemes")
 # Are flipper length and body mass related?
 
 
-# Why is it acceptable to leave the axis values where they are rather than set them to 0? Because we are interested in the general direction of the relationship (positive or negative) between these variables rather than the values themselves. We would need statistics to measure the strength of the relationship.
+# Why is it acceptable to leave the axis values where they are rather than set them to 0? Because we are interested in the general direction of the relationship (positive or negative) between these variables rather than the values themselves. We would need statistics to measure the *strength* of the relationship.
 
 
 # Try it yourself! --------------------------------------------------------
@@ -148,9 +152,7 @@ help(package = "ggthemes")
 
 # Line graph
 # This usually occurs when the y-axis is ordered, like time. For example, let's create a data frame that shows the mean bill length for each year of the study. You'll learn how to understand this code in the next module of the course.
-number_penguins <- 
-  penguins |> 
-  count(year)
+number_penguins <- count(penguins, year)
 
 
 

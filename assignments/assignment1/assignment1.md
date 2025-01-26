@@ -6,6 +6,22 @@ Please submit your completed `.R` script via Blackboard. In addition,
 please submit a Word document or PDF containing the visualizations for
 questions 5 and 6.
 
+**To save a graph and download it to your computer in Posit Cloud:**
+
+1.  In the “Plots” pane, select “Export” and then “Save as Image.”
+
+2.  Give the file a name and use the drag button in the corner of the
+    graph to resize the image to proper dimensions. Click “Save.”
+
+3.  In the “Files” pane, select the check mark next to your `.png` file.
+    Click “More”, and then “Export…” Click “Download” to download the
+    file to your computer.
+
+    If you select the check mark next to multiple files, you will export
+    a .zip folder. Before submitting any work in this class, you must
+    unzip the folder to obtain the unzipped files. Do not submit a zip
+    folder for an assignment.
+
 You may complete the assignments on your own or in collaboration with
 other students. This means that you may work together to write code
 and/or solve problems. **Do not split up the questions or combine
@@ -66,8 +82,8 @@ identical(flights$new_dep_delay, flights$dep_delay)
 
     [1] FALSE
 
-`dep_time` and `sched_dep_time` are integers, not times (e.g., `600-557`
-is `43`, not `3` minutes).
+> `dep_time` and `sched_dep_time` are integers, not times (e.g.,
+> `600-557` is `43`, not `3` minutes).
 
 3.  Now we want to find out how many flights were delayed by 30 minutes
     or more when departing JFK airport. First, create a new data frame
