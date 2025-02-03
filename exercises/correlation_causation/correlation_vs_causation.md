@@ -1,4 +1,6 @@
-## Correlation vs. Causation Exercise ##
+---
+title: Correlation vs. Causation
+---
 
 In each of the examples below, identify a reason why correlation does not imply causation.
 
