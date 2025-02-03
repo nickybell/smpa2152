@@ -34,7 +34,6 @@
 library(dplyr)
 house_prices |>
   mutate(month = as.numeric(format(date, "%m"))) |>
-  count(month) |>
   ggplot()
 
 
