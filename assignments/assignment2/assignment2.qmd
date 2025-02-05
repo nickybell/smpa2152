@@ -73,7 +73,7 @@ writeLines("> Homes with better views command higher prices on average, but ther
 
 2. When homes get larger, are constructors more likely to add additional bedrooms or additional bathrooms? To answer this question, calculate a new variable that is the ratio of bathrooms to bedrooms (i.e., `bathrooms/bedrooms`). Do larger homes (as measured by `sqft_living`) have more bathrooms per bedrooms?
 
-    *Hint: You will need to geom_\*() layers to answer this question.*
+    *Hint: You will need to use two geom_\*() layers to answer this question.*
     
 ```{r}
 house_prices$bath_per_bed <- house_prices$bathrooms/house_prices$bedrooms

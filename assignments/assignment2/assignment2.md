@@ -82,7 +82,8 @@ ggplot(data = house_prices) +
     bedrooms (i.e., `bathrooms/bedrooms`). Do larger homes (as measured
     by `sqft_living`) have more bathrooms per bedrooms?
 
-    *Hint: You will need to geom\_\*() layers to answer this question.*
+    *Hint: You will need to use two geom\_\*() layers to answer this
+    question.*
 
 ``` r
 house_prices$bath_per_bed <- house_prices$bathrooms/house_prices$bedrooms
