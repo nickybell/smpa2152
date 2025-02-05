@@ -12,8 +12,8 @@ author: "SMPA 2152 (Prof. Bell)"
 #          \DefineVerbatimEnvironment{OutputCode}{Verbatim}{breaklines=true, breakanywhere=true, breaksymbol=, breakanywheresymbolpre=,commandchars=\\\{\}}
 format: gfm
 execute:
-  echo: true
-  include: true
+  echo: false
+  include: false
   warning: false
   message: false
 editor_options: 
