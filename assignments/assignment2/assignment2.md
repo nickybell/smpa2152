@@ -107,9 +107,10 @@ ggplot(house_prices) +
 
 3.  Complete the following code to generate a graph showing how the
     number of monthly home sales changes over the course of the year (we
-    will learn what this code does in a couple of weeks). Modify the
-    axes to better fit the data. What is the most popular time of year
-    for home sales? Why do you think this might be?
+    will learn what this code does in a couple of weeks). **You must use
+    the code as it is provided here - notice the class of vector for
+    `month`.** Modify the axes to better fit the data. What is the most
+    popular time of year for home sales? Why do you think this might be?
 
     *Hint: This is a univariate graph.*
 
