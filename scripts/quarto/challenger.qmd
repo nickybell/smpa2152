@@ -50,11 +50,11 @@ In 1986, the NASA space shuttle Challenger exploded just over a minute after lau
 data(orings)
 ```
 
-We can now `glimpse()` our data and use the help file (`?orings`) to learn more about our data. However, we should do this *outside* of Quarto, since we probably do not want to show our `glimpse()` output or the help file in our document. Alternatively, we can use the `include` code chunk option to hide the code and it's output from our document.
+We can now `glimpse()` our data and use the help file (`?orings`) to learn more about our data. However, we should do this *outside* of Quarto, since we probably do not want to show our `glimpse()` output or the help file in our document. Alternatively, we can use the `output` code chunk option to hide the output from our document.
 
 ```{r}
 #| label: glimpse-orings
-#| include: false
+#| output: false
 
 glimpse(orings)
 ```
@@ -67,7 +67,6 @@ NASA engineers convened an emergency conference on the morning of the launch to 
 
 ```{r}
 #| label: past-failures
-#| code-fold: true
 
 past_failures <- orings[orings$damaged > 0,]
 
@@ -87,7 +86,6 @@ From this data, there does not appear to be a clear correlation between temperat
 
 ```{r}
 #| label: no-failures
-#| code-fold: true
 
 orings$fail <- ifelse(orings$damaged > 0, "Failed O-rings", "No Failed O-rings")
 
@@ -106,7 +104,6 @@ In fact, `r sum(orings$damaged == 0)` missions had no failed O-rings. How do the
 
 ```{r}
 #| label: temperatures
-#| code-fold: true
 
 ggplot(orings) +
   geom_histogram(aes(x = temperature), binwidth = 5) +
@@ -123,7 +120,6 @@ Now it seems much more likely that temperature is correlated with O-ring failure
 
 ```{r}
 #| label: all-plotted
-#| code-fold: true
 
 ggplot(orings) +
 	geom_point(aes(x = temperature, y = damaged, color = fail)) +
