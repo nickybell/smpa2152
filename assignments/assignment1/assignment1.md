@@ -114,13 +114,15 @@ mean(jfk_delays$dep_delay_hours, na.rm = TRUE)
     [1] 1.413193
 
 5.  Create a histogram showing the departure delays from JFK airport in
-    hours. Each bar should represent 20 minutes (i.e., 1/3 of an hour).
-    Your graph should include a theme, a title, proper axis labels, and
-    a caption.
+    hours (that is, use all flights from JFK, not just the ones delayed
+    by 30 minutes or more). Each bar should represent 20 minutes (i.e.,
+    1/3 of an hour).
 
 ``` r
+jfk <- flights[flights$origin == "JFK",]
+jfk$dep_delay_hours <- jfk$dep_delay/60
 library(ggplot2)
-ggplot(data = jfk_delays) +
+ggplot(data = jfk) +
   geom_histogram(mapping = aes(x = dep_delay_hours), binwidth = .33) +
   theme_classic() +
   labs(x = "Departure Delay (hours)",
@@ -133,20 +135,17 @@ ggplot(data = jfk_delays) +
 ![](assignment1_files/figure-commonmark/unnamed-chunk-7-1.png)
 
 6.  Let’s return to the original `flights` data frame now. Limit the
-    data frame to only the three major airlines (`AA` for American
-    Airlines, `DL` for Delta Airlines, and `UA` for United Airlines).
-    Create a bar graph showing how many flights each airline took from
-    each of the three NYC airports (JFK, LGA, and EWR). Your graph
-    should include a theme, a title, proper axis labels, and a caption.
+    data frame to only United Airlines (`UA`). Create a bar graph
+    showing how many flights United Airlines took from each of the three
+    NYC airports (JFK, LGA, and EWR).
 
 ``` r
-ggplot(data = flights[flights$carrier %in% c("AA", "DL", "UA"),]) +
-  geom_bar(mapping = aes(x = origin, fill = carrier), position = "dodge") +
+ggplot(data = flights[flights$carrier == "UA",]) +
+  geom_bar(mapping = aes(x = origin)) +
   theme_classic() +
   labs(x = "Airport",
        y = "Count",
-       fill = "Airline",
-       title = "Which Major Airlines Fly from NYC Airports?",
+       title = "Which Airports Does United Airlines Fly From?",
        caption = "Source: {nycflights13} package.") +
   theme(plot.title = element_text(hjust = .5))
 ```
