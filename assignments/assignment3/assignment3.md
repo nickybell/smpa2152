@@ -1,4 +1,4 @@
-# Assignment \#3
+# Problem Set \#3
 SMPA 2152 (Prof. Bell)
 
 This week’s homework uses data on union membership in the United States
@@ -42,7 +42,7 @@ library(knitr)
 1.  Load the `union_membership.csv` data.
 
 ``` r
-union <- readr::read_csv("union_membership.csv")
+union <- read_csv("union_membership.csv")
 ```
 
 2.  Generate a nicely-formatted table showing the five states with the
@@ -74,8 +74,7 @@ union |>
 ``` r
 union |>
   group_by(year) |>
-  summarize(union_members = sum(members)) |>
-  mutate(union_members = union_members/1000) |>
+  summarize(union_members = sum(members)/1000) |>
   ggplot(aes(x = year, y = union_members)) +
   geom_line() +
   geom_point() +
@@ -116,9 +115,9 @@ union |>
     unionized between 1983 and 2022. (A percentage point change means
     that you are subtracting one percentage from another.)
 
-    *Hint: You will need to use `arrange()`, `first()`, and `last()` to
-    do this math. Check the `dplyr` cheat sheet for a clue about where
-    to use these functions.*
+    *Hint: You will need to use the functions `first()` and `last()` to
+    answer this question. Check the `dplyr` cheat sheet for a clue about
+    where to use these functions.*
 
 ``` r
 union |>
