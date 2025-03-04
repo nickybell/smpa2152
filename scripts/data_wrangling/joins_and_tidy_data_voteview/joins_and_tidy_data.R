@@ -32,8 +32,7 @@ cd <- read_csv("data/congressional_district_data.csv")
 
 # Let's prepare this data frame
 immigration <- cd |>
-  select(state_abbrev, DISTRICT, TOTPOP20, Hispanic, FOREIGN_BORN_pct) |>
-  mutate(Hispanic_pct = (Hispanic/TOTPOP20)*100)
+  select(state_abbrev, DISTRICT, TOTPOP20, Hispanic, FOREIGN_BORN_pct)
 
 # In order to combine the members data with the district data, we need to use a "join". There are four types of joins:
 

@@ -32,8 +32,7 @@ cd <- read_csv("data/congressional_district_data.csv")
 
 # Let's prepare this data frame
 immigration <- cd |>
-  select(state_abbrev, DISTRICT, TOTPOP20, Hispanic, FOREIGN_BORN_pct) |>
-  mutate(Hispanic_pct = (Hispanic/TOTPOP20)*100)
+  select(state_abbrev, DISTRICT, TOTPOP20, Hispanic, FOREIGN_BORN_pct)
 
 # In order to combine the members data with the district data, we need to use a "join". There are four types of joins:
 
@@ -126,6 +125,7 @@ ggplot(merged, aes(x = nominate.dim2, y = FOREIGN_BORN_pct)) +
 merged <-
   cd |>
   select(state_abbrev, DISTRICT, G20PREDBID_pct) |>
+  mutate(DISTRICT = ifelse(is.na(DISTRICT), 1, DISTRICT)) |>
   right_join(members, by = join_by(state_abbrev, DISTRICT == district_code))
 
 # No, because we need a single variable to put in our aes() function. This is where we can use the pivot_longer() function, which takes multiple columns and turns them into rows (so we are making our data frame longer).
@@ -158,7 +158,7 @@ fh |>
   labs(x = "",
        y = "Score",
        caption = "Source: Freedom House; 1 indicates most freedom, 7 least freedom",
-       title = "Freedom House Scores Over Time: Iraq",
+       title = "Freedom House Scores Over Time: Russia",
        color = "Type")
 
 #####################
@@ -179,7 +179,7 @@ hot100 |>
   mutate(date = mdy(week_id),
          entry = paste(performer, song, sep = " - ")) |>
   filter(week_position <= 3) |> 
-  pivot_wider(id_cols = date, names_from = week_position, values_from = entry, names_prefix = "Song", names_sort = TRUE) |> 
-  arrange(date) |>
-  tail(5)
+  pivot_wider(id_cols = date, names_from = week_position, values_from = entry) |> 
+  arrange(desc(date)) |>
+  slice_head(n = 5)
 
