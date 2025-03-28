@@ -239,6 +239,44 @@
       "Maintainer": "Dirk Eddelbuettel <edd@debian.org>",
       "Repository": "CRAN"
     },
+    "Rvoteview": {
+      "Package": "Rvoteview",
+      "Version": "0.1",
+      "Source": "GitHub",
+      "Type": "Package",
+      "Title": "Voteview Data in R",
+      "Date": "2015-10-16",
+      "Authors@R": "c( person(\"Lewis\", \"Jeff\", role = \"aut\"), person(\"Boche\", \"Adam\", role = \"ctb\"), person(\"Rudkin\", \"Aaron\", role = \"ctb\"), person(\"Sonnet\", \"Luke\", email = \"luke.sonnet@gmail.com\", role = c(\"cre\", \"ctb\")))",
+      "Description": "Package provides functions to query Voteview database by search term or by house bill and return basic metadata or a detailed PSCL rollcall object.",
+      "License": "GPL (>= 3)",
+      "Imports": [
+        "pscl",
+        "jsonlite",
+        "stringi",
+        "httr",
+        "fastmatch"
+      ],
+      "URL": "https://github.com/JeffreyBLewis/Rvoteview, http://voteview.polisci.ucla.edu/, http://voteview.com/",
+      "Suggests": [
+        "testthat",
+        "knitr",
+        "rmarkdown",
+        "ggplot2",
+        "wnominate"
+      ],
+      "RoxygenNote": "6.0.1",
+      "VignetteBuilder": "knitr",
+      "LazyData": "true",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteRepo": "Rvoteview",
+      "RemoteUsername": "voteview",
+      "RemoteRef": "HEAD",
+      "RemoteSha": "54d0f026818f1c37e3b3e417c510ad22bec38e29",
+      "NeedsCompilation": "no",
+      "Author": "Lewis Jeff [aut], Boche Adam [ctb], Rudkin Aaron [ctb], Sonnet Luke [cre, ctb]",
+      "Maintainer": "Sonnet Luke <luke.sonnet@gmail.com>"
+    },
     "airports": {
       "Package": "airports",
       "Version": "0.1.0",
@@ -949,6 +987,25 @@
       "Maintainer": "Matthew Lincoln <matthew.d.lincoln@gmail.com>",
       "Repository": "CRAN"
     },
+    "clisymbols": {
+      "Package": "clisymbols",
+      "Version": "1.2.0",
+      "Source": "Repository",
+      "Title": "Unicode Symbols at the R Prompt",
+      "Authors@R": "c( person(\"Gábor\", \"Csárdi\", , \"csardi.gabor@gmail.com\", role = c(\"aut\", \"cre\")), person(\"Sindre\", \"Sorhus\", role = \"aut\") )",
+      "Description": "A small subset of Unicode symbols, that are useful when building command line applications. They fall back to alternatives on terminals that do not support Unicode. Many symbols were taken from the 'figures' 'npm' package (see <https://github.com/sindresorhus/figures>).",
+      "License": "MIT + file LICENSE",
+      "URL": "https://github.com/gaborcsardi/clisymbols",
+      "BugReports": "https://github.com/gaborcsardi/clisymbols/issues",
+      "Suggests": [
+        "testthat"
+      ],
+      "Encoding": "UTF-8",
+      "NeedsCompilation": "no",
+      "Author": "Gábor Csárdi [aut, cre], Sindre Sorhus [aut]",
+      "Maintainer": "Gábor Csárdi <csardi.gabor@gmail.com>",
+      "Repository": "CRAN"
+    },
     "colorspace": {
       "Package": "colorspace",
       "Version": "2.1-1",
@@ -1645,6 +1702,24 @@
       "Author": "Winston Chang [aut, cre], Posit Software, PBC [cph, fnd], Tessil [cph] (hopscotch_map library)",
       "Maintainer": "Winston Chang <winston@posit.co>",
       "Repository": "CRAN"
+    },
+    "fastmatch": {
+      "Package": "fastmatch",
+      "Version": "1.1-6",
+      "Source": "Repository",
+      "Title": "Fast 'match()' Function",
+      "Author": "Simon Urbanek [aut, cre, cph] (https://urbanek.org, <https://orcid.org/0000-0003-2297-1732>)",
+      "Authors@R": "person(\"Simon\", \"Urbanek\", role=c(\"aut\",\"cre\",\"cph\"), email=\"Simon.Urbanek@r-project.org\", comment=c(\"https://urbanek.org\", ORCID=\"0000-0003-2297-1732\"))",
+      "Maintainer": "Simon Urbanek <simon.urbanek@r-project.org>",
+      "Description": "Package providing a fast match() replacement for cases that require repeated look-ups. It is slightly faster that R's built-in match() function on first match against a table, but extremely fast on any subsequent lookup as it keeps the hash table in memory.",
+      "License": "GPL-2",
+      "Depends": [
+        "R (>= 2.3.0)"
+      ],
+      "URL": "http://www.rforge.net/fastmatch",
+      "NeedsCompilation": "yes",
+      "Repository": "RSPM",
+      "Encoding": "UTF-8"
     },
     "fontawesome": {
       "Package": "fontawesome",
@@ -4133,6 +4208,44 @@
       "Maintainer": "Gábor Csárdi <csardi.gabor@gmail.com>",
       "Repository": "CRAN"
     },
+    "pscl": {
+      "Package": "pscl",
+      "Version": "1.5.9",
+      "Source": "Repository",
+      "Date": "2024-01-14",
+      "Title": "Political Science Computational Laboratory",
+      "Authors@R": "c( person(\"Simon\", \"Jackman\", role = c(\"aut\", \"cre\"), email = \"simon.jackman@sydney.edu.au\", comment = c(ORCID = \"0000-0001-7421-4034\") ), person(\"Alex\", \"Tahk\", role = c(\"ctb\"), comment = c(ORCID = \"0000-0001-7895-9420\")), person(\"Achim\", \"Zeileis\", role = c(\"ctb\"), comment = c(ORCID = \"0000-0003-0918-3766\")), person(\"Christina\", \"Maimone\", role = c(\"ctb\"), comment = c(ORCID = \"0000-0002-0402-6297\")), person(\"James\", \"Fearon\", role = c(\"ctb\")), person(\"Zoe\", \"Meers\", role = c(\"ctb\"), comment = c(ORCID = \"0000-0001-8045-6531\")) )",
+      "Imports": [
+        "MASS",
+        "datasets",
+        "grDevices",
+        "graphics",
+        "stats",
+        "utils"
+      ],
+      "Suggests": [
+        "lattice",
+        "MCMCpack",
+        "car",
+        "lmtest",
+        "sandwich",
+        "zoo",
+        "coda",
+        "vcd",
+        "mvtnorm",
+        "mgcv"
+      ],
+      "Description": "Bayesian analysis of item-response theory (IRT) models, roll call analysis; computing highest density regions;  maximum likelihood estimation of zero-inflated and hurdle models for count data; goodness-of-fit measures for GLMs; data sets used in writing\tand teaching; seats-votes curves.",
+      "LazyData": "true",
+      "License": "GPL-2",
+      "URL": "https://github.com/atahk/pscl",
+      "RoxygenNote": "7.3.0",
+      "NeedsCompilation": "yes",
+      "Author": "Simon Jackman [aut, cre] (<https://orcid.org/0000-0001-7421-4034>), Alex Tahk [ctb] (<https://orcid.org/0000-0001-7895-9420>), Achim Zeileis [ctb] (<https://orcid.org/0000-0003-0918-3766>), Christina Maimone [ctb] (<https://orcid.org/0000-0002-0402-6297>), James Fearon [ctb], Zoe Meers [ctb] (<https://orcid.org/0000-0001-8045-6531>)",
+      "Maintainer": "Simon Jackman <simon.jackman@sydney.edu.au>",
+      "Repository": "RSPM",
+      "Encoding": "UTF-8"
+    },
     "purrr": {
       "Package": "purrr",
       "Version": "1.0.4",
@@ -5468,8 +5581,8 @@
     },
     "tidylog": {
       "Package": "tidylog",
-      "Version": "1.1.0.9000",
-      "Source": "GitHub",
+      "Version": "1.1.0",
+      "Source": "Repository",
       "Type": "Package",
       "Title": "Logging for 'dplyr' and 'tidyr' Functions",
       "Authors@R": "c( person(\"Benjamin\", \"Elbers\", email = \"elbersb@gmail.com\", role = c(\"aut\", \"cre\"), comment = c(ORCID = \"0000-0001-5392-3448\")), person(\"Damiano\", \"Oldoni\", email = \"damiano.oldoni@inbo.be\", role = c(\"ctb\"), comment = c(ORCID = \"0000-0003-3445-7562\")) )",
@@ -5479,7 +5592,7 @@
         "dplyr",
         "tidyr",
         "glue",
-        "cli",
+        "clisymbols",
         "rlang (>= 0.4.3)"
       ],
       "Suggests": [
@@ -5497,14 +5610,10 @@
       "BugReports": "https://github.com/elbersb/tidylog/issues",
       "RoxygenNote": "7.3.1",
       "VignetteBuilder": "knitr",
+      "NeedsCompilation": "no",
       "Author": "Benjamin Elbers [aut, cre] (<https://orcid.org/0000-0001-5392-3448>), Damiano Oldoni [ctb] (<https://orcid.org/0000-0003-3445-7562>)",
       "Maintainer": "Benjamin Elbers <elbersb@gmail.com>",
-      "RemoteType": "github",
-      "RemoteHost": "api.github.com",
-      "RemoteRepo": "tidylog",
-      "RemoteUsername": "elbersb",
-      "RemoteRef": "HEAD",
-      "RemoteSha": "69effbcfdf81b883e89178def7228a2fa823cd6b"
+      "Repository": "CRAN"
     },
     "tidyr": {
       "Package": "tidyr",
