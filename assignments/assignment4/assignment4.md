@@ -6,8 +6,8 @@ This week’s homework uses two data sources:
 - data on monthly inflation from the [Federal Reserve Bank of
   St. Louis](https://fred.stlouisfed.org/series/CPIAUCSL). The data
   measures the percentage change in prices from the previous year.
-- data on President Biden’s approval rating from
-  [FiveThirtyEight](https://projects.fivethirtyeight.com/biden-approval-rating/).
+- data on President Biden’s approval rating from FiveThirtyEight (no
+  longer publicly available).
 
 We will be exploring whether the inflation rate affected President
 Biden’s approval rating.
