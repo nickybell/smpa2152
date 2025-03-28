@@ -6,7 +6,7 @@ output:
 ---
 
 ## Mid-term Exam Study Guide
-### SMPA 2152 (Fall 2024)
+### SMPA 2152 (Fall 2025)
 <br>
 The mid-term exam will consist of three parts:
 
@@ -18,7 +18,6 @@ The mid-term exam will consist of three parts:
     * Operationalizing concepts
     * Evaluating causal claims
     * Conducting ethical research
-    * Writing good survey questions
 
 * Part III will consist of a short essay (2-3 paragraphs) that asks you to make an argument about a contemporary issue in data analysis.
 
@@ -39,8 +38,9 @@ The mid-term exam will consist of three parts:
 * Correlation (positive and negative)
 * Causation
 * Fundamental Problem of Causal Inference
+* Experiments
 * John Snow's Cholera Experiment
-* Confounders
+* Confounding
 * Reverse causation
 * Tuskegee Syphilis Study
 * Belmont Report
@@ -49,13 +49,4 @@ The mid-term exam will consist of three parts:
 * De-identification
 * Estimate
 * Margin of error (do not memorize the formula)
-* Systematic sampling
-* List-based sampling
-* Address-based sampling
-* Random digit dialing (RDD)
-* Quota sampling
-* George Gallup
-* Missing data (MCAR, MAR, and MNAR)
-* Weighting
-* Herding
-* Satisficing
+* Sampling distribution
