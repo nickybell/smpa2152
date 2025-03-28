@@ -4,11 +4,11 @@
 
 library(tidyverse)
 here::i_am("assignments/assignment4/data_prep.R")
-read_csv(here::here("assignments/assignment4/CPIAUCSL.csv")) |>
-  mutate(YEAR = year(DATE),
-         month = month(DATE)) |>
-  select(-DATE) |>
-  pivot_wider(names_from = month, values_from = CPIAUCSL_PC1) |>
+read_csv(here::here("assignments/assignment4/CPIAUCSL_PC1.csv")) |>
+  mutate(YEAR = year(observation_date),
+         MONTH = month(observation_date)) |>
+  select(-observation_date) |>
+  pivot_wider(names_from = MONTH, values_from = CPIAUCSL_PC1) |>
   write_csv(here::here("assignments/assignment4/inflation.csv"))
 
 read_csv(here::here("assignments/assignment4/approval_topline.csv")) |>
