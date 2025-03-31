@@ -1,11 +1,9 @@
 # File Name: 	  	  political_polling.R
 # File Purpose:  	  Political Polling
 # Author: 	    	  Nicholas Bell (nicholasbell@gwu.edu)
-# Date Created:     2024-10-28
 
 # Load the tidyverse and set options
 library(tidyverse)
-options(tibble.width = Inf)
 
 
 # Exit Polls --------------------------------------------------------------
@@ -88,10 +86,9 @@ poll |>
   group_by(issue20) |>
   mutate(prop = n/sum(n)) |>
   ungroup() |> # so that we don't continue to mutate within each group!
-  filter(str_detect(pres, "Biden") & issue20 != "Omit") |>
-  mutate(issue20 = fct_reorder(issue20, prop)) |>
+  filter(pres == "Joe Biden" & issue20 != "Omit") |>
   ggplot() +
-  geom_col(aes(x = issue20, y = prop)) +
+  geom_col(aes(x = reorder(issue20, -prop), y = prop)) +
   scale_y_continuous(limits = c(0,1), labels = scales::percent_format()) +
   labs(x = "Most Important Issue",
        y = "Biden Support (%)",
@@ -101,7 +98,7 @@ poll |>
   theme(plot.title = element_text(hjust = .5),
         axis.text.x = element_text(angle = 45, hjust = 1))
 
-# In 2020, many Democrats cast their ballots by mail due to the COVID-19 pandemic, while Republicans typically cast their ballots in person. This resulted in a wide partisan gap between election day ballots (which were counted immediately) and mail ballots. This year, mail voting is less common, but early in-person voting is proving to be quite popular. Based on vote methods in the 2020 election, can we infer whether the same pattern will hold again?
+# In 2020, many Democrats cast their ballots by mail due to the COVID-19 pandemic, while Republicans typically cast their ballots in person. This resulted in a wide partisan gap between election day ballots (which were counted immediately) and mail ballots. Can we visualize this divide?
 
 poll |>
   filter(!is.na(pres) & !is.na(votemeth)) |>
