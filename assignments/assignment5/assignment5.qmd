@@ -1,16 +1,16 @@
 ---
 title: "Problem Set #5"
 author: "SMPA 2152 (Prof. Bell)"
-format:
-  pdf:
-    mainfont: "Arial"
-    keep-tex: true
-    include-in-header:
-       text: |
-# format: gfm
+# format:
+#   pdf:
+#     mainfont: "Arial"
+#     keep-tex: true
+#     include-in-header:
+#        text: |
+format: gfm
 execute:
-  echo: false
-  include: false
+  echo: true
+  include: true
   warning: false
   message: false
 editor_options: 
