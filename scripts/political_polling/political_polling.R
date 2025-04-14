@@ -1,11 +1,9 @@
 # File Name: 	  	  political_polling.R
 # File Purpose:  	  Political Polling
 # Author: 	    	  Nicholas Bell (nicholasbell@gwu.edu)
-# Date Created:     2024-10-28
 
 # Load the tidyverse and set option
 library(tidyverse)
-options(tibble.width = Inf)
 
 
 # Exit Polls --------------------------------------------------------------
@@ -51,7 +49,7 @@ poll <- read_csv("31119913_National2020.csv")
 
 
 
-# In 2020, many Democrats cast their ballots by mail due to the COVID-19 pandemic, while Republicans typically cast their ballots in person. This resulted in a wide partisan gap between election day ballots (which were counted immediately) and mail ballots. This year, mail voting is less common, but early in-person voting is proving to be quite popular. Based on vote methods in the 2020 election, can we infer whether the same pattern will hold again?
+# In 2020, many Democrats cast their ballots by mail due to the COVID-19 pandemic, while Republicans typically cast their ballots in person. This resulted in a wide partisan gap between election day ballots (which were counted immediately) and mail ballots. Can we visualize this divide?
 
 
 
