@@ -19,12 +19,13 @@
 \usepackage{hyperref}
 
 \title[Political Polling]{Political Polling}
-\author[SMPA 2152]{Data Analysis for Journalism and Political Communication (Fall 2024)}
+\author[SMPA 2152]{Data Analysis for Journalism and Political Communication (Spring 2025)}
 \date{Prof. Bell}
 
 \begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\titlegraphic{\includegraphics[width=.5\textwidth]{pollsters_political_cartoon.jpg}}
 \frame{
 \titlepage
 }
@@ -34,13 +35,9 @@
 
 \only<1>{
 \centering
-\includegraphics[width = .9\textwidth]{pollsters_political_cartoon.jpg}}
-
-\only<2>{
-\centering
 \includegraphics[width=.9\textwidth]{literary_digest_landon_roosevelt.png}}
 
-\only<3>{
+\only<2>{
 \begin{columns}[c, onlytextwidth]
     \begin{column}{.6\textwidth}
         \includegraphics[height=.9\textheight]{1936nyt.jpg}
@@ -52,15 +49,15 @@
     \end{column}
 \end{columns}}
 
-\only<4>{
+\only<3>{
 \centering
 \includegraphics[width=.9\textwidth]{1936_gallup_polls.png}}
 
-\only<5>{
+\only<4>{
 \centering
 \includegraphics[width = .9\textwidth]{1948GallupPolls.jpg}}
 
-\only<6>{
+\only<5>{
 \centering
 \includegraphics[width = .9\textwidth]{dewey_defeats_truman.jpg}}
 }
@@ -79,8 +76,12 @@
 \end{enumerate}}
 
 \only<3>{
-\centering
-\includegraphics[width = .8\textwidth]{538_PollsGood2016.png}}
+    \centering
+    \includegraphics[width = .8\textwidth]{historical_polling_error.png}}
+
+\only<4>{
+    \centering
+    \includegraphics[width = .6\textwidth]{polling_errors.png}}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -202,37 +203,111 @@
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\frame{\frametitle{Can We Trust the 2024 Polls?}
+\frame{\frametitle{The 2024 Election Polls}
 
-\only<1-3> {
-    \begin{itemize}[<+->]
-        \item Not much evidence of herding
-        \item Pollsters are trying new techniques to address partisan non-response, like weighting on recalled vote (controversial)
+\only<1>{
+    \centering
+    \includegraphics[width = .8\textwidth]{RCP2024Election.png}
+}
+
+\only<2>{
+    \centering
+    \includegraphics[width = .9\textwidth]{2024_swing_state_errors.png}
+}
+
+\only<3-4>{
+    \begin{itemize}
+        \item Pollsters used new techniques to address partisan non-response, like weighting on \textbf{recalled vote}
     \end{itemize}
 }
 
 \only<3> {
     \centering
     ~\\
-    \fbox{\includegraphics[width = .604\textwidth]{recalled_vote.png}}
-    \fbox{\includegraphics[width = .31\textwidth]{siena_polls.jpeg}}
+    \fbox{\includegraphics[width = .277\textwidth]{siena_polls.jpeg}}
+    \fbox{\includegraphics[width = .633\textwidth]{poll_weighting_factors.png}}
 }
 
-\only<4-6,8>{
-    \begin{itemize}[<+(3)->]
-        \item But there is no guarantee that the polling error will be in the same direction or magnitude as 2016 or 2020.
-        \item The polling error could also be bigger. Some researchers suggest that the margin of error should be doubled to account for uncertainty due to response bias and other measurement error.
-        \item There is already some evidence that 2024 polls are exhibiting unusual variability.
-        \item<8> You won't know all of the ways the polls might be wrong until Election Day.
+\only<4> {
+    \centering
+    ~\\
+    \fbox{\includegraphics[width = .545\textwidth]{weighting_2024.png}}
+    \fbox{\includegraphics[width = .3575\textwidth]{selzer.png}}
+}
+
+\only<5>{
+    \begin{itemize}
+        \item Pollsters used new techniques to address partisan non-response, like weighting on \textbf{recalled vote}
+        \item Recalled vote weighting assumes that the electorate looks the same from year-to-year
     \end{itemize}
+}
+
+\only<5>{
+    \centering
+    \includegraphics[height = .6\textheight]{vote_shift.jpeg}
+}
+
+\only<6->{
+    \begin{itemize}
+        \item Pollsters used new techniques to address partisan non-response, like weighting on \textbf{recalled vote}
+        \item Recalled vote weighting assumes that the electorate looks the same from year-to-year
+        \item This is especially the case as pollsters begin using ``likely voter'' models
+    \end{itemize}
+}
+
+\only<6>{
+    \centering
+    \includegraphics[height = .55\textheight]{lv_vs_rv.png}
 }
 
 \only<7>{
     \centering
-    \includegraphics[height = .8\textheight]{survey_method_effect.png}
+    \includegraphics[height = .55\textheight]{news_consumption.png}
 }
 
+\only<8>{
+    \centering
+    \includegraphics[height = .55\textheight]{late_deciders.png}
 }
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{\frametitle{Polling Challenges}
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|p{0.3\linewidth} | p{0.6\linewidth}|}
+        \hline
+        2016 Presidential & Polls wrong due to \textbf{missing at \mbox{random} (MAR)} non-response bias by education \\
+        \hline
+        2020 Presidential  & Polls wrong due to \textbf{missing not at random (MNAR)} non-response bias \\
+        \hline
+        2022 Midterm  & The rise of partisan polling and \mbox{\textbf{herding}} \\
+        \hline
+        2024 Presidential & Pollsters try weighting on \textbf{recalled vote} \\
+        \hline
+    \end{tabular}
+\end{table}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{\frametitle{Types of Survey Samples}
+
+\only<1>{
+    \centering
+    \includegraphics[height = .8\textheight]{survey_types.png}
+}
+
+\only<2->{
+    \begin{itemize}[<+(1)->]
+        \item \textbf{Systematic Sampling}: Select every $n^{th}$ unit of a population (e.g. exit polls)
+        \item \textbf{List-based Sampling}: Randomly select units from an existing list of the population (e.g. registered voter lists)
+        \item \textbf{Address-based Sampling (ABS)}: Randomly select households from a list of addresses provided by the U.S. Postal Service
+        \item \textbf{Random-digit Dialing (RDD)}: Randomly select area codes, and then random digits are added to the end to create 10-digit phone numbers
+        \item \textbf{Non-probability/Quota Sampling}: Pseudo-randomly selecting, from an opt-in pool of respondents, a sample that approximates the make-up of the general population
+    \end{itemize}
+}
+}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \frame{\frametitle{Writing Good Surveys}
