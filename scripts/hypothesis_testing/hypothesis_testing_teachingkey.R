@@ -1,7 +1,6 @@
 # File Name: 	  	  hypothesis_testing.R
 # File Purpose:  	  Hypothesis Testing
 # Author: 	    	  Nicholas Bell (nicholasbell@gwu.edu)
-# Date Created:     2024-11-11
 
 # Today, we will be working with the replication dataset for De Sante's (2013) experiment examining how people choose to allocate social benefits according to ideas about "deservingness"
 
@@ -45,7 +44,7 @@ desante |>
 
 # One-sided, one-sample t-test
 
-# H0: Applicants are allocated less than or equal to $550 per week on average
+# H0: Applicants are not allocated greater than (are allocated less than or equal to) $550 per week on average
 # HA: Applicants are allocated greater than $550 per week on average
 
 desante |>
@@ -53,19 +52,9 @@ desante |>
 				 mu = 550,
 				 alternative = "greater")
 
-set.seed(2024)
-desante |>
-  specify(response = allocation) |>
-  hypothesize(null = "point", mu = 550) |>
-  generate(reps = 1000, type = "bootstrap") |>
-  calculate(stat = "mean") |>
-  visualize() + 
-  shade_p_value(mean(desante$allocation, na.rm=T),
-                direction = "greater")
-
 # Two-sided, one-sample t-test
 
-# H0: Applicants are allocated $550 per week on average
+# H0: Applicants are not allocated greater than or less than (are allocated equal to) $550 per week on average
 # HA: Applicants are not allocated $550 per week on average
 
 desante |>
@@ -73,19 +62,9 @@ desante |>
 				 mu = 550,
 				 alternative = "two-sided")
 
-set.seed(2024)
-desante |>
-  specify(response = allocation) |>
-  hypothesize(null = "point", mu = 550) |>
-  generate(reps = 1000, type = "bootstrap") |>
-  calculate(stat = "mean") |>
-  visualize() + 
-  shade_p_value(mean(desante$allocation, na.rm=T),
-                direction = "two-sided")
-
 # One-sided, two-sample t-test
 
-# H0: Black applicants are allocated more than or the same as white applicants on average
+# H0: Black applicants are not allocated less than (are allocated more than or the same as) white applicants on average
 # HA: Black applicants are allocated less than white applicants on average
 
 desante |>
@@ -93,35 +72,16 @@ desante |>
 				 order = c("black", "white"), # black-white
 				 alternative = "less")
 
-desante |>
-  filter(!is.na(race)) |>
-  specify(allocation ~ race) |>
-  hypothesize(null = "independence") |>
-  generate(reps = 1000, type = "permute") |>
-  calculate(stat = "diff in means", order = c("black", "white")) |>
-  visualize() + 
-  shade_p_value(-27,
-                direction = "less")
+# Note that you *must* specify the order for subtraction when using one-sided t-tests (you do not have to do this for two-sided t-tests, since the direction of subtraction does not matter, but you should hide the warning message from your Quarto documents.)
 
 # Two-sided, two-sample t-test
 
-# H0: Excellent applicants are allocated the same as poor applicants on average
-# HA: Excellent applicants are not allocated the same as poor applicants on average
+# H0: Excellent applicants are not allocated more than or less than (are allocated the same as) poor applicants on average
+# HA: Excellent applicants are allocated more than or less than (different than) poor applicants on average
 
 desante |>
 	t_test(allocation ~ work_ethic,
-				 order = c("excellent", "poor"),
 				 alternative = "two-sided")
-
-desante |>
-  filter(!is.na(work_ethic)) |>
-  specify(allocation ~ work_ethic) |>
-  hypothesize(null = "independence") |>
-  generate(reps = 1000, type = "permute") |>
-  calculate(stat = "diff in means", order = c("excellent", "poor")) |>
-  visualize() + 
-  shade_p_value(155.8,
-                direction = "two-sided")
 
 # Try it yourself! --------------------------------------------------------
 
@@ -129,59 +89,35 @@ desante |>
 
 # Excellent applicants
 
+# H0: Excellent black applicants are not allocated less than (are allocated more than or equal to) excellent white applicants.
+# HA: Excellent black applicants are allocated less than excellent white applicants.
+
 desante |>
   filter(work_ethic == "excellent") |>
   t_test(allocation ~ race,
          order = c("black", "white"),
          alternative = "less")
-
-desante |>
-  filter(work_ethic == "excellent") |>
-  filter(!is.na(race)) |>
-  specify(allocation ~ race) |>
-  hypothesize(null = "independence") |>
-  generate(reps = 1000, type = "permute") |>
-  calculate(stat = "diff in means", order = c("black", "white")) |>
-  visualize() + 
-  shade_p_value(-60.4,
-                direction = "less")
 
 # Poor applicants
 
+# H0: Poor black applicants are not allocated less than (are allocated more than or equal to) poor white applicants.
+# HA: Poor black applicants are allocated less than poor white applicants.
+
 desante |>
   filter(work_ethic == "poor") |>
   t_test(allocation ~ race,
          order = c("black", "white"),
          alternative = "less")
 
-desante |>
-  filter(work_ethic == "poor") |>
-  filter(!is.na(race)) |>
-  specify(allocation ~ race) |>
-  hypothesize(null = "independence") |>
-  generate(reps = 1000, type = "permute") |>
-  calculate(stat = "diff in means", order = c("black", "white")) |>
-  visualize() + 
-  shade_p_value(-56.5,
-                direction = "less")
-
 # There is a third option for respondents to allocate some of the $1500 to "balancing the budget" (variable bal_bud). Do Republicans and Democrats allocate different amounts to balancing the budget? Write the H0 and HA.
+
+# H0: Republicans and Democrats do not allocate different amounts (allocate the same amount) to balancing the budget.
+# HA: Republicans and Democrats allocate different amounts to balancing the budget.
 
 desante |>
 	filter(pid %in% c("Republican", "Democrat")) |>
 	t_test(bal_bud ~ pid,
-				 order = c("Republican", "Democrat"),
 				 alternative = "two-sided")
-
-desante |>
-  filter(pid %in% c("Republican", "Democrat")) |>
-  specify(allocation ~ pid) |>
-  hypothesize(null = "independence") |>
-  generate(reps = 1000, type = "permute") |>
-  calculate(stat = "diff in means", order = c("Republican", "Democrat")) |>
-  visualize() + 
-  shade_p_value(256,
-                direction = "two-sided")
 
 # What about poll questions? For polls, we generally want to weight the responses using the weighting variable before calculating estimates like the mean or difference in means.
 

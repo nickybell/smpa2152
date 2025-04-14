@@ -1,7 +1,6 @@
 # File Name: 	  	  hypothesis_testing.R
 # File Purpose:  	  Hypothesis Testing
 # Author: 	    	  Nicholas Bell (nicholasbell@gwu.edu)
-# Date Created:     2024-11-11
 
 # Today, we will be working with the replication dataset for De Sante's (2013) experiment examining how people choose to allocate social benefits according to ideas about "deservingness"
 
@@ -44,6 +43,7 @@ desante <- read_csv("desante2013_modified.csv")
 # HA: Black applicants are allocated less than white applicants on average
 
 
+# Note that you *must* specify the order for subtraction when using two-sample, one-sided t-tests. (You do not have to do this for two-sample, two-sided t-tests, since the direction of subtraction does not matter, but you should hide the warning message from your Quarto documents.)
 
 # Two-sided, two-sample t-test
 
