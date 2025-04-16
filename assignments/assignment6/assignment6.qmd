@@ -1,0 +1,82 @@
+---
+title: "Assignment #6"
+author: "SMPA 2152 (Prof. Bell)"
+format:
+  pdf:
+    mainfont: "Arial"
+    keep-tex: true
+    include-in-header:
+       text: |
+# format: gfm
+execute:
+  echo: false
+  include: false
+  warning: false
+  message: false
+editor_options: 
+  chunk_output_type: inline
+---
+
+For this week's homework, we will use hypothesis tests to explore Americans' views of free expression on college campuses. You will need to download the data for the [Ipsos/Knight Foundation Survey: Free Expression in America Post-2020](https://doi.org/10.25940/ROPER-31119146) from Roper iPoll. You will need to dowload the `.csv` file from Roper iPoll and upload it to your Posit Cloud project.
+
+```{r}
+#| label: setup
+
+library(tidyverse)
+library(infer)
+poll <- read_csv("31119146.csv")
+```
+
+**BEFORE YOU BEGIN**: Make the following change to the poll data before proceeding to any analysis.
+
+```{r}
+#| label: modify
+#| include: true
+#| echo: true
+
+poll <- 
+  poll |>
+  mutate(Main_Weights = ifelse(!is.na(Students_Weights),
+                               Students_Weights,
+                               Main_Weights))
+```
+
+For each question below, you must write both the $H_0$ and the $H_A$. How do you interpret the results of each hypothesis test?
+
+1. Conduct a hypothesis test showing whether a majority of Americans believe that freedom of speech is "extremely important" to them (`Q1_5`).
+
+2. Conduct a hypothesis test showing whether the proportion of college students who believe that colleges and universities should **allow** offensive political speech on campus is less than among non-college students (`Q11_4`).
+
+    Please note that **non**-college students are represented with the values `No` *and* `NA` in the variable `Student1`; any other values represent college students. You should have 4,276 non-college students and 1,023 college students. 
+
+```{r}
+#| label: hypotheses
+#| output: asis
+#| echo: false
+
+writeLines(c("* $H_0$: The proportion of college students who believe that colleges and universities should allow offensive political speech is greater than or equal to the proportion among non-college students.", "* $H_A$: The proportion of college students who believe that colleges and universities should allow offensive political speech is less than the proportion among non-college students."), sep = "\n")
+```
+
+```{r}
+#| label: hypothesis_test
+
+poll |>
+  filter(Q11_4 != "Skipped") |>
+  mutate(College = ifelse(Student1 == "No" | is.na(Student1), "Not a student", "Student"),
+         College = factor(College, levels = c("Not a student", "Student")),
+         AllowSpeech = ifelse(Q11_4 == "Allow", 1, 0)) |>
+  t_test(AllowSpeech ~ College,
+         order = c("Student", "Not a student"),
+         alternative = "less") |>
+  knitr::kable()
+```
+
+```{r}
+#| label: hypothesis_test_result
+#| output: asis
+#| echo: false
+
+writeLines("> The p-value is .013, so we can reject $H_0$ and accept $H_A$, which is that non-college students are 3.8 percentage points less likely to support allowing offensive political speech on campus, on average.")
+```
+
+3. Now, we will focus only on college students. Conduct a hypothesis test showing whether a different proportion of self-identified Democratic and Republican college students agree that, "The climate at my school or on my campus prevents some people from saying things they believe because others might find it offensive" (`Q16_4`).
