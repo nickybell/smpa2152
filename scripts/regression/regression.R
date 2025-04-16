@@ -8,7 +8,7 @@ library(tidyverse)
 library(palmerpenguins)
 
 # Set options
-options(tibble.width = Inf)
+options(tibble.width = Inf, scipen = 999)
 
 # Load data
 data(penguins)
@@ -35,23 +35,25 @@ ggplot(penguins, aes(x = body_mass_g, y = flipper_length_mm)) +
               linewidth = 1) +
   theme_minimal()
 
+##############################
+## Simple Linear Regression ##
+##############################
+
+desante <- read_csv("scripts/regression/desante2013_modified.csv")
+
+reg2 <- lm(allocation ~ income_1000s, data = desante)
+summary(reg2)
 
 ################################
 ## Multiple Linear Regression ##
 ################################
 
-desante <- read_csv("scripts/regression/desante2013_modified.csv")
-
-reg2 <- lm(allocation ~ race + work_ethic + age + gender + pid, data = desante)
-summary(reg2)
+reg3 <- lm(allocation ~ race + work_ethic + age + gender + pid + income_1000s, data = desante)
+summary(reg3)
 
 # Let's look at the error
-desante$prediction <- predict(reg2, desante)
+desante$prediction <- predict(reg3, desante)
 desante$error <- desante$allocation-desante$prediction
-
 desante |>
-  filter(!is.na(error)) |>
-  ggplot(aes(x = prediction, y = error)) +
-  geom_point() +
-  geom_smooth(method = "lm") +
-  theme_minimal()
+  select(allocation, prediction, error, race, work_ethic, pid, age, gender, income_1000s) |>
+  slice_max(abs(error), n = 10)
