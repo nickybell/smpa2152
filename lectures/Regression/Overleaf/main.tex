@@ -28,7 +28,7 @@
 \makeatother
 
 \title[Regression]{Regression}
-\author[SMPA 2152]{Data Analysis for Journalism and Political Communication (Fall 2024)}
+\author[SMPA 2152]{Data Analysis for Journalism and Political Communication (Fall 2025)}
 \date{Prof. Bell}
 
 \begin{document}
@@ -79,26 +79,44 @@ $\epsilon$ = error
 $y = ax + b$\\
 \only<3>{$y = b + ax$}
 \end{center}}
+}
 
-\only<4-7>{You want to estimate the effect of religiosity on political activism. The linear regression equation is:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{
+In-class exercise
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{\frametitle{Example}
+
+\only<1>{
+    \footnotesize
+    ``Working Twice as Hard to Get Half as Far: Race, Work Ethic, and America’s Deserving Poor''\\
+    Christopher D. DeSante, \textit{Am. Journal of Political Science} vol. 57 iss. 2 (2013)
+    ~\\
+    ~\\
+    \centering
+    \includegraphics[height = .8\textheight]{desante_treatment.png}
+}
+
+\only<2->{You want to estimate the effect of income on the allocation to welfare applicants. The linear regression equation is:
 \begin{center}
-$\hat{Activism} = \hat{\beta}_0 + \hat{\beta}_1Religiosity$
+$\hat{Allocation} = \hat{\beta}_0 + \hat{\beta}_1Income$
 \end{center}
 
 The \enspace  $\hat{}$ \enspace is the mathematical notation for ``estimate of the mean''\\
 ~\\
-\only<5-7>{If ``Religiosity'' has a value of 4, and the intercept is 1, and the coefficient is .5, what is our estimated mean of ``Activism''?}
+\only<3->{If ``Income'' in thousands has a value of 100, and the intercept is \$605, and the coefficient is -.5, what is our estimated mean of ``Allocation''?}
 
-\only<6-7>{\begin{center}
-$\hat{Activism} = 1 + .5(4)$
+\only<4->{\begin{center}
+$\hat{Allocation} = 605 + (-.5)*100$
 \end{center}}
 
-\only<7>{So the coefficient ($\beta_1$) is the effect of a \textbf{one-unit} change in religiosity on the mean of political activism.}
-}
+\only<5->{\begin{center}
+$\hat{Allocation} = 555$
+\end{center}}
 
-\only<8>{
-\centering
-\includegraphics[height = .8\textheight]{linear_equation.png}
+\only<6>{So the coefficient ($\beta_1$) is the effect of a \textbf{one-unit} change in income (thousands) on the mean allocation.}
 }
 }
 
@@ -137,10 +155,10 @@ $\epsilon$ = error
 \end{center}
 \only<2>{\textcolor{blue}{What is the interpretation of $\beta_1$?}\\
 ~\\
-$\beta_1$ is the effect of a one-unit change in $X_1$ on the mean of $Y$, holding $X_2$ fixed (the independent effect of $X_1$ on $Y$)}
+$\beta_1$ is the effect of a one-unit change in $X_1$ on the mean of $Y$, holding $X_2$ constant (the independent effect of $X_1$ on $Y$)}
 \only<3>{\textcolor{blue}{What is the interpretation of $\beta_2$?}\\
 ~\\
-$\beta_2$ is the effect of a one-unit change in $X_2$ on the mean of $Y$, holding $X_1$ fixed (the independent effect of $X_2$ on $Y$)}}
+$\beta_2$ is the effect of a one-unit change in $X_2$ on the mean of $Y$, holding $X_1$ constant (the independent effect of $X_2$ on $Y$)}}
 \only<4>{\centering
 \includegraphics[width=.6\textwidth]{3dregression.png}}
 }
@@ -148,19 +166,9 @@ $\beta_2$ is the effect of a one-unit change in $X_2$ on the mean of $Y$, holdin
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \frame{\frametitle{Example}
 
-\only<1>{
-\footnotesize
-``Working Twice as Hard to Get Half as Far: Race, Work Ethic, and America’s Deserving Poor''\\
-Christopher D. DeSante, \textit{Am. Journal of Political Science} vol. 57 iss. 2 (2013)
-~\\
-~\\
-\centering
-\includegraphics[height = .8\textheight]{desante_treatment.png}
-}
-
-\only<2>{\begin{center}
-$\hat{Allocation} = \hat{\beta_0} + \hat{\beta_1}Race + \hat{\beta_2}WorkEthic + \hat{\beta_3}Age + \hat{\beta_4}Gender + \hat{\beta_3}PoliticalParty$
-\end{center}}
+\begin{center}
+$\hat{Allocation} = \hat{\beta_0} + \hat{\beta_1}Race + \hat{\beta_2}WorkEthic + \hat{\beta_3}Age + \hat{\beta_4}Gender + \hat{\beta_5}PoliticalParty + \hat{\beta_6}Income$
+\end{center}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
