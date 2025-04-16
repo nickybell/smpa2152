@@ -1,16 +1,16 @@
 ---
 title: "Assignment #6"
 author: "SMPA 2152 (Prof. Bell)"
-format:
-  pdf:
-    mainfont: "Arial"
-    keep-tex: true
-    include-in-header:
-       text: |
-# format: gfm
+# format:
+#   pdf:
+#     mainfont: "Arial"
+#     keep-tex: true
+#     include-in-header:
+#        text: |
+format: gfm
 execute:
-  echo: false
-  include: false
+  echo: true
+  include: true
   warning: false
   message: false
 editor_options: 
@@ -27,30 +27,39 @@ library(infer)
 poll <- read_csv("31119146.csv")
 ```
 
-**BEFORE YOU BEGIN**: Make the following change to the poll data before proceeding to any analysis.
-
-```{r}
-#| label: modify
-#| include: true
-#| echo: true
-
-poll <- 
-  poll |>
-  mutate(Main_Weights = ifelse(!is.na(Students_Weights),
-                               Students_Weights,
-                               Main_Weights))
-```
-
 For each question below, you must write both the $H_0$ and the $H_A$. How do you interpret the results of each hypothesis test?
 
 1. Conduct a hypothesis test showing whether a majority of Americans believe that freedom of speech is "extremely important" to them (`Q1_5`).
+
+```{r}
+#| output: asis
+#| echo: false
+
+writeLines(c("* $H_0$: The percentage of Americans who believe that freedom of speech is \"extremely important\" to them is less than or equal to 50%.", "* $H_A$: The percentage of Americans who believe that freedom of speech is \"extremely important\" to them is greater than 50%."), sep = "\n")
+```
+
+```{r}
+poll |>
+  filter(Q1_5 != "Skipped") |>
+  mutate(free_speech = ifelse(Q1_5 == "Extremely important", 1, 0)) |>
+  t_test(response = free_speech,
+         mu = .5,
+         alternative = "greater") |>
+  knitr::kable()
+```
+
+```{r}
+#| output: asis
+#| echo: false
+
+writeLines("> The p-value is about 0, so we can reject the null hypothesis and accept the alternative hypothesis that the percentage of Americans who believe that freedom of speech is \"extremely important\" to them is greater than 50%. Americans clearly feel that free speech is an important right.")
+```
 
 2. Conduct a hypothesis test showing whether the proportion of college students who believe that colleges and universities should **allow** offensive political speech on campus is less than among non-college students (`Q11_4`).
 
     Please note that **non**-college students are represented with the values `No` *and* `NA` in the variable `Student1`; any other values represent college students. You should have 4,276 non-college students and 1,023 college students. 
 
 ```{r}
-#| label: hypotheses
 #| output: asis
 #| echo: false
 
@@ -58,12 +67,9 @@ writeLines(c("* $H_0$: The proportion of college students who believe that colle
 ```
 
 ```{r}
-#| label: hypothesis_test
-
 poll |>
   filter(Q11_4 != "Skipped") |>
   mutate(College = ifelse(Student1 == "No" | is.na(Student1), "Not a student", "Student"),
-         College = factor(College, levels = c("Not a student", "Student")),
          AllowSpeech = ifelse(Q11_4 == "Allow", 1, 0)) |>
   t_test(AllowSpeech ~ College,
          order = c("Student", "Not a student"),
@@ -72,11 +78,36 @@ poll |>
 ```
 
 ```{r}
-#| label: hypothesis_test_result
 #| output: asis
 #| echo: false
 
-writeLines("> The p-value is .013, so we can reject $H_0$ and accept $H_A$, which is that non-college students are 3.8 percentage points less likely to support allowing offensive political speech on campus, on average.")
+writeLines("> The p-value is .013, so we can reject the null hypothesis and accept the alternative hypothesis that the proportion of college students who believe that colleges and universities should allow offensive political speech is less than the proportion among non-college students. However, the estimate is only -4 percentage points, which is not very much, suggesting that views are not sharply divided between these two groups.")
 ```
 
-3. Now, we will focus only on college students. Conduct a hypothesis test showing whether a different proportion of self-identified Democratic and Republican college students agree that, "The climate at my school or on my campus prevents some people from saying things they believe because others might find it offensive" (`Q16_4`).
+3. Now, we will focus only on college students. Conduct a hypothesis test showing whether a different proportion of self-identified Democratic and Republican (`QPID100`) college students agree that, "The climate at my school or on my campus prevents some people from saying things they believe because others might find it offensive" (`Q16_5`).
+
+```{r}
+#| output: asis
+#| echo: false
+
+writeLines(c("* $H_0$: Democratic and Republican college students are equally likely to believe that, \"The climate at my school or on my campus prevents some people from saying things they believe because others might find it offensive.\"", "* $H_A$: Democratic and Republican college students are not equally likely to believe that, \"The climate at my school or on my campus prevents some people from saying things they believe because others might find it offensive.\""), sep = "\n")
+```
+
+```{r}
+#| eval: false
+poll |>
+  mutate(College = ifelse(Student1 == "No" | is.na(Student1), "Not a student", "Student"),
+         CampusClimate = ifelse(Q16_5 %in% c("Strongly agree", "Somewhat agree"), 1, 0)) |>
+  filter(Q16_5 != "Skipped" & College == "Student") |>
+  t_test(CampusClimate ~ QPID100,
+         order = c("Democrat", "Republican"),
+         alternative = "two-sided") |>
+  knitr::kable()
+```
+
+```{r}
+#| output: asis
+#| echo: false
+
+writeLines("> The p-value is .025, so we can reject the null hypothesis and accept the alternative hypothesis that Democratic and Republican college students are not equally likely to believe that, \"The climate at my school or on my campus prevents some people from saying things they believe because others might find it offensive.\". The estimate is that Republicans are 9 percentage points more likely to, perhaps because colleges are associated with liberalism in the popular imagination.")
+```
