@@ -7,6 +7,9 @@ author: "SMPA 2152 (Prof. Bell)"
 #     keep-tex: true
 #     include-in-header:
 #        text: |
+#          \usepackage{fvextra}
+#          \DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines=true, breakanywhere=true, breaksymbol=, breakanywheresymbolpre=,commandchars=\\\{\}}
+#          \DefineVerbatimEnvironment{OutputCode}{Verbatim}{breaklines=true, breakanywhere=true, breaksymbol=, breakanywheresymbolpre=,commandchars=\\\{\}}
 format: gfm
 execute:
   echo: true
@@ -94,7 +97,6 @@ writeLines(c("* $H_0$: Democratic and Republican college students are equally li
 ```
 
 ```{r}
-#| eval: false
 poll |>
   mutate(College = ifelse(Student1 == "No" | is.na(Student1), "Not a student", "Student"),
          CampusClimate = ifelse(Q16_5 %in% c("Strongly agree", "Somewhat agree"), 1, 0)) |>
