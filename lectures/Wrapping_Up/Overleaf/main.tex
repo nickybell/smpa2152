@@ -20,7 +20,7 @@
 \usepackage{hyperref}
 
 \title[Wrapping Up]{Wrapping Up}
-\author[SMPA 2152]{Data Analysis for Journalism and Political Communication (Fall 2024)}
+\author[SMPA 2152]{Data Analysis for Journalism and Political Communication (Spring 2025)}
 \date{Prof. Bell}
 
 \begin{document}
@@ -28,6 +28,20 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \frame{
     \titlepage
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{\frametitle{Canadian Election Predictions}
+
+\only<1>{
+    \centering
+    \includegraphics[width = .9\textwidth]{Canadian Election Predictions.png}
+}
+
+\only<2>{
+    \centering
+    \includegraphics[height = .8\textheight]{cbc_apr27.png}
+}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -53,34 +67,46 @@
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\frame{
-    \frametitle{Can you see the uncertainty?}
-    \begin{itemize}[<+->]
-        \item Whenever we take a sample and try to make inferences about a population, there is uncertainty
-        \only<1>{
-            ~\\~\\
-            \centering
-            \includegraphics[height = .6\textheight]{nyt_final_polls.png}
-            }
-        \item There is also uncertainty when making causal claims
-        \only<2>{
-            ~\\~\\
-            \centering
-            \includegraphics[height = .6\textheight]{consumer_sentiment.jpeg}
-            }
-    \end{itemize}
+\frame{\frametitle{Can you see the uncertainty?}
+
+\begin{itemize}[<+->]
+    \item Whenever we take a sample and try to make inferences about a population, there is uncertainty
+    \item There is also uncertainty when making causal claims due to confounding and reverse causation
+\end{itemize}
+    
+\only<1>{
+    \centering
+    \includegraphics[height = .6\textheight]{cnn_uncertainty.jpeg}
+}
+\only<2>{
+    \centering
+    \includegraphics[height = .6\textheight]{trade_attitudes.jpeg}
 }
 
+}
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\frame{
-    \frametitle{Can we look beyond the averages?}
-    \begin{itemize}[<+->]
-        \item We have to be conscious of \href{https://x.com/rp_griffin/status/1857414569628475691}{researcher degrees of freedom}.
-        \item There is both a science and an art to accurately communicating about data using data visualizations.
-        ~\\~\\
-            \centering
-            \includegraphics[height = .5\textheight]{2024_thanksgiving_dinner.png}
-    \end{itemize}
+\frame{\frametitle{Can we look beyond the averages?}
+
+\begin{itemize}[<+->]
+    \item We need to carefully communicate the context of the data
+    \item<3-> There is both a science and an art to accurately communicating about data using data visualizations
+\end{itemize}
+
+\only<1>{
+    \centering
+    \includegraphics[height = .6\textheight]{immigration_question.png}
+}
+\only<2>{
+    \centering
+    \includegraphics[height = .6\textheight]{j6_jail.png}
+}
+\only<3>{
+    \centering
+    \includegraphics[height = .6\textheight]{wapo_90_degree_days.jpeg}
+}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -88,15 +114,19 @@
     \frametitle{How was the data collected?}
     \only<1> {
         \centering
-        \includegraphics[height = .8\textheight]{selzer.png}
+        \includegraphics[height = .8\textheight]{musk_random.png}
     }
     \only<2> {
         \centering
-        \includegraphics[height = .8\textheight]{weighting_2024.png}
+        \includegraphics[height = .8\textheight]{selection_dv.jpg}
     }
     \only<3> {
         \centering
-        \includegraphics[height = .8\textheight]{poll_questions.jpeg}
+        \includegraphics[width = .8\textwidth]{prob_vs_nonprob.png}
+    }
+    \only<4> {
+        \centering
+        \includegraphics[height = .8\textheight]{news_consumption.png}
     }
 }
 
@@ -106,54 +136,27 @@
     \begin{columns}
     \begin{column}{0.5\textwidth}
        \begin{itemize}
+            \item Base R functions
             \item Make charts for 3+ variables
             \item Load data
             \item Filter data
             \item Create and change data
             \item Summarize data
             \item Pivot data (tidy data)
-            \item Join data
        \end{itemize}
     \end{column}
     \begin{column}{0.5\textwidth}  %%<--- here
         \begin{itemize}
-            \item Work with dates
-            \item Work with strings
-            \item Work with factors
-            \item Analyze poll data
-            \item Make maps
-            \item Conduct t-tests
+            \item Join data
+            \item Weight poll data
+            \item Calculate margins of error
+            \item Conduct t-tests of means
+            \item Conduct t-tests of proportions
             \item Run regressions
             \item Create reports
        \end{itemize}
     \end{column}
     \end{columns}
-}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\frame{
-    \frametitle{How Did the Polls Do in 2024?}
-    \only<1> {
-        \centering
-        \includegraphics[height = .8\textheight]{close_election.jpeg}
-    }
-    \only<2> {
-        \centering
-        \includegraphics[height = .8\textheight]{vote_shift.jpeg}
-    }
-    \only<3> {
-        \centering
-        \includegraphics[height = .8\textheight]{state_polling_misses.png}
-    }
-    \only<4> {
-        \centering
-        \includegraphics[height = .8\textheight]{late_deciders.png}
-    }
-    \only<5> {
-        \centering
-        \includegraphics[width = .9\textwidth]{direction_of_miss.jpeg}
-    }
 }
 
 \end{document}
