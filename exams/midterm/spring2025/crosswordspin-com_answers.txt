@@ -1,0 +1,16 @@
+BELMONT: 1978 report laying out guidelines for ethical research
+PRISONERS: Group with special protection in research
+NIGHTINGALE: Namesake of the Data Visualization Society journal
+FIVE: Acceptable chance of committing Type I error, typically
+TUFTE: "Above all else, show the data"
+MILGRAM: Yale psychologist whose research on obedience is now considered unethical
+HARKING: Hypothesizing after results are known (acronym)
+REVERSE: Causation when the explanation precedes the outcome
+SAMPLE: Ideally generated through random selection
+LETBY: Nurse whose conviction may rest on confusing correlation vs. causation
+MINARD: Created Tufte's “greatest statistical graph ever”
+CONFOUNDER: Other variable that explains change in explanatory and outcome variables
+PLAYFAIR: Published 43 data visualization in 1786
+SNOW: English epidemiologist whose natural experiment contributed to modern germ theory
+TOPCODE: Removing extremely large values from data
+CHILDREN: Group with special protection in research
