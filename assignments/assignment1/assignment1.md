@@ -1,0 +1,68 @@
+# Assignment \#1
+SMPA 2152 (Prof. Bell)
+
+For this homework, please use the `assignment1_template.R` script.
+Please submit your completed `.R` script via Blackboard. In addition,
+please submit a Word document or PDF containing the visualizations for
+questions 5 and 6.
+
+**To save a graph and download it to your computer in Posit Cloud:**
+
+1.  In the “Plots” pane, select “Export” and then “Save as Image.”
+
+2.  Give the file a name and use the drag button in the corner of the
+    graph to resize the image to proper dimensions. Click “Save.”
+
+3.  In the “Files” pane, select the check mark next to your `.png` file.
+    Click “More”, and then “Export…” Click “Download” to download the
+    file to your computer.
+
+    If you select the check mark next to multiple files, you will export
+    a .zip folder. Before submitting any work in this class, you must
+    unzip the folder to obtain the unzipped files. Do not submit a zip
+    folder for an assignment.
+
+You may complete the assignments on your own or in collaboration with
+other students. This means that you may work together to write code
+and/or solve problems. **Do not split up the questions or combine
+independent work.**
+
+If you work with other students, please indicate their names at the top
+of your submission. Each student must submit an assignment on
+Blackboard.
+
+------------------------------------------------------------------------
+
+1.  Install the `{nycflights13}` package and load the `flights` data
+    frame.
+
+2.  Explore the data frame using `glimpse()`. (Remember to load the
+    `{dplyr}` package first.) If we wanted to calculate the departure
+    delay, can we subtract `dep_time` from `sched_dep_time`? Why or why
+    not?
+
+3.  Now we want to find out how many flights were delayed by 30 minutes
+    or more when departing JFK airport. First, create a new data frame
+    with only those rows where the origin airport is “JFK” and where the
+    departure delay is greater than or equal to 30. Then, use the
+    `nrow()` function to get the number of rows in the resulting data
+    frame.
+
+4.  In your new data frame, create a new column that represents the
+    departure delay in hours rather than minutes (i.e., divide departure
+    delay by 60). What is the average departure delay of these flights
+    in hours? Hint: look at the help file for `mean()`. How can you ask
+    this function to ignore the flights where the departure delay is
+    `NA` (because the flight was cancelled)?
+
+5.  Create a histogram showing the departure delays from JFK airport in
+    hours. Each bar should represent 20 minutes (i.e., 1/3 of an hour).
+    Your graph should include a theme, a title, proper axis labels, and
+    a caption.
+
+6.  Let’s return to the original `flights` data frame now. Limit the
+    data frame to only the three major airlines (`AA` for American
+    Airlines, `DL` for Delta Airlines, and `UA` for United Airlines).
+    Create a bar graph showing how many flights each airline took from
+    each of the three NYC airports (JFK, LGA, and EWR). Your graph
+    should include a theme, a title, proper axis labels, and a caption.
