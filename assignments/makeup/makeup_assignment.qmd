@@ -1,0 +1,52 @@
+---
+title: "Make-up Assignment"
+author: "SMPA 2152 (Prof. Bell)"
+# format:
+#   pdf:
+#     mainfont: "Arial"
+#     keep-tex: true
+#     include-in-header:
+#        text: |
+format: gfm
+execute:
+  echo: true
+  include: true
+  warning: false
+  message: false
+editor_options: 
+  chunk_output_type: console
+---
+\vspace{-3em}
+
+For this week's homework, we are going to explore how well the polls did in predicting the results of the 2020 Presidential Election. We will be using two datasets:
+
+- Data on 2020 election polls collected by FiveThirtyEight (RIP). This data is available on Blackboard as `presidential_polls_2020.csv`.
+
+- Results of the 2020 Presidential election compiled by the [MIT Election Data + Science Lab](https://electionlab.mit.edu/). This data is available on Blackboard as `2020-president.csv`.
+    
+---
+
+1. Load the `presidential_polls_2020.csv` data and turn it into tidy data. In addition, limit the data to polls that:
+
+    1. are national polls (i.e., are not state polls).
+    2. are conducted by pollsters with a rating from 538 of 2.0 or higher.
+
+2. Make a nicely-formatted graph showing the average support for Joe Biden and Donald Trump in each month over the course of the race. 
+
+    *Hint: You can use the make_date() function to create a date column for your x-axis:*
+ 
+3. Reload the `presidential_polls_2020.csv` and keep only the polls that:
+
+    1. are state polls.
+    2. are conducted in October or November 2020.
+    3. are conducted by pollsters with a rating from 538 of 2.0 or higher.
+    
+    In addition, calculate the average two-party vote share for Biden *in each state*. The two-party vote share is:
+
+    $BidenPct/(BidenPct + TrumpPct)$
+    
+    You should calculate the two-party vote share before calculating the average in each state.
+
+4. Load the `2020-president.csv` data to the polling data. Generate a polling error in each state by comparing the average two-party vote share for Biden in each state according to the polling vs. the actual two-party vote share for Biden in the election results.
+
+    Make a nicely-formatted graph showing the polling error in each state arranged from largest to smallest polling error. Comment on the graph. What does this graph tell you about state polling in the 2020 election?
