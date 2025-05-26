@@ -13,9 +13,11 @@
 
 ### Lecture materials
 * [Linear regression explainer](https://mlu-explain.github.io/linear-regression/)
+* On observational vs. experimental data: observational data suggests that female instructors face bias from students on semester evals, but experimental data [suggests otherwise](https://x.com/JohnHolbein1/status/1861964761086459957)
 
 ### Readings
 * [Dan Sinker's blog, "The Who Cares Era"](https://dansinker.com/posts/2025-05-23-who-cares/): maybe useful if talking about role of AI in the course because it is more general, not just about coding
 
 ### Other
 * *Coded Bias*: 2021 documentary about bias in facial recognition AI
+* [Brendan Nyhan](https://bpb-us-e1.wpmucdn.com/sites.dartmouth.edu/dist/5/2293/files/2025/04/experiments-syllabus-2025.pdf) has his students take surveys on some online platforms and then report back
