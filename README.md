@@ -4,7 +4,7 @@
 <img width="50%" src="lectures/Correlation_vs_Causation/Overleaf/xkcd_correlation.png">
 </p>
 
-This repository contains the most recent version of the course materials for SMPA 2152: Data Analysis for Journalism and Political Communication offered at George Washington University's [School of Media and Public Affairs](https://smpa.gwu.edu/). In this course, students will become responsible consumers and producers of data. Students learn how to critically evaluate claims derived from data and how to ethically present data in compelling and persuasive ways. The course includes a special discussion of political polling, which is widely used in journalism and political communication but has come under increasing scrutiny in recent years. In addition to developing data literacy, students will be introduced to the \textit{R} programming language.
+This repository contains the most recent version of the course materials for SMPA 2152: Data Analysis for Journalism and Political Communication offered at George Washington University's [School of Media and Public Affairs](https://smpa.gwu.edu/). In this course, students will become responsible consumers and producers of data. Students learn how to critically evaluate claims derived from data and how to ethically present data in compelling and persuasive ways. The course includes a special discussion of political polling, which is widely used in journalism and political communication but has come under increasing scrutiny in recent years. In addition to developing data literacy, students will be introduced to the `R` programming language.
 
 ## Repository Structure
 
@@ -24,7 +24,7 @@ Assignment answer keys are provided in a [separate, private repository](https://
 
 ## License
 
-This work is [licensed](https://github.com/nickybell/smpa2152/blob/main/LICENSE) under a
+The materials in this repository are [licensed](https://github.com/nickybell/smpa2152/blob/main/LICENSE) under a
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
 
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-image]][cc-by-nc-sa]
