@@ -21,6 +21,9 @@
 * [David Byler](https://www.vox.com/2024-elections/370649/trust-polls-2016-2020-election-2024-pollster-polling-miss): "We're just not in a world where polls provide that kind of 100 percent, 0 percent win probability. You can get odds, you can get probabilities, you can get sort of levels of certainty. But we're in an incredibly polarized moment, and [polling] is just not a precision tool that can provide certainty."
 * [Pretty amazing graphs](https://graphics.wsj.com/infectious-diseases-and-vaccines/) about how the introduction of a vaccine (a sort of natural experiment) led to precipitous declines in disease rates.
 * NORC is using [satellite imagery](https://www.norc.org/research/library/accurate-affordable-survey-sampling-method-satellite-imagery.html) to enhance their survey frames derived from USPS address data
+* [Visual explanation](https://haswal.github.io/pivot/) of pivot_longer()
+* YouGov shows that even the way we design [matrix questions](https://business.yougov.com/content/52629-the-effect-of-question-format-on-partisan-support-for-bans) can impact responses.
+* [Pew Research Center](https://www.pewresearch.org/decoded/2025/07/23/why-and-how-were-weighting-surveys-for-past-presidential-vote/) is now weighting by recalled vote!
 
 ### Readings
 * [Dan Sinker's blog, "The Who Cares Era"](https://dansinker.com/posts/2025-05-23-who-cares/): maybe useful if talking about role of AI in the course because it is more general, not just about coding
@@ -36,4 +39,4 @@
 
 ### Miscellaneous thoughts
 * "Plot rates, not counts."
-
+* Consider magazines like *Significance*, *CHANCE*, and *Nightingale*
