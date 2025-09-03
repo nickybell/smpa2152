@@ -26,6 +26,7 @@
 * [Pew Research Center](https://www.pewresearch.org/decoded/2025/07/23/why-and-how-were-weighting-surveys-for-past-presidential-vote/) is now weighting by recalled vote!
 * [Survey160](https://www.survey160.com/methodological-research-blog/the-limits-of-simulation-in-public-opinion-research) blog post on synthetic poll respondents
 * Evidence from [NORC](https://www.norc.org/content/dam/norc-org/pdf2024/CPSS-Research-Brief-8-Professional-Respondents-In-Nonprobability-Panels.pdf) that non-probability panel respondents are "professional respondents"
+* Examples of [natural experiments](https://www.nytimes.com/interactive/2025/03/11/upshot/covid-lessons.html) from the COVID-19 pandemic
 
 ### Readings
 * [Dan Sinker's blog, "The Who Cares Era"](https://dansinker.com/posts/2025-05-23-who-cares/): maybe useful if talking about role of AI in the course because it is more general, not just about coding

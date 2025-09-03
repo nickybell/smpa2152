@@ -21,6 +21,9 @@
 # RStudio files
 .Rproj.user/
 
+# Positron files
+.vscode/
+
 # produced vignettes
 vignettes/*.html
 vignettes/*.pdf
