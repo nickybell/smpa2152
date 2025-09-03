@@ -1,43 +1,25 @@
-\documentclass[xcolor={dvipsnames}]{beamer} % dvipsnames gives more built-in colors
-\mode<presentation>
+% The dvipsnames option is passed to the xcolor package, which beamer loads
+\documentclass[xcolor={dvipsnames}]{beamer}
 
-\usetheme{Boadilla}
-
-\definecolor{GWdarkblue}{HTML}{033C5A}
-
-\usecolortheme[named=GWdarkblue]{structure}
-
-% Sets the font
-\usepackage[defaultfam,tabular,lining]{montserrat}
-% Capital case titles
-\setbeamerfont{title}{shape=\scshape}
-\setbeamerfont{frametitle}{shape=\scshape}
-
-%Remove "Figure" from captions
-\setbeamertemplate{caption}{\raggedright\insertcaption\par}
-
-\usepackage{graphicx}
-\usepackage{hyperref}
-\usepackage{tabularx}
+\usepackage{smpa2152-style}
 \usepackage{marvosym}
 
 \title[Data Visualization]{Data Visualization}
-\author[SMPA 2152]{Data Analysis for Journalism and Political Communication (Spring 2025)}
+\author[SMPA 2152]{Data Analysis for Journalism and Political Communication (Fall 2025)}
 \date{Prof. Bell}
 
 \begin{document}
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \frame{
-\titlepage
+    \titlepage
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \frame{\frametitle{Michel Florent van Langren (1644)}
 \centering
-\only<1>{\includegraphics[width=\textheight]{florent_van_langren.png}}
-\only<2>{\includegraphics[width=\textheight]{florent_van_langren_overlay.jpg}}
+    \only<1>{\includegraphics[width=\textheight]{florent_van_langren.png}}
+    \only<2>{\includegraphics[width=\textheight]{florent_van_langren_overlay.jpg}}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -141,14 +123,14 @@
 }
 
 \only<7>{\centering\large Color Contrasts\\~\\\includegraphics[height=.7\textheight]{cherry_blossoms.JPG}}
-\only<8>{\centering\large Proximity and Distance\\~\\\includegraphics[height=.7\textheight]{vaccination.JPG}}
+\only<8>{\centering\large Proximity and Distance\\~\\\includegraphics[height=.7\textheight]{views_of_x_partisan_reasoning.png}}
 \only<9>{\centering\large Proximity and Distance\\~\\\includegraphics[height=.7\textheight]{ft_partisanship.PNG}}
 \only<10>{\centering\large Similarity and Difference\\~\\\includegraphics[height=.7\textheight]{nyt_candidate_histories.jpg}}
 \only<11>{\centering\large Connectedness\\~\\\includegraphics[height=.7\textheight]{nyt_admissions.jpg}}
 \only<12>{\centering\large (Dis)Continuity\\~\\\includegraphics[height=.7\textheight]{nyt_antarctic_ice.png}}
 \only<13>{\centering\large (Dis)Continuity\\~\\\includegraphics[height=.7\textheight]{wsj_minimum_wage.jpg}}
 \only<14>{\centering\large Closure\\~\\\includegraphics[height=.7\textheight]{ft_immigration.png}}
-\only<15>{\centering\large Closure\\~\\\includegraphics[height=.7\textheight]{wsj_wfh.png}}
+\only<15>{\centering\large Closure\\~\\\includegraphics[height=.7\textheight]{vacation_days.jpeg}\\\scriptsize Source: People's Policy Project}
 \only<16>{\centering\includegraphics[width=.9\textwidth]{economist_assasinations.png}}
 }
 
@@ -166,29 +148,35 @@
         \item<1-> Show the context of the data
         \item<3-> The main axis should show the scale of the data
         \item<5-> Use conventional ordering and meanings
-        \item<10-> Data visualizations are paragraphs about data
-        \item<12-> Limit cognitive load
-        \item<14-> No pie charts
-        \item<15-> Not all data should be in a chart
+        \item<9-> Data visualizations are paragraphs about data
+        \item<11-> Limit cognitive load
+        \item<13-> No pie charts
+        \item<14-> Not all data should be in a chart
     \end{enumerate}
 \column{0.6\textwidth}
 \centering
-\only<1>{\includegraphics[width=\textwidth]{holiday_travel.jpg}}
-\only<2>{\includegraphics[width=\textwidth]{nba_covid.jpg}}
-\only<3>{\includegraphics[width=\textwidth]{truncated_y_axis.jpeg}}
+\only<1>{\includegraphics[width=\textwidth]{nba_covid.jpg}}
+\only<2>{
+    \begin{minipage}{0.48\textwidth}
+        \includegraphics[width=\linewidth]{nyt_county_shift_red.png}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.48\textwidth}
+        \includegraphics[width=\linewidth]{nyt_county_shift_blue.png}
+    \end{minipage}
+}
+\only<3>{\includegraphics[width=\textwidth]{truncated_axis_spr.png}\\\scriptsize Source: Susquehanna Polling \& Research}
 \only<4>{\includegraphics[width=\textwidth]{nyt_vaccination.png}}
 \only<5>{\includegraphics[width=\textwidth]{nbc_boy_scouts.png}}
-\only<6>{\includegraphics[width=\textwidth]{vehicles_by_income.jpg}}
-\only<7>{\includegraphics[width=\textwidth]{stein_robinson_poll.jpeg}}
-\only<8>{\includegraphics[width=\textwidth]{DC_covid.png}}
-\only<9>{\includegraphics[width=\textwidth]{pa_sen_result.JPG}}
-\only<10>{\includegraphics[width=\textwidth]{ft_britishpolit.JPG}}
-\only<11>{\includegraphics[width=\textwidth]{wapo_80_degrees.jpeg}}
-\only<12>{\includegraphics[width=\textwidth]{wapo_second_choices.jpg}}
-\only<13>{\includegraphics[width=\textwidth]{wapo_gas_prices.JPG}}
-\only<14>{\includegraphics[width=\textwidth]{pie_charts.jpeg}}
-\only<15>{\includegraphics[width=\textwidth]{nbc4_rain.jpg}}
-\only<16>{\includegraphics[width=\textwidth]{education_map.png}}
+\only<6>{\includegraphics[width=\textwidth]{stein_robinson_poll.jpeg}}
+\only<7>{\includegraphics[width=\textwidth]{DC_covid.png}}
+\only<8>{\includegraphics[width=\textwidth]{pa_sen_result.JPG}}
+\only<9>{\includegraphics[width=\textwidth]{income_pres_vote.jpeg}\\\scriptsize Source: @thomasjwood}
+\only<10>{\includegraphics[width=\textwidth]{wapo_2025_90_degree_days.png}}
+\only<11>{\includegraphics[width=\textwidth]{wapo_second_choices.jpg}}
+\only<12>{\includegraphics[width=\textwidth]{wapo_gas_prices.JPG}}
+\only<13>{\includegraphics[width=\textwidth]{pie_charts.jpeg}}
+\only<14>{\includegraphics[width=\textwidth]{nbc4_rain.jpg}}
 \end{columns}
 }
 
@@ -209,11 +197,8 @@
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\frame{\frametitle{Discussion\\``When Charts Are a Matter of Life and Death''}
-\begin{block}{}
-    \centering
-    ``Data visualization has progressed from a means of making things tractable and comprehensible on the page to an automated hunt for clusters and connections, with trained machines to do the searching. Patterns still emerge and drive our understanding of the world forward, even if they are no longer visible to the human eye.''
-\end{block}
+\frame{\frametitle{Exercise}
+\inserttimer{8}
 }
 
 \end{document}
