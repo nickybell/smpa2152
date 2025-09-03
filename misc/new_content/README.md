@@ -26,8 +26,6 @@
 ### Readings
 * [Dan Sinker's blog, "The Who Cares Era"](https://dansinker.com/posts/2025-05-23-who-cares/): maybe useful if talking about role of AI in the course because it is more general, not just about coding
 * The rise in reported maternal mortality rates in the US is largely due to a change in measurement ([Our World In Data](https://ourworldindata.org/rise-us-maternal-mortality-rates-measurement))
-* [Urban Institute](https://www.urban.org/sites/default/files/publication/102346/principles-for-advancing-equitable-data-practice_0.pdf)'s "Principles for advancing equitable data practice"
-* Fun story about the [climate change warming stripes graph](https://chezvoila.com/blog/warmingstripes/): speaks to data viz engineers vs. designers
 * [Opinion piece from Jennifer Benz](https://www.scientificamerican.com/article/americans-are-moody-and-pollsters-should-pay-attention/) on the value of polling beyond the horse race
 
 ### Other
