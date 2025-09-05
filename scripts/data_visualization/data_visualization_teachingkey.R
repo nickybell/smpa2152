@@ -27,6 +27,7 @@ library(palmerpenguins)
 
 # Normally we will load data from an external file such as a CSV, but for this lesson we will use the "penguins" data frame that comes included with the {palmerpenguins} package. This data frame contains measurements for three species of penguins (Adelie, Chinstrap, and Gentoo) that were collected from three islands in the Palmer Archipelago, Antarctica.
 data(penguins)
+glimpse(penguins)
 
 # The grammar of graphics -------------------------------------------------
 
@@ -73,7 +74,7 @@ ggplot(data = penguins) +
 #=====================================
 
 ggplot(data = penguins) +
-  geom_histogram(mapping = aes(x = flipper_length_mm), binwidth = 10)
+  geom_histogram(mapping = aes(x = flipper_length_mm), bins = 10)
 
 #=====================================
 # Bivariate graphs
@@ -124,13 +125,13 @@ p +
 
 # Let's also add some labels to this graph. We can do this with the labs() function. Every element inside of an aes() mapping can get a label, as well as the title, axis labels, and caption.
 p +
-  theme_classic(base_size = 12) +
+  theme_tufte() +
   labs(
     title = "Species of Penguins on Each Island",
     x = "Island",
     y = "Count",
     fill = "Species",
-    caption = "Source: {palmerpenguins} package."
+    caption = "Source: palmerpenguins package"
   )
 
 #=====================================
@@ -147,23 +148,23 @@ ggplot(data = penguins) +
     x = "Sex",
     y = "Bill Length (mm)",
     title = "Penguin Flipper Length by Sex",
-    caption = "Source: {palmerpenguins} package"
+    caption = "Source: palmerpenguins package"
   ) +
-  theme_wsj(base_size = 6)
+  theme_fivethirtyeight()
 
 # So far, we've only changed the design of the graph; we haven't changed anything that relates to the data. But on this graph, the scale of the y-axis might be distorting differences to make them appear larger than they actually are. We can modify the way that the *data* is displayed using the scale functions.
 
 # The general format is scale_aesthetic_vartype, e.g., scale_y_continuous
 
 ggplot(data = penguins) +
-  geom_boxplot(aes(x = sex, y = flipper_length_mm)) +
+  geom_boxplot(mapping = aes(x = sex, y = flipper_length_mm)) +
   labs(
     x = "Sex",
-    y = "Bill Length (mm)",
+    y = "Flipper Length (mm)",
     title = "Penguin Flipper Length by Sex",
-    caption = "Source: {palmerpenguins} package"
+    caption = "Source: palmerpenguins package"
   ) +
-  theme_wsj() +
+  theme_fivethirtyeight() +
   scale_y_continuous(limits = c(0, 250)) +
   scale_x_discrete(labels = c("Female", "Male", "Unknown"))
 
@@ -182,16 +183,16 @@ ggplot(data = penguins) +
     method = "lm",
     se = F,
     linetype = "dashed",
-    linewidth = 2
+    linewidth = 2,
+    color = "#456789"
   ) +
   theme_classic() +
   labs(
     x = "Flipper Length (mm)",
     y = "Body Mass (g)",
     title = "Heavier Penguins Have Bigger Flippers",
-    caption = "Source: {palmerpenguins} package"
-  ) +
-  theme(plot.title = element_text(hjust = .5))
+    caption = "Source: palmerpenguins package"
+  )
 
 # Why is it acceptable to leave the axis values where they are rather than set them to 0? Because we are interested in the general direction of the relationship (positive or negative) between these variables rather than the values themselves. We would need statistics to measure the *strength* of the relationship.
 
@@ -204,15 +205,13 @@ ggplot(data = number_penguins, mapping = aes(x = year, y = n)) +
   geom_line() +
   geom_point() +
   scale_x_continuous(breaks = c(2007:2009)) +
-  scale_y_continuous(limits = c(0, NA)) +
   labs(
     x = "Year",
     y = "Number of Penguins",
     title = "Number of Penguins Each Year",
-    caption = "Source: {palmerpenguins} package"
+    caption = "Source: palmerpenguins package"
   ) +
-  theme_few() +
-  theme(plot.title = element_text(hjust = .5))
+  theme_few()
 
 # Let's review what we've learned so far:
 # 1. The grammar of graphics: data, aesthetics, geometric objects
