@@ -6,14 +6,9 @@
 * [`{gwalkr}`](https://github.com/Kanaries/GWalkR) is an interactive tool for data visualizations that runs in the RStudio IDE
 
 ### Images
-* `nyt_county_shift_*.png`: [NYT](https://www.nytimes.com/interactive/2025/05/25/us/politics/trump-politics-democrats.html) graphics showing that more counties shifting red than blue, but misses the context of the data: counties are not equally weighted
-* `income_pres_vote.jpeg`: tells a story with data similar to FT graph showing change in Labour share of vote by income (@thomasjwood)
 * `pew_opt_in_young_people.png`: 12% of younger respondents in opt-in samples say that they are licensed to operate a submarine :)
-* `truncated_axis_spr.png`: poll release from [SP&R](https://x.com/SusquehannaPR/status/1909231029061050458) that egregiously truncates the y-axis
 * `fireworks_injuries.jpeg` (from Vox) and `ufo_sightings.png` (from Economist): both great examples of confounders (July -> DV confounded by July 4 fireworks)
-* `vacation_days.jpg`: good example of using closures in data viz
 * `catholic_church_attendance.jpeg`: good example of selection bias - weak Catholics are selecting out of the Catholic sample
-* `views_of_x_partisan_reasoning.png`: good example of confounding
 
 ### Lecture materials
 * [Linear regression explainer](https://mlu-explain.github.io/linear-regression/)
@@ -26,12 +21,11 @@
 * [Pew Research Center](https://www.pewresearch.org/decoded/2025/07/23/why-and-how-were-weighting-surveys-for-past-presidential-vote/) is now weighting by recalled vote!
 * [Survey160](https://www.survey160.com/methodological-research-blog/the-limits-of-simulation-in-public-opinion-research) blog post on synthetic poll respondents
 * Evidence from [NORC](https://www.norc.org/content/dam/norc-org/pdf2024/CPSS-Research-Brief-8-Professional-Respondents-In-Nonprobability-Panels.pdf) that non-probability panel respondents are "professional respondents"
+* Examples of [natural experiments](https://www.nytimes.com/interactive/2025/03/11/upshot/covid-lessons.html) from the COVID-19 pandemic
 
 ### Readings
 * [Dan Sinker's blog, "The Who Cares Era"](https://dansinker.com/posts/2025-05-23-who-cares/): maybe useful if talking about role of AI in the course because it is more general, not just about coding
 * The rise in reported maternal mortality rates in the US is largely due to a change in measurement ([Our World In Data](https://ourworldindata.org/rise-us-maternal-mortality-rates-measurement))
-* [Urban Institute](https://www.urban.org/sites/default/files/publication/102346/principles-for-advancing-equitable-data-practice_0.pdf)'s "Principles for advancing equitable data practice"
-* Fun story about the [climate change warming stripes graph](https://chezvoila.com/blog/warmingstripes/): speaks to data viz engineers vs. designers
 * [Opinion piece from Jennifer Benz](https://www.scientificamerican.com/article/americans-are-moody-and-pollsters-should-pay-attention/) on the value of polling beyond the horse race
 
 ### Other
