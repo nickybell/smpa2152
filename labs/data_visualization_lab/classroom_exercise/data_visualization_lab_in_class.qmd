@@ -1,0 +1,210 @@
+---
+title: "Data Visualization Lab #1"
+format:
+  revealjs:
+    embed-resources: true
+lightbox: true
+---
+
+```{r}
+#| label: setup
+#| include: false
+
+library(tidyverse)
+library(palmerpenguins)
+data(penguins)
+```
+
+---
+
+How do I start making a graph using the `penguins` dataset?
+
+::: {.fragment}
+```{r}
+#| eval: false
+#| echo: true
+
+ggplot(data = penguins)
+```
+
+:::
+
+---
+
+What `geom` layer would I use to make a graph of `body_mass_g` for all of the penguins in the dataset?
+
+```{r}
+#| eval: false
+#| echo: true
+
+ggplot(data = penguins) +
+  _________(mapping = aes(x = body_mass_g))
+```
+
+---
+
+What `geom` layer would I use to make a graph of `body_mass_g` for all of the penguins in the dataset?
+
+```{r}
+#| echo: true
+#| code-line-numbers: "2"
+
+ggplot(data = penguins) +
+  geom_histogram(mapping = aes(x = body_mass_g)) +
+  labs(
+    title = "Distribution of Penguin Body Mass",
+    x = "Body Mass (g)",
+    y = "Count"
+  ) +
+  theme_minimal()
+```
+
+---
+
+What `geom` layer would I use to make a graph of penguins by sex and species?
+
+```{r}
+#| eval: false
+#| echo: true
+
+ggplot(data = penguins) +
+  _________(mapping = aes(x = species, fill = sex), position = "dodge")
+```
+
+---
+
+Which function would I use to change the appearance of the x-axis?
+
+```{r}
+#| eval: false
+#| echo: true
+#| code-line-numbers: "2,3"
+
+ggplot(data = penguins) +
+  geom_bar(mapping = aes(x = species, fill = sex), position = "dodge") +
+  ______x_discrete(labels = c("Adelie", "Chinstrap", "Gentoo"))
+```
+
+---
+
+Which function would I use to change the appearance of the x-axis?
+
+```{r}
+#| echo: true
+#| code-line-numbers: "3,4"
+
+ggplot(data = penguins) +
+  geom_bar(mapping = aes(x = species, fill = sex), position = "dodge") +
+  scale_x_discrete(labels = c("Adelie", "Chinstrap", "Gentoo")) +
+  scale_fill_discrete(labels = c("Female", "Male", "NA")) +
+  labs(
+    title = "Distribution of Penguin Body Mass",
+    x = "Body Mass (g)",
+    y = "Count"
+  ) +
+  theme_minimal()
+```
+
+---
+
+What `geom` layer would I use to make a graph of bill length and bill depth?
+
+```{r}
+#| eval: false
+#| echo: true
+
+ggplot(data = penguins) +
+  ________(mapping = aes(x = bill_length_mm, y = bill_depth_mm))
+```
+
+---
+
+What `geom` layer would I use to make a graph of bill length and bill depth?
+  
+```{r}
+#| echo: true
+#| code-line-numbers: "2-7"
+
+ggplot(data = penguins) +
+  geom_point(mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +
+  geom_smooth(
+    mapping = aes(x = bill_length_mm, y = bill_depth_mm),
+    method = "lm",
+    se = FALSE
+  ) +
+  labs(
+    title = "Bill Length vs. Bill Depth",
+    x = "Bill Length (mm)",
+    y = "Bill Depth (mm)"
+  ) +
+  theme_minimal()
+```
+
+---
+
+What `geom` layer would I use to make a graph of flipper length by species?
+
+```{r}
+#| eval: false
+#| echo: true
+
+ggplot(data = penguins) +
+  ________(mapping = aes(x = sex, y = flipper_length_mm))
+```
+
+---
+
+What `geom` layer would I use to make a graph of flipper length by sex?
+  
+```{r}
+#| echo: true
+#| code-line-numbers: "2"
+
+ggplot(data = penguins) +
+  geom_boxplot(mapping = aes(x = sex, y = flipper_length_mm)) +
+  scale_x_discrete(labels = c("Female", "Male", "NA")) +
+  labs(
+    title = "Flipper Length by Sex",
+    x = "Sex",
+    y = "Flipper Length (mm)"
+  ) +
+  theme_minimal()
+```
+
+---
+
+What is missing from this graph?
+  
+```{r}
+#| echo: true
+
+ggplot(data = penguins) +
+  geom_boxplot(mapping = aes(x = sex, y = flipper_length_mm)) +
+  scale_x_discrete(labels = c("Female", "Male", "NA")) +
+  labs(
+    title = "Flipper Length by Sex",
+    x = "Sex",
+    y = "Flipper Length (mm)"
+  ) +
+  theme_minimal()
+```
+
+---
+
+What `geom` layer would I use to make a graph of flipper length by sex?
+  
+```{r}
+#| echo: true
+#| code-line-numbers: "8"
+
+ggplot(data = penguins) +
+  geom_boxplot(mapping = aes(x = sex, y = flipper_length_mm)) +
+  scale_x_discrete(labels = c("Female", "Male", "NA")) +
+  labs(
+    title = "Flipper Length by Sex",
+    x = "Sex",
+    y = "Flipper Length (mm)",
+    caption = "Source: palmerpenguins package"
+  ) +
+  theme_minimal()
+```

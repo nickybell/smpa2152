@@ -25,7 +25,7 @@ ____________________________________________ <br>
 ____________________________________________ <br>
 </td>
 <td>
-<img src="wapo_graduates.jpg" height="475">
+&emsp;&emsp;<img src="holiday_travel.jpg" width="350">
 </td>
 </tr>
 <tr><td><br><br></td></tr>
@@ -45,7 +45,7 @@ ____________________________________________ <br>
 ____________________________________________ <br>
 </td>
 <td>
-&nbsp;&nbsp;<img src="wsj_pay.png" width="325">
+&nbsp;&nbsp;<img src="vehicles_by_income.jpg" width="500">
 </td>
 </tr>
 </table>
