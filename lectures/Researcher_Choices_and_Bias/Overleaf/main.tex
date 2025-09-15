@@ -1,25 +1,10 @@
-\documentclass[xcolor=dvipsnames]{beamer} % dvipsnames gives more built-in colors
-\mode<presentation>
+% The dvipsnames option is passed to the xcolor package, which beamer loads
+\documentclass[xcolor={dvipsnames}]{beamer}
 
-\usetheme{Boadilla}
-
-\definecolor{GWdarkblue}{HTML}{033C5A}
-
-\usecolortheme[named=GWdarkblue]{structure}
-
-% Sets the font
-\usepackage[defaultfam,tabular,lining]{montserrat}
-\setbeamerfont{title}{shape=\scshape}
-\setbeamerfont{frametitle}{shape=\scshape}
-%Remove "Figure" from captions
-\setbeamertemplate{caption}{\raggedright\insertcaption\par}
-
-\usepackage{graphicx}
-\usepackage{tabularx}
-\usepackage{hyperref}
+\usepackage{smpa2152-style}
 
 \title[Researcher Choices and Bias]{Researcher Choices and Bias}
-\author[SMPA 2152]{Data Analysis for Journalism and Political Communication (Fall 2024)}
+\author[SMPA 2152]{Data Analysis for Journalism and Political Communication (Fall 2025)}
 \date{Prof. Bell}
 
 \begin{document}
@@ -28,6 +13,17 @@
 \frame{
 \titlepage
 }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{
+
+\begin{center}
+\includegraphics[width=.9\textwidth]{nyt_headline.png} \newline
+\newline
+\includegraphics[width=.9\textwidth]{nyt_graf.png} 
+\end{center}
+}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \frame{
@@ -109,7 +105,7 @@ Choosing a hypothesis is all about avoiding error:\\~\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \frame{\frametitle{Are Democrats or Republicans Good for the Economy?}
 
-Use FiveThirtyEight's online modeling tool to test what you think is the best approach to answering the question. There are no right or wrong answers - just select the model you think is best, and report your results in the form:
+Use (a recreation of) FiveThirtyEight's online tool to test what you think is the best approach to answering the question. There are no right or wrong answers - just select the model you think is best, and report your results in the form:
 
 \begin{center}
 \href{https://bit.ly/smpa2152}{https://bit.ly/smpa2152}\\
@@ -120,38 +116,58 @@ Use FiveThirtyEight's online modeling tool to test what you think is the best ap
 (The link to the tool is on the form.)
 }
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\frame{\frametitle{Misuses of P-values}
-
-\begin{itemize}[<+->]
-    \item \textbf{P-hacking}: Manipulating data or analysis in order to find a statistically significant result
-    \item \textbf{HARKing}: \textbf{H}ypothesizing \textbf{a}fter \textbf{r}esults are \textbf{k}nown
-    \item \textbf{File drawer bias/publication bias}: Only publishing statistically significant results
-    \item Confusing statistical significance with substantive significance
-\end{itemize}
-}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \frame{\frametitle{What do I measure?}
 
 \begin{block}{Operationalization}
-    The process of defining a measurable version of a concept
+    The process of defining a measurable version of a concept.
 \end{block}
 ~\\
-\only<2>{Suppose you were interested in measuring ``study quality,'' a variable indicating how well a student studies. What are some ways you would measure this concept?}
-\only<3->{
-\begin{itemize}[<+(2)->]
-    \item Principles of good operationalization:
-    \begin{enumerate}
-        \item<.-> Unambiguous
-        \item Concise
-        \item Familiar
-        \item Available
+\begin{center}
+\includegraphics[width=.48\textwidth]{maternal_mortality.png}
+\hfill
+\includegraphics[width=.48\textwidth]{nyt_autism_traits.png}
+\end{center}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{\frametitle{Principles of Good Operationalization}
+\only<1-5>{
+    \begin{enumerate}[<+(0)->]
+        \item Unambiguous
+        \item Parsimonious
+        \item Accurate
+        \item Reliable
+        \item Feasible
     \end{enumerate}
-\end{itemize}
+    \only<1>{
+        \begin{center}
+        \href{https://www.youtube.com/watch?v=oLAtkkkUAPc}{\includegraphics[height=.6\textheight]{EnglishmanWentUpHillPoster.png}}
+        \end{center}
+    }
+    \only<3>{
+        \begin{center}
+        \includegraphics[height=.6\textheight]{census_2010.jpg}
+        \hspace{2em}
+        \includegraphics[height=.6\textheight]{census_2030.png}
+        \end{center}
+    }
+    \only<4>{
+        \begin{center}
+        \includegraphics[height=.6\textheight]{IAT.png}
+        \end{center}
+    }
+}
+\only<6>{
+    \begin{block}{Index (or Scale) Variable}
+    An index (or scale) variable is a type of proxy measure in which the researcher combines multiple sources of data into a single representation of the concept under investigation using a pre-defined mathematical operation.
+    \end{block}
+    \begin{center}
+    \includegraphics[width=.6\textwidth]{gender_inequality_index.png}
+    \end{center}
 }
 }
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \frame{\frametitle{Exercise: Operationalization}
@@ -303,43 +319,6 @@ We over- and under-state probabilistic evidence.
 \centering
 \includegraphics[width = .9\textwidth]{retro_report.png}
 
-}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\frame{\frametitle{Fraudulent Research}
-\only<1-2, 10->{
-    \begin{itemize}[<+->]
-        \item Unfortunately, fraud does happen - perhaps more than researchers would like to admit
-        \item One of the most infamous cases of fraud was a \href{https://www.youtube.com/watch?v=d8uRYqsu2W4}{study linking the childhood MMR (mumps, measles, and rubella) vaccine to autism}
-        \item<10-> Red flags:
-        \begin{itemize}
-            \item<10-> Not sharing data or methods
-            \item<11-> Unusual patterns in the data
-            \item<12-> Non-reproducible outcomes or outcomes not supported by theory
-            \item<13-> Conflicts of interest
-        \end{itemize}
-        \item<14-> These ``red flags'' do not necessarily mean the data is fraudulent -- but be vigilant
-    \end{itemize}
-}
-
-\only<3-6>{
-    \centering
-    \textbf{Gay Canvassers Scandal}\\
-    ~\\
-    \includegraphics<3>[width = .8\textwidth]{lacour_result.png}
-    \includegraphics<4>[width = .8\textwidth]{lacour1.png}
-    \includegraphics<5>[width = .8\textwidth]{lacour2.png}
-    \includegraphics<6>[width = .8\textwidth]{lacour3.png}
-    }
-
-\only<7-9>{
-    \centering
-    \small{\textbf{Dishonesty in Dishonesty Research (uncovered by Data Colada)}}\\
-    ~\\
-    \includegraphics<7>[width = .8\textwidth]{colada1.png}
-    \includegraphics<8>[width = .8\textwidth]{colada2.png}
-    \includegraphics<9>[width = .8\textwidth]{colada3.png}
-    }
 }
 
 \end{document}
