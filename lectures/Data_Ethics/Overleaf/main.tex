@@ -1,25 +1,10 @@
-\documentclass[xcolor=dvipsnames]{beamer} % dvipsnames gives more built-in colors
-\mode<presentation>
+% The dvipsnames option is passed to the xcolor package, which beamer loads
+\documentclass[xcolor={dvipsnames}]{beamer}
 
-\usetheme{Boadilla}
-
-\definecolor{GWdarkblue}{HTML}{033C5A}
-
-\usecolortheme[named=GWdarkblue]{structure}
-
-% Sets the font
-\usepackage[defaultfam,tabular,lining]{montserrat}
-\setbeamerfont{title}{shape=\scshape}
-\setbeamerfont{frametitle}{shape=\scshape}
-%Remove "Figure" from captions
-\setbeamertemplate{caption}{\raggedright\insertcaption\par}
-
-\usepackage{graphicx}
-\usepackage{tabularx}
-\usepackage{hyperref}
+\usepackage{smpa2152-style}
 
 \title[Data Ethics]{Data Ethics}
-\author[SMPA 2152]{Data Analysis for Journalism and Political Communication (Spring 2024)}
+\author[SMPA 2152]{Data Analysis for Journalism and Political Communication (Fall 2025)}
 \date{Prof. Bell}
 
 \begin{document}
@@ -27,17 +12,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \frame{
 \titlepage
-}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\frame{\frametitle{Bouie, ``Quantifying the Pain of Slavery''}
-
-\centering
-\includegraphics[height=.4\textheight]{slave_voyages.png}\\
-~\\
-
-Go to \href{https://www.slavevoyages.org/}{SlaveVoyages.org} and spend a few minutes exploring the data. Think about the implications of collecting and sharing this data. What are some of the benefits of sharing this data? What are some of the risks? Do the benefits outweigh the harms?
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -86,13 +60,29 @@ Go to \href{https://www.slavevoyages.org/}{SlaveVoyages.org} and spend a few min
     \begin{itemize}
         \item<.-> Is there a way to gain the information sought in the study that minimizes risk?
         \item If risks cannot be reduced, how great is the potential benefit to society and to the subject?
-        \item Examples: Stanford Prison Experiment, Milgram Experiment
-        \item[] vs. randomized drug trials, ``challenge'' trials in medicine
+        \item Examples: Stanford Prison Experiment, \href{https://www.youtube.com/watch?v=Kzd6Ew3TraA}{Milgram Experiment}
+        \item[] vs. randomized drug trials
     \end{itemize}
-    \item Selection of subjects
-    \begin{itemize}
-        \item<.-> Do not select favored subjects for highly beneficial research and unfavored subjects for risky research
-    \end{itemize}
+\end{itemize}
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{\frametitle{Expanding Principles for Equity (Urban Institute)}
+
+\begin{itemize}
+    \item Seek and include communities' interests in
+research design
+    \item Seek out and incorporate communities' interpretation of the data
+    \item Return data and research results to community
+members in a form they can use
+    \item Be aware of how sensitive topics can affect
+people and communities
+    \item Minimize the amount of personally identifiable
+information (PII) collected
+    \item Avoid undue burden
+    \item Share data to reduce the burden of duplicate
+data collection
 \end{itemize}
 
 }
@@ -115,20 +105,22 @@ In 2019, the \textit{Wall Street Journal} reported that the nation's second-larg
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \frame{\frametitle{Case Studies}
 \large
-\only<1,3>{
+\only<1>{
 \begin{enumerate}
     \item Home DNA Testing
     \item Crisis Text Line
     \item Diversity in Faces (DiF) dataset
 \end{enumerate}
 }
-
 \only<2>{
+\small
 \begin{enumerate}
-    \item What are the relevant ethical principles and practices in this case?
-    \item In what ways/why are there concerns about a violation of ethical principles in this case?
-    \item What are some ways that data could have been used more ethically in this case?
+    \setlength{\itemsep}{0pt} % Reduces space to zero
+    \item What are the relevant ethical principles and practices?
+    \item What concerns are there about violations of ethical principles?
+    \item How could the research have been conducted more ethically?
 \end{enumerate}
+\inserttimer{8}
 }
 }
 
@@ -141,7 +133,6 @@ In 2019, the \textit{Wall Street Journal} reported that the nation's second-larg
         \item \textbf{Direct identifiers}: information that would be sufficient on its own to disclose an identity, such as names, addresses, and phone numbers.
         \item \textbf{Indirect identifiers}: information that \textit{in combination} would be sufficient to disclose an identity
     \end{enumerate}
-    \item Examples: credit card transactions, Netflix movie ratings, tennis match-fixing
     \item De-identification is the process of removing direct and indirect identifiers
 \end{itemize}
 }
@@ -186,7 +177,7 @@ In 2019, the \textit{Wall Street Journal} reported that the nation's second-larg
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \frame{\frametitle{De-identification Exercise}
-
+\inserttimer{8}
 }
 
 \end{document}

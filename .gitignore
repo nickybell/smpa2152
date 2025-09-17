@@ -57,6 +57,7 @@ rsconnect/
 # Rendered markdown and Quarto files
 *.pdf
 *.html
+*_files/
 *.tex
 # with exceptions for lecture files
 !lectures/*/*.pdf
