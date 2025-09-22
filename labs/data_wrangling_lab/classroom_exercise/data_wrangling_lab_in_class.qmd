@@ -1,0 +1,241 @@
+---
+title: "Data Visualization Lab #1"
+format:
+  revealjs:
+    embed-resources: true
+lightbox: true
+---
+
+```{r}
+#| label: setup
+#| include: false
+
+library(tidyverse)
+library(palmerpenguins)
+data(penguins)
+```
+
+---
+
+Let's say that I'm only interested in Chinstrap penguins. What function would I use?
+
+```{r}
+#| eval: false
+#| echo: true
+
+_______(penguins, species == "Chinstrap")
+```
+
+---
+
+Let's say that I'm only interested in Chinstrap penguins. What function would I use?
+
+```{r}
+#| eval: false
+#| echo: true
+
+filter(penguins, species == "Chinstrap") |>
+  slice_head(n = 5)
+```
+
+```{r}
+#| echo: false
+
+filter(penguins, species == "Chinstrap") |>
+  slice_head(n = 5) |>
+  knitr::kable()
+```
+
+---
+
+What logical operator would I use if I wanted to filter for penguins on Biscoe and Dream islands?
+
+```{r}
+#| eval: false
+#| echo: true
+
+filter(penguins, island ___ c("Biscoe", "Dream"))
+```
+
+---
+
+What logical operator would I use if I wanted to filter for penguins on Biscoe and Dream islands?
+
+```{r}
+#| eval: false
+#| echo: true
+
+filter(penguins, island %in% c("Biscoe", "Dream")) |>
+  slice_head(n = 5)
+```
+
+```{r}
+#| eval: true
+#| echo: false
+
+filter(penguins, island %in% c("Biscoe", "Dream")) |>
+  slice_head(n = 5) |>
+  knitr::kable()
+```
+
+---
+
+How would I sort the male penguins by largest to smallest body mass?
+
+```{r}
+#| eval: false
+#| echo: true
+
+penguins |>
+  filter(sex == "male") |>
+  ________(_____(body_mass_g))
+```
+
+---
+
+How would I sort the male penguins by largest to smallest body mass?
+
+```{r}
+#| eval: false
+#| echo: true
+
+penguins |>
+  filter(sex == "male") |>
+  arrange(desc(body_mass_g)) |>
+  slice_head(n = 5)
+```
+
+```{r}
+#| eval: true
+#| echo: false
+
+penguins |>
+  filter(sex == "male") |>
+  arrange(desc(body_mass_g)) |>
+  slice_head(n = 5) |>
+  knitr::kable()
+```
+
+---
+
+How would I sort the male penguins by largest to smallest body mass?
+
+```{r}
+#| eval: false
+#| echo: true
+
+penguins |>
+  filter(sex == "male") |>
+  arrange(desc(body_mass_g)) |>
+  select(species, island, body_mass_g) |>
+  slice_head(n = 5)
+```
+
+```{r}
+#| eval: true
+#| echo: false
+
+penguins |>
+  filter(sex == "male") |>
+  arrange(desc(body_mass_g)) |>
+  select(species, island, body_mass_g) |>
+  slice_head(n = 5) |>
+  knitr::kable()
+```
+
+---
+
+How would I change the body mass column to be in kilograms rather than grams?
+
+```{r}
+#| eval: false
+#| echo: true
+
+penguins_kg <- _______(penguins, body_mass_kg = body_mass_g / 1000) |>
+  select(species, island, body_mass_kg)
+```
+
+---
+
+How would I change the body mass column to be in kilograms rather than grams?
+
+```{r}
+#| eval: false
+#| echo: true
+
+penguins_kg <- mutate(penguins, body_mass_kg = body_mass_g / 1000) |>
+  select(species, island, body_mass_kg)
+slice_head(penguins_kg, n = 5)
+```
+
+```{r}
+#| eval: true
+#| echo: false
+
+penguins_kg <- mutate(penguins, body_mass_kg = body_mass_g / 1000) |>
+  select(species, island, body_mass_kg)
+slice_head(penguins_kg, n = 5) |>
+  knitr::kable()
+```
+
+---
+
+How would I calculate the largest body mass in kilograms per species?
+
+```{r}
+#| eval: false
+#| echo: true
+
+penguins |>
+  mutate(penguins, body_mass_kg = body_mass_g / 1000) |>
+  ________(species) |>
+  ________(max_body_mass_kg = max(body_mass_kg, na.rm = TRUE))
+```
+
+---
+
+How would I calculate the largest body mass in kilograms per species?
+
+```{r}
+#| eval: false
+#| echo: true
+
+penguins |>
+  mutate(penguins, body_mass_kg = body_mass_g / 1000) |>
+  group_by(species) |>
+  summarize(max_body_mass_kg = max(body_mass_kg, na.rm = TRUE))
+```
+
+```{r}
+#| eval: true
+#| echo: false
+
+penguins |>
+  mutate(penguins, body_mass_kg = body_mass_g / 1000) |>
+  group_by(species) |>
+  summarize(max_body_mass_kg = max(body_mass_kg, na.rm = TRUE)) |>
+  knitr::kable()
+```
+
+---
+
+## With {ggplot2} {.scrollable}
+
+```{r}
+#| eval: true
+#| echo: true
+
+penguins |>
+  mutate(penguins, body_mass_kg = body_mass_g / 1000) |>
+  group_by(species) |>
+  summarize(max_body_mass_kg = max(body_mass_kg, na.rm = TRUE)) |>
+  ggplot() +
+  geom_col(aes(x = species, y = max_body_mass_kg)) +
+  labs(
+    title = "Largest Body Mass in Kilograms per Species",
+    x = "Species",
+    y = "Max Body Mass (kg)",
+    caption = "Source: Palmer Penguins Dataset"
+  ) +
+  theme_minimal()
+```
