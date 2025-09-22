@@ -46,13 +46,17 @@ Blackboard.
 1.  Load the `union_membership.csv` data.
 
 2.  What are the five states with the largest percentage of union
-    members in 2024?
+    members in 2024? Provide their names and percentage of union
+    members. Why do you think these states have relatively high union
+    membership?
 
 3.  Create a nicely-formatted graph that shows the total number of union
     members in millions of workers over time.
 
 4.  Make the same graph, but this time, use the *percentage* of workers
     who are in a union rather than the total number of union members.
+    Compare the two graphs you just made. What does this tell you about
+    union membership in the United States over time?
 
 5.  What are the five states with the largest percentage point decline
     in the percent of workers who are unionized between 1983 and 2024?
