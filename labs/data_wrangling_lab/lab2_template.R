@@ -1,6 +1,6 @@
 #----------------------------------------------
 # SMPA 2152
-# Lab #1
+# Lab #2
 # Name: YOUR NAME HERE
 # Worked with: NAMES HERE (if applicable)
 #----------------------------------------------
