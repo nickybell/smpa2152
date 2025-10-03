@@ -21,7 +21,7 @@ mean(sample(house_prices$price_thousands, 50))
 
 # Recall that the *95% confidence interval* means that if we repeat the sample 100 times, 95 of the means will fall within the confidence interval.
 # Therefore, we are 95% confident that the true mean falls within those 95 samples. (5% chance of Type 1 error - the true mean is one of the other 5 samples.)
-# If we repeat the sample 1000 times, then 950 of the means will fall within the confidence interval. The number of repititions isn't important - it's only theoretical (we don't actually repeat samples to generate confidence intervals).
+# If we repeat the sample 1000 times, then 950 of the means will fall within the confidence interval. The number of repetitions isn't important - it's only theoretical (we don't actually repeat samples to generate confidence intervals).
 
 rep_sample_n(house_prices, size = 50, reps = 1000) |>
   group_by(replicate) |>

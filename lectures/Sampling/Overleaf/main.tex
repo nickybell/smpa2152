@@ -1,22 +1,7 @@
-\documentclass[xcolor=dvipsnames]{beamer} % dvipsnames gives more built-in colors
-\mode<presentation>
+% The dvipsnames option is passed to the xcolor package, which beamer loads
+\documentclass[xcolor={dvipsnames}]{beamer}
 
-\usetheme{Boadilla}
-
-\definecolor{GWdarkblue}{HTML}{033C5A}
-
-\usecolortheme[named=GWdarkblue]{structure}
-
-% Sets the font
-\usepackage[defaultfam,tabular,lining]{montserrat}
-\setbeamerfont{title}{shape=\scshape}
-\setbeamerfont{frametitle}{shape=\scshape}
-%Remove "Figure" from captions
-\setbeamertemplate{caption}{\raggedright\insertcaption\par}
-
-\usepackage{graphicx}
-\usepackage{tabularx}
-\usepackage{hyperref}
+\usepackage{smpa2152-style}
 
 \title[Sampling]{Sampling}
 \author[SMPA 2152]{Data Analysis for Journalism and Political Communication (Fall 2025)}
