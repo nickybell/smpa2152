@@ -12,9 +12,7 @@
 ### Lecture materials
 * [Linear regression explainer](https://mlu-explain.github.io/linear-regression/)
 * On observational vs. experimental data: observational data suggests that female instructors face bias from students on semester evals, but experimental data [suggests otherwise](https://x.com/JohnHolbein1/status/1861964761086459957)
-* [Pretty amazing graphs](https://graphics.wsj.com/infectious-diseases-and-vaccines/) about how the introduction of a vaccine (a sort of natural experiment) led to precipitous declines in disease rates.
 * [Visual explanation](https://haswal.github.io/pivot/) of pivot_longer()
-* Examples of [natural experiments](https://www.nytimes.com/interactive/2025/03/11/upshot/covid-lessons.html) from the COVID-19 pandemic
 
 ### Readings
 * [Opinion piece from Jennifer Benz](https://www.scientificamerican.com/article/americans-are-moody-and-pollsters-should-pay-attention/) on the value of polling beyond the horse race
