@@ -1,25 +1,10 @@
-\documentclass[xcolor=dvipsnames]{beamer} % dvipsnames gives more built-in colors
-\mode<presentation>
+% The dvipsnames option is passed to the xcolor package, which beamer loads
+\documentclass[xcolor={dvipsnames}]{beamer}
 
-\usetheme{Boadilla}
-
-\definecolor{GWdarkblue}{HTML}{033C5A}
-
-\usecolortheme[named=GWdarkblue]{structure}
-
-% Sets the font
-\usepackage[defaultfam,tabular,lining]{montserrat}
-\setbeamerfont{title}{shape=\scshape}
-\setbeamerfont{frametitle}{shape=\scshape}
-%Remove "Figure" from captions
-\setbeamertemplate{caption}{\raggedright\insertcaption\par}
-
-\usepackage{graphicx}
-\usepackage{tabularx}
-\usepackage{hyperref}
+\usepackage{smpa2152-style}
 
 \title[Correlation vs. Causation]{Correlation vs. Causation}
-\author[SMPA 2152]{Data Analysis for Journalism and Political Communication (Spring 2025)}
+\author[SMPA 2152]{Data Analysis for Journalism and Political Communication (Fall 2025)}
 \date{Prof. Bell}
 
 \begin{document}
@@ -81,10 +66,14 @@
     \centering
     \includegraphics[width=.8\textwidth]{2024polls.png}
 }
-% \only<7>{
-%     \centering
-%     \includegraphics[width=.8\textwidth]{comey_letter.jpg}
-% }
+\only<7>{
+    ``15 Lessons Scientists Learned About Us When the World Stood Still'' (\textit{New York Times})
+    \begin{enumerate}
+        \item Home-field advantage is real (when fans are there).
+        \item Women who rest more and were exposed to fewer stressors, pollutants and viruses have fewer premature births.
+        \item Dolphins whistle longer, birds change their songs, and sea turtles lay more eggs when humans aren't around.
+    \end{enumerate}
+    }
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -152,63 +141,76 @@ Kam and Zechmeister (2013)\\
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\frame<1-7>[label=assessing]{\frametitle{Assessing Causality Without Experiments}
+\frame{\frametitle{Assessing Causality Without Experiments}
 
-\only<1-3>{
 \begin{itemize}[<+->]
     \item What about when we don't have an experiment, but instead are collecting \textbf{observational data} from the world?
     \item Then we face the fundamental problem of causal inference. Correlation does not imply causation.
-    \item But all hope is not lost - we just have to be much more careful before making causal claims.
+    \item But all hope is not lost - we just have to be much more careful about threats to causal inference: \textbf{confounders} and \textbf{reverse causation}.
 \end{itemize}
 }
 
-\only<4,7-8,11>{
-\begin{itemize}
-    \item<4-> Consider possible \textbf{confounders}: other variables that could explain the change in both the explanatory variable and the outcome variable
-    \item<7-> Stronger associations are less susceptible to confounding
-    \item<8-> Consider possible \textbf{reverse causation}, especially where the explanatory variable does not clearly precede the outcome variable
-    \item<11-> Is there a plausible theory for how the explanatory variable causes the outcome variable?
-\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{\frametitle{Confounders}
+\only<1-3>{
+    \begin{block}{Confounder}
+    A variable that explains change in both the independent and dependent variable.
+    \end{block}
+    \vspace{1em}
 }
 
-\only<5>{
+\only<2>{
     \centering
     \includegraphics[width=.9\textwidth]{causal_diagram.png}
 }
-\only<6>{
+\only<3>{
     \centering
-    \includegraphics[width=.9\textwidth]{confounding.png}
+    \includegraphics[width=.8\textwidth]{confounding.png}
 }
-\only<9>{
+\only<4>{
+    \centering
+    \textbf{"It's most dangerous to launch fireworks in July."} \\
+    IV: Time \\
+    DV: Fireworks-related hospitalizations \\
+    ~\\
+    \includegraphics[height=.6\textheight]{firework_injuries.jpeg}
+}
+\only<5>{
+    \centering
+    \textbf{"If aliens exist, they will arrive on July 4th."} \\
+    IV: Time \\
+    DV: UFO Sightings \\
+    ~\\
+    \includegraphics[width=.7\textwidth]{ufo_sightings.png}
+}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{\frametitle{Reverse Causation}
+\only<1-3>{
+    \begin{block}{Reverse Causation}
+    Occurs when the dependent variable affects the independent variable.
+    \end{block}
+    \vspace{1em}
+}
+
+\only<2>{
+    \centering
+    \includegraphics[width=.9\textwidth]{causal_diagram.png}
+}
+\only<3>{
     \centering
     \includegraphics[width=.9\textwidth]{reverse_causation.png}
 }
-\only<10>{
+\only<4>{
     \centering
     \includegraphics[width=.8\textwidth]{consumer_sentiment.png}
 }
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\frame<1-2>[label=example,noframenumbering]{
-\centering
-\includegraphics[width=.75\textwidth]{pos_correlation.png}\\
-\begin{itemize}[<+->]
-    \item The correlation between GDP per capita and life satisfaction could be stronger, so check for confounders
-    \item Possible confounder: technological advancement increases economic productivity and provides entertainment
-    \item Not clear that GDP per capita precedes happiness, so check for reverse causality
-    \item Do happy people work harder?
-\end{itemize}
-}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\againframe<8->{assessing}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\againframe<3->{example}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \frame{\frametitle{Exercise: Correlation vs. Causation}
+\inserttimer{8}
 }
 
 \end{document}
