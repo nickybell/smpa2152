@@ -1,146 +1,281 @@
-# File Name: 	  	  political_polling.R
-# File Purpose:  	  Political Polling
+# File Name: 	  	  political_polling_teachingkey.R
+# File Purpose:  	  Pre-lab video lecture on analyzing political polls
 # Author: 	    	  Nicholas Bell (nicholasbell@gwu.edu)
+# Last Modified:    2025-10-12
 
-# Load the tidyverse and set options
+# Before we get started, let's load the packages and data we will be using today. Remember, if you are using Posit Cloud, you will need to install the packages every time you start a new project. However, whether you are using Posit Cloud or Positron, you will need to load the packages every time you start a new R session.
 library(tidyverse)
 
+# Today, we are going to use what we've previously learned about data visualization with {ggplot2} and data wrangling with {dplyr} to analyze political polls. Specifically, we will:
+# 1) Use dplyr verbs to calculate the results of poll questions for the whole survey (known as toplines) or for subgroups (known as crosstabs) while applying survey weights.
+# 2) Use ggplot2 to visualize the results of these polls, showing the margin of error alongside our poll results.
 
-# Exit Polls --------------------------------------------------------------
+# To do this, we are going to use data from the 2024 American National Election Study. The ANES is a large, nationally representative survey that collects data on voting behavior, political attitudes, and demographic characteristics of the U.S. population. This is the data from the pre-election questionnaires only.
 
-# Today, we will learn how to use weights to help ensure that our survey samples are representative of the population. To demonstrate, we will use data from the 2020 National Election Pool (ABC News, CBS, CNN, NBC) exit poll that you may have seen watching telecasts of the election results. Exit polls are a good example of using weights because it is very difficult to generate a truly random sample of U.S. voters.
-# - Exit polls are taken at select precincts across the United States. Are these precincts representative of the state/country as a whole?
-# - Exit polls are traditionally conducted by approaching every nth voter leaving the polling place. Are these participants representative of voters as a whole?
-# - In 2020, in-person exit polls were combined with telephone interviews due to the ubiquity of early voting and vote-by-mail. Could different survey methods yield different types of selection bias?
+# This data dictionary describes the variables in the cleaned dataset.
 
-# Download the 2020 National Election Pool exit poll results from Roper iPoll and load the data in R: https://doi.org/10.25940/ROPER-31119913
-poll <- read_csv("31119913_National2020.csv")
+# |Variable Name|Description|
+# |:---|:---|
+# |`id`|A unique identifier for each respondent in the 2024 ANES Time Series study.|
+# |`party_id`|Respondent's 7-point party identification.|
+# |`race`|Respondent's self-identified race and ethnicity.|
+# |`age`|Respondent's age in years on Election Day.|
+# |`educ`|Respondent's highest level of education.|
+# |`gender`|Respondent's self-identified gender.|
+# |`income`|Respondent's total household income over the past 12 months, converted to the numeric midpoint of the original category.|
+# |`pres_vote`|A summary of the respondent's presidential vote choice or intent to vote from the pre-election survey.|
+# |`economy`|Respondent's approval or disapproval of how the president is handling the economy.|
+# |`immigration`|Respondent's approval or disapproval of the president's handling of immigration.|
+# |`crime`|Respondent's approval or disapproval of the president's handling of crime.|
+# |`attention_to_politics`|How often the respondent pays attention to government and politics.|
+# |`weights`|Survey weights to make the data nationally representative.|
 
+# You can load the data I've provided to you.
+anes <- read_csv("anes_2024.csv")
 
 # Survey Weights ----------------------------------------------------------
 
 # Let's begin by doing a little exploratory data analysis on the survey weights used in this poll. What does the distribution of weights look like?
-ggplot(poll) +
-  geom_histogram(aes(x = weight), binwidth = .2) +
-  scale_x_continuous(limits = c(0, 30)) +
+ggplot(anes) +
+  geom_histogram(aes(x = weights), binwidth = .2) +
   geom_vline(xintercept = 1, color = "red", linetype = "dashed")
 
-ggplot(poll) +
-  geom_boxplot(aes(x = sex, y = weight), outliers = FALSE)
+ggplot(anes) +
+  geom_point(aes(x = age, y = weights), outliers = FALSE) +
+  geom_smooth(aes(x = age, y = weights), method = "lm", se = FALSE)
 
-ggplot(poll) +
-  geom_boxplot(aes(x = age10, y = weight), outliers = FALSE)
+ggplot(anes) +
+  geom_point(aes(x = income, y = weights), outliers = FALSE) +
+  geom_smooth(aes(x = income, y = weights), method = "lm", se = FALSE)
 
-ggplot(poll) +
-  geom_boxplot(aes(x = qraceai, y = weight), outliers = FALSE)
+ggplot(anes) +
+  geom_boxplot(aes(x = race, y = weights), outliers = FALSE) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
-ggplot(poll) +
-  geom_boxplot(aes(x = educcoll, y = weight), outliers = FALSE)
+ggplot(anes) +
+  geom_boxplot(aes(x = educ, y = weights), outliers = FALSE) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
-# Presidential vote is not a weighting variable (it is an outcome), but are Trump voters more heavily weighted than Biden voters?
-ggplot(poll) +
-  geom_boxplot(aes(x = pres, y = weight), outliers = FALSE)
+# Topline Results ----------------------------------------------------------
 
 # Using just the tidyverse, we can generate both the unweighted and weighted presidential vote. To make this easier, let's introduce a new function: count().
 
-poll |>
-  filter(!is.na(pres)) |>
-  group_by(pres) |>
-  summarize(n = n())
+anes |>
+  filter(!is.na(pres_vote)) |>
+  count(pres_vote)
 
-poll |>
-  count(pres)
+anes |>
+  filter(!is.na(pres_vote)) |>
+  count(pres_vote, wt = weights)
 
-# The reason to use count() when working with political polls is that it allows you to easily add weights. You can do this with group_by() and summarize(), but it is much more difficult.
+# What if we want proportions instead of counts?
 
-poll |>
-  count(pres, wt = weight)
+anes |>
+  filter(!is.na(pres_vote)) |>
+  count(pres_vote, wt = weights) |>
+  mutate(prop = n / sum(n))
 
-# What is we want proportions instead of counts?
+# This is known as a "topline" result, because it includes everyone in the sample.
 
-poll |>
-  count(pres, wt = weight) |>
-  mutate(prop = n/sum(n))
+# Of course, we know that every time we have a sample, we also have uncertainty about whether our estimate is the same as the true population mean (the true percentage of voters who intended to vote for Harris). This is because for any given sample, we sometimes get an estimate that is in the tails of the sampling distribution, and is much too high or much too low. We account for this uncertainty using the margin of error.
 
-# One of the challenges of count() is that it does not leave your data frame "grouped", so be careful when calculating proportions. Imagine we are doing a cross-tab, meaning that we are comparing the cross of two groups: Sex x Presidential Vote.
+# You do not need to memorize the margin of error formula for this class, but you will need this code from time to time. My recommendation is to have it in an easy-to-find location so that you can copy and paste it when you need it. This code generates the margin of error for each response option.
 
-poll |>
-  filter(!is.na(sex) & !is.na(pres)) |>
-  count(sex, pres) |>
-  mutate(prop = n/sum(n))
+anes |>
+  filter(!is.na(pres_vote)) |>
+  count(pres_vote, wt = weights) |>
+  mutate(
+    prop = n / sum(n),
+    total = sum(n),
+    moe = 1.96 * sqrt((prop * (1 - prop)) / total)
+  )
 
-# We need to add a group_by() to get the proportions calculated in the right way. (We are keeping all the rows, so we use mutate() instead of summarize() here. One of the few times we do so.)
+# Based on this code, we learn that if we redid this survey 100 times, in 95 of those surveys, the estimated vote for Donald Trump would be between 41.0 - 45.4%, and the estimated vote for Kamala Harris would be between 48.0 - 52.4%.
 
-poll |>
-  filter(!is.na(sex) & !is.na(pres)) |>
-  count(sex, pres) |>
-  group_by(sex) |>
-  mutate(prop = n/sum(n))
+# Because these confidence intervals do not overlap, we can say that Harris is statistically significantly ahead of Trump in this poll. How can we show this visually to our readers who might not be familiar with confidence intervals?
 
+# In ggplot2, there is a geom_*() layer that puts error bars on our estimates. It is called geom_errorbar(), and it works similarly to all of our other geom_*() layers. We just need to tell it where to put the bottom and top of the error bars.
 
-# Plotting Poll Results ---------------------------------------------------
-
-poll |>
-  filter(!is.na(pres) & !is.na(issue20)) |>
-  count(issue20, pres, wt = weight) |>
-  group_by(issue20) |>
-  mutate(prop = n/sum(n)) |>
-  ungroup() |> # so that we don't continue to mutate within each group!
-  filter(pres == "Joe Biden" & issue20 != "Omit") |>
+anes |>
+  filter(!is.na(pres_vote)) |>
+  count(pres_vote, wt = weights) |>
+  mutate(
+    prop = n / sum(n),
+    total = sum(n),
+    moe = 1.96 * sqrt((prop * (1 - prop)) / total)
+  ) |>
   ggplot() +
-  geom_col(aes(x = reorder(issue20, -prop), y = prop)) +
-  scale_y_continuous(limits = c(0,1), labels = scales::percent_format()) +
-  labs(x = "Most Important Issue",
-       y = "Biden Support (%)",
-       title = "Support for Biden in 2020 by Most Important Issue",
-       caption = "Source: 2020 National Election Pool exit poll") +
-  theme_classic() +
-  theme(plot.title = element_text(hjust = .5),
-        axis.text.x = element_text(angle = 45, hjust = 1))
+  geom_col(aes(x = pres_vote, y = prop, fill = pres_vote)) +
+  scale_fill_manual(values = c("#D63333", "#3344C9", "#7EAC5B")) +
+  geom_errorbar(
+    aes(x = pres_vote, ymin = prop - moe, ymax = prop + moe),
+    width = .2
+  ) +
+  scale_y_continuous(limits = c(0, 1), labels = scales::percent_format()) +
+  labs(
+    x = "Presidential Vote Choice",
+    y = "Vote Share (%)",
+    title = "2024 Presidential Vote Intentions",
+    caption = "Source: 2024 American National Election Study"
+  ) +
+  theme_minimal() +
+  theme(legend.position = "none")
 
-# In 2020, many Democrats cast their ballots by mail due to the COVID-19 pandemic, while Republicans typically cast their ballots in person. This resulted in a wide partisan gap between election day ballots (which were counted immediately) and mail ballots. Can we visualize this divide?
+# Crosstab Results --------------------------------------------------------
 
-poll |>
-  filter(!is.na(pres) & !is.na(votemeth)) |>
-  count(votemeth, pres, wt = weight) |>
-  group_by(votemeth) |>
-  mutate(prop = n/sum(n)) |>
-  filter(pres %in% c("Joe Biden", "Donald Trump")) |>
+# A "crosstab" is when we compare the results of a poll question across subgroups. For example, what if we want to know how presidential vote varies by age?
+# Note: a crosstab only works if both variables are categorical (i.e., not continuous). So if we have a continuous variable like age or income, we need to convert it into categories first.
+
+anes_age <-
+  anes |>
+  mutate(
+    agecat = case_when(
+      age < 30 ~ "18-29",
+      age >= 30 & age < 45 ~ "30-44",
+      age >= 45 & age < 60 ~ "45-59",
+      age >= 60 ~ "60+",
+      TRUE ~ NA
+    )
+  )
+
+anes_age |>
+  filter(!is.na(agecat) & !is.na(pres_vote)) |>
+  count(agecat, pres_vote, wt = weights)
+
+# One of the challenges of count() is that it does not leave your data frame "grouped", so we need to add another group_by() function before calculating our proportions and margins of error.
+
+anes_age |>
+  filter(!is.na(agecat) & !is.na(pres_vote)) |>
+  count(agecat, pres_vote, wt = weights) |>
+  group_by(agecat) |>
+  mutate(
+    prop = n / sum(n),
+    total = sum(n),
+    moe = 1.96 * sqrt((prop * (1 - prop)) / total)
+  )
+
+# Look at how much larger our margins of error are when we are calculating crosstabs! This is because our sample size is much smaller when we are looking at subgroups of the population. For this reason, we have to be even more cautious when interpreting crosstab results.
+
+anes_age |>
+  filter(!is.na(agecat) & !is.na(pres_vote)) |>
+  count(agecat, pres_vote, wt = weights) |>
+  group_by(agecat) |>
+  mutate(
+    prop = n / sum(n),
+    total = sum(n),
+    moe = 1.96 * sqrt((prop * (1 - prop)) / total)
+  ) |>
   ggplot() +
-  geom_col(aes(x = votemeth, y = prop, fill = pres), color = "black", position = "dodge") +
-  scale_y_continuous(limits = c(0,1), labels = scales::percent_format()) +
-  scale_fill_manual(values = c("#CA0120", "#0671B0")) +
-  labs(x = "Vote Method",
-       y = "Vote Share (%)",
-       fill = "Candidate",
-       title = "Vote Choice by Vote Method in 2020 Presidential Election",
-       caption = "Source: 2020 National Election Pool exit poll") +
-  theme_classic() +
-  theme(plot.title = element_text(hjust = .5),
-        legend.position = "bottom")
+  geom_col(
+    aes(x = agecat, y = prop, fill = pres_vote),
+    position = position_dodge(.9) # Instead of "dodge" - a quirk of ggplot2
+  ) +
+  geom_errorbar(
+    aes(x = agecat, ymin = prop - moe, ymax = prop + moe, group = pres_vote),
+    position = position_dodge(.9), # Instead of "dodge" - a quirk of ggplot2
+    width = .2
+  ) +
+  scale_y_continuous(limits = c(0, 1), labels = scales::percent_format()) +
+  scale_fill_manual(values = c("#D63333", "#3344C9", "#7EAC5B")) +
+  labs(
+    x = "Age Category",
+    y = "Vote Share (%)",
+    fill = "Candidate",
+    title = "2024 Presidential Vote Intentions by Age",
+    caption = "Source: 2024 American National Election Study"
+  ) +
+  theme_minimal()
 
-# When we present survey results, we always want to show the margin of error. Let's calculate the margin of error for these results and add it to our graph.
+# These results are very interesting! According to this poll, the only group that Harris is winning with statistical certainty is the age 60+ group. All other age groups have overlapping confidence intervals, meaning that we cannot say with certainty that one candidate is ahead of the other. This is contrary to the conventional wisdom that younger voters are more likely to vote for Democrats, and older voters are more likely to vote for Republicans.
 
-poll |>
-  filter(!is.na(pres) & !is.na(votemeth)) |>
-  count(votemeth, pres, wt = weight) |>
-  group_by(votemeth) |>
-  mutate(prop = n/sum(n),
-         total = sum(n),
-         moe = 1.96 * sqrt((prop * (1 - prop))/total)) |>
-  filter(pres %in% c("Joe Biden", "Donald Trump")) |>
+# You can use this same code to analyze other variables in the dataset. For example, how does presidential vote vary by race? By education? We can also look at other questions in the survey that are not weighting and/or demographic variables, such as how closely someone pays attention to politics.
+
+anes |>
+  filter(!is.na(attention_to_politics) & !is.na(pres_vote)) |>
+  count(attention_to_politics, pres_vote, wt = weights) |>
+  group_by(attention_to_politics) |>
+  mutate(
+    prop = n / sum(n),
+    total = sum(n),
+    moe = 1.96 * sqrt((prop * (1 - prop)) / total)
+  ) |>
   ggplot() +
-  geom_col(aes(x = votemeth, y = prop, fill = pres), color = "black", position = "dodge") +
-  geom_errorbar(aes(x = votemeth, ymin = prop-moe, ymax = prop+moe, group = pres), position = position_dodge(.9), width = .2) +
-  scale_y_continuous(limits = c(0,1), labels = scales::percent_format()) +
-  scale_fill_manual(values = c("#CA0120", "#0671B0")) +
-  labs(x = "When Voter Decided",
-       y = "Vote Share (%)",
-       fill = "Candidate",
-       title = "Late Deciding Voters Broke for Trump in 2020",
-       caption = "Source: 2020 National Election Pool exit poll") +
-  theme_classic() +
-  theme(plot.title = element_text(hjust = .5),
-        legend.position = "bottom")
+  geom_col(
+    aes(x = attention_to_politics, y = prop, fill = pres_vote),
+    position = position_dodge(.9) # Instead of "dodge" - a quirk of ggplot2
+  ) +
+  geom_errorbar(
+    aes(
+      x = attention_to_politics,
+      ymin = prop - moe,
+      ymax = prop + moe,
+      group = pres_vote # This is the geom_errorbar equivalent of fill.
+    ),
+    position = position_dodge(.9), # Instead of "dodge" - a quirk of ggplot2
+    width = .2
+  ) +
+  scale_y_continuous(limits = c(0, 1), labels = scales::percent_format()) +
+  scale_fill_manual(values = c("#D63333", "#3344C9", "#7EAC5B")) +
+  labs(
+    x = "Age Category",
+    y = "Vote Share (%)",
+    fill = "Candidate",
+    title = "2024 Presidential Vote Intentions by Age",
+    caption = "Source: 2024 American National Election Study"
+  ) +
+  theme_minimal()
 
-# A rule of thumb about the error bars: if they do NOT intersect, then the two numbers are statistically significantly different. If they DO intersect, then they *might* or *might not* be significantly different.
+# The order here is a bit odd. We can fix this by reordering the *factor levels* of attention_to_politics. We can do this using the factor() function inside mutate(), but please be careful: the levels argument has to include all of the values in the variable, and spelled/capitalized exactly the same way!
+
+anes_attention <- anes |>
+  mutate(
+    attention_to_politics = factor(
+      attention_to_politics,
+      levels = c(
+        "Always",
+        "Most of the time",
+        "About half the time",
+        "Some of the time",
+        "Never"
+      )
+    )
+  )
+
+anes_attention |>
+  filter(!is.na(attention_to_politics) & !is.na(pres_vote)) |>
+  count(attention_to_politics, pres_vote, wt = weights) |>
+  group_by(attention_to_politics) |>
+  mutate(
+    prop = n / sum(n),
+    total = sum(n),
+    moe = 1.96 * sqrt((prop * (1 - prop)) / total)
+  ) |>
+  ggplot() +
+  geom_col(
+    aes(x = attention_to_politics, y = prop, fill = pres_vote),
+    position = position_dodge(.9) # Instead of "dodge" - a quirk of ggplot2
+  ) +
+  geom_errorbar(
+    aes(
+      x = attention_to_politics,
+      ymin = prop - moe,
+      ymax = prop + moe,
+      group = pres_vote
+    ),
+    position = position_dodge(.9), # Instead of "dodge" - a quirk of ggplot2
+    width = .2
+  ) +
+  scale_y_continuous(limits = c(0, 1), labels = scales::percent_format()) +
+  scale_fill_manual(values = c("#D63333", "#3344C9", "#7EAC5B")) +
+  labs(
+    x = "Age Category",
+    y = "Vote Share (%)",
+    fill = "Candidate",
+    title = "2024 Presidential Vote Intentions by Age",
+    caption = "Source: 2024 American National Election Study"
+  ) +
+  theme_minimal()
+
+# We might be tempted to say that people who never pay attention to politics are more likely to vote for Trump. However, look at the margins of error here! The confidence intervals for both candidates overlap, even though the estimate for Trump is so large. Think about how few people in this group probably answered the survey, so our uncertainty is large.
+
+# The point of this exercise is that it is really easy to dive into the crosstabs to find surprising results and build a narrative - but often we are so uncertain about these results that we cannot be sure our results are just chance. It is a fallacy that happens often in media analyses of polling results, so be on the lookout for small samples sizes and large uncertainty before drawing any conclusions of your own from polls.

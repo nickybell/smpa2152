@@ -1,0 +1,1002 @@
+id,shutdown_blame,shutdown_inconv,region,gender,age,educ,pid,income,weight
+100210,Pelosi and the Democrats in Congress,No,Midwest,Male,51,some college,Republican,100 thousand or more,0.8726557
+100656,Trump and the Republicans in Congress,Yes,West,Male,47,post-graduate degree,Democrat,100 thousand or more,0.882698
+100854,Pelosi and the Democrats in Congress,No,Northeast,Male,52,some college,Republican,75 to under 100 thousand,0.7508868
+101010,Trump and the Republicans in Congress,No,South,Male,47,some college,Democrat,50 to under 75 thousand,1.2002163
+100690,Pelosi and the Democrats in Congress,No,South,Female,91,high school or less,Republican,Under 20 thousand dollars,1.8103035
+100699,Pelosi and the Democrats in Congress,No,West,Male,46,high school or less,Republican,100 thousand or more,1.7234291
+100718,Trump and the Republicans in Congress,No,West,Male,64,high school or less,Democrat,75 to under 100 thousand,1.2949093
+100572,Pelosi and the Democrats in Congress,Yes,South,Male,75,college degree,Independent,100 thousand or more,0.355256
+100583,Trump and the Republicans in Congress,No,South,Female,64,college degree,Democrat,20 to under 35 thousand,1.1179417
+100682,Pelosi and the Democrats in Congress,No,South,Female,70,post-graduate degree,Republican,100 thousand or more,0.4688172
+100694,Trump and the Republicans in Congress,No,West,Male,83,college degree,Democrat,35 to under 50 thousand,0.4612074
+100708,Trump and the Republicans in Congress,No,West,Male,20,high school or less,Republican,50 to under 75 thousand,1.2329953
+100723,Trump and the Republicans in Congress,No,Northeast,Female,55,high school or less,Democrat,50 to under 75 thousand,1.3584234
+100746,Pelosi and the Democrats in Congress,No,South,Male,62,high school or less,Republican,20 to under 35 thousand,1.9184578
+100773,NA,Yes,Northeast,Female,32,some college,Independent,20 to under 35 thousand,1.7386228
+100909,Trump and the Republicans in Congress,No,West,Female,71,college degree,Independent,35 to under 50 thousand,0.5498663
+100926,Trump and the Republicans in Congress,No,West,Male,19,high school or less,Independent,20 to under 35 thousand,1.6819516
+100944,Pelosi and the Democrats in Congress,No,West,Male,57,high school or less,Republican,100 thousand or more,1.0039758
+100981,Trump and the Republicans in Congress,No,Midwest,Male,56,some college,NA,100 thousand or more,0.7188294
+100996,Pelosi and the Democrats in Congress,No,South,Male,65,high school or less,Republican,35 to under 50 thousand,1.2507586
+101012,NA,Yes,West,Male,54,post-graduate degree,Republican,100 thousand or more,0.5313028
+101053,Pelosi and the Democrats in Congress,No,West,Female,21,some college,Republican,75 to under 100 thousand,1.9476396
+100790,Trump and the Republicans in Congress,No,South,Female,19,some college,Democrat,75 to under 100 thousand,1.6208243
+100838,Trump and the Republicans in Congress,No,Northeast,Male,23,high school or less,Independent,Under 20 thousand dollars,3.213026
+100899,Trump and the Republicans in Congress,No,West,Female,64,post-graduate degree,Democrat,50 to under 75 thousand,0.933549
+100918,NA,No,Midwest,Female,56,post-graduate degree,Republican,75 to under 100 thousand,1.0142375
+100438,Trump and the Republicans in Congress,No,Northeast,Female,67,some college,Democrat,35 to under 50 thousand,0.5836554
+100577,Pelosi and the Democrats in Congress,Yes,South,Female,53,some college,Republican,100 thousand or more,0.8954958
+100092,Trump and the Republicans in Congress,No,Northeast,Female,89,high school or less,Democrat,35 to under 50 thousand,0.8856383
+100561,NA,No,South,Female,81,high school or less,Republican,Under 20 thousand dollars,0.8858999
+100643,Trump and the Republicans in Congress,No,South,Male,44,college degree,Democrat,100 thousand or more,1.0570467
+214,NA,No,NA,Female,43,some college,Democrat,100 thousand or more,1.2251469
+232,Pelosi and the Democrats in Congress,No,NA,Male,68,post-graduate degree,Republican,100 thousand or more,0.3238153
+100262,Trump and the Republicans in Congress,No,South,Female,32,college degree,Republican,75 to under 100 thousand,1.2141777
+100548,Pelosi and the Democrats in Congress,No,South,Male,79,some college,Republican,NA,0.403373
+100628,Trump and the Republicans in Congress,Yes,West,Male,32,high school or less,Democrat,NA,3.5257896
+100698,NA,No,West,Male,52,some college,Independent,NA,0.6616424
+100732,Trump and the Republicans in Congress,No,West,Female,70,some college,Democrat,35 to under 50 thousand,0.6243418
+100825,Pelosi and the Democrats in Congress,No,Northeast,Male,72,some college,Republican,100 thousand or more,0.4032539
+100936,Trump and the Republicans in Congress,No,West,Male,94,high school or less,Democrat,NA,1.1017779
+100948,Pelosi and the Democrats in Congress,No,West,Male,58,high school or less,Republican,20 to under 35 thousand,1.6899461
+100953,Pelosi and the Democrats in Congress,No,West,Male,37,some college,Republican,100 thousand or more,0.4023923
+101045,Trump and the Republicans in Congress,No,South,Male,37,college degree,Democrat,50 to under 75 thousand,1.1368517
+101066,Trump and the Republicans in Congress,No,West,Female,49,college degree,Republican,75 to under 100 thousand,1.1542204
+101075,Trump and the Republicans in Congress,No,West,Male,42,some college,Democrat,50 to under 75 thousand,1.283504
+100147,NA,No,Midwest,Male,75,post-graduate degree,Democrat,75 to under 100 thousand,0.3763275
+100303,NA,No,West,Male,28,some college,Independent,20 to under 35 thousand,1.1975557
+100599,Pelosi and the Democrats in Congress,No,South,Male,66,some college,Republican,50 to under 75 thousand,0.489693
+100397,Trump and the Republicans in Congress,No,Midwest,Male,18,high school or less,Republican,50 to under 75 thousand,3.3231334
+100437,NA,No,Northeast,Female,42,post-graduate degree,Democrat,NA,0.9838003
+100490,Pelosi and the Democrats in Congress,No,South,Male,64,some college,Republican,35 to under 50 thousand,0.7511086
+100598,Pelosi and the Democrats in Congress,No,South,Male,65,high school or less,Republican,50 to under 75 thousand,0.5041847
+100629,Pelosi and the Democrats in Congress,No,West,Male,56,college degree,Republican,100 thousand or more,0.5827173
+100676,Trump and the Republicans in Congress,Yes,Midwest,Female,24,college degree,Democrat,50 to under 75 thousand,1.6584822
+100681,Trump and the Republicans in Congress,No,Midwest,Male,40,some college,Democrat,100 thousand or more,1.1942516
+100687,Pelosi and the Democrats in Congress,No,Midwest,Male,36,some college,Republican,100 thousand or more,1.195617
+100692,Trump and the Republicans in Congress,Yes,West,Male,58,post-graduate degree,Democrat,100 thousand or more,0.6664375
+100706,Trump and the Republicans in Congress,No,West,Male,25,high school or less,Republican,Under 20 thousand dollars,1.4968508
+100727,Trump and the Republicans in Congress,Yes,West,Female,70,post-graduate degree,Democrat,50 to under 75 thousand,0.608637
+100983,Trump and the Republicans in Congress,No,Northeast,Female,44,college degree,Democrat,75 to under 100 thousand,1.3099054
+100055,Trump and the Republicans in Congress,No,Northeast,Male,70,college degree,Democrat,50 to under 75 thousand,0.4311519
+100096,Trump and the Republicans in Congress,No,South,Male,21,some college,Democrat,100 thousand or more,1.1198453
+100202,Pelosi and the Democrats in Congress,No,South,Male,48,high school or less,Republican,50 to under 75 thousand,1.2848086
+100268,Trump and the Republicans in Congress,No,South,Female,74,college degree,Democrat,75 to under 100 thousand,0.514185
+100530,NA,No,South,Female,32,post-graduate degree,Democrat,50 to under 75 thousand,1.1960479
+100735,Trump and the Republicans in Congress,Yes,West,Male,54,some college,Democrat,100 thousand or more,0.8032309
+101014,Trump and the Republicans in Congress,No,South,Female,53,post-graduate degree,Republican,75 to under 100 thousand,0.8729703
+101076,Trump and the Republicans in Congress,Yes,West,Female,24,some college,Democrat,100 thousand or more,1.7332996
+100103,Pelosi and the Democrats in Congress,No,South,Male,64,some college,Republican,Under 20 thousand dollars,0.7511086
+100148,Pelosi and the Democrats in Congress,No,South,Female,51,post-graduate degree,Republican,50 to under 75 thousand,0.8729703
+100284,Trump and the Republicans in Congress,Yes,West,Male,27,college degree,Democrat,35 to under 50 thousand,1.1851281
+100473,NA,Yes,Midwest,Female,50,college degree,Democrat,75 to under 100 thousand,0.4067389
+100509,Trump and the Republicans in Congress,No,South,Female,28,post-graduate degree,Democrat,75 to under 100 thousand,1.4624791
+100596,Pelosi and the Democrats in Congress,No,South,Male,18,high school or less,Republican,100 thousand or more,1.3997188
+100635,Trump and the Republicans in Congress,No,West,Male,60,some college,Democrat,100 thousand or more,0.9025586
+100929,Pelosi and the Democrats in Congress,No,West,Male,18,high school or less,Republican,20 to under 35 thousand,1.4968508
+100969,Pelosi and the Democrats in Congress,No,Northeast,Female,43,some college,Republican,100 thousand or more,1.4873229
+100985,Trump and the Republicans in Congress,No,Midwest,Male,67,some college,Democrat,100 thousand or more,0.6643059
+100999,Pelosi and the Democrats in Congress,No,South,Female,66,post-graduate degree,Republican,50 to under 75 thousand,0.569142
+101071,Trump and the Republicans in Congress,No,West,Male,72,some college,Democrat,35 to under 50 thousand,0.4313647
+101080,NA,No,West,Male,40,post-graduate degree,Republican,100 thousand or more,0.882698
+100059,Trump and the Republicans in Congress,No,Midwest,Male,26,college degree,Independent,75 to under 100 thousand,1.1458635
+100094,Trump and the Republicans in Congress,No,South,Female,31,some college,Democrat,20 to under 35 thousand,1.4894633
+100178,Trump and the Republicans in Congress,No,South,Female,65,high school or less,Democrat,Under 20 thousand dollars,0.772886
+100245,Trump and the Republicans in Congress,No,Midwest,Male,75,some college,NA,NA,0.4686483
+100286,Trump and the Republicans in Congress,No,West,Female,65,high school or less,Democrat,100 thousand or more,0.947376
+100379,Trump and the Republicans in Congress,No,Northeast,Male,25,college degree,Republican,35 to under 50 thousand,0.9859716
+100453,Pelosi and the Democrats in Congress,No,South,Male,66,some college,Republican,50 to under 75 thousand,0.489693
+100575,Pelosi and the Democrats in Congress,No,Midwest,Female,61,some college,Republican,75 to under 100 thousand,1.0404082
+100641,Pelosi and the Democrats in Congress,No,Midwest,Male,43,college degree,Republican,75 to under 100 thousand,1.0517936
+100973,Trump and the Republicans in Congress,No,South,Female,40,college degree,Democrat,75 to under 100 thousand,2.0516414
+100986,Pelosi and the Democrats in Congress,Yes,South,Male,44,college degree,Independent,35 to under 50 thousand,0.9052953
+100811,Trump and the Republicans in Congress,No,South,Male,46,some college,Democrat,50 to under 75 thousand,1.0279113
+100002,Trump and the Republicans in Congress,No,Northeast,Male,34,high school or less,Republican,NA,4.1143989
+100169,Trump and the Republicans in Congress,Yes,Northeast,Male,21,high school or less,Independent,NA,2.1910174
+100224,Pelosi and the Democrats in Congress,No,Midwest,Male,71,high school or less,Independent,100 thousand or more,0.7111267
+100256,Trump and the Republicans in Congress,No,South,Male,22,some college,Independent,35 to under 50 thousand,1.1198453
+100320,Trump and the Republicans in Congress,No,West,Female,65,high school or less,Democrat,20 to under 35 thousand,0.947376
+100362,Trump and the Republicans in Congress,No,West,Male,37,post-graduate degree,Democrat,100 thousand or more,0.8837071
+100409,Pelosi and the Democrats in Congress,No,South,Female,34,high school or less,Democrat,Under 20 thousand dollars,1.5335412
+100445,Trump and the Republicans in Congress,No,South,Male,52,high school or less,Democrat,NA,0.8190611
+100626,Trump and the Republicans in Congress,No,South,Female,28,post-graduate degree,Democrat,Under 20 thousand dollars,1.2518189
+100700,Trump and the Republicans in Congress,No,West,Female,58,some college,Democrat,35 to under 50 thousand,0.9576377
+100391,Trump and the Republicans in Congress,No,Midwest,Female,60,college degree,Democrat,100 thousand or more,1.0698977
+101011,Trump and the Republicans in Congress,No,South,Male,37,high school or less,Democrat,50 to under 75 thousand,2.0140391
+101019,Trump and the Republicans in Congress,No,South,Male,31,college degree,Democrat,100 thousand or more,1.4191221
+216,Trump and the Republicans in Congress,No,NA,Female,84,high school or less,Independent,Under 20 thousand dollars,0.7295235
+256,Trump and the Republicans in Congress,Yes,NA,Female,70,high school or less,Democrat,20 to under 35 thousand,0.9111904
+291,Trump and the Republicans in Congress,No,NA,Male,47,post-graduate degree,Democrat,100 thousand or more,1.06461
+292,Trump and the Republicans in Congress,No,NA,Male,56,college degree,Democrat,50 to under 75 thousand,0.9124125
+298,Trump and the Republicans in Congress,No,NA,Female,55,high school or less,Independent,20 to under 35 thousand,2.035602
+303,Pelosi and the Democrats in Congress,No,NA,Female,28,some college,Democrat,75 to under 100 thousand,2.2355778
+100882,Trump and the Republicans in Congress,No,South,Female,68,high school or less,Democrat,Under 20 thousand dollars,0.8858999
+100913,Trump and the Republicans in Congress,Yes,West,Female,63,college degree,Democrat,50 to under 75 thousand,0.9476999
+304,Trump and the Republicans in Congress,No,NA,Male,35,college degree,Democrat,100 thousand or more,0.7983753
+311,Trump and the Republicans in Congress,No,NA,Male,44,college degree,Democrat,100 thousand or more,0.7974636
+100131,Pelosi and the Democrats in Congress,No,Northeast,Male,55,some college,Republican,75 to under 100 thousand,0.6185251
+100194,Pelosi and the Democrats in Congress,Yes,Midwest,Female,57,some college,Independent,100 thousand or more,1.2630509
+100357,Trump and the Republicans in Congress,No,West,Female,47,college degree,Democrat,100 thousand or more,1.1542204
+100004,Pelosi and the Democrats in Congress,No,Midwest,Male,NA,some college,Republican,100 thousand or more,0.8726557
+100088,Pelosi and the Democrats in Congress,No,Midwest,Male,44,post-graduate degree,Republican,100 thousand or more,0.9589913
+100135,Trump and the Republicans in Congress,No,South,Male,26,college degree,Independent,50 to under 75 thousand,0.9862629
+100406,Trump and the Republicans in Congress,No,South,Female,62,high school or less,Democrat,20 to under 35 thousand,1.5865995
+100418,Trump and the Republicans in Congress,No,Northeast,Male,25,college degree,Democrat,50 to under 75 thousand,1.2716879
+100431,Trump and the Republicans in Congress,No,Northeast,Male,59,some college,Independent,100 thousand or more,0.7508868
+100475,Trump and the Republicans in Congress,No,Northeast,Male,21,some college,Democrat,Under 20 thousand dollars,1.1195145
+100541,NA,Yes,South,Male,32,college degree,Republican,100 thousand or more,0.9063303
+100608,Trump and the Republicans in Congress,Yes,Midwest,Female,59,post-graduate degree,Democrat,100 thousand or more,1.0142375
+100662,Trump and the Republicans in Congress,No,Midwest,Male,53,post-graduate degree,Democrat,100 thousand or more,0.5772243
+100796,Pelosi and the Democrats in Congress,No,South,Male,54,high school or less,Republican,20 to under 35 thousand,0.9388269
+100847,Trump and the Republicans in Congress,No,South,Female,50,post-graduate degree,Democrat,100 thousand or more,0.8396266
+100890,Trump and the Republicans in Congress,No,South,Male,19,high school or less,Republican,20 to under 35 thousand,1.3997188
+100919,Trump and the Republicans in Congress,No,Northeast,Female,45,post-graduate degree,Democrat,50 to under 75 thousand,1.498102
+100988,Pelosi and the Democrats in Congress,Yes,South,Female,38,some college,Republican,100 thousand or more,1.4894633
+101001,Pelosi and the Democrats in Congress,No,Northeast,Male,60,post-graduate degree,Republican,100 thousand or more,0.2349381
+101008,Pelosi and the Democrats in Congress,No,Northeast,Male,35,high school or less,Republican,50 to under 75 thousand,1.0592276
+101032,NA,Yes,West,Female,31,college degree,Democrat,75 to under 100 thousand,1.4028205
+101074,Pelosi and the Democrats in Congress,No,West,Female,58,some college,Republican,100 thousand or more,1.1625678
+101083,Pelosi and the Democrats in Congress,No,West,Male,52,college degree,Independent,100 thousand or more,0.7074164
+100474,Trump and the Republicans in Congress,No,Northeast,Female,NA,college degree,Independent,50 to under 75 thousand,1.2138192
+100576,Trump and the Republicans in Congress,Yes,Midwest,Male,82,post-graduate degree,Democrat,100 thousand or more,0.4394098
+100693,Trump and the Republicans in Congress,No,West,Male,36,some college,Democrat,75 to under 100 thousand,1.1004988
+100753,NA,Yes,South,Female,21,some college,Republican,NA,1.6208243
+101021,Pelosi and the Democrats in Congress,No,South,Female,70,high school or less,Republican,50 to under 75 thousand,0.729739
+101072,NA,No,Midwest,Female,38,some college,Independent,75 to under 100 thousand,1.7304937
+101095,Pelosi and the Democrats in Congress,No,West,Male,54,some college,Republican,NA,0.6616424
+100012,Trump and the Republicans in Congress,No,Midwest,Male,31,college degree,Democrat,35 to under 50 thousand,0.9746408
+100050,NA,No,South,Male,56,college degree,Democrat,75 to under 100 thousand,0.743314
+100077,Pelosi and the Democrats in Congress,No,Northeast,Female,74,high school or less,Independent,Under 20 thousand dollars,0.8856383
+100107,Trump and the Republicans in Congress,No,Northeast,Male,53,high school or less,Democrat,20 to under 35 thousand,1.0958753
+100113,Pelosi and the Democrats in Congress,No,Midwest,Male,68,high school or less,Republican,50 to under 75 thousand,0.7111267
+100114,Trump and the Republicans in Congress,No,South,Male,21,some college,Republican,Under 20 thousand dollars,1.3075608
+100180,Pelosi and the Democrats in Congress,No,South,Female,57,high school or less,Republican,Under 20 thousand dollars,1.3588247
+100259,Pelosi and the Democrats in Congress,No,Midwest,Female,79,some college,Republican,NA,0.8234592
+100327,Pelosi and the Democrats in Congress,No,South,Male,56,NA,Republican,75 to under 100 thousand,1.4795853
+100333,NA,No,Midwest,Male,71,some college,Independent,100 thousand or more,0.5689371
+100358,Trump and the Republicans in Congress,Yes,West,Female,29,post-graduate degree,Republican,100 thousand or more,1.39185
+100369,Trump and the Republicans in Congress,Yes,West,Female,35,college degree,Democrat,75 to under 100 thousand,1.7596222
+100376,Trump and the Republicans in Congress,Yes,Midwest,Female,21,some college,Republican,50 to under 75 thousand,1.883112
+100408,Trump and the Republicans in Congress,No,Northeast,Female,50,high school or less,Democrat,Under 20 thousand dollars,3.2411997
+100436,Pelosi and the Democrats in Congress,No,Northeast,Male,63,high school or less,Republican,NA,0.7731079
+100522,Trump and the Republicans in Congress,No,South,Female,26,high school or less,Republican,20 to under 35 thousand,2.0259034
+100545,Pelosi and the Democrats in Congress,No,South,Male,41,college degree,Democrat,100 thousand or more,0.9052953
+100584,Pelosi and the Democrats in Congress,No,Northeast,Female,58,college degree,Republican,50 to under 75 thousand,1.4987193
+100607,Trump and the Republicans in Congress,No,Northeast,Male,43,college degree,Democrat,75 to under 100 thousand,0.7454953
+100657,Trump and the Republicans in Congress,No,Midwest,Female,45,some college,Independent,50 to under 75 thousand,1.9422661
+100686,Pelosi and the Democrats in Congress,No,Midwest,Male,78,high school or less,Independent,20 to under 35 thousand,0.5857737
+100703,NA,No,West,Male,41,some college,Republican,50 to under 75 thousand,1.099242
+100710,Trump and the Republicans in Congress,Yes,West,Male,82,college degree,NA,35 to under 50 thousand,0.5182404
+100755,Trump and the Republicans in Congress,Yes,Midwest,Male,28,college degree,Democrat,75 to under 100 thousand,1.1458635
+100806,Trump and the Republicans in Congress,No,South,Male,75,college degree,Democrat,50 to under 75 thousand,0.355256
+100874,Trump and the Republicans in Congress,No,Midwest,Female,79,post-graduate degree,Democrat,100 thousand or more,0.5446829
+100074,Trump and the Republicans in Congress,No,Northeast,Male,38,high school or less,Democrat,35 to under 50 thousand,1.3286376
+100124,NA,No,Midwest,Female,21,high school or less,Republican,Under 20 thousand dollars,2.3537426
+100216,Trump and the Republicans in Congress,No,West,Male,30,college degree,Democrat,35 to under 50 thousand,0.9692241
+100273,Pelosi and the Democrats in Congress,No,Midwest,Male,30,college degree,Republican,50 to under 75 thousand,1.0529961
+100394,Trump and the Republicans in Congress,No,South,Male,42,high school or less,Democrat,35 to under 50 thousand,0.5485327
+100574,Trump and the Republicans in Congress,Yes,Midwest,Male,20,high school or less,Democrat,Under 20 thousand dollars,1.5641119
+100958,Trump and the Republicans in Congress,No,Northeast,Male,41,post-graduate degree,Democrat,100 thousand or more,0.6797184
+100967,Trump and the Republicans in Congress,No,Northeast,Female,50,some college,Democrat,100 thousand or more,1.0452956
+101006,Pelosi and the Democrats in Congress,No,Northeast,Male,74,college degree,Republican,100 thousand or more,0.3551512
+100616,Trump and the Republicans in Congress,No,South,Male,81,high school or less,Democrat,20 to under 35 thousand,0.5041847
+100174,Pelosi and the Democrats in Congress,No,South,Female,42,post-graduate degree,Independent,100 thousand or more,1.1946821
+100314,Pelosi and the Democrats in Congress,No,West,Male,71,college degree,Republican,35 to under 50 thousand,0.3799087
+100370,Trump and the Republicans in Congress,No,West,Female,49,some college,Democrat,75 to under 100 thousand,1.5910039
+100873,NA,No,South,Male,21,high school or less,NA,Under 20 thousand dollars,1.1529852
+100894,Trump and the Republicans in Congress,Yes,South,Female,68,some college,Democrat,20 to under 35 thousand,0.6816927
+100932,Trump and the Republicans in Congress,No,West,Female,32,post-graduate degree,Democrat,100 thousand or more,1.2790462
+100069,Pelosi and the Democrats in Congress,No,Northeast,Male,47,some college,Republican,100 thousand or more,0.40039400000000003
+100112,Trump and the Republicans in Congress,Yes,Midwest,Male,31,post-graduate degree,Democrat,50 to under 75 thousand,0.9600877
+100197,Pelosi and the Democrats in Congress,No,South,Male,38,post-graduate degree,Republican,75 to under 100 thousand,0.8263626
+100740,Trump and the Republicans in Congress,No,South,Female,72,high school or less,Democrat,Under 20 thousand dollars,1.8103035
+100852,Trump and the Republicans in Congress,Yes,Northeast,Male,20,some college,Democrat,100 thousand or more,1.1195145
+100968,Trump and the Republicans in Congress,No,Midwest,Female,48,high school or less,Democrat,20 to under 35 thousand,2.1605114
+101022,Pelosi and the Democrats in Congress,No,Northeast,Male,76,college degree,Republican,100 thousand or more,0.3551512
+101079,Trump and the Republicans in Congress,No,West,Female,46,high school or less,Democrat,NA,4.7448736
+100105,Pelosi and the Democrats in Congress,No,South,Male,60,some college,Republican,100 thousand or more,0.7511086
+100215,Trump and the Republicans in Congress,No,Midwest,Male,66,high school or less,Democrat,20 to under 35 thousand,0.5857737
+100243,Trump and the Republicans in Congress,No,Midwest,Male,56,college degree,Democrat,35 to under 50 thousand,0.7685596
+100278,Pelosi and the Democrats in Congress,Yes,South,Female,51,college degree,Republican,NA,0.9574482
+100446,Pelosi and the Democrats in Congress,No,South,Female,23,high school or less,Republican,Under 20 thousand dollars,2.0259034
+100479,NA,No,South,Female,23,college degree,Democrat,75 to under 100 thousand,1.1758541
+100505,Trump and the Republicans in Congress,No,South,Female,76,some college,Democrat,50 to under 75 thousand,0.5838277
+100610,Trump and the Republicans in Congress,Yes,South,Male,33,post-graduate degree,Republican,50 to under 75 thousand,0.8263626
+100812,Pelosi and the Democrats in Congress,No,South,Female,25,some college,Republican,75 to under 100 thousand,1.6208243
+100912,Trump and the Republicans in Congress,No,West,Female,55,post-graduate degree,Democrat,100 thousand or more,0.7689889
+100006,Pelosi and the Democrats in Congress,No,Northeast,Female,20,college degree,Republican,NA,0.2468197
+100037,Trump and the Republicans in Congress,No,South,Female,74,college degree,Democrat,100 thousand or more,0.514185
+100239,Trump and the Republicans in Congress,No,Midwest,Male,51,high school or less,Democrat,NA,1.0907513
+100305,Pelosi and the Democrats in Congress,No,West,Male,41,high school or less,Republican,100 thousand or more,1.3739665
+100317,Trump and the Republicans in Congress,Yes,West,Female,60,some college,Independent,20 to under 35 thousand,1.3063311
+100324,Pelosi and the Democrats in Congress,Yes,Midwest,Male,38,high school or less,Republican,100 thousand or more,1.4944276
+100337,Trump and the Republicans in Congress,No,West,Male,78,high school or less,Democrat,Under 20 thousand dollars,0.8210352
+100342,Trump and the Republicans in Congress,Yes,West,Female,65,some college,Democrat,35 to under 50 thousand,0.8516763
+100352,Trump and the Republicans in Congress,No,West,Female,70,some college,Democrat,Under 20 thousand dollars,0.7579483
+100502,Trump and the Republicans in Congress,No,South,Male,31,post-graduate degree,Republican,100 thousand or more,0.9648828
+100558,Trump and the Republicans in Congress,No,Northeast,Male,47,college degree,Democrat,100 thousand or more,1.0567345
+100678,NA,Yes,West,Male,29,college degree,Democrat,20 to under 35 thousand,1.0547034
+100725,Trump and the Republicans in Congress,No,West,Male,51,college degree,Democrat,NA,0.7074164
+100752,Trump and the Republicans in Congress,No,Midwest,Female,29,some college,Republican,35 to under 50 thousand,2.1159779
+100823,Trump and the Republicans in Congress,No,South,Male,52,post-graduate degree,Democrat,100 thousand or more,0.6031447
+100957,Trump and the Republicans in Congress,Yes,West,Male,22,college degree,Democrat,35 to under 50 thousand,1.0547034
+100970,Trump and the Republicans in Congress,Yes,South,Female,21,some college,Democrat,50 to under 75 thousand,1.8212555
+100980,Pelosi and the Democrats in Congress,No,South,Female,72,post-graduate degree,Republican,100 thousand or more,0.569142
+101046,NA,No,West,Female,53,some college,Democrat,Under 20 thousand dollars,1.3574449
+101070,Pelosi and the Democrats in Congress,Yes,South,Female,29,high school or less,Republican,20 to under 35 thousand,2.0259034
+101100,Trump and the Republicans in Congress,No,West,Male,68,post-graduate degree,NA,35 to under 50 thousand,0.3892228
+100532,NA,No,South,Female,42,high school or less,Independent,35 to under 50 thousand,1.8595863
+100595,Trump and the Republicans in Congress,Yes,South,Male,72,post-graduate degree,Democrat,35 to under 50 thousand,0.323911
+100614,Pelosi and the Democrats in Congress,No,Midwest,Female,37,high school or less,Republican,50 to under 75 thousand,2.7131268
+100758,Trump and the Republicans in Congress,Yes,South,Female,39,high school or less,Democrat,20 to under 35 thousand,2.1737843
+100795,Trump and the Republicans in Congress,No,South,Female,58,post-graduate degree,Democrat,100 thousand or more,0.7190884
+100908,Trump and the Republicans in Congress,No,West,Male,25,high school or less,Republican,35 to under 50 thousand,1.4968508
+100960,Trump and the Republicans in Congress,No,Northeast,Female,59,high school or less,Independent,Under 20 thousand dollars,1.3584234
+100998,Pelosi and the Democrats in Congress,No,Northeast,Male,45,college degree,Republican,100 thousand or more,0.7454953
+101013,Trump and the Republicans in Congress,No,Northeast,Male,76,post-graduate degree,Democrat,75 to under 100 thousand,0.3238153
+101026,Trump and the Republicans in Congress,Yes,West,Male,35,high school or less,Republican,20 to under 35 thousand,1.5456363
+101038,Trump and the Republicans in Congress,No,West,Male,20,high school or less,Independent,Under 20 thousand dollars,1.7477624
+101052,Trump and the Republicans in Congress,Yes,West,Male,43,post-graduate degree,Democrat,100 thousand or more,0.8489828
+100042,Pelosi and the Democrats in Congress,No,Northeast,Male,55,some college,Republican,75 to under 100 thousand,0.7508868
+100086,Trump and the Republicans in Congress,Yes,South,Male,56,college degree,Democrat,100 thousand or more,0.2577494
+100232,NA,No,Midwest,Male,29,post-graduate degree,Republican,75 to under 100 thousand,1.0447612
+100340,NA,No,West,Male,57,college degree,Democrat,100 thousand or more,0.7074164
+100347,Pelosi and the Democrats in Congress,No,West,Male,42,post-graduate degree,Republican,100 thousand or more,0.882698
+100351,NA,No,West,Male,45,post-graduate degree,Democrat,100 thousand or more,0.882698
+100388,Pelosi and the Democrats in Congress,No,South,Male,32,high school or less,Republican,35 to under 50 thousand,1.2862774
+100434,Pelosi and the Democrats in Congress,No,Midwest,Male,36,high school or less,Republican,50 to under 75 thousand,1.2309992
+100450,Pelosi and the Democrats in Congress,No,Midwest,Female,35,college degree,Republican,100 thousand or more,1.5240691
+100497,Trump and the Republicans in Congress,No,Midwest,Female,78,high school or less,Democrat,35 to under 50 thousand,1.0292596
+100766,Trump and the Republicans in Congress,Yes,Midwest,Male,56,post-graduate degree,Democrat,100 thousand or more,0.724039
+100779,Trump and the Republicans in Congress,No,Northeast,Female,45,some college,Republican,50 to under 75 thousand,1.4873229
+100821,Pelosi and the Democrats in Congress,No,South,Female,45,some college,Republican,100 thousand or more,1.4877622
+100961,Trump and the Republicans in Congress,No,South,Male,35,post-graduate degree,Democrat,100 thousand or more,1.0365446
+100975,Trump and the Republicans in Congress,No,South,Male,86,high school or less,Democrat,35 to under 50 thousand,0.7146785
+101062,Trump and the Republicans in Congress,No,West,Male,75,post-graduate degree,Democrat,75 to under 100 thousand,0.420514
+100331,Pelosi and the Democrats in Congress,No,South,Male,18,some college,Republican,NA,1.1198453
+100364,Trump and the Republicans in Congress,No,West,Female,38,post-graduate degree,Democrat,Under 20 thousand dollars,1.6043665
+100518,Trump and the Republicans in Congress,No,Northeast,Female,23,some college,Democrat,50 to under 75 thousand,1.6203456
+100563,Trump and the Republicans in Congress,No,South,Male,23,high school or less,Democrat,NA,1.5728082
+100634,Pelosi and the Democrats in Congress,No,West,Female,64,post-graduate degree,Democrat,50 to under 75 thousand,0.7689889
+100738,Trump and the Republicans in Congress,No,Midwest,Male,73,college degree,Democrat,100 thousand or more,0.412745
+100815,Trump and the Republicans in Congress,Yes,Northeast,Female,21,college degree,Democrat,Under 20 thousand dollars,1.7900272
+100859,Trump and the Republicans in Congress,No,Northeast,Female,33,college degree,Democrat,100 thousand or more,2.0533803
+100940,Trump and the Republicans in Congress,No,West,Female,75,college degree,Republican,100 thousand or more,0.6675353
+100207,NA,Yes,Midwest,Male,21,some college,Democrat,20 to under 35 thousand,1.0717195
+100581,Pelosi and the Democrats in Congress,No,South,Male,31,post-graduate degree,Republican,50 to under 75 thousand,0.8263626
+100631,Trump and the Republicans in Congress,Yes,Northeast,Female,58,some college,Democrat,100 thousand or more,1.0868069
+100798,Pelosi and the Democrats in Congress,No,Northeast,Female,54,some college,Republican,20 to under 35 thousand,1.3632316
+100393,NA,No,South,Male,22,some college,NA,50 to under 75 thousand,0.4363331
+100410,Trump and the Republicans in Congress,No,South,Female,40,college degree,Democrat,75 to under 100 thousand,1.2602449
+100649,Trump and the Republicans in Congress,No,South,Female,53,post-graduate degree,Republican,75 to under 100 thousand,0.7190884
+100161,Trump and the Republicans in Congress,No,Midwest,Male,67,post-graduate degree,Democrat,20 to under 35 thousand,0.3763275
+100248,Trump and the Republicans in Congress,No,Midwest,Male,71,post-graduate degree,Democrat,100 thousand or more,0.4568598
+100307,Pelosi and the Democrats in Congress,No,West,Male,71,college degree,Republican,50 to under 75 thousand,0.3799087
+100824,Pelosi and the Democrats in Congress,Yes,South,Male,46,post-graduate degree,Republican,100 thousand or more,0.6799192
+100850,NA,No,Northeast,Male,60,high school or less,Democrat,100 thousand or more,0.7731079
+100537,Trump and the Republicans in Congress,No,South,Male,22,college degree,Democrat,50 to under 75 thousand,1.2371148
+100674,Pelosi and the Democrats in Congress,No,Midwest,Female,30,some college,NA,50 to under 75 thousand,1.7304937
+100721,Trump and the Republicans in Congress,No,West,Male,79,college degree,Democrat,100 thousand or more,0.3799087
+100776,Trump and the Republicans in Congress,No,Northeast,Female,40,college degree,Democrat,NA,1.3534434
+100808,Pelosi and the Democrats in Congress,No,South,Male,71,college degree,Republican,50 to under 75 thousand,0.4312793
+100832,Pelosi and the Democrats in Congress,Yes,South,Female,65,college degree,Republican,100 thousand or more,0.514185
+100878,Pelosi and the Democrats in Congress,No,South,Male,54,college degree,Independent,100 thousand or more,0.8297642
+100905,Pelosi and the Democrats in Congress,No,West,Male,30,high school or less,Republican,50 to under 75 thousand,1.5456363
+100954,Trump and the Republicans in Congress,No,Midwest,Female,18,high school or less,Democrat,20 to under 35 thousand,2.3537426
+101073,NA,No,West,Male,48,some college,Independent,100 thousand or more,1.2351745
+340,Trump and the Republicans in Congress,No,NA,Female,72,high school or less,Democrat,Under 20 thousand dollars,0.8460181
+364,Trump and the Republicans in Congress,No,NA,Female,90,high school or less,Republican,35 to under 50 thousand,0.5404739
+420,Trump and the Republicans in Congress,Yes,NA,Male,58,high school or less,Democrat,35 to under 50 thousand,0.6882532
+432,Pelosi and the Democrats in Congress,No,NA,Male,59,high school or less,Republican,100 thousand or more,0.8270011
+446,Pelosi and the Democrats in Congress,No,NA,Female,89,some college,Republican,20 to under 35 thousand,0.4324062
+100134,NA,No,South,Female,56,high school or less,Independent,20 to under 35 thousand,2.1276329
+100378,NA,No,South,Female,28,high school or less,Democrat,NA,5.999094
+100472,NA,NA,South,Male,23,NA,NA,NA,0.9418015
+100571,Trump and the Republicans in Congress,No,South,Female,35,high school or less,Democrat,Under 20 thousand dollars,2.9150488
+100648,Trump and the Republicans in Congress,No,Midwest,Female,35,high school or less,Independent,NA,1.2383581
+100680,Trump and the Republicans in Congress,No,South,Male,33,high school or less,Democrat,20 to under 35 thousand,2.0140391
+100705,Trump and the Republicans in Congress,Yes,West,Male,43,high school or less,Democrat,20 to under 35 thousand,2.1513417
+100959,Trump and the Republicans in Congress,No,Northeast,Female,32,high school or less,Democrat,35 to under 50 thousand,5.9550347
+100978,Trump and the Republicans in Congress,No,Northeast,Male,NA,high school or less,Democrat,20 to under 35 thousand,3.0030133
+101068,Pelosi and the Democrats in Congress,No,West,Male,65,high school or less,Democrat,20 to under 35 thousand,0.8210352
+101077,Pelosi and the Democrats in Congress,Yes,West,Female,60,college degree,Republican,100 thousand or more,1.2843112
+100108,Trump and the Republicans in Congress,Yes,Midwest,Female,42,high school or less,Independent,75 to under 100 thousand,2.1605114
+100203,Trump and the Republicans in Congress,No,South,Female,33,college degree,Democrat,100 thousand or more,1.3117903
+100254,Pelosi and the Democrats in Congress,No,South,Female,65,some college,Republican,50 to under 75 thousand,0.7087644
+100456,Pelosi and the Democrats in Congress,No,Northeast,Male,49,some college,Republican,75 to under 100 thousand,0.8464675
+100527,Trump and the Republicans in Congress,No,South,Male,26,some college,Democrat,35 to under 50 thousand,1.2583255
+100580,NA,No,Midwest,Male,31,college degree,Republican,100 thousand or more,1.0529961
+100606,Pelosi and the Democrats in Congress,No,South,Female,53,some college,Republican,35 to under 50 thousand,1.0871279
+100661,Trump and the Republicans in Congress,No,South,Male,69,high school or less,Democrat,35 to under 50 thousand,0.7146785
+100696,Pelosi and the Democrats in Congress,No,West,Female,69,post-graduate degree,Republican,50 to under 75 thousand,0.608637
+100521,Pelosi and the Democrats in Congress,No,Midwest,Male,38,college degree,Republican,100 thousand or more,0.8673804
+100560,Trump and the Republicans in Congress,No,South,Female,60,some college,Democrat,NA,1.2693592
+100637,NA,No,South,Male,58,high school or less,Democrat,Under 20 thousand dollars,0.9388269
+100750,Pelosi and the Democrats in Congress,No,Northeast,Male,NA,some college,Republican,75 to under 100 thousand,0.4032539
+100765,NA,No,Northeast,Male,64,college degree,Republican,100 thousand or more,0.5447434
+100836,Pelosi and the Democrats in Congress,No,Northeast,Male,28,NA,NA,NA,1.0431443
+100884,Trump and the Republicans in Congress,No,South,Female,57,some college,Democrat,100 thousand or more,1.0456044
+101015,Pelosi and the Democrats in Congress,No,South,Female,68,high school or less,Republican,35 to under 50 thousand,0.729739
+101028,Trump and the Republicans in Congress,Yes,West,Female,NA,college degree,NA,NA,0.5947966
+101049,Pelosi and the Democrats in Congress,No,West,Male,34,high school or less,Republican,20 to under 35 thousand,1.3755372
+101061,NA,No,South,Male,51,post-graduate degree,Republican,100 thousand or more,0.7565521
+101081,NA,No,West,Male,44,post-graduate degree,Democrat,100 thousand or more,0.882698
+263,Trump and the Republicans in Congress,Yes,NA,Female,74,high school or less,Democrat,Under 20 thousand dollars,0.8768801
+343,Trump and the Republicans in Congress,Yes,NA,Female,67,college degree,Democrat,20 to under 35 thousand,0.8048674
+100152,Trump and the Republicans in Congress,No,South,Male,48,high school or less,Democrat,75 to under 100 thousand,2.6254585
+100246,Pelosi and the Democrats in Congress,No,Midwest,Male,51,post-graduate degree,Republican,100 thousand or more,0.7007478
+100452,Pelosi and the Democrats in Congress,No,South,Female,65,some college,Republican,100 thousand or more,0.7087644
+100516,Pelosi and the Democrats in Congress,Yes,South,Female,59,some college,Republican,100 thousand or more,1.0871279
+100602,Trump and the Republicans in Congress,No,South,Male,54,some college,Republican,50 to under 75 thousand,0.7511086
+100618,Trump and the Republicans in Congress,Yes,West,Female,30,post-graduate degree,Democrat,100 thousand or more,1.6043665
+100783,NA,No,South,Female,76,high school or less,Democrat,NA,1.7411579
+100848,Pelosi and the Democrats in Congress,No,Northeast,Female,64,post-graduate degree,Republican,NA,0.8727124
+100869,Trump and the Republicans in Congress,No,Midwest,Male,36,high school or less,Democrat,100 thousand or more,1.4944276
+100921,Pelosi and the Democrats in Congress,No,Northeast,Female,73,some college,Republican,20 to under 35 thousand,0.5836554
+100713,Pelosi and the Democrats in Congress,No,West,Male,66,post-graduate degree,Republican,75 to under 100 thousand,0.4344909
+100022,Trump and the Republicans in Congress,No,South,Male,88,college degree,Republican,75 to under 100 thousand,0.355256
+100085,Trump and the Republicans in Congress,No,Northeast,Male,62,post-graduate degree,Republican,100 thousand or more,0.4966794
+100149,Trump and the Republicans in Congress,No,Northeast,Male,72,college degree,Democrat,50 to under 75 thousand,0.3551512
+100181,NA,No,South,Male,66,high school or less,Republican,75 to under 100 thousand,0.6120781
+100349,Trump and the Republicans in Congress,Yes,West,Female,27,college degree,Democrat,50 to under 75 thousand,1.7153123
+100355,Trump and the Republicans in Congress,No,West,Male,66,post-graduate degree,Republican,100 thousand or more,0.1999698
+100365,Trump and the Republicans in Congress,No,West,Female,26,high school or less,Democrat,Under 20 thousand dollars,2.7175261
+100401,Pelosi and the Democrats in Congress,No,South,Female,76,high school or less,Republican,75 to under 100 thousand,0.729739
+100429,Trump and the Republicans in Congress,No,South,Male,21,high school or less,Democrat,50 to under 75 thousand,1.1529852
+100468,Trump and the Republicans in Congress,Yes,South,Male,58,some college,Republican,100 thousand or more,0.7511086
+100520,NA,No,Midwest,Male,30,some college,Republican,35 to under 50 thousand,0.9848611
+100566,Trump and the Republicans in Congress,No,Northeast,Male,24,college degree,Democrat,50 to under 75 thousand,1.1512463
+100605,Trump and the Republicans in Congress,No,South,Male,53,high school or less,Democrat,35 to under 50 thousand,1.096199
+100625,Pelosi and the Democrats in Congress,Yes,West,Male,52,college degree,Republican,100 thousand or more,0.3346204
+100675,Pelosi and the Democrats in Congress,No,Midwest,Female,44,post-graduate degree,Republican,20 to under 35 thousand,1.1433401
+100688,Pelosi and the Democrats in Congress,Yes,Midwest,Male,77,post-graduate degree,Republican,100 thousand or more,0.4568598
+100712,Trump and the Republicans in Congress,Yes,West,Female,29,college degree,Democrat,20 to under 35 thousand,1.5265403
+100965,Trump and the Republicans in Congress,No,South,Male,38,high school or less,Democrat,75 to under 100 thousand,1.4453386
+100972,Trump and the Republicans in Congress,Yes,Northeast,Female,46,college degree,Democrat,75 to under 100 thousand,1.2598728
+101035,Trump and the Republicans in Congress,Yes,West,Male,55,post-graduate degree,Republican,100 thousand or more,0.6449993
+101089,Trump and the Republicans in Congress,No,West,Female,44,college degree,Democrat,50 to under 75 thousand,1.4012185
+100791,Trump and the Republicans in Congress,No,Midwest,Male,40,post-graduate degree,Democrat,100 thousand or more,0.9589913
+100888,NA,No,South,Male,41,some college,Democrat,35 to under 50 thousand,1.6094923
+100922,Trump and the Republicans in Congress,No,South,Female,50,high school or less,Democrat,20 to under 35 thousand,2.1276329
+100971,Pelosi and the Democrats in Congress,Yes,Northeast,Male,57,NA,Democrat,Under 20 thousand dollars,1.9077783
+100984,Trump and the Republicans in Congress,No,Northeast,Male,54,high school or less,Democrat,Under 20 thousand dollars,1.210524
+101040,Trump and the Republicans in Congress,No,West,Male,29,high school or less,Democrat,Under 20 thousand dollars,2.3437527
+101067,NA,Yes,West,Male,61,some college,Republican,20 to under 35 thousand,1.0075294
+100457,Trump and the Republicans in Congress,No,South,Female,45,some college,Democrat,50 to under 75 thousand,1.4877622
+100526,Trump and the Republicans in Congress,No,South,Female,35,college degree,Independent,NA,1.355391
+100573,Pelosi and the Democrats in Congress,Yes,South,Female,19,high school or less,Republican,100 thousand or more,1.6687898
+100685,Pelosi and the Democrats in Congress,Yes,South,Male,38,college degree,Democrat,100 thousand or more,0.9063303
+100976,Trump and the Republicans in Congress,No,Northeast,Female,58,college degree,Democrat,Under 20 thousand dollars,0.9571654
+101000,Trump and the Republicans in Congress,Yes,South,Male,56,college degree,Democrat,100 thousand or more,0.5449043
+101056,Trump and the Republicans in Congress,No,West,Male,19,high school or less,Independent,35 to under 50 thousand,1.2329953
+101092,Trump and the Republicans in Congress,Yes,West,Female,59,high school or less,Democrat,Under 20 thousand dollars,3.7246475
+100164,Trump and the Republicans in Congress,Yes,Northeast,Male,29,high school or less,Democrat,20 to under 35 thousand,1.5723438
+100182,Trump and the Republicans in Congress,No,South,Male,19,some college,Republican,20 to under 35 thousand,1.2583255
+100213,NA,No,South,Male,60,high school or less,Republican,50 to under 75 thousand,0.9388269
+100344,Pelosi and the Democrats in Congress,Yes,West,Male,39,post-graduate degree,Democrat,35 to under 50 thousand,0.817949
+100789,Pelosi and the Democrats in Congress,No,South,Male,50,high school or less,Republican,100 thousand or more,1.2108816
+100807,Trump and the Republicans in Congress,No,Midwest,Female,42,some college,Democrat,100 thousand or more,1.4238252
+100818,Trump and the Republicans in Congress,No,Northeast,Female,58,post-graduate degree,Democrat,50 to under 75 thousand,0.8727124
+101036,Pelosi and the Democrats in Congress,No,West,Male,70,college degree,Republican,75 to under 100 thousand,0.3799087
+101058,Pelosi and the Democrats in Congress,No,South,Male,54,post-graduate degree,Republican,100 thousand or more,0.6031447
+101064,Trump and the Republicans in Congress,No,West,Male,21,college degree,Democrat,50 to under 75 thousand,0.9762211
+100528,Trump and the Republicans in Congress,No,South,Male,18,some college,Democrat,20 to under 35 thousand,1.2583255
+100622,Trump and the Republicans in Congress,No,West,Male,33,high school or less,Democrat,50 to under 75 thousand,2.1538011
+100663,Trump and the Republicans in Congress,No,West,Female,42,post-graduate degree,Democrat,75 to under 100 thousand,1.2775857
+100054,Pelosi and the Democrats in Congress,No,South,Male,63,high school or less,Republican,50 to under 75 thousand,0.9388269
+100078,Pelosi and the Democrats in Congress,No,South,Male,80,college degree,Democrat,50 to under 75 thousand,0.4312793
+100163,Trump and the Republicans in Congress,Yes,Midwest,Male,NA,high school or less,Democrat,NA,2.3372863
+100313,Trump and the Republicans in Congress,No,West,Female,68,college degree,Democrat,100 thousand or more,0.6675353
+100419,Trump and the Republicans in Congress,Yes,South,Male,18,high school or less,Democrat,100 thousand or more,1.3997188
+100440,Trump and the Republicans in Congress,No,Northeast,Female,69,some college,Democrat,100 thousand or more,0.5836554
+100797,Trump and the Republicans in Congress,No,South,Male,56,college degree,Republican,100 thousand or more,0.6615115
+100819,Pelosi and the Democrats in Congress,Yes,South,Male,53,high school or less,Republican,35 to under 50 thousand,0.4305891
+100843,Trump and the Republicans in Congress,Yes,Northeast,Male,37,college degree,Democrat,100 thousand or more,0.3530356
+101007,Trump and the Republicans in Congress,No,South,Female,34,some college,Democrat,NA,1.4894633
+101097,Trump and the Republicans in Congress,No,Midwest,Male,21,some college,Republican,20 to under 35 thousand,1.3010628
+100348,NA,No,West,Male,22,high school or less,Republican,NA,1.4968508
+100770,Pelosi and the Democrats in Congress,No,Northeast,Male,43,some college,Republican,NA,1.609017
+100911,NA,No,West,Male,55,college degree,Republican,NA,0.7074164
+100966,Trump and the Republicans in Congress,No,South,Female,66,some college,Republican,NA,0.5838277
+100982,Trump and the Republicans in Congress,No,South,Female,38,post-graduate degree,Democrat,35 to under 50 thousand,1.396537
+101051,Trump and the Republicans in Congress,Yes,South,Female,63,college degree,Democrat,75 to under 100 thousand,0.7886752
+101069,Trump and the Republicans in Congress,Yes,West,Female,54,some college,Democrat,NA,1.4582623
+100020,Pelosi and the Democrats in Congress,No,Northeast,Male,41,some college,Republican,50 to under 75 thousand,1.0276077
+100057,Pelosi and the Democrats in Congress,No,South,Male,63,post-graduate degree,Republican,100 thousand or more,0.6031447
+100093,Trump and the Republicans in Congress,Yes,South,Female,30,some college,Democrat,75 to under 100 thousand,1.5389693
+100158,Pelosi and the Democrats in Congress,No,Northeast,Male,18,high school or less,Republican,NA,2.8594289
+100166,Trump and the Republicans in Congress,No,South,Female,24,high school or less,Democrat,20 to under 35 thousand,2.3654983
+100199,NA,No,Midwest,Male,62,some college,Independent,50 to under 75 thousand,0.7188294
+100236,Trump and the Republicans in Congress,No,South,Male,18,some college,Democrat,Under 20 thousand dollars,1.1198453
+100341,NA,No,West,Female,50,college degree,Independent,75 to under 100 thousand,1.2843112
+100359,Pelosi and the Democrats in Congress,No,West,Male,45,some college,Republican,50 to under 75 thousand,1.2351745
+100402,NA,No,Northeast,Male,49,high school or less,Independent,100 thousand or more,2.0111452
+100414,Trump and the Republicans in Congress,No,South,Male,30,post-graduate degree,Democrat,NA,0.9648828
+100508,NA,No,Midwest,Female,27,college degree,Republican,100 thousand or more,1.6584822
+100536,Pelosi and the Democrats in Congress,Yes,South,Male,42,college degree,Republican,100 thousand or more,0.9052953
+100582,Pelosi and the Democrats in Congress,No,Midwest,Male,28,post-graduate degree,Republican,35 to under 50 thousand,1.310492
+100677,NA,No,Midwest,Male,53,high school or less,Democrat,35 to under 50 thousand,1.0907513
+100709,NA,No,West,Male,63,some college,Republican,100 thousand or more,0.7434611
+100804,Trump and the Republicans in Congress,No,Midwest,Male,28,some college,Democrat,35 to under 50 thousand,1.3010628
+100872,Pelosi and the Democrats in Congress,No,South,Female,NA,high school or less,Republican,35 to under 50 thousand,0.8858999
+100934,NA,No,West,Female,36,college degree,Democrat,75 to under 100 thousand,1.7596222
+100955,Trump and the Republicans in Congress,Yes,West,Female,55,college degree,Democrat,35 to under 50 thousand,1.0238893
+100974,NA,No,Northeast,Male,33,post-graduate degree,Republican,100 thousand or more,1.2935275
+100992,Pelosi and the Democrats in Congress,No,Midwest,Male,43,some college,Republican,100 thousand or more,1.1942516
+101016,Pelosi and the Democrats in Congress,No,South,Male,52,post-graduate degree,Republican,50 to under 75 thousand,0.4968262
+101029,NA,No,West,Female,81,high school or less,Democrat,35 to under 50 thousand,0.7803784
+101065,NA,Yes,West,Male,26,high school or less,Democrat,50 to under 75 thousand,1.4968508
+100146,Trump and the Republicans in Congress,No,Northeast,Female,30,some college,Democrat,100 thousand or more,1.4890234
+100176,Pelosi and the Democrats in Congress,No,South,Male,57,post-graduate degree,Democrat,50 to under 75 thousand,0.4968262
+100201,Pelosi and the Democrats in Congress,Yes,Midwest,Male,65,post-graduate degree,Independent,100 thousand or more,0.4568598
+100300,Trump and the Republicans in Congress,No,West,Male,58,some college,Independent,75 to under 100 thousand,0.7725511
+100764,Trump and the Republicans in Congress,No,Midwest,Female,55,post-graduate degree,Democrat,100 thousand or more,1.0142375
+100841,Trump and the Republicans in Congress,No,South,Female,20,some college,Democrat,50 to under 75 thousand,1.6208243
+100901,Pelosi and the Democrats in Congress,No,South,Male,28,some college,Independent,50 to under 75 thousand,1.1198453
+100927,Pelosi and the Democrats in Congress,No,West,Male,66,some college,Republican,35 to under 50 thousand,0.5236748
+100941,Pelosi and the Democrats in Congress,No,West,Female,37,college degree,Independent,NA,1.4028205
+100070,Trump and the Republicans in Congress,No,Northeast,Female,72,post-graduate degree,Democrat,50 to under 75 thousand,0.4686788
+100188,Pelosi and the Democrats in Congress,No,Midwest,Male,35,post-graduate degree,Republican,NA,0.9600877
+100506,Trump and the Republicans in Congress,Yes,Northeast,Male,47,some college,Democrat,20 to under 35 thousand,1.1998619
+100640,Pelosi and the Democrats in Congress,No,South,Male,53,college degree,Republican,50 to under 75 thousand,0.6615115
+101048,Pelosi and the Democrats in Congress,No,West,Female,70,post-graduate degree,Republican,35 to under 50 thousand,0.608637
+100075,Pelosi and the Democrats in Congress,No,South,Male,70,high school or less,Republican,50 to under 75 thousand,1.2507586
+100157,Pelosi and the Democrats in Congress,No,South,Male,44,post-graduate degree,Republican,75 to under 100 thousand,1.06461
+100209,Trump and the Republicans in Congress,Yes,South,Male,40,post-graduate degree,Democrat,35 to under 50 thousand,0.6799192
+100269,Pelosi and the Democrats in Congress,No,Midwest,Male,65,post-graduate degree,Republican,100 thousand or more,0.4568598
+100353,Trump and the Republicans in Congress,No,West,Male,70,some college,Democrat,100 thousand or more,0.5236748
+100400,Pelosi and the Democrats in Congress,No,South,Male,55,college degree,Independent,NA,0.1999698
+100609,Trump and the Republicans in Congress,No,South,Female,76,high school or less,Democrat,Under 20 thousand dollars,1.1112249
+100728,Trump and the Republicans in Congress,Yes,West,Female,23,college degree,Democrat,20 to under 35 thousand,1.2574513
+100787,Pelosi and the Democrats in Congress,No,Midwest,Female,60,some college,Republican,100 thousand or more,1.2630509
+100907,Pelosi and the Democrats in Congress,No,West,Male,78,high school or less,Republican,100 thousand or more,0.5391721
+100942,NA,No,West,Male,18,high school or less,Democrat,Under 20 thousand dollars,1.6819516
+101005,NA,No,Northeast,Female,79,high school or less,Democrat,75 to under 100 thousand,0.7295235
+101060,Trump and the Republicans in Congress,Yes,West,Female,38,high school or less,Democrat,Under 20 thousand dollars,4.0683377
+328,Pelosi and the Democrats in Congress,No,NA,Male,71,post-graduate degree,Republican,75 to under 100 thousand,0.323911
+381,Pelosi and the Democrats in Congress,No,NA,Male,47,college degree,Republican,100 thousand or more,1.0116197
+429,Pelosi and the Democrats in Congress,No,NA,Female,72,college degree,Republican,75 to under 100 thousand,0.514185
+205,NA,No,NA,Female,49,high school or less,Independent,35 to under 50 thousand,1.7796698
+100600,Trump and the Republicans in Congress,Yes,Midwest,Female,50,college degree,Democrat,50 to under 75 thousand,1.112386
+47,Pelosi and the Democrats in Congress,No,NA,Male,78,high school or less,Independent,20 to under 35 thousand,0.373309
+388,Pelosi and the Democrats in Congress,No,NA,Male,61,college degree,Independent,100 thousand or more,0.7941048
+412,Pelosi and the Democrats in Congress,No,NA,Female,67,some college,Republican,NA,0.5838277
+464,Trump and the Republicans in Congress,Yes,NA,Female,37,college degree,Democrat,100 thousand or more,1.15554
+467,Trump and the Republicans in Congress,No,NA,Female,48,college degree,Democrat,NA,0.2561746
+100015,Pelosi and the Democrats in Congress,No,Midwest,Male,21,college degree,Republican,Under 20 thousand dollars,1.1458635
+100144,Pelosi and the Democrats in Congress,Yes,South,Female,66,college degree,Republican,75 to under 100 thousand,0.6242183
+100208,NA,No,Midwest,Female,21,high school or less,Republican,75 to under 100 thousand,2.9524073
+100,NA,Yes,NA,Male,45,high school or less,Democrat,20 to under 35 thousand,1.2353696
+147,Trump and the Republicans in Congress,No,NA,Male,71,post-graduate degree,Republican,100 thousand or more,0.323911
+285,Pelosi and the Democrats in Congress,No,NA,Female,40,some college,Republican,50 to under 75 thousand,1.4238252
+100390,Pelosi and the Democrats in Congress,No,Northeast,Male,61,high school or less,Democrat,50 to under 75 thousand,0.7731079
+100403,Trump and the Republicans in Congress,No,Northeast,Male,26,college degree,Democrat,35 to under 50 thousand,0.9859716
+100511,Pelosi and the Democrats in Congress,No,Midwest,Male,44,some college,Republican,50 to under 75 thousand,0.9837364
+100597,Pelosi and the Democrats in Congress,No,South,Female,NA,post-graduate degree,Republican,35 to under 50 thousand,0.4688172
+100613,NA,No,South,Female,65,some college,Republican,75 to under 100 thousand,0.7087644
+100756,Trump and the Republicans in Congress,No,South,Female,67,high school or less,Democrat,75 to under 100 thousand,0.729739
+100762,Pelosi and the Democrats in Congress,Yes,South,Male,50,college degree,Republican,100 thousand or more,0.6615115
+100782,Trump and the Republicans in Congress,Yes,South,Female,53,high school or less,Republican,Under 20 thousand dollars,1.3588247
+129,NA,No,NA,Male,85,some college,Republican,NA,0.403373
+100407,Trump and the Republicans in Congress,No,Northeast,Male,62,high school or less,Republican,50 to under 75 thousand,0.7731079
+100478,Pelosi and the Democrats in Congress,No,South,Male,47,high school or less,Republican,35 to under 50 thousand,1.0583306
+100557,Trump and the Republicans in Congress,Yes,South,Male,65,college degree,Democrat,75 to under 100 thousand,0.355256
+100585,Pelosi and the Democrats in Congress,No,South,Female,70,some college,Independent,75 to under 100 thousand,0.5838277
+100630,NA,No,West,Female,19,high school or less,Republican,75 to under 100 thousand,2.434397
+36,Trump and the Republicans in Congress,No,NA,Female,62,high school or less,Independent,50 to under 75 thousand,1.118969
+69,Pelosi and the Democrats in Congress,No,NA,Male,84,high school or less,Republican,35 to under 50 thousand,0.5041847
+86,Pelosi and the Democrats in Congress,No,NA,Female,85,college degree,Democrat,Under 20 thousand dollars,0.5140332
+141,Pelosi and the Democrats in Congress,Yes,NA,Male,64,some college,Republican,50 to under 75 thousand,0.7188294
+158,Pelosi and the Democrats in Congress,No,NA,Male,81,some college,Republican,100 thousand or more,0.4313647
+100080,Trump and the Republicans in Congress,No,South,Female,36,some college,Independent,35 to under 50 thousand,1.4325722
+100136,NA,No,Midwest,Male,43,high school or less,NA,75 to under 100 thousand,1.4927211
+100282,Trump and the Republicans in Congress,No,South,Female,28,post-graduate degree,Democrat,35 to under 50 thousand,1.3015316
+100312,Pelosi and the Democrats in Congress,No,West,Male,75,some college,Republican,75 to under 100 thousand,0.5236748
+100421,Trump and the Republicans in Congress,No,Northeast,Male,19,high school or less,Democrat,75 to under 100 thousand,1.1526446
+100460,NA,Yes,Northeast,Male,50,high school or less,Independent,35 to under 50 thousand,0.7731079
+100539,Pelosi and the Democrats in Congress,No,South,Male,39,high school or less,Republican,100 thousand or more,1.2862774
+100612,Trump and the Republicans in Congress,No,South,Female,38,college degree,Democrat,100 thousand or more,1.3117903
+100817,Trump and the Republicans in Congress,Yes,South,Male,21,some college,Democrat,35 to under 50 thousand,1.0770722
+100897,Pelosi and the Democrats in Congress,No,West,Male,70,some college,Independent,50 to under 75 thousand,0.4313647
+335,Trump and the Republicans in Congress,No,NA,Female,78,some college,Democrat,50 to under 75 thousand,0.5865918
+347,Trump and the Republicans in Congress,No,NA,Female,87,college degree,Democrat,NA,0.514185
+355,Pelosi and the Democrats in Congress,Yes,NA,Female,30,some college,Republican,35 to under 50 thousand,1.2265475
+383,Trump and the Republicans in Congress,Yes,NA,Female,58,high school or less,Democrat,50 to under 75 thousand,1.1192996
+399,Pelosi and the Democrats in Congress,No,NA,Female,71,college degree,Independent,100 thousand or more,0.514185
+441,Trump and the Republicans in Congress,No,NA,Male,70,some college,Democrat,50 to under 75 thousand,0.4686483
+480,Pelosi and the Democrats in Congress,No,NA,Female,73,high school or less,Republican,35 to under 50 thousand,0.729739
+100066,Trump and the Republicans in Congress,No,Midwest,Male,19,some college,Republican,100 thousand or more,1.3010628
+100276,Trump and the Republicans in Congress,No,Midwest,Female,33,college degree,Democrat,50 to under 75 thousand,1.2554156
+100417,Pelosi and the Democrats in Congress,Yes,South,Male,37,some college,Republican,100 thousand or more,1.0290865
+100555,Trump and the Republicans in Congress,No,Midwest,Male,19,high school or less,Democrat,100 thousand or more,1.3395654
+100664,NA,Yes,Midwest,Male,22,some college,Democrat,75 to under 100 thousand,1.2042484
+34,Pelosi and the Democrats in Congress,No,NA,Female,68,high school or less,Republican,Under 20 thousand dollars,0.8478281
+127,Pelosi and the Democrats in Congress,No,NA,Female,83,high school or less,Republican,NA,0.1999698
+152,Trump and the Republicans in Congress,No,NA,Female,63,post-graduate degree,Democrat,20 to under 35 thousand,0.7689889
+100383,Trump and the Republicans in Congress,Yes,South,Female,53,college degree,Democrat,100 thousand or more,1.234899
+100441,NA,No,Northeast,Male,36,some college,Democrat,Under 20 thousand dollars,1.2904491
+100495,Trump and the Republicans in Congress,No,West,Male,34,post-graduate degree,Independent,50 to under 75 thousand,0.8837071
+218,Trump and the Republicans in Congress,No,NA,Female,67,some college,Democrat,100 thousand or more,0.5838277
+250,Trump and the Republicans in Congress,No,NA,Female,72,post-graduate degree,Democrat,NA,0.403414
+8,Trump and the Republicans in Congress,No,NA,Female,46,some college,Democrat,35 to under 50 thousand,1.5367579
+35,NA,No,NA,Female,75,some college,Republican,35 to under 50 thousand,0.5836554
+52,Pelosi and the Democrats in Congress,No,NA,Male,85,college degree,Republican,100 thousand or more,0.355256
+64,Pelosi and the Democrats in Congress,Yes,NA,Male,62,some college,Democrat,100 thousand or more,0.7222062
+89,Trump and the Republicans in Congress,No,NA,Female,71,post-graduate degree,Democrat,100 thousand or more,0.4686788
+103,Trump and the Republicans in Congress,No,NA,Female,79,some college,Independent,50 to under 75 thousand,0.5838277
+118,Pelosi and the Democrats in Congress,No,NA,Female,68,some college,Republican,35 to under 50 thousand,0.5838277
+126,Trump and the Republicans in Congress,No,NA,Male,70,college degree,Republican,50 to under 75 thousand,0.412745
+136,Trump and the Republicans in Congress,Yes,NA,Female,73,some college,Democrat,75 to under 100 thousand,0.6816927
+156,NA,Yes,NA,Male,60,college degree,Democrat,100 thousand or more,0.5827173
+198,Trump and the Republicans in Congress,No,NA,Female,83,post-graduate degree,Democrat,50 to under 75 thousand,0.4688172
+211,Pelosi and the Democrats in Congress,No,NA,Male,67,post-graduate degree,Republican,100 thousand or more,0.4394098
+239,Trump and the Republicans in Congress,No,NA,Male,NA,high school or less,Democrat,Under 20 thousand dollars,3.8981161
+248,Trump and the Republicans in Congress,No,NA,Female,72,post-graduate degree,Democrat,100 thousand or more,0.4688172
+344,Pelosi and the Democrats in Congress,Yes,NA,Female,69,some college,Republican,20 to under 35 thousand,0.5838277
+398,Pelosi and the Democrats in Congress,Yes,NA,Male,24,high school or less,Republican,NA,1.3395654
+419,Trump and the Republicans in Congress,No,NA,Male,58,some college,Independent,20 to under 35 thousand,0.6616424
+206,Trump and the Republicans in Congress,Yes,NA,Male,50,post-graduate degree,Independent,100 thousand or more,0.5772243
+210,Trump and the Republicans in Congress,No,NA,Female,75,high school or less,Democrat,75 to under 100 thousand,0.7295235
+231,Pelosi and the Democrats in Congress,No,NA,Male,57,some college,Republican,75 to under 100 thousand,0.2925733
+253,Trump and the Republicans in Congress,Yes,NA,Male,75,some college,Republican,100 thousand or more,0.403373
+259,Trump and the Republicans in Congress,No,NA,Female,65,some college,Democrat,NA,0.5023798
+331,Trump and the Republicans in Congress,No,NA,Female,78,some college,Independent,35 to under 50 thousand,0.6560239
+361,Pelosi and the Democrats in Congress,No,NA,Female,NA,college degree,Republican,NA,0.2432186
+379,Pelosi and the Democrats in Congress,No,NA,Female,72,college degree,Democrat,NA,0.514185
+386,NA,Yes,NA,Female,54,high school or less,Democrat,35 to under 50 thousand,1.6940265
+423,Pelosi and the Democrats in Congress,No,NA,Male,73,college degree,Republican,20 to under 35 thousand,0.3799087
+435,NA,No,NA,Female,88,college degree,Republican,NA,0.514185
+100051,Pelosi and the Democrats in Congress,No,South,Male,60,college degree,Republican,50 to under 75 thousand,0.6615115
+100226,Trump and the Republicans in Congress,No,Midwest,Male,22,college degree,Democrat,100 thousand or more,1.4373091
+100309,Trump and the Republicans in Congress,No,West,Female,33,college degree,Democrat,50 to under 75 thousand,1.15554
+29,Trump and the Republicans in Congress,No,NA,Male,94,some college,Democrat,NA,0.4032539
+42,Pelosi and the Democrats in Congress,No,NA,Male,75,some college,Republican,Under 20 thousand dollars,0.403373
+54,Trump and the Republicans in Congress,No,NA,Female,75,high school or less,Democrat,35 to under 50 thousand,0.8478281
+62,Pelosi and the Democrats in Congress,No,NA,Female,56,college degree,Republican,NA,0.1999698
+85,Pelosi and the Democrats in Congress,No,NA,Female,80,some college,Republican,50 to under 75 thousand,0.5838277
+107,Pelosi and the Democrats in Congress,No,NA,Female,87,NA,NA,50 to under 75 thousand,0.4027896
+153,Trump and the Republicans in Congress,Yes,NA,Female,71,some college,Democrat,100 thousand or more,0.6243418
+168,Pelosi and the Democrats in Congress,No,NA,Female,76,some college,Republican,NA,0.6243418
+249,NA,No,NA,Female,67,college degree,Republican,50 to under 75 thousand,0.5973924
+471,Pelosi and the Democrats in Congress,No,NA,Female,62,high school or less,Republican,20 to under 35 thousand,1.1192996
+478,Trump and the Republicans in Congress,Yes,NA,Male,54,some college,Independent,Under 20 thousand dollars,0.7224195
+496,Trump and the Republicans in Congress,No,NA,Male,48,post-graduate degree,Democrat,100 thousand or more,0.7899462
+501,Trump and the Republicans in Congress,No,NA,Male,71,some college,Democrat,50 to under 75 thousand,0.4313647
+513,NA,Yes,NA,Male,63,college degree,Democrat,50 to under 75 thousand,0.5449043
+296,Trump and the Republicans in Congress,Yes,NA,Female,56,high school or less,Democrat,75 to under 100 thousand,2.8559766
+307,Trump and the Republicans in Congress,No,NA,Female,70,some college,Democrat,75 to under 100 thousand,0.6243418
+470,Trump and the Republicans in Congress,No,NA,Female,60,college degree,Democrat,100 thousand or more,0.7884422
+483,Pelosi and the Democrats in Congress,No,NA,Female,67,post-graduate degree,Republican,20 to under 35 thousand,0.4688172
+505,Trump and the Republicans in Congress,No,NA,Female,68,some college,Republican,75 to under 100 thousand,0.6243418
+100420,Pelosi and the Democrats in Congress,No,South,Female,67,high school or less,Republican,100 thousand or more,0.729739
+100672,NA,No,West,Male,30,some college,Independent,50 to under 75 thousand,1.2849713
+225,Pelosi and the Democrats in Congress,No,NA,Male,47,some college,Republican,Under 20 thousand dollars,0.8467174
+366,Trump and the Republicans in Congress,Yes,NA,Male,82,some college,Democrat,50 to under 75 thousand,0.403373
+449,Trump and the Republicans in Congress,Yes,NA,Female,52,college degree,Democrat,100 thousand or more,0.8434044
+100295,Pelosi and the Democrats in Congress,No,West,Female,53,college degree,Republican,75 to under 100 thousand,0.8434044
+17,Pelosi and the Democrats in Congress,No,NA,Female,67,college degree,Republican,NA,0.5140332
+48,Pelosi and the Democrats in Congress,No,NA,Male,56,high school or less,Republican,20 to under 35 thousand,0.7731079
+74,Trump and the Republicans in Congress,No,NA,Male,67,some college,Democrat,20 to under 35 thousand,0.2987542
+120,Trump and the Republicans in Congress,No,NA,Female,61,high school or less,Independent,35 to under 50 thousand,1.3004287
+135,Pelosi and the Democrats in Congress,No,NA,Male,72,some college,Republican,75 to under 100 thousand,0.4686483
+160,Pelosi and the Democrats in Congress,No,NA,Male,67,post-graduate degree,Republican,Under 20 thousand dollars,0.2565491
+58,Pelosi and the Democrats in Congress,No,NA,Female,80,high school or less,Republican,50 to under 75 thousand,0.729739
+114,Pelosi and the Democrats in Congress,No,NA,Male,65,some college,Republican,NA,0.1999698
+159,Trump and the Republicans in Congress,No,NA,Female,64,college degree,Democrat,20 to under 35 thousand,0.3989452
+357,Trump and the Republicans in Congress,No,NA,Male,47,college degree,Republican,100 thousand or more,0.7454953
+372,Trump and the Republicans in Congress,No,NA,Female,NA,college degree,Republican,NA,0.7886752
+417,NA,Yes,NA,Male,NA,some college,Democrat,NA,3.8565469
+437,Trump and the Republicans in Congress,No,NA,Male,79,college degree,Democrat,35 to under 50 thousand,0.445614
+100097,Trump and the Republicans in Congress,No,South,Female,38,college degree,Democrat,100 thousand or more,1.080556
+100150,NA,No,Northeast,Male,31,some college,NA,35 to under 50 thousand,1.1560018
+100277,Trump and the Republicans in Congress,Yes,South,Male,66,high school or less,Democrat,75 to under 100 thousand,0.5041847
+100464,NA,No,Midwest,Male,44,high school or less,Democrat,Under 20 thousand dollars,3.0503198
+100513,Trump and the Republicans in Congress,No,South,Male,21,some college,Independent,50 to under 75 thousand,1.1198453
+100538,Pelosi and the Democrats in Congress,Yes,South,Female,47,post-graduate degree,Democrat,100 thousand or more,1.4985445
+100587,Trump and the Republicans in Congress,No,Midwest,Male,69,high school or less,Republican,35 to under 50 thousand,0.7111267
+100639,Pelosi and the Democrats in Congress,No,Midwest,Male,59,college degree,Republican,100 thousand or more,0.7685596
+100658,Pelosi and the Democrats in Congress,No,West,Female,49,college degree,Republican,35 to under 50 thousand,1.4012185
+100784,Trump and the Republicans in Congress,No,South,Male,48,some college,Democrat,75 to under 100 thousand,1.0279113
+100810,Trump and the Republicans in Congress,No,South,Female,56,college degree,Democrat,100 thousand or more,1.234899
+100837,Trump and the Republicans in Congress,NA,South,Male,60,some college,NA,100 thousand or more,0.6187079
+100865,Pelosi and the Democrats in Congress,No,Midwest,Female,55,some college,Republican,100 thousand or more,1.2630509
+287,Pelosi and the Democrats in Congress,No,NA,Female,37,high school or less,Independent,35 to under 50 thousand,1.7817045
+288,Pelosi and the Democrats in Congress,No,NA,Male,92,high school or less,Republican,NA,1.1970067
+299,Pelosi and the Democrats in Congress,No,NA,Female,37,some college,NA,50 to under 75 thousand,1.31205
+309,NA,Yes,NA,Female,31,some college,NA,Under 20 thousand dollars,1.31205
+100031,Trump and the Republicans in Congress,Yes,South,Female,68,high school or less,Democrat,20 to under 35 thousand,0.8858999
+100125,Trump and the Republicans in Congress,Yes,Northeast,Female,44,college degree,Republican,50 to under 75 thousand,1.0790033
+100159,Pelosi and the Democrats in Congress,No,Midwest,Male,63,college degree,Independent,NA,0.7941048
+100205,Trump and the Republicans in Congress,No,South,Female,69,high school or less,Democrat,Under 20 thousand dollars,1.8103035
+100386,Trump and the Republicans in Congress,No,South,Female,42,college degree,Democrat,35 to under 50 thousand,2.0516414
+100433,Trump and the Republicans in Congress,No,Northeast,Male,23,some college,Democrat,20 to under 35 thousand,1.3071747
+100501,Pelosi and the Democrats in Congress,No,South,Male,21,high school or less,Republican,35 to under 50 thousand,1.3997188
+100519,Pelosi and the Democrats in Congress,No,Midwest,Female,38,college degree,NA,50 to under 75 thousand,1.5747254
+100667,Pelosi and the Democrats in Congress,No,Midwest,Male,55,high school or less,Republican,50 to under 75 thousand,0.8984804
+14,Trump and the Republicans in Congress,No,NA,Female,NA,post-graduate degree,Democrat,75 to under 100 thousand,0.4688172
+61,Pelosi and the Democrats in Congress,Yes,NA,Male,31,some college,Republican,100 thousand or more,0.6278298
+176,Trump and the Republicans in Congress,No,NA,Male,77,high school or less,Democrat,35 to under 50 thousand,0.6763082
+178,Trump and the Republicans in Congress,Yes,NA,Male,64,high school or less,Democrat,75 to under 100 thousand,0.6125101
+100173,Trump and the Republicans in Congress,No,South,Male,22,college degree,Republican,35 to under 50 thousand,0.8124106
+100326,Trump and the Republicans in Congress,No,South,Male,32,some college,Democrat,50 to under 75 thousand,1.2015884
+100416,Pelosi and the Democrats in Congress,No,South,Female,53,some college,Democrat,100 thousand or more,1.0871279
+119,Trump and the Republicans in Congress,No,NA,Female,66,some college,Democrat,NA,0.5838277
+358,Pelosi and the Democrats in Congress,No,NA,Female,73,college degree,Republican,100 thousand or more,0.514185
+427,Pelosi and the Democrats in Congress,No,NA,Female,74,high school or less,Democrat,20 to under 35 thousand,0.7803784
+100052,Pelosi and the Democrats in Congress,No,South,Male,60,high school or less,Republican,100 thousand or more,0.9388269
+100141,Trump and the Republicans in Congress,No,South,Male,22,some college,Democrat,35 to under 50 thousand,1.2583255
+100567,Trump and the Republicans in Congress,No,South,Female,32,college degree,Democrat,100 thousand or more,1.3117903
+100644,Trump and the Republicans in Congress,Yes,West,Male,37,college degree,Democrat,100 thousand or more,0.7983753
+70,Pelosi and the Democrats in Congress,No,NA,Female,65,college degree,Republican,50 to under 75 thousand,0.5140332
+98,Trump and the Republicans in Congress,No,NA,Female,85,college degree,Democrat,20 to under 35 thousand,0.6001987
+24,Pelosi and the Democrats in Congress,No,NA,Male,83,high school or less,Republican,NA,1.0299784
+77,Trump and the Republicans in Congress,No,NA,Female,68,high school or less,NA,NA,1.4911945
+140,Trump and the Republicans in Congress,No,NA,Female,56,college degree,Democrat,100 thousand or more,0.9163014
+223,Pelosi and the Democrats in Congress,No,NA,Male,50,post-graduate degree,Independent,100 thousand or more,0.5580988
+246,Trump and the Republicans in Congress,No,NA,Male,48,high school or less,Democrat,100 thousand or more,1.0583306
+272,Trump and the Republicans in Congress,No,NA,Male,65,some college,Democrat,20 to under 35 thousand,0.3488333
+345,Trump and the Republicans in Congress,No,NA,Female,NA,post-graduate degree,Independent,35 to under 50 thousand,0.5474033
+408,Pelosi and the Democrats in Congress,No,NA,Male,66,high school or less,Republican,50 to under 75 thousand,0.5041847
+91,Trump and the Republicans in Congress,Yes,NA,Female,56,post-graduate degree,NA,35 to under 50 thousand,0.9019856
+162,Trump and the Republicans in Congress,Yes,NA,Male,61,high school or less,Democrat,NA,0.3911861
+173,NA,No,NA,Female,81,high school or less,Republican,20 to under 35 thousand,0.7803784
+177,Pelosi and the Democrats in Congress,No,NA,Male,65,some college,Republican,35 to under 50 thousand,0.4686483
+179,Trump and the Republicans in Congress,Yes,NA,Female,64,post-graduate degree,Republican,100 thousand or more,0.7689889
+192,Trump and the Republicans in Congress,No,NA,Female,61,college degree,Democrat,20 to under 35 thousand,0.9208778
+201,Trump and the Republicans in Congress,No,NA,Female,76,high school or less,Democrat,Under 20 thousand dollars,0.6279354
+229,Trump and the Republicans in Congress,Yes,NA,Male,50,college degree,Independent,100 thousand or more,0.5447434
+247,Pelosi and the Democrats in Congress,No,NA,Male,NA,college degree,Republican,75 to under 100 thousand,1.0867527
+334,Trump and the Republicans in Congress,No,NA,Female,56,high school or less,Democrat,35 to under 50 thousand,1.118969
+348,NA,No,NA,Female,64,some college,Republican,75 to under 100 thousand,0.8952313
+373,Trump and the Republicans in Congress,Yes,NA,Male,54,post-graduate degree,Democrat,100 thousand or more,0.5801072
+395,Pelosi and the Democrats in Congress,No,NA,Female,NA,some college,Republican,NA,0.5838277
+100009,Trump and the Republicans in Congress,No,South,Male,41,college degree,Democrat,100 thousand or more,0.7457155
+100032,Trump and the Republicans in Congress,Yes,South,Female,34,some college,Democrat,50 to under 75 thousand,1.7391365
+100060,Pelosi and the Democrats in Congress,No,South,Male,51,post-graduate degree,Republican,100 thousand or more,0.6031447
+100102,NA,Yes,Northeast,Female,NA,some college,NA,75 to under 100 thousand,0.8525011
+100126,Trump and the Republicans in Congress,Yes,South,Female,21,some college,Democrat,Under 20 thousand dollars,1.6208243
+100274,Pelosi and the Democrats in Congress,No,South,Female,59,some college,Republican,50 to under 75 thousand,0.8954958
+100290,Pelosi and the Democrats in Congress,No,West,Female,47,high school or less,Republican,100 thousand or more,1.9886303
+100323,Pelosi and the Democrats in Congress,No,Midwest,Male,47,post-graduate degree,Republican,35 to under 50 thousand,0.7899462
+100330,Trump and the Republicans in Congress,No,South,Male,20,some college,Democrat,50 to under 75 thousand,1.3075608
+327,Pelosi and the Democrats in Congress,No,NA,Male,84,high school or less,Republican,20 to under 35 thousand,0.5041847
+341,Pelosi and the Democrats in Congress,No,NA,Male,46,college degree,Republican,75 to under 100 thousand,0.7454953
+354,Pelosi and the Democrats in Congress,No,NA,Male,48,post-graduate degree,Republican,75 to under 100 thousand,0.7899462
+365,Trump and the Republicans in Congress,No,NA,Male,68,high school or less,Democrat,20 to under 35 thousand,0.5040358
+378,Pelosi and the Democrats in Congress,Yes,NA,Female,53,some college,Republican,50 to under 75 thousand,0.8952313
+390,Trump and the Republicans in Congress,No,NA,Male,70,high school or less,Democrat,75 to under 100 thousand,0.5857737
+409,Pelosi and the Democrats in Congress,No,NA,Female,63,college degree,Republican,35 to under 50 thousand,0.7886752
+425,Pelosi and the Democrats in Congress,No,NA,Female,79,high school or less,Republican,NA,1.5946744
+476,Trump and the Republicans in Congress,No,NA,Male,53,college degree,Republican,20 to under 35 thousand,0.403578
+485,Pelosi and the Democrats in Congress,No,NA,Female,73,college degree,Republican,50 to under 75 thousand,0.514185
+511,Trump and the Republicans in Congress,No,NA,Female,51,post-graduate degree,Democrat,100 thousand or more,0.7689889
+100064,Trump and the Republicans in Congress,No,South,Female,59,some college,Democrat,100 thousand or more,1.0456044
+100315,Trump and the Republicans in Congress,No,West,Male,40,high school or less,Independent,100 thousand or more,1.3739665
+40,Trump and the Republicans in Congress,No,NA,Male,49,high school or less,Democrat,35 to under 50 thousand,1.063341
+49,NA,No,NA,Male,90,some college,Independent,100 thousand or more,0.298666
+154,Pelosi and the Democrats in Congress,No,NA,Female,82,high school or less,Republican,NA,0.3539315
+191,Trump and the Republicans in Congress,No,NA,Female,88,high school or less,Republican,20 to under 35 thousand,0.6071295
+202,Pelosi and the Democrats in Congress,No,NA,Male,77,post-graduate degree,Republican,50 to under 75 thousand,0.323911
+208,Trump and the Republicans in Congress,No,NA,Male,40,high school or less,Republican,50 to under 75 thousand,1.0583306
+221,NA,No,NA,Female,60,college degree,Democrat,50 to under 75 thousand,1.2345343
+228,Trump and the Republicans in Congress,No,NA,Female,26,some college,Democrat,20 to under 35 thousand,1.5511687
+295,Pelosi and the Democrats in Congress,No,NA,Male,75,high school or less,Republican,100 thousand or more,0.5391721
+300,Trump and the Republicans in Congress,Yes,NA,Male,79,post-graduate degree,NA,35 to under 50 thousand,0.3463884
+322,NA,No,NA,Male,73,high school or less,Republican,35 to under 50 thousand,0.5041847
+337,Trump and the Republicans in Congress,Yes,NA,Male,64,high school or less,Democrat,100 thousand or more,0.7733363
+407,Pelosi and the Democrats in Congress,No,NA,Male,66,post-graduate degree,Republican,35 to under 50 thousand,0.2787231
+426,NA,No,NA,Male,73,post-graduate degree,Independent,NA,0.3463884
+444,Pelosi and the Democrats in Congress,Yes,NA,Male,59,some college,Republican,50 to under 75 thousand,0.7188294
+450,Trump and the Republicans in Congress,No,NA,Male,62,high school or less,Democrat,75 to under 100 thousand,0.8270011
+463,Pelosi and the Democrats in Congress,Yes,NA,Female,89,some college,Republican,Under 20 thousand dollars,0.4624126
+100044,Pelosi and the Democrats in Congress,No,South,Female,61,some college,Republican,100 thousand or more,1.0871279
+100195,Pelosi and the Democrats in Congress,Yes,South,Male,40,post-graduate degree,Independent,100 thousand or more,1.0353608
+100228,Trump and the Republicans in Congress,No,Midwest,Female,63,high school or less,Republican,20 to under 35 thousand,1.5787147
+13,Trump and the Republicans in Congress,No,NA,Female,80,high school or less,Democrat,20 to under 35 thousand,0.6308851
+32,Pelosi and the Democrats in Congress,No,NA,Male,63,some college,Independent,50 to under 75 thousand,0.6185251
+55,Trump and the Republicans in Congress,No,NA,Female,85,college degree,Independent,75 to under 100 thousand,0.7493365
+90,Pelosi and the Democrats in Congress,No,NA,Female,89,high school or less,Republican,20 to under 35 thousand,0.6279354
+112,Pelosi and the Democrats in Congress,No,NA,Male,66,high school or less,Republican,NA,1.1970067
+134,Pelosi and the Democrats in Congress,No,NA,Female,63,post-graduate degree,Republican,NA,0.5325857
+166,Pelosi and the Democrats in Congress,No,NA,Male,38,high school or less,Republican,100 thousand or more,1.1330661
+242,NA,No,NA,Male,65,college degree,Independent,75 to under 100 thousand,0.412745
+258,Trump and the Republicans in Congress,No,NA,Male,53,some college,Republican,100 thousand or more,0.6187079
+280,Trump and the Republicans in Congress,No,NA,Female,87,high school or less,Democrat,Under 20 thousand dollars,1.2895712
+11,Pelosi and the Democrats in Congress,No,NA,Male,51,post-graduate degree,Republican,100 thousand or more,0.5772243
+23,Trump and the Republicans in Congress,No,NA,Female,44,college degree,Democrat,75 to under 100 thousand,1.2598728
+30,Pelosi and the Democrats in Congress,No,NA,Female,54,post-graduate degree,Republican,75 to under 100 thousand,0.7188761
+67,Trump and the Republicans in Congress,No,NA,Female,58,high school or less,Democrat,35 to under 50 thousand,1.3004287
+99,Trump and the Republicans in Congress,No,NA,Female,68,some college,Democrat,Under 20 thousand dollars,0.678305
+115,Pelosi and the Democrats in Congress,No,NA,Female,NA,college degree,Republican,Under 20 thousand dollars,0.5841243
+130,Trump and the Republicans in Congress,No,NA,Female,84,high school or less,Democrat,50 to under 75 thousand,0.6279354
+163,Pelosi and the Democrats in Congress,No,NA,Male,69,high school or less,Republican,35 to under 50 thousand,0.5391721
+294,NA,No,NA,Male,70,post-graduate degree,Independent,NA,0.2565491
+474,Trump and the Republicans in Congress,No,NA,Female,73,college degree,Independent,NA,0.514185
+477,Pelosi and the Democrats in Congress,No,NA,Female,NA,high school or less,Republican,35 to under 50 thousand,0.5404739
+481,Trump and the Republicans in Congress,No,NA,Female,71,some college,Independent,NA,0.1999698
+499,Trump and the Republicans in Congress,Yes,NA,Male,31,some college,Republican,35 to under 50 thousand,0.7544224
+515,Pelosi and the Democrats in Congress,No,NA,Female,64,some college,Republican,50 to under 75 thousand,0.8954958
+100016,Trump and the Republicans in Congress,No,South,Female,39,high school or less,Democrat,50 to under 75 thousand,2.1737843
+100048,Pelosi and the Democrats in Congress,No,South,Male,61,high school or less,Republican,Under 20 thousand dollars,0.9388269
+100068,Trump and the Republicans in Congress,Yes,South,Male,57,post-graduate degree,Democrat,100 thousand or more,0.4968262
+100185,Pelosi and the Democrats in Congress,No,South,Male,75,college degree,Republican,100 thousand or more,0.355256
+100263,Trump and the Republicans in Congress,Yes,Midwest,Male,66,some college,Democrat,Under 20 thousand dollars,0.5689371
+100281,Pelosi and the Democrats in Congress,No,South,Male,65,college degree,Republican,50 to under 75 thousand,0.4312793
+100043,Pelosi and the Democrats in Congress,Yes,South,Male,40,high school or less,Republican,100 thousand or more,1.2357345
+100090,NA,No,Northeast,Male,27,some college,Independent,20 to under 35 thousand,1.1195145
+100220,Pelosi and the Democrats in Congress,No,Midwest,Male,60,some college,Republican,75 to under 100 thousand,0.8726557
+100250,Pelosi and the Democrats in Congress,No,Midwest,Male,32,college degree,NA,100 thousand or more,0.4980857
+100304,Trump and the Republicans in Congress,No,West,Female,21,high school or less,Democrat,35 to under 50 thousand,2.434397
+100360,Trump and the Republicans in Congress,No,West,Female,NA,college degree,Democrat,NA,0.6675353
+100375,Pelosi and the Democrats in Congress,No,South,Female,25,some college,Democrat,100 thousand or more,1.6208243
+100380,Trump and the Republicans in Congress,Yes,Northeast,Female,37,high school or less,Democrat,20 to under 35 thousand,2.0913142
+100396,Trump and the Republicans in Congress,Yes,South,Male,41,some college,Independent,35 to under 50 thousand,1.0279113
+100493,Trump and the Republicans in Congress,Yes,South,Male,22,some college,Democrat,100 thousand or more,1.1198453
+100578,Pelosi and the Democrats in Congress,No,Midwest,Male,60,NA,Republican,75 to under 100 thousand,1.4159997
+100655,NA,No,South,Female,55,some college,Republican,35 to under 50 thousand,1.702213
+100741,Pelosi and the Democrats in Congress,No,Northeast,Male,50,college degree,Republican,100 thousand or more,0.6613161
+100754,Pelosi and the Democrats in Congress,No,Midwest,Female,53,some college,Independent,100 thousand or more,1.0404082
+100800,Trump and the Republicans in Congress,No,South,Male,82,college degree,Republican,100 thousand or more,0.4312793
+100860,NA,Yes,Northeast,Male,29,college degree,Democrat,100 thousand or more,0.9859716
+12,Trump and the Republicans in Congress,No,NA,Female,90,high school or less,Democrat,Under 20 thousand dollars,1.1044383
+27,Trump and the Republicans in Congress,No,NA,Female,94,high school or less,Democrat,35 to under 50 thousand,0.8478281
+31,Pelosi and the Democrats in Congress,No,NA,Male,52,college degree,Republican,100 thousand or more,0.5449043
+53,NA,No,NA,Male,50,high school or less,Independent,100 thousand or more,0.7731079
+80,Pelosi and the Democrats in Congress,No,NA,Female,68,college degree,Republican,NA,0.5140332
+109,Trump and the Republicans in Congress,No,NA,Male,63,college degree,Democrat,100 thousand or more,0.7941048
+132,Pelosi and the Democrats in Congress,No,NA,Female,73,some college,NA,Under 20 thousand dollars,0.4324062
+143,Pelosi and the Democrats in Congress,No,NA,Male,70,college degree,Republican,75 to under 100 thousand,0.412745
+389,Pelosi and the Democrats in Congress,No,NA,Male,55,college degree,Republican,100 thousand or more,0.6330828
+396,Trump and the Republicans in Congress,No,NA,Female,69,college degree,Democrat,Under 20 thousand dollars,0.514185
+100019,Pelosi and the Democrats in Congress,No,South,Male,74,some college,Republican,50 to under 75 thousand,0.489693
+100049,Pelosi and the Democrats in Congress,No,Northeast,Male,18,some college,Republican,50 to under 75 thousand,0.9221735
+100104,Pelosi and the Democrats in Congress,No,South,Male,35,college degree,Independent,35 to under 50 thousand,1.1368517
+100151,Trump and the Republicans in Congress,No,South,Male,42,college degree,Independent,75 to under 100 thousand,0.9052953
+100160,Pelosi and the Democrats in Congress,No,Northeast,Male,22,some college,Independent,NA,1.1195145
+100171,Trump and the Republicans in Congress,Yes,South,Female,43,high school or less,Democrat,Under 20 thousand dollars,2.171302
+100225,Pelosi and the Democrats in Congress,No,South,Male,72,college degree,Republican,75 to under 100 thousand,0.355256
+100258,Pelosi and the Democrats in Congress,No,South,Female,76,some college,Republican,50 to under 75 thousand,0.5838277
+100387,Trump and the Republicans in Congress,No,South,Female,69,post-graduate degree,Democrat,50 to under 75 thousand,0.4688172
+100398,Pelosi and the Democrats in Congress,No,Northeast,Male,44,high school or less,Democrat,100 thousand or more,2.9492519
+100415,Trump and the Republicans in Congress,Yes,Midwest,Female,49,post-graduate degree,Democrat,100 thousand or more,1.3880099
+100444,Trump and the Republicans in Congress,No,Northeast,Female,62,high school or less,Republican,35 to under 50 thousand,1.118969
+100481,Trump and the Republicans in Congress,Yes,Northeast,Male,35,high school or less,Independent,100 thousand or more,1.5014479
+100515,Trump and the Republicans in Congress,No,Midwest,Female,60,some college,Independent,100 thousand or more,1.2630509
+100611,Trump and the Republicans in Congress,No,Midwest,Male,18,high school or less,Independent,100 thousand or more,1.5641119
+100642,Trump and the Republicans in Congress,Yes,Midwest,Female,48,high school or less,Democrat,50 to under 75 thousand,4.4149244
+100742,Trump and the Republicans in Congress,No,Northeast,Female,19,some college,Democrat,50 to under 75 thousand,1.674202
+100803,Pelosi and the Democrats in Congress,No,Northeast,Male,18,high school or less,Republican,Under 20 thousand dollars,2.8594289
+100830,Pelosi and the Democrats in Congress,No,Northeast,Male,50,some college,Independent,100 thousand or more,0.2925733
+100879,Pelosi and the Democrats in Congress,No,South,Male,78,high school or less,NA,20 to under 35 thousand,0.6120781
+100906,Pelosi and the Democrats in Congress,No,South,Male,50,high school or less,Independent,NA,2.4064097
+100920,Pelosi and the Democrats in Congress,No,South,Female,47,college degree,Republican,75 to under 100 thousand,1.0793221
+100005,Trump and the Republicans in Congress,No,South,Female,74,some college,Democrat,Under 20 thousand dollars,0.5838277
+100053,Pelosi and the Democrats in Congress,No,Northeast,Male,55,some college,Republican,100 thousand or more,0.7508868
+100076,NA,No,Northeast,Female,53,college degree,Democrat,20 to under 35 thousand,0.9571654
+100128,Trump and the Republicans in Congress,No,South,Female,61,high school or less,Democrat,Under 20 thousand dollars,1.3588247
+100179,Trump and the Republicans in Congress,Yes,South,Female,53,high school or less,Democrat,Under 20 thousand dollars,1.5865995
+100267,Pelosi and the Democrats in Congress,No,South,Female,68,college degree,Independent,100 thousand or more,0.6242183
+100301,Trump and the Republicans in Congress,No,West,Female,57,some college,Democrat,75 to under 100 thousand,1.1625678
+100767,Pelosi and the Democrats in Congress,No,Northeast,Male,40,post-graduate degree,Independent,100 thousand or more,0.8251752
+100840,NA,No,South,Male,51,some college,Republican,100 thousand or more,0.7511086
+100868,Pelosi and the Democrats in Congress,No,South,Male,75,some college,Republican,20 to under 35 thousand,0.489693
+100891,Trump and the Republicans in Congress,Yes,South,Male,20,some college,Democrat,20 to under 35 thousand,1.7534415
+100923,NA,No,South,Male,77,post-graduate degree,Republican,100 thousand or more,0.323911
+317,Trump and the Republicans in Congress,Yes,NA,Male,58,post-graduate degree,Democrat,100 thousand or more,0.5801072
+100035,Pelosi and the Democrats in Congress,No,South,Male,33,some college,NA,75 to under 100 thousand,1.0290865
+100191,Pelosi and the Democrats in Congress,No,Midwest,Female,NA,some college,Independent,50 to under 75 thousand,0.678305
+100299,Pelosi and the Democrats in Congress,Yes,Northeast,Female,29,college degree,Democrat,50 to under 75 thousand,1.4270603
+100404,Trump and the Republicans in Congress,Yes,South,Female,69,some college,Democrat,35 to under 50 thousand,0.8275719
+100443,Trump and the Republicans in Congress,No,Midwest,Male,68,college degree,Independent,35 to under 50 thousand,0.412745
+100547,Trump and the Republicans in Congress,No,Midwest,Female,36,high school or less,Democrat,Under 20 thousand dollars,2.1629814
+82,Pelosi and the Democrats in Congress,No,NA,Female,NA,college degree,Republican,NA,0.7886752
+350,NA,No,NA,Male,25,some college,Independent,20 to under 35 thousand,0.9221735
+403,Trump and the Republicans in Congress,Yes,NA,Female,57,some college,Democrat,Under 20 thousand dollars,0.7744164
+431,Trump and the Republicans in Congress,No,NA,Male,69,college degree,Democrat,35 to under 50 thousand,0.355256
+100140,Trump and the Republicans in Congress,No,Midwest,Female,23,college degree,Democrat,NA,1.6584822
+100192,Pelosi and the Democrats in Congress,No,Midwest,Male,29,college degree,Republican,50 to under 75 thousand,1.1458635
+100240,Trump and the Republicans in Congress,No,Midwest,Male,48,some college,Democrat,Under 20 thousand dollars,1.1053854
+100275,Trump and the Republicans in Congress,Yes,South,Female,32,some college,Democrat,Under 20 thousand dollars,1.868302
+100458,Trump and the Republicans in Congress,No,Midwest,Male,85,high school or less,Democrat,Under 20 thousand dollars,0.8303303
+100503,Pelosi and the Democrats in Congress,No,South,Male,23,college degree,Republican,35 to under 50 thousand,1.2371148
+100627,Pelosi and the Democrats in Congress,No,West,Female,36,college degree,Republican,100 thousand or more,1.15554
+172,Pelosi and the Democrats in Congress,No,NA,Female,83,high school or less,Republican,Under 20 thousand dollars,0.8478281
+174,Pelosi and the Democrats in Congress,No,NA,Male,58,high school or less,Independent,75 to under 100 thousand,0.8270011
+180,Trump and the Republicans in Congress,Yes,NA,Female,79,college degree,Democrat,75 to under 100 thousand,0.5498663
+182,Trump and the Republicans in Congress,No,NA,Female,47,some college,Democrat,NA,0.3648537
+338,Pelosi and the Democrats in Congress,Yes,NA,Female,65,high school or less,Republican,NA,0.729739
+359,Pelosi and the Democrats in Congress,No,NA,Male,90,some college,Republican,35 to under 50 thousand,0.403373
+391,NA,No,NA,Female,84,some college,Republican,35 to under 50 thousand,0.5838277
+401,Pelosi and the Democrats in Congress,No,NA,Female,68,high school or less,Democrat,35 to under 50 thousand,0.8478281
+422,Pelosi and the Democrats in Congress,No,NA,Female,82,some college,Republican,Under 20 thousand dollars,0.4624126
+100132,Trump and the Republicans in Congress,Yes,South,Female,23,college degree,Democrat,NA,0.2468926
+100172,Pelosi and the Democrats in Congress,Yes,South,Male,20,some college,Republican,35 to under 50 thousand,1.1198453
+100288,Trump and the Republicans in Congress,Yes,West,Male,50,some college,NA,50 to under 75 thousand,0.8032309
+100316,Pelosi and the Democrats in Congress,No,West,Female,50,post-graduate degree,Republican,100 thousand or more,0.8978916
+100329,Pelosi and the Democrats in Congress,No,Midwest,Female,57,college degree,Republican,20 to under 35 thousand,1.112386
+100533,Pelosi and the Democrats in Congress,No,West,Male,28,college degree,Republican,75 to under 100 thousand,1.0547034
+100646,Trump and the Republicans in Congress,Yes,West,Female,40,post-graduate degree,Democrat,100 thousand or more,1.0523808
+21,Pelosi and the Democrats in Congress,No,NA,Female,81,some college,Republican,NA,0.4322785
+26,Trump and the Republicans in Congress,No,NA,Female,50,some college,Democrat,NA,0.8952313
+33,Pelosi and the Democrats in Congress,No,NA,Female,83,high school or less,Republican,Under 20 thousand dollars,0.729739
+108,Pelosi and the Democrats in Congress,No,NA,Male,69,high school or less,Republican,20 to under 35 thousand,0.4338474
+123,NA,No,NA,Male,39,high school or less,Democrat,20 to under 35 thousand,2.5155009
+149,Pelosi and the Democrats in Congress,No,NA,Male,67,high school or less,Republican,50 to under 75 thousand,0.5857737
+184,Pelosi and the Democrats in Congress,Yes,NA,Female,80,high school or less,Republican,20 to under 35 thousand,0.8478281
+219,Pelosi and the Democrats in Congress,No,NA,Male,NA,post-graduate degree,Republican,100 thousand or more,0.3238153
+224,Pelosi and the Democrats in Congress,No,NA,Female,76,high school or less,Republican,Under 20 thousand dollars,1.4911945
+252,Trump and the Republicans in Congress,No,NA,Male,74,some college,Democrat,50 to under 75 thousand,0.470989
+261,Trump and the Republicans in Congress,No,NA,Female,79,some college,Democrat,20 to under 35 thousand,0.6243418
+268,Pelosi and the Democrats in Congress,No,NA,Male,73,some college,Republican,100 thousand or more,0.4313647
+274,Trump and the Republicans in Congress,Yes,NA,Male,69,post-graduate degree,Democrat,50 to under 75 thousand,0.3463884
+282,Trump and the Republicans in Congress,Yes,NA,Male,64,college degree,Democrat,75 to under 100 thousand,0.4315837
+339,Pelosi and the Democrats in Congress,No,NA,Female,73,some college,Republican,20 to under 35 thousand,0.5838277
+349,Trump and the Republicans in Congress,No,NA,Female,45,post-graduate degree,Democrat,100 thousand or more,0.9840909
+375,Pelosi and the Democrats in Congress,Yes,NA,Male,42,NA,Republican,20 to under 35 thousand,1.6679224
+440,Trump and the Republicans in Congress,No,NA,Male,74,some college,Democrat,75 to under 100 thousand,0.5472062
+6,Trump and the Republicans in Congress,Yes,NA,Male,82,high school or less,Democrat,50 to under 75 thousand,0.5041847
+25,NA,No,NA,Female,88,post-graduate degree,Democrat,20 to under 35 thousand,0.4688172
+71,Trump and the Republicans in Congress,No,NA,Male,20,high school or less,NA,Under 20 thousand dollars,1.7444933
+96,Trump and the Republicans in Congress,Yes,NA,Female,51,some college,Democrat,Under 20 thousand dollars,1.0452956
+128,Pelosi and the Democrats in Congress,No,NA,Female,69,post-graduate degree,Republican,75 to under 100 thousand,0.5446829
+167,Trump and the Republicans in Congress,No,NA,Female,82,some college,NA,NA,0.1999698
+186,Trump and the Republicans in Congress,No,NA,Female,61,some college,Democrat,100 thousand or more,1.0456044
+193,Trump and the Republicans in Congress,No,NA,Female,82,college degree,Democrat,50 to under 75 thousand,0.5140332
+196,Pelosi and the Democrats in Congress,Yes,NA,Male,42,college degree,Independent,75 to under 100 thousand,0.7454953
+212,Trump and the Republicans in Congress,No,NA,Female,67,some college,Independent,50 to under 75 thousand,0.5048889
+222,Pelosi and the Democrats in Congress,No,NA,Female,93,college degree,Republican,Under 20 thousand dollars,0.380826
+230,Pelosi and the Democrats in Congress,No,NA,Male,84,post-graduate degree,Republican,50 to under 75 thousand,0.3763275
+237,Pelosi and the Democrats in Congress,No,NA,Female,66,high school or less,Republican,20 to under 35 thousand,0.729739
+277,NA,No,NA,Female,89,some college,Democrat,Under 20 thousand dollars,0.4624126
+284,NA,No,NA,Male,72,college degree,Republican,50 to under 75 thousand,0.412745
+290,Trump and the Republicans in Congress,No,NA,Female,65,some college,Democrat,100 thousand or more,0.7015481
+293,Pelosi and the Democrats in Congress,No,NA,Female,24,high school or less,Republican,75 to under 100 thousand,1.7845935
+306,Trump and the Republicans in Congress,No,NA,Female,62,high school or less,Independent,100 thousand or more,1.8742058
+473,Pelosi and the Democrats in Congress,No,NA,Male,28,high school or less,Republican,35 to under 50 thousand,1.1529852
+475,Pelosi and the Democrats in Congress,No,NA,Female,82,post-graduate degree,Republican,NA,0.4688172
+482,Trump and the Republicans in Congress,No,NA,Female,64,some college,Democrat,20 to under 35 thousand,0.8954958
+493,Pelosi and the Democrats in Congress,Yes,NA,Male,86,college degree,Republican,100 thousand or more,0.445614
+497,Trump and the Republicans in Congress,No,NA,Male,88,high school or less,Democrat,NA,0.5391721
+504,Trump and the Republicans in Congress,No,NA,Male,19,some college,Democrat,20 to under 35 thousand,1.1084435
+100008,Trump and the Republicans in Congress,No,South,Female,34,college degree,Republican,100 thousand or more,1.3117903
+100296,Pelosi and the Democrats in Congress,No,West,Male,46,high school or less,Republican,Under 20 thousand dollars,1.7234291
+45,Trump and the Republicans in Congress,Yes,NA,Female,NA,some college,Democrat,NA,0.5478166
+60,Trump and the Republicans in Congress,No,NA,Male,77,some college,Democrat,75 to under 100 thousand,0.403373
+79,Pelosi and the Democrats in Congress,No,NA,Male,75,some college,Independent,35 to under 50 thousand,0.298666
+116,NA,No,NA,Female,67,high school or less,Democrat,20 to under 35 thousand,0.8199786
+137,Trump and the Republicans in Congress,No,NA,Female,64,post-graduate degree,Republican,100 thousand or more,0.835454
+217,Trump and the Republicans in Congress,No,NA,Female,82,college degree,Democrat,50 to under 75 thousand,0.514185
+227,Pelosi and the Democrats in Congress,No,NA,Male,65,some college,Republican,100 thousand or more,0.470989
+241,Trump and the Republicans in Congress,No,NA,Female,78,college degree,Democrat,100 thousand or more,0.8051053
+273,Trump and the Republicans in Congress,No,NA,Female,80,some college,Independent,NA,0.732322
+50,Trump and the Republicans in Congress,No,NA,Female,80,high school or less,Democrat,20 to under 35 thousand,0.729739
+106,Pelosi and the Democrats in Congress,No,NA,Male,NA,high school or less,Republican,35 to under 50 thousand,0.5041847
+138,Pelosi and the Democrats in Congress,No,NA,Female,64,college degree,Republican,NA,0.7886752
+157,Pelosi and the Democrats in Congress,No,NA,Male,44,high school or less,Republican,100 thousand or more,1.1317722
+235,Pelosi and the Democrats in Congress,No,NA,Male,65,some college,Republican,35 to under 50 thousand,0.4686483
+254,Trump and the Republicans in Congress,No,NA,Male,92,some college,Democrat,20 to under 35 thousand,0.4686483
+264,Trump and the Republicans in Congress,Yes,NA,Female,93,post-graduate degree,Democrat,20 to under 35 thousand,0.5446829
+169,Trump and the Republicans in Congress,No,NA,Female,61,some college,Democrat,35 to under 50 thousand,1.0760592
+100154,Pelosi and the Democrats in Congress,No,Northeast,Male,59,some college,Republican,100 thousand or more,0.6185251
+175,Pelosi and the Democrats in Congress,Yes,NA,Female,34,some college,Democrat,50 to under 75 thousand,1.31205
+319,Pelosi and the Democrats in Congress,No,NA,Female,54,high school or less,Republican,50 to under 75 thousand,1.118969
+353,Trump and the Republicans in Congress,No,NA,Female,74,post-graduate degree,Democrat,100 thousand or more,0.4686788
+374,Pelosi and the Democrats in Congress,No,NA,Female,76,some college,Independent,NA,0.1999698
+400,Trump and the Republicans in Congress,No,NA,Female,58,some college,Democrat,100 thousand or more,1.0404082
+416,Pelosi and the Democrats in Congress,No,NA,Male,79,high school or less,Republican,50 to under 75 thousand,0.5391721
+457,Pelosi and the Democrats in Congress,No,NA,Male,74,some college,Republican,100 thousand or more,0.4313647
+462,Trump and the Republicans in Congress,Yes,NA,Male,29,college degree,Democrat,50 to under 75 thousand,0.9762211
+472,NA,Yes,NA,Female,26,college degree,Democrat,20 to under 35 thousand,1.1758541
+484,Trump and the Republicans in Congress,No,NA,Male,56,college degree,Republican,NA,0.5447434
+490,Pelosi and the Democrats in Congress,No,NA,Male,36,high school or less,Democrat,20 to under 35 thousand,0.784738
+500,Pelosi and the Democrats in Congress,No,NA,Male,56,high school or less,Republican,75 to under 100 thousand,1.0373455
+502,Pelosi and the Democrats in Congress,No,NA,Male,70,some college,Republican,50 to under 75 thousand,0.4313647
+516,Pelosi and the Democrats in Congress,No,NA,Female,62,some college,Republican,100 thousand or more,0.9576377
+100395,NA,No,South,Female,52,college degree,Democrat,NA,0.9892714
+100424,Trump and the Republicans in Congress,No,South,Male,64,high school or less,Democrat,NA,0.5375005
+100535,NA,Yes,South,Male,23,college degree,Republican,100 thousand or more,1.1082241
+100645,Trump and the Republicans in Congress,Yes,West,Male,37,some college,Democrat,20 to under 35 thousand,1.1004988
+100071,Pelosi and the Democrats in Congress,No,South,Female,63,high school or less,Independent,Under 20 thousand dollars,1.5865995
+100234,Trump and the Republicans in Congress,No,Midwest,Male,30,post-graduate degree,Democrat,100 thousand or more,1.2042819
+100257,NA,No,Midwest,Male,76,high school or less,Republican,20 to under 35 thousand,0.7111267
+100405,Pelosi and the Democrats in Congress,No,South,Male,NA,some college,Republican,NA,1.7058398
+100455,Trump and the Republicans in Congress,No,Northeast,Female,57,high school or less,Democrat,Under 20 thousand dollars,1.586131
+100551,Trump and the Republicans in Congress,No,South,Male,64,college degree,Republican,100 thousand or more,0.6122872
+100633,NA,Yes,West,Male,35,post-graduate degree,Democrat,50 to under 75 thousand,0.8837071
+100665,NA,No,South,Male,72,post-graduate degree,Republican,100 thousand or more,0.3932265
+100117,Trump and the Republicans in Congress,No,South,Male,36,some college,Democrat,100 thousand or more,0.8476855
+100211,NA,No,Midwest,Female,31,college degree,Democrat,50 to under 75 thousand,1.5240691
+100249,Pelosi and the Democrats in Congress,No,South,Female,40,high school or less,Republican,35 to under 50 thousand,1.8595863
+100471,Trump and the Republicans in Congress,No,Northeast,Male,57,some college,Republican,35 to under 50 thousand,0.6185251
+100556,Trump and the Republicans in Congress,Yes,Midwest,Male,30,post-graduate degree,Democrat,100 thousand or more,0.9600877
+333,NA,Yes,NA,Male,75,college degree,NA,NA,0.412745
+352,Pelosi and the Democrats in Congress,No,NA,Male,81,college degree,Republican,75 to under 100 thousand,0.355256
+376,Pelosi and the Democrats in Congress,No,NA,Male,48,college degree,Republican,100 thousand or more,0.86639
+402,Pelosi and the Democrats in Congress,No,NA,Female,88,high school or less,Republican,20 to under 35 thousand,0.6279354
+424,Trump and the Republicans in Congress,No,NA,Female,75,some college,Independent,35 to under 50 thousand,0.6243418
+455,Trump and the Republicans in Congress,Yes,NA,Female,79,post-graduate degree,Democrat,75 to under 100 thousand,0.5013503
+456,Trump and the Republicans in Congress,Yes,NA,Female,66,college degree,Democrat,Under 20 thousand dollars,0.5498663
+460,Pelosi and the Democrats in Congress,No,NA,Male,67,post-graduate degree,Republican,100 thousand or more,0.3463884
+466,Trump and the Republicans in Congress,Yes,NA,Male,67,post-graduate degree,Independent,100 thousand or more,0.3463884
+100081,NA,No,South,Female,59,high school or less,Democrat,75 to under 100 thousand,1.1192996
+100247,Trump and the Republicans in Congress,No,Midwest,Female,68,college degree,Democrat,35 to under 50 thousand,0.7252317
+100499,Pelosi and the Democrats in Congress,No,Northeast,Male,25,high school or less,Republican,35 to under 50 thousand,1.3993055
+100517,Pelosi and the Democrats in Congress,No,Midwest,Male,67,some college,Republican,35 to under 50 thousand,0.5689371
+100569,Pelosi and the Democrats in Congress,No,South,Male,44,college degree,Republican,75 to under 100 thousand,1.0570467
+100603,NA,Yes,South,Male,28,some college,Democrat,20 to under 35 thousand,1.3075608
+100034,Trump and the Republicans in Congress,No,Midwest,Male,43,college degree,Democrat,75 to under 100 thousand,1.0517936
+100170,Trump and the Republicans in Congress,No,South,Female,46,post-graduate degree,Democrat,75 to under 100 thousand,1.1490505
+100198,Pelosi and the Democrats in Congress,No,Midwest,Female,38,some college,Republican,75 to under 100 thousand,1.7304937
+37,Trump and the Republicans in Congress,No,NA,Female,70,some college,NA,35 to under 50 thousand,0.678305
+81,Trump and the Republicans in Congress,No,NA,Male,72,some college,Democrat,50 to under 75 thousand,0.4686483
+133,Trump and the Republicans in Congress,No,NA,Female,28,some college,Democrat,50 to under 75 thousand,1.5511687
+150,Pelosi and the Democrats in Congress,No,NA,Female,78,NA,Republican,35 to under 50 thousand,1.1500641
+165,Trump and the Republicans in Congress,No,NA,Female,71,some college,Democrat,20 to under 35 thousand,0.4624126
+185,Pelosi and the Democrats in Congress,No,NA,Female,84,high school or less,Republican,20 to under 35 thousand,0.5404739
+220,NA,No,NA,Female,64,high school or less,Democrat,20 to under 35 thousand,1.1192996
+255,Trump and the Republicans in Congress,No,NA,Female,72,some college,Democrat,NA,0.678305
+266,Trump and the Republicans in Congress,No,NA,Female,69,some college,Independent,NA,0.678305
+324,Trump and the Republicans in Congress,No,NA,Female,67,high school or less,Democrat,50 to under 75 thousand,0.729739
+336,Trump and the Republicans in Congress,No,NA,Male,40,college degree,Democrat,20 to under 35 thousand,0.7454953
+362,NA,Yes,NA,Female,78,some college,Democrat,Under 20 thousand dollars,0.5048889
+384,Trump and the Republicans in Congress,No,NA,Female,81,high school or less,Independent,NA,0.8478281
+404,Pelosi and the Democrats in Congress,No,NA,Female,78,high school or less,Republican,35 to under 50 thousand,0.729739
+433,Pelosi and the Democrats in Congress,No,NA,Female,93,high school or less,Republican,20 to under 35 thousand,0.5404739
+453,Trump and the Republicans in Congress,No,NA,Female,65,some college,Democrat,20 to under 35 thousand,0.6243418
+459,Trump and the Republicans in Congress,No,NA,Male,21,high school or less,Democrat,50 to under 75 thousand,1.3854675
+487,Trump and the Republicans in Congress,Yes,NA,Female,60,college degree,Democrat,NA,0.9208778
+488,NA,No,NA,Female,42,high school or less,Independent,50 to under 75 thousand,1.53179
+494,Pelosi and the Democrats in Congress,No,NA,Male,86,high school or less,Republican,35 to under 50 thousand,0.5041847
+498,Pelosi and the Democrats in Congress,No,NA,Male,61,college degree,Republican,100 thousand or more,0.5827173
+514,Trump and the Republicans in Congress,Yes,NA,Female,71,college degree,Democrat,100 thousand or more,0.5498663
+100046,Pelosi and the Democrats in Congress,No,Northeast,Male,62,post-graduate degree,Republican,100 thousand or more,0.4966794
+100115,Pelosi and the Democrats in Congress,No,South,Female,70,post-graduate degree,Republican,100 thousand or more,0.569142
+100139,NA,No,Northeast,Male,23,some college,Independent,75 to under 100 thousand,0.9221735
+100219,NA,No,South,Male,86,high school or less,Independent,35 to under 50 thousand,0.6120781
+100242,NA,No,Midwest,Male,71,some college,Republican,75 to under 100 thousand,0.5689371
+100265,Trump and the Republicans in Congress,No,South,Male,22,some college,Democrat,35 to under 50 thousand,1.7534415
+100311,Trump and the Republicans in Congress,No,West,Female,38,college degree,Republican,75 to under 100 thousand,1.4028205
+75,NA,No,NA,Male,67,high school or less,NA,35 to under 50 thousand,0.5041847
+101,Trump and the Republicans in Congress,Yes,NA,Female,64,some college,Republican,50 to under 75 thousand,0.8954958
+142,Trump and the Republicans in Congress,Yes,NA,Female,NA,some college,Independent,50 to under 75 thousand,0.5838277
+2,Trump and the Republicans in Congress,No,NA,Male,53,post-graduate degree,Democrat,75 to under 100 thousand,0.5801072
+5,Trump and the Republicans in Congress,No,NA,Male,59,high school or less,NA,Under 20 thousand dollars,1.3598233
+68,Trump and the Republicans in Congress,No,NA,Male,52,post-graduate degree,Democrat,100 thousand or more,0.6230077
+83,Pelosi and the Democrats in Congress,No,NA,Female,59,high school or less,Republican,75 to under 100 thousand,1.4039888
+105,Trump and the Republicans in Congress,No,NA,Male,91,some college,Democrat,50 to under 75 thousand,0.298666
+113,Trump and the Republicans in Congress,No,NA,Female,87,some college,Republican,NA,0.678305
+155,Trump and the Republicans in Congress,No,NA,Female,65,post-graduate degree,Democrat,NA,0.6288666
+188,Trump and the Republicans in Congress,Yes,NA,Female,67,college degree,Republican,NA,0.5140332
+203,Pelosi and the Democrats in Congress,No,NA,Male,80,high school or less,Democrat,35 to under 50 thousand,0.373309
+243,Pelosi and the Democrats in Congress,No,NA,Female,78,high school or less,Republican,20 to under 35 thousand,0.5404739
+257,NA,No,NA,Male,58,high school or less,NA,NA,1.315156
+270,Pelosi and the Democrats in Congress,No,NA,Female,80,some college,Republican,20 to under 35 thousand,0.4624126
+281,Pelosi and the Democrats in Congress,No,NA,Male,67,high school or less,Republican,35 to under 50 thousand,0.5391721
+325,Trump and the Republicans in Congress,Yes,NA,Female,65,high school or less,Democrat,20 to under 35 thousand,1.2895712
+346,NA,Yes,NA,Female,79,some college,Independent,20 to under 35 thousand,0.4324062
+405,Trump and the Republicans in Congress,No,NA,Female,65,college degree,Democrat,50 to under 75 thousand,0.3807135
+413,Trump and the Republicans in Congress,No,NA,Female,64,some college,Democrat,20 to under 35 thousand,1.0456044
+414,Trump and the Republicans in Congress,No,NA,Male,74,post-graduate degree,Democrat,NA,0.2787231
+418,Pelosi and the Democrats in Congress,No,NA,Male,94,college degree,Republican,50 to under 75 thousand,0.3799087
+436,NA,Yes,NA,Female,36,post-graduate degree,NA,100 thousand or more,1.1503641
+492,Trump and the Republicans in Congress,Yes,NA,Female,70,some college,Republican,50 to under 75 thousand,0.5838277
+517,Pelosi and the Democrats in Congress,No,NA,Female,83,college degree,Republican,35 to under 50 thousand,0.5498663
+100062,Pelosi and the Democrats in Congress,No,Northeast,Female,57,some college,Republican,100 thousand or more,0.8952313
+100120,NA,No,Northeast,Female,83,post-graduate degree,Democrat,100 thousand or more,0.4686788
+100121,Pelosi and the Democrats in Congress,No,Midwest,Female,64,some college,Republican,50 to under 75 thousand,1.0404082
+100193,Pelosi and the Democrats in Congress,Yes,Midwest,Male,62,some college,Independent,NA,0.4127816
+100229,Trump and the Republicans in Congress,Yes,South,Male,18,some college,Independent,Under 20 thousand dollars,1.2583255
+100744,Trump and the Republicans in Congress,No,Northeast,Female,51,college degree,Democrat,35 to under 50 thousand,0.9571654
+100769,Pelosi and the Democrats in Congress,No,South,Male,71,some college,Republican,50 to under 75 thousand,0.403373
+100853,Trump and the Republicans in Congress,No,Northeast,Male,63,college degree,Democrat,100 thousand or more,0.5447434
+100876,Trump and the Republicans in Congress,No,Midwest,Female,27,college degree,Democrat,20 to under 35 thousand,1.6584822
+65,Pelosi and the Democrats in Congress,No,NA,Male,58,high school or less,Republican,Under 20 thousand dollars,0.8984804
+434,Trump and the Republicans in Congress,No,NA,Male,53,high school or less,Democrat,NA,0.9029678
+100098,Trump and the Republicans in Congress,Yes,Midwest,Female,60,some college,Democrat,20 to under 35 thousand,1.4747716
+100212,Pelosi and the Democrats in Congress,No,South,Male,37,high school or less,Republican,75 to under 100 thousand,1.2862774
+100261,Trump and the Republicans in Congress,No,Midwest,Male,57,post-graduate degree,Democrat,75 to under 100 thousand,0.7007478
+100306,Trump and the Republicans in Congress,No,West,Female,62,post-graduate degree,Democrat,100 thousand or more,0.7689889
+100482,NA,No,Northeast,Male,34,college degree,Independent,NA,0.4155618
+100504,Trump and the Republicans in Congress,No,South,Male,93,high school or less,Democrat,35 to under 50 thousand,0.6120781
+100624,Pelosi and the Democrats in Congress,No,West,Male,32,high school or less,Independent,75 to under 100 thousand,1.3755372
