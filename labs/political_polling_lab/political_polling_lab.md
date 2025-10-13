@@ -1,0 +1,83 @@
+# Lab \#3 - Political Polling
+SMPA 2152 (Prof. Bell)
+
+For this lab, we are going to work with data from an [ABC
+News/Washington Post
+poll](https://ropercenter.cornell.edu/ipoll/study/31115721) conducted in
+2019. You may recall that from December 2018 - January 2019, the U.S.
+federal government was partially shut down for a record 35 days. The
+poll asked respondents about their opinions on the shutdown and its
+effects on them personally. We will use this data to get an idea of how
+the politics of the current government shutdown might play out (the
+politics being secondary to the human impacts, of course, but I’m a
+political scientist).
+
+Please use the `lab3_template.R` script. Please submit your completed
+`.R` script via Blackboard. In addition, please submit a Word document
+or PDF containing the visualizations and your written responses to each
+question.
+
+All graphs must be properly labeled with titles, axis labels, and a
+caption. You must use a `theme` function to improve the appearance of
+your graphs, but you may choose which theme you prefer.
+
+You may complete the assignments on your own or in collaboration with
+other students. This means that you may work together to write code
+and/or solve problems. **Do not split up the questions or combine
+independent work.**
+
+As a reminder, this course permits virtually unlimited use of AI tools
+on **code**. However, the use of AI tools for **written text** (e.g.,
+explanations, analysis, etc.) is not permitted.
+
+If you work with other students, please indicate their names at the top
+of your submission. Each student must submit an assignment on
+Blackboard.
+
+------------------------------------------------------------------------
+
+1.  Load the survey data provided to you as `31115721.csv`.
+
+2.  Some of the variables used to generate the survey weights (`weight`)
+    are:
+
+> - Gender (`gender`)
+> - Age (`age`)
+> - Census Region (`region`)
+> - Education (`educ`)
+> - Income (`income`)
+
+On your own, conduct an exploratory data analysis to determine which
+groups the survey had difficulty reaching.
+
+In your submission, present **one** graph that shows the distribution of
+weights for one of the variables – one that includes a group(s) that was
+difficult for the survey to reach. Provide a possible explanation for
+why this group(s) was hard to reach.
+
+3.  Show the **weighted** responses (in percentages) to the question:
+    “As you may know, the federal government has been partially shut
+    down because Donald Trump and the Republicans in Congress and Nancy
+    Pelosi and the Democrats in Congress cannot agree on laws about
+    border security. Who do you think is mainly responsible for this
+    situation – Trump and the Republicans in Congress or Pelosi and the
+    Democrats in Congress?” (variable `shutdown_blame`). Be sure to
+    include the margin of error on the graph. Is there a statistically
+    significant difference between the blame for the two parties in this
+    poll? How do you know?
+
+4.  Create a graph that shows a cross-tab of the weighting variable that
+    you identified in \#2 with the survey question on blame for the
+    shutdown. Based on these results, is it important to weight the data
+    on this variable when analyzing opinions on the shutdown? Why or why
+    not?
+
+    *Hint: To determine whether weighting variables matter for the
+    results, think about why education became an important weighting
+    variable for pollsters in the 2016 presidential election, but was
+    not an important weighting variable in previous elections.*
+
+5.  *BONUS: Write three thoughtful questions for our next guest speaker,
+    [G. Elliott Morris](https://www.gelliottmorris.com/about). Questions
+    can be about his career, work, election prediction, polling, or
+    anything else you are curious about.*

@@ -1,6 +1,6 @@
 library(tidyverse)
 
-read_csv(here::here("data/week7/raw/31115721.csv")) |>
+read_csv(here::here("labs/political_polling_lab/raw/31115721.csv")) |>
   mutate(
     income = case_when(
       income2 == "100 thousand or more" ~ income2,
@@ -28,7 +28,12 @@ read_csv(here::here("data/week7/raw/31115721.csv")) |>
     age = as.numeric(q910),
     educnew = case_when(
       str_detect(educnew, "DK") ~ NA_character_,
-      TRUE ~ educnew
+      TRUE ~ str_to_title(educnew)
+    ),
+    q9 = case_when(
+      str_detect(q9, "Democrats") ~ "Democrats",
+      str_detect(q9, "Republicans") ~ "Republicans",
+      TRUE ~ NA_character_
     )
   ) |>
   rename(
@@ -52,4 +57,4 @@ read_csv(here::here("data/week7/raw/31115721.csv")) |>
     income,
     weight
   ) |>
-  write_csv(here::here("data/week7/shutdown_poll.csv"))
+  write_csv(here::here("labs/political_polling_lab/31115721.csv"))

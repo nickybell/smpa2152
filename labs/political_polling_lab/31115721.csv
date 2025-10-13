@@ -1,0 +1,1002 @@
+id,shutdown_blame,shutdown_inconv,region,gender,age,educ,pid,income,weight
+100210,Democrats,No,Midwest,Male,51,Some College,Republican,100 thousand or more,0.8726557
+100656,Republicans,Yes,West,Male,47,Post-Graduate Degree,Democrat,100 thousand or more,0.882698
+100854,Democrats,No,Northeast,Male,52,Some College,Republican,75 to under 100 thousand,0.7508868
+101010,Republicans,No,South,Male,47,Some College,Democrat,50 to under 75 thousand,1.2002163
+100690,Democrats,No,South,Female,91,High School Or Less,Republican,Under 20 thousand dollars,1.8103035
+100699,Democrats,No,West,Male,46,High School Or Less,Republican,100 thousand or more,1.7234291
+100718,Republicans,No,West,Male,64,High School Or Less,Democrat,75 to under 100 thousand,1.2949093
+100572,Democrats,Yes,South,Male,75,College Degree,Independent,100 thousand or more,0.355256
+100583,Republicans,No,South,Female,64,College Degree,Democrat,20 to under 35 thousand,1.1179417
+100682,Democrats,No,South,Female,70,Post-Graduate Degree,Republican,100 thousand or more,0.4688172
+100694,Republicans,No,West,Male,83,College Degree,Democrat,35 to under 50 thousand,0.4612074
+100708,Republicans,No,West,Male,20,High School Or Less,Republican,50 to under 75 thousand,1.2329953
+100723,Republicans,No,Northeast,Female,55,High School Or Less,Democrat,50 to under 75 thousand,1.3584234
+100746,Democrats,No,South,Male,62,High School Or Less,Republican,20 to under 35 thousand,1.9184578
+100773,NA,Yes,Northeast,Female,32,Some College,Independent,20 to under 35 thousand,1.7386228
+100909,Republicans,No,West,Female,71,College Degree,Independent,35 to under 50 thousand,0.5498663
+100926,Republicans,No,West,Male,19,High School Or Less,Independent,20 to under 35 thousand,1.6819516
+100944,Democrats,No,West,Male,57,High School Or Less,Republican,100 thousand or more,1.0039758
+100981,Republicans,No,Midwest,Male,56,Some College,NA,100 thousand or more,0.7188294
+100996,Democrats,No,South,Male,65,High School Or Less,Republican,35 to under 50 thousand,1.2507586
+101012,NA,Yes,West,Male,54,Post-Graduate Degree,Republican,100 thousand or more,0.5313028
+101053,Democrats,No,West,Female,21,Some College,Republican,75 to under 100 thousand,1.9476396
+100790,Republicans,No,South,Female,19,Some College,Democrat,75 to under 100 thousand,1.6208243
+100838,Republicans,No,Northeast,Male,23,High School Or Less,Independent,Under 20 thousand dollars,3.213026
+100899,Republicans,No,West,Female,64,Post-Graduate Degree,Democrat,50 to under 75 thousand,0.933549
+100918,NA,No,Midwest,Female,56,Post-Graduate Degree,Republican,75 to under 100 thousand,1.0142375
+100438,Republicans,No,Northeast,Female,67,Some College,Democrat,35 to under 50 thousand,0.5836554
+100577,Democrats,Yes,South,Female,53,Some College,Republican,100 thousand or more,0.8954958
+100092,Republicans,No,Northeast,Female,89,High School Or Less,Democrat,35 to under 50 thousand,0.8856383
+100561,NA,No,South,Female,81,High School Or Less,Republican,Under 20 thousand dollars,0.8858999
+100643,Republicans,No,South,Male,44,College Degree,Democrat,100 thousand or more,1.0570467
+214,NA,No,NA,Female,43,Some College,Democrat,100 thousand or more,1.2251469
+232,Democrats,No,NA,Male,68,Post-Graduate Degree,Republican,100 thousand or more,0.3238153
+100262,Republicans,No,South,Female,32,College Degree,Republican,75 to under 100 thousand,1.2141777
+100548,Democrats,No,South,Male,79,Some College,Republican,NA,0.403373
+100628,Republicans,Yes,West,Male,32,High School Or Less,Democrat,NA,3.5257896
+100698,NA,No,West,Male,52,Some College,Independent,NA,0.6616424
+100732,Republicans,No,West,Female,70,Some College,Democrat,35 to under 50 thousand,0.6243418
+100825,Democrats,No,Northeast,Male,72,Some College,Republican,100 thousand or more,0.4032539
+100936,Republicans,No,West,Male,94,High School Or Less,Democrat,NA,1.1017779
+100948,Democrats,No,West,Male,58,High School Or Less,Republican,20 to under 35 thousand,1.6899461
+100953,Democrats,No,West,Male,37,Some College,Republican,100 thousand or more,0.4023923
+101045,Republicans,No,South,Male,37,College Degree,Democrat,50 to under 75 thousand,1.1368517
+101066,Republicans,No,West,Female,49,College Degree,Republican,75 to under 100 thousand,1.1542204
+101075,Republicans,No,West,Male,42,Some College,Democrat,50 to under 75 thousand,1.283504
+100147,NA,No,Midwest,Male,75,Post-Graduate Degree,Democrat,75 to under 100 thousand,0.3763275
+100303,NA,No,West,Male,28,Some College,Independent,20 to under 35 thousand,1.1975557
+100599,Democrats,No,South,Male,66,Some College,Republican,50 to under 75 thousand,0.489693
+100397,Republicans,No,Midwest,Male,18,High School Or Less,Republican,50 to under 75 thousand,3.3231334
+100437,NA,No,Northeast,Female,42,Post-Graduate Degree,Democrat,NA,0.9838003
+100490,Democrats,No,South,Male,64,Some College,Republican,35 to under 50 thousand,0.7511086
+100598,Democrats,No,South,Male,65,High School Or Less,Republican,50 to under 75 thousand,0.5041847
+100629,Democrats,No,West,Male,56,College Degree,Republican,100 thousand or more,0.5827173
+100676,Republicans,Yes,Midwest,Female,24,College Degree,Democrat,50 to under 75 thousand,1.6584822
+100681,Republicans,No,Midwest,Male,40,Some College,Democrat,100 thousand or more,1.1942516
+100687,Democrats,No,Midwest,Male,36,Some College,Republican,100 thousand or more,1.195617
+100692,Republicans,Yes,West,Male,58,Post-Graduate Degree,Democrat,100 thousand or more,0.6664375
+100706,Republicans,No,West,Male,25,High School Or Less,Republican,Under 20 thousand dollars,1.4968508
+100727,Republicans,Yes,West,Female,70,Post-Graduate Degree,Democrat,50 to under 75 thousand,0.608637
+100983,Republicans,No,Northeast,Female,44,College Degree,Democrat,75 to under 100 thousand,1.3099054
+100055,Republicans,No,Northeast,Male,70,College Degree,Democrat,50 to under 75 thousand,0.4311519
+100096,Republicans,No,South,Male,21,Some College,Democrat,100 thousand or more,1.1198453
+100202,Democrats,No,South,Male,48,High School Or Less,Republican,50 to under 75 thousand,1.2848086
+100268,Republicans,No,South,Female,74,College Degree,Democrat,75 to under 100 thousand,0.514185
+100530,NA,No,South,Female,32,Post-Graduate Degree,Democrat,50 to under 75 thousand,1.1960479
+100735,Republicans,Yes,West,Male,54,Some College,Democrat,100 thousand or more,0.8032309
+101014,Republicans,No,South,Female,53,Post-Graduate Degree,Republican,75 to under 100 thousand,0.8729703
+101076,Republicans,Yes,West,Female,24,Some College,Democrat,100 thousand or more,1.7332996
+100103,Democrats,No,South,Male,64,Some College,Republican,Under 20 thousand dollars,0.7511086
+100148,Democrats,No,South,Female,51,Post-Graduate Degree,Republican,50 to under 75 thousand,0.8729703
+100284,Republicans,Yes,West,Male,27,College Degree,Democrat,35 to under 50 thousand,1.1851281
+100473,NA,Yes,Midwest,Female,50,College Degree,Democrat,75 to under 100 thousand,0.4067389
+100509,Republicans,No,South,Female,28,Post-Graduate Degree,Democrat,75 to under 100 thousand,1.4624791
+100596,Democrats,No,South,Male,18,High School Or Less,Republican,100 thousand or more,1.3997188
+100635,Republicans,No,West,Male,60,Some College,Democrat,100 thousand or more,0.9025586
+100929,Democrats,No,West,Male,18,High School Or Less,Republican,20 to under 35 thousand,1.4968508
+100969,Democrats,No,Northeast,Female,43,Some College,Republican,100 thousand or more,1.4873229
+100985,Republicans,No,Midwest,Male,67,Some College,Democrat,100 thousand or more,0.6643059
+100999,Democrats,No,South,Female,66,Post-Graduate Degree,Republican,50 to under 75 thousand,0.569142
+101071,Republicans,No,West,Male,72,Some College,Democrat,35 to under 50 thousand,0.4313647
+101080,NA,No,West,Male,40,Post-Graduate Degree,Republican,100 thousand or more,0.882698
+100059,Republicans,No,Midwest,Male,26,College Degree,Independent,75 to under 100 thousand,1.1458635
+100094,Republicans,No,South,Female,31,Some College,Democrat,20 to under 35 thousand,1.4894633
+100178,Republicans,No,South,Female,65,High School Or Less,Democrat,Under 20 thousand dollars,0.772886
+100245,Republicans,No,Midwest,Male,75,Some College,NA,NA,0.4686483
+100286,Republicans,No,West,Female,65,High School Or Less,Democrat,100 thousand or more,0.947376
+100379,Republicans,No,Northeast,Male,25,College Degree,Republican,35 to under 50 thousand,0.9859716
+100453,Democrats,No,South,Male,66,Some College,Republican,50 to under 75 thousand,0.489693
+100575,Democrats,No,Midwest,Female,61,Some College,Republican,75 to under 100 thousand,1.0404082
+100641,Democrats,No,Midwest,Male,43,College Degree,Republican,75 to under 100 thousand,1.0517936
+100973,Republicans,No,South,Female,40,College Degree,Democrat,75 to under 100 thousand,2.0516414
+100986,Democrats,Yes,South,Male,44,College Degree,Independent,35 to under 50 thousand,0.9052953
+100811,Republicans,No,South,Male,46,Some College,Democrat,50 to under 75 thousand,1.0279113
+100002,Republicans,No,Northeast,Male,34,High School Or Less,Republican,NA,4.1143989
+100169,Republicans,Yes,Northeast,Male,21,High School Or Less,Independent,NA,2.1910174
+100224,Democrats,No,Midwest,Male,71,High School Or Less,Independent,100 thousand or more,0.7111267
+100256,Republicans,No,South,Male,22,Some College,Independent,35 to under 50 thousand,1.1198453
+100320,Republicans,No,West,Female,65,High School Or Less,Democrat,20 to under 35 thousand,0.947376
+100362,Republicans,No,West,Male,37,Post-Graduate Degree,Democrat,100 thousand or more,0.8837071
+100409,Democrats,No,South,Female,34,High School Or Less,Democrat,Under 20 thousand dollars,1.5335412
+100445,Republicans,No,South,Male,52,High School Or Less,Democrat,NA,0.8190611
+100626,Republicans,No,South,Female,28,Post-Graduate Degree,Democrat,Under 20 thousand dollars,1.2518189
+100700,Republicans,No,West,Female,58,Some College,Democrat,35 to under 50 thousand,0.9576377
+100391,Republicans,No,Midwest,Female,60,College Degree,Democrat,100 thousand or more,1.0698977
+101011,Republicans,No,South,Male,37,High School Or Less,Democrat,50 to under 75 thousand,2.0140391
+101019,Republicans,No,South,Male,31,College Degree,Democrat,100 thousand or more,1.4191221
+216,Republicans,No,NA,Female,84,High School Or Less,Independent,Under 20 thousand dollars,0.7295235
+256,Republicans,Yes,NA,Female,70,High School Or Less,Democrat,20 to under 35 thousand,0.9111904
+291,Republicans,No,NA,Male,47,Post-Graduate Degree,Democrat,100 thousand or more,1.06461
+292,Republicans,No,NA,Male,56,College Degree,Democrat,50 to under 75 thousand,0.9124125
+298,Republicans,No,NA,Female,55,High School Or Less,Independent,20 to under 35 thousand,2.035602
+303,Democrats,No,NA,Female,28,Some College,Democrat,75 to under 100 thousand,2.2355778
+100882,Republicans,No,South,Female,68,High School Or Less,Democrat,Under 20 thousand dollars,0.8858999
+100913,Republicans,Yes,West,Female,63,College Degree,Democrat,50 to under 75 thousand,0.9476999
+304,Republicans,No,NA,Male,35,College Degree,Democrat,100 thousand or more,0.7983753
+311,Republicans,No,NA,Male,44,College Degree,Democrat,100 thousand or more,0.7974636
+100131,Democrats,No,Northeast,Male,55,Some College,Republican,75 to under 100 thousand,0.6185251
+100194,Democrats,Yes,Midwest,Female,57,Some College,Independent,100 thousand or more,1.2630509
+100357,Republicans,No,West,Female,47,College Degree,Democrat,100 thousand or more,1.1542204
+100004,Democrats,No,Midwest,Male,NA,Some College,Republican,100 thousand or more,0.8726557
+100088,Democrats,No,Midwest,Male,44,Post-Graduate Degree,Republican,100 thousand or more,0.9589913
+100135,Republicans,No,South,Male,26,College Degree,Independent,50 to under 75 thousand,0.9862629
+100406,Republicans,No,South,Female,62,High School Or Less,Democrat,20 to under 35 thousand,1.5865995
+100418,Republicans,No,Northeast,Male,25,College Degree,Democrat,50 to under 75 thousand,1.2716879
+100431,Republicans,No,Northeast,Male,59,Some College,Independent,100 thousand or more,0.7508868
+100475,Republicans,No,Northeast,Male,21,Some College,Democrat,Under 20 thousand dollars,1.1195145
+100541,NA,Yes,South,Male,32,College Degree,Republican,100 thousand or more,0.9063303
+100608,Republicans,Yes,Midwest,Female,59,Post-Graduate Degree,Democrat,100 thousand or more,1.0142375
+100662,Republicans,No,Midwest,Male,53,Post-Graduate Degree,Democrat,100 thousand or more,0.5772243
+100796,Democrats,No,South,Male,54,High School Or Less,Republican,20 to under 35 thousand,0.9388269
+100847,Republicans,No,South,Female,50,Post-Graduate Degree,Democrat,100 thousand or more,0.8396266
+100890,Republicans,No,South,Male,19,High School Or Less,Republican,20 to under 35 thousand,1.3997188
+100919,Republicans,No,Northeast,Female,45,Post-Graduate Degree,Democrat,50 to under 75 thousand,1.498102
+100988,Democrats,Yes,South,Female,38,Some College,Republican,100 thousand or more,1.4894633
+101001,Democrats,No,Northeast,Male,60,Post-Graduate Degree,Republican,100 thousand or more,0.2349381
+101008,Democrats,No,Northeast,Male,35,High School Or Less,Republican,50 to under 75 thousand,1.0592276
+101032,NA,Yes,West,Female,31,College Degree,Democrat,75 to under 100 thousand,1.4028205
+101074,Democrats,No,West,Female,58,Some College,Republican,100 thousand or more,1.1625678
+101083,Democrats,No,West,Male,52,College Degree,Independent,100 thousand or more,0.7074164
+100474,Republicans,No,Northeast,Female,NA,College Degree,Independent,50 to under 75 thousand,1.2138192
+100576,Republicans,Yes,Midwest,Male,82,Post-Graduate Degree,Democrat,100 thousand or more,0.4394098
+100693,Republicans,No,West,Male,36,Some College,Democrat,75 to under 100 thousand,1.1004988
+100753,NA,Yes,South,Female,21,Some College,Republican,NA,1.6208243
+101021,Democrats,No,South,Female,70,High School Or Less,Republican,50 to under 75 thousand,0.729739
+101072,NA,No,Midwest,Female,38,Some College,Independent,75 to under 100 thousand,1.7304937
+101095,Democrats,No,West,Male,54,Some College,Republican,NA,0.6616424
+100012,Republicans,No,Midwest,Male,31,College Degree,Democrat,35 to under 50 thousand,0.9746408
+100050,NA,No,South,Male,56,College Degree,Democrat,75 to under 100 thousand,0.743314
+100077,Democrats,No,Northeast,Female,74,High School Or Less,Independent,Under 20 thousand dollars,0.8856383
+100107,Republicans,No,Northeast,Male,53,High School Or Less,Democrat,20 to under 35 thousand,1.0958753
+100113,Democrats,No,Midwest,Male,68,High School Or Less,Republican,50 to under 75 thousand,0.7111267
+100114,Republicans,No,South,Male,21,Some College,Republican,Under 20 thousand dollars,1.3075608
+100180,Democrats,No,South,Female,57,High School Or Less,Republican,Under 20 thousand dollars,1.3588247
+100259,Democrats,No,Midwest,Female,79,Some College,Republican,NA,0.8234592
+100327,Democrats,No,South,Male,56,NA,Republican,75 to under 100 thousand,1.4795853
+100333,NA,No,Midwest,Male,71,Some College,Independent,100 thousand or more,0.5689371
+100358,Republicans,Yes,West,Female,29,Post-Graduate Degree,Republican,100 thousand or more,1.39185
+100369,Republicans,Yes,West,Female,35,College Degree,Democrat,75 to under 100 thousand,1.7596222
+100376,Republicans,Yes,Midwest,Female,21,Some College,Republican,50 to under 75 thousand,1.883112
+100408,Republicans,No,Northeast,Female,50,High School Or Less,Democrat,Under 20 thousand dollars,3.2411997
+100436,Democrats,No,Northeast,Male,63,High School Or Less,Republican,NA,0.7731079
+100522,Republicans,No,South,Female,26,High School Or Less,Republican,20 to under 35 thousand,2.0259034
+100545,Democrats,No,South,Male,41,College Degree,Democrat,100 thousand or more,0.9052953
+100584,Democrats,No,Northeast,Female,58,College Degree,Republican,50 to under 75 thousand,1.4987193
+100607,Republicans,No,Northeast,Male,43,College Degree,Democrat,75 to under 100 thousand,0.7454953
+100657,Republicans,No,Midwest,Female,45,Some College,Independent,50 to under 75 thousand,1.9422661
+100686,Democrats,No,Midwest,Male,78,High School Or Less,Independent,20 to under 35 thousand,0.5857737
+100703,NA,No,West,Male,41,Some College,Republican,50 to under 75 thousand,1.099242
+100710,Republicans,Yes,West,Male,82,College Degree,NA,35 to under 50 thousand,0.5182404
+100755,Republicans,Yes,Midwest,Male,28,College Degree,Democrat,75 to under 100 thousand,1.1458635
+100806,Republicans,No,South,Male,75,College Degree,Democrat,50 to under 75 thousand,0.355256
+100874,Republicans,No,Midwest,Female,79,Post-Graduate Degree,Democrat,100 thousand or more,0.5446829
+100074,Republicans,No,Northeast,Male,38,High School Or Less,Democrat,35 to under 50 thousand,1.3286376
+100124,NA,No,Midwest,Female,21,High School Or Less,Republican,Under 20 thousand dollars,2.3537426
+100216,Republicans,No,West,Male,30,College Degree,Democrat,35 to under 50 thousand,0.9692241
+100273,Democrats,No,Midwest,Male,30,College Degree,Republican,50 to under 75 thousand,1.0529961
+100394,Republicans,No,South,Male,42,High School Or Less,Democrat,35 to under 50 thousand,0.5485327
+100574,Republicans,Yes,Midwest,Male,20,High School Or Less,Democrat,Under 20 thousand dollars,1.5641119
+100958,Republicans,No,Northeast,Male,41,Post-Graduate Degree,Democrat,100 thousand or more,0.6797184
+100967,Republicans,No,Northeast,Female,50,Some College,Democrat,100 thousand or more,1.0452956
+101006,Democrats,No,Northeast,Male,74,College Degree,Republican,100 thousand or more,0.3551512
+100616,Republicans,No,South,Male,81,High School Or Less,Democrat,20 to under 35 thousand,0.5041847
+100174,Democrats,No,South,Female,42,Post-Graduate Degree,Independent,100 thousand or more,1.1946821
+100314,Democrats,No,West,Male,71,College Degree,Republican,35 to under 50 thousand,0.3799087
+100370,Republicans,No,West,Female,49,Some College,Democrat,75 to under 100 thousand,1.5910039
+100873,NA,No,South,Male,21,High School Or Less,NA,Under 20 thousand dollars,1.1529852
+100894,Republicans,Yes,South,Female,68,Some College,Democrat,20 to under 35 thousand,0.6816927
+100932,Republicans,No,West,Female,32,Post-Graduate Degree,Democrat,100 thousand or more,1.2790462
+100069,Democrats,No,Northeast,Male,47,Some College,Republican,100 thousand or more,0.40039400000000003
+100112,Republicans,Yes,Midwest,Male,31,Post-Graduate Degree,Democrat,50 to under 75 thousand,0.9600877
+100197,Democrats,No,South,Male,38,Post-Graduate Degree,Republican,75 to under 100 thousand,0.8263626
+100740,Republicans,No,South,Female,72,High School Or Less,Democrat,Under 20 thousand dollars,1.8103035
+100852,Republicans,Yes,Northeast,Male,20,Some College,Democrat,100 thousand or more,1.1195145
+100968,Republicans,No,Midwest,Female,48,High School Or Less,Democrat,20 to under 35 thousand,2.1605114
+101022,Democrats,No,Northeast,Male,76,College Degree,Republican,100 thousand or more,0.3551512
+101079,Republicans,No,West,Female,46,High School Or Less,Democrat,NA,4.7448736
+100105,Democrats,No,South,Male,60,Some College,Republican,100 thousand or more,0.7511086
+100215,Republicans,No,Midwest,Male,66,High School Or Less,Democrat,20 to under 35 thousand,0.5857737
+100243,Republicans,No,Midwest,Male,56,College Degree,Democrat,35 to under 50 thousand,0.7685596
+100278,Democrats,Yes,South,Female,51,College Degree,Republican,NA,0.9574482
+100446,Democrats,No,South,Female,23,High School Or Less,Republican,Under 20 thousand dollars,2.0259034
+100479,NA,No,South,Female,23,College Degree,Democrat,75 to under 100 thousand,1.1758541
+100505,Republicans,No,South,Female,76,Some College,Democrat,50 to under 75 thousand,0.5838277
+100610,Republicans,Yes,South,Male,33,Post-Graduate Degree,Republican,50 to under 75 thousand,0.8263626
+100812,Democrats,No,South,Female,25,Some College,Republican,75 to under 100 thousand,1.6208243
+100912,Republicans,No,West,Female,55,Post-Graduate Degree,Democrat,100 thousand or more,0.7689889
+100006,Democrats,No,Northeast,Female,20,College Degree,Republican,NA,0.2468197
+100037,Republicans,No,South,Female,74,College Degree,Democrat,100 thousand or more,0.514185
+100239,Republicans,No,Midwest,Male,51,High School Or Less,Democrat,NA,1.0907513
+100305,Democrats,No,West,Male,41,High School Or Less,Republican,100 thousand or more,1.3739665
+100317,Republicans,Yes,West,Female,60,Some College,Independent,20 to under 35 thousand,1.3063311
+100324,Democrats,Yes,Midwest,Male,38,High School Or Less,Republican,100 thousand or more,1.4944276
+100337,Republicans,No,West,Male,78,High School Or Less,Democrat,Under 20 thousand dollars,0.8210352
+100342,Republicans,Yes,West,Female,65,Some College,Democrat,35 to under 50 thousand,0.8516763
+100352,Republicans,No,West,Female,70,Some College,Democrat,Under 20 thousand dollars,0.7579483
+100502,Republicans,No,South,Male,31,Post-Graduate Degree,Republican,100 thousand or more,0.9648828
+100558,Republicans,No,Northeast,Male,47,College Degree,Democrat,100 thousand or more,1.0567345
+100678,NA,Yes,West,Male,29,College Degree,Democrat,20 to under 35 thousand,1.0547034
+100725,Republicans,No,West,Male,51,College Degree,Democrat,NA,0.7074164
+100752,Republicans,No,Midwest,Female,29,Some College,Republican,35 to under 50 thousand,2.1159779
+100823,Republicans,No,South,Male,52,Post-Graduate Degree,Democrat,100 thousand or more,0.6031447
+100957,Republicans,Yes,West,Male,22,College Degree,Democrat,35 to under 50 thousand,1.0547034
+100970,Republicans,Yes,South,Female,21,Some College,Democrat,50 to under 75 thousand,1.8212555
+100980,Democrats,No,South,Female,72,Post-Graduate Degree,Republican,100 thousand or more,0.569142
+101046,NA,No,West,Female,53,Some College,Democrat,Under 20 thousand dollars,1.3574449
+101070,Democrats,Yes,South,Female,29,High School Or Less,Republican,20 to under 35 thousand,2.0259034
+101100,Republicans,No,West,Male,68,Post-Graduate Degree,NA,35 to under 50 thousand,0.3892228
+100532,NA,No,South,Female,42,High School Or Less,Independent,35 to under 50 thousand,1.8595863
+100595,Republicans,Yes,South,Male,72,Post-Graduate Degree,Democrat,35 to under 50 thousand,0.323911
+100614,Democrats,No,Midwest,Female,37,High School Or Less,Republican,50 to under 75 thousand,2.7131268
+100758,Republicans,Yes,South,Female,39,High School Or Less,Democrat,20 to under 35 thousand,2.1737843
+100795,Republicans,No,South,Female,58,Post-Graduate Degree,Democrat,100 thousand or more,0.7190884
+100908,Republicans,No,West,Male,25,High School Or Less,Republican,35 to under 50 thousand,1.4968508
+100960,Republicans,No,Northeast,Female,59,High School Or Less,Independent,Under 20 thousand dollars,1.3584234
+100998,Democrats,No,Northeast,Male,45,College Degree,Republican,100 thousand or more,0.7454953
+101013,Republicans,No,Northeast,Male,76,Post-Graduate Degree,Democrat,75 to under 100 thousand,0.3238153
+101026,Republicans,Yes,West,Male,35,High School Or Less,Republican,20 to under 35 thousand,1.5456363
+101038,Republicans,No,West,Male,20,High School Or Less,Independent,Under 20 thousand dollars,1.7477624
+101052,Republicans,Yes,West,Male,43,Post-Graduate Degree,Democrat,100 thousand or more,0.8489828
+100042,Democrats,No,Northeast,Male,55,Some College,Republican,75 to under 100 thousand,0.7508868
+100086,Republicans,Yes,South,Male,56,College Degree,Democrat,100 thousand or more,0.2577494
+100232,NA,No,Midwest,Male,29,Post-Graduate Degree,Republican,75 to under 100 thousand,1.0447612
+100340,NA,No,West,Male,57,College Degree,Democrat,100 thousand or more,0.7074164
+100347,Democrats,No,West,Male,42,Post-Graduate Degree,Republican,100 thousand or more,0.882698
+100351,NA,No,West,Male,45,Post-Graduate Degree,Democrat,100 thousand or more,0.882698
+100388,Democrats,No,South,Male,32,High School Or Less,Republican,35 to under 50 thousand,1.2862774
+100434,Democrats,No,Midwest,Male,36,High School Or Less,Republican,50 to under 75 thousand,1.2309992
+100450,Democrats,No,Midwest,Female,35,College Degree,Republican,100 thousand or more,1.5240691
+100497,Republicans,No,Midwest,Female,78,High School Or Less,Democrat,35 to under 50 thousand,1.0292596
+100766,Republicans,Yes,Midwest,Male,56,Post-Graduate Degree,Democrat,100 thousand or more,0.724039
+100779,Republicans,No,Northeast,Female,45,Some College,Republican,50 to under 75 thousand,1.4873229
+100821,Democrats,No,South,Female,45,Some College,Republican,100 thousand or more,1.4877622
+100961,Republicans,No,South,Male,35,Post-Graduate Degree,Democrat,100 thousand or more,1.0365446
+100975,Republicans,No,South,Male,86,High School Or Less,Democrat,35 to under 50 thousand,0.7146785
+101062,Republicans,No,West,Male,75,Post-Graduate Degree,Democrat,75 to under 100 thousand,0.420514
+100331,Democrats,No,South,Male,18,Some College,Republican,NA,1.1198453
+100364,Republicans,No,West,Female,38,Post-Graduate Degree,Democrat,Under 20 thousand dollars,1.6043665
+100518,Republicans,No,Northeast,Female,23,Some College,Democrat,50 to under 75 thousand,1.6203456
+100563,Republicans,No,South,Male,23,High School Or Less,Democrat,NA,1.5728082
+100634,Democrats,No,West,Female,64,Post-Graduate Degree,Democrat,50 to under 75 thousand,0.7689889
+100738,Republicans,No,Midwest,Male,73,College Degree,Democrat,100 thousand or more,0.412745
+100815,Republicans,Yes,Northeast,Female,21,College Degree,Democrat,Under 20 thousand dollars,1.7900272
+100859,Republicans,No,Northeast,Female,33,College Degree,Democrat,100 thousand or more,2.0533803
+100940,Republicans,No,West,Female,75,College Degree,Republican,100 thousand or more,0.6675353
+100207,NA,Yes,Midwest,Male,21,Some College,Democrat,20 to under 35 thousand,1.0717195
+100581,Democrats,No,South,Male,31,Post-Graduate Degree,Republican,50 to under 75 thousand,0.8263626
+100631,Republicans,Yes,Northeast,Female,58,Some College,Democrat,100 thousand or more,1.0868069
+100798,Democrats,No,Northeast,Female,54,Some College,Republican,20 to under 35 thousand,1.3632316
+100393,NA,No,South,Male,22,Some College,NA,50 to under 75 thousand,0.4363331
+100410,Republicans,No,South,Female,40,College Degree,Democrat,75 to under 100 thousand,1.2602449
+100649,Republicans,No,South,Female,53,Post-Graduate Degree,Republican,75 to under 100 thousand,0.7190884
+100161,Republicans,No,Midwest,Male,67,Post-Graduate Degree,Democrat,20 to under 35 thousand,0.3763275
+100248,Republicans,No,Midwest,Male,71,Post-Graduate Degree,Democrat,100 thousand or more,0.4568598
+100307,Democrats,No,West,Male,71,College Degree,Republican,50 to under 75 thousand,0.3799087
+100824,Democrats,Yes,South,Male,46,Post-Graduate Degree,Republican,100 thousand or more,0.6799192
+100850,NA,No,Northeast,Male,60,High School Or Less,Democrat,100 thousand or more,0.7731079
+100537,Republicans,No,South,Male,22,College Degree,Democrat,50 to under 75 thousand,1.2371148
+100674,Democrats,No,Midwest,Female,30,Some College,NA,50 to under 75 thousand,1.7304937
+100721,Republicans,No,West,Male,79,College Degree,Democrat,100 thousand or more,0.3799087
+100776,Republicans,No,Northeast,Female,40,College Degree,Democrat,NA,1.3534434
+100808,Democrats,No,South,Male,71,College Degree,Republican,50 to under 75 thousand,0.4312793
+100832,Democrats,Yes,South,Female,65,College Degree,Republican,100 thousand or more,0.514185
+100878,Democrats,No,South,Male,54,College Degree,Independent,100 thousand or more,0.8297642
+100905,Democrats,No,West,Male,30,High School Or Less,Republican,50 to under 75 thousand,1.5456363
+100954,Republicans,No,Midwest,Female,18,High School Or Less,Democrat,20 to under 35 thousand,2.3537426
+101073,NA,No,West,Male,48,Some College,Independent,100 thousand or more,1.2351745
+340,Republicans,No,NA,Female,72,High School Or Less,Democrat,Under 20 thousand dollars,0.8460181
+364,Republicans,No,NA,Female,90,High School Or Less,Republican,35 to under 50 thousand,0.5404739
+420,Republicans,Yes,NA,Male,58,High School Or Less,Democrat,35 to under 50 thousand,0.6882532
+432,Democrats,No,NA,Male,59,High School Or Less,Republican,100 thousand or more,0.8270011
+446,Democrats,No,NA,Female,89,Some College,Republican,20 to under 35 thousand,0.4324062
+100134,NA,No,South,Female,56,High School Or Less,Independent,20 to under 35 thousand,2.1276329
+100378,NA,No,South,Female,28,High School Or Less,Democrat,NA,5.999094
+100472,NA,NA,South,Male,23,NA,NA,NA,0.9418015
+100571,Republicans,No,South,Female,35,High School Or Less,Democrat,Under 20 thousand dollars,2.9150488
+100648,Republicans,No,Midwest,Female,35,High School Or Less,Independent,NA,1.2383581
+100680,Republicans,No,South,Male,33,High School Or Less,Democrat,20 to under 35 thousand,2.0140391
+100705,Republicans,Yes,West,Male,43,High School Or Less,Democrat,20 to under 35 thousand,2.1513417
+100959,Republicans,No,Northeast,Female,32,High School Or Less,Democrat,35 to under 50 thousand,5.9550347
+100978,Republicans,No,Northeast,Male,NA,High School Or Less,Democrat,20 to under 35 thousand,3.0030133
+101068,Democrats,No,West,Male,65,High School Or Less,Democrat,20 to under 35 thousand,0.8210352
+101077,Democrats,Yes,West,Female,60,College Degree,Republican,100 thousand or more,1.2843112
+100108,Republicans,Yes,Midwest,Female,42,High School Or Less,Independent,75 to under 100 thousand,2.1605114
+100203,Republicans,No,South,Female,33,College Degree,Democrat,100 thousand or more,1.3117903
+100254,Democrats,No,South,Female,65,Some College,Republican,50 to under 75 thousand,0.7087644
+100456,Democrats,No,Northeast,Male,49,Some College,Republican,75 to under 100 thousand,0.8464675
+100527,Republicans,No,South,Male,26,Some College,Democrat,35 to under 50 thousand,1.2583255
+100580,NA,No,Midwest,Male,31,College Degree,Republican,100 thousand or more,1.0529961
+100606,Democrats,No,South,Female,53,Some College,Republican,35 to under 50 thousand,1.0871279
+100661,Republicans,No,South,Male,69,High School Or Less,Democrat,35 to under 50 thousand,0.7146785
+100696,Democrats,No,West,Female,69,Post-Graduate Degree,Republican,50 to under 75 thousand,0.608637
+100521,Democrats,No,Midwest,Male,38,College Degree,Republican,100 thousand or more,0.8673804
+100560,Republicans,No,South,Female,60,Some College,Democrat,NA,1.2693592
+100637,NA,No,South,Male,58,High School Or Less,Democrat,Under 20 thousand dollars,0.9388269
+100750,Democrats,No,Northeast,Male,NA,Some College,Republican,75 to under 100 thousand,0.4032539
+100765,NA,No,Northeast,Male,64,College Degree,Republican,100 thousand or more,0.5447434
+100836,Democrats,No,Northeast,Male,28,NA,NA,NA,1.0431443
+100884,Republicans,No,South,Female,57,Some College,Democrat,100 thousand or more,1.0456044
+101015,Democrats,No,South,Female,68,High School Or Less,Republican,35 to under 50 thousand,0.729739
+101028,Republicans,Yes,West,Female,NA,College Degree,NA,NA,0.5947966
+101049,Democrats,No,West,Male,34,High School Or Less,Republican,20 to under 35 thousand,1.3755372
+101061,NA,No,South,Male,51,Post-Graduate Degree,Republican,100 thousand or more,0.7565521
+101081,NA,No,West,Male,44,Post-Graduate Degree,Democrat,100 thousand or more,0.882698
+263,Republicans,Yes,NA,Female,74,High School Or Less,Democrat,Under 20 thousand dollars,0.8768801
+343,Republicans,Yes,NA,Female,67,College Degree,Democrat,20 to under 35 thousand,0.8048674
+100152,Republicans,No,South,Male,48,High School Or Less,Democrat,75 to under 100 thousand,2.6254585
+100246,Democrats,No,Midwest,Male,51,Post-Graduate Degree,Republican,100 thousand or more,0.7007478
+100452,Democrats,No,South,Female,65,Some College,Republican,100 thousand or more,0.7087644
+100516,Democrats,Yes,South,Female,59,Some College,Republican,100 thousand or more,1.0871279
+100602,Republicans,No,South,Male,54,Some College,Republican,50 to under 75 thousand,0.7511086
+100618,Republicans,Yes,West,Female,30,Post-Graduate Degree,Democrat,100 thousand or more,1.6043665
+100783,NA,No,South,Female,76,High School Or Less,Democrat,NA,1.7411579
+100848,Democrats,No,Northeast,Female,64,Post-Graduate Degree,Republican,NA,0.8727124
+100869,Republicans,No,Midwest,Male,36,High School Or Less,Democrat,100 thousand or more,1.4944276
+100921,Democrats,No,Northeast,Female,73,Some College,Republican,20 to under 35 thousand,0.5836554
+100713,Democrats,No,West,Male,66,Post-Graduate Degree,Republican,75 to under 100 thousand,0.4344909
+100022,Republicans,No,South,Male,88,College Degree,Republican,75 to under 100 thousand,0.355256
+100085,Republicans,No,Northeast,Male,62,Post-Graduate Degree,Republican,100 thousand or more,0.4966794
+100149,Republicans,No,Northeast,Male,72,College Degree,Democrat,50 to under 75 thousand,0.3551512
+100181,NA,No,South,Male,66,High School Or Less,Republican,75 to under 100 thousand,0.6120781
+100349,Republicans,Yes,West,Female,27,College Degree,Democrat,50 to under 75 thousand,1.7153123
+100355,Republicans,No,West,Male,66,Post-Graduate Degree,Republican,100 thousand or more,0.1999698
+100365,Republicans,No,West,Female,26,High School Or Less,Democrat,Under 20 thousand dollars,2.7175261
+100401,Democrats,No,South,Female,76,High School Or Less,Republican,75 to under 100 thousand,0.729739
+100429,Republicans,No,South,Male,21,High School Or Less,Democrat,50 to under 75 thousand,1.1529852
+100468,Republicans,Yes,South,Male,58,Some College,Republican,100 thousand or more,0.7511086
+100520,NA,No,Midwest,Male,30,Some College,Republican,35 to under 50 thousand,0.9848611
+100566,Republicans,No,Northeast,Male,24,College Degree,Democrat,50 to under 75 thousand,1.1512463
+100605,Republicans,No,South,Male,53,High School Or Less,Democrat,35 to under 50 thousand,1.096199
+100625,Democrats,Yes,West,Male,52,College Degree,Republican,100 thousand or more,0.3346204
+100675,Democrats,No,Midwest,Female,44,Post-Graduate Degree,Republican,20 to under 35 thousand,1.1433401
+100688,Democrats,Yes,Midwest,Male,77,Post-Graduate Degree,Republican,100 thousand or more,0.4568598
+100712,Republicans,Yes,West,Female,29,College Degree,Democrat,20 to under 35 thousand,1.5265403
+100965,Republicans,No,South,Male,38,High School Or Less,Democrat,75 to under 100 thousand,1.4453386
+100972,Republicans,Yes,Northeast,Female,46,College Degree,Democrat,75 to under 100 thousand,1.2598728
+101035,Republicans,Yes,West,Male,55,Post-Graduate Degree,Republican,100 thousand or more,0.6449993
+101089,Republicans,No,West,Female,44,College Degree,Democrat,50 to under 75 thousand,1.4012185
+100791,Republicans,No,Midwest,Male,40,Post-Graduate Degree,Democrat,100 thousand or more,0.9589913
+100888,NA,No,South,Male,41,Some College,Democrat,35 to under 50 thousand,1.6094923
+100922,Republicans,No,South,Female,50,High School Or Less,Democrat,20 to under 35 thousand,2.1276329
+100971,Democrats,Yes,Northeast,Male,57,NA,Democrat,Under 20 thousand dollars,1.9077783
+100984,Republicans,No,Northeast,Male,54,High School Or Less,Democrat,Under 20 thousand dollars,1.210524
+101040,Republicans,No,West,Male,29,High School Or Less,Democrat,Under 20 thousand dollars,2.3437527
+101067,NA,Yes,West,Male,61,Some College,Republican,20 to under 35 thousand,1.0075294
+100457,Republicans,No,South,Female,45,Some College,Democrat,50 to under 75 thousand,1.4877622
+100526,Republicans,No,South,Female,35,College Degree,Independent,NA,1.355391
+100573,Democrats,Yes,South,Female,19,High School Or Less,Republican,100 thousand or more,1.6687898
+100685,Democrats,Yes,South,Male,38,College Degree,Democrat,100 thousand or more,0.9063303
+100976,Republicans,No,Northeast,Female,58,College Degree,Democrat,Under 20 thousand dollars,0.9571654
+101000,Republicans,Yes,South,Male,56,College Degree,Democrat,100 thousand or more,0.5449043
+101056,Republicans,No,West,Male,19,High School Or Less,Independent,35 to under 50 thousand,1.2329953
+101092,Republicans,Yes,West,Female,59,High School Or Less,Democrat,Under 20 thousand dollars,3.7246475
+100164,Republicans,Yes,Northeast,Male,29,High School Or Less,Democrat,20 to under 35 thousand,1.5723438
+100182,Republicans,No,South,Male,19,Some College,Republican,20 to under 35 thousand,1.2583255
+100213,NA,No,South,Male,60,High School Or Less,Republican,50 to under 75 thousand,0.9388269
+100344,Democrats,Yes,West,Male,39,Post-Graduate Degree,Democrat,35 to under 50 thousand,0.817949
+100789,Democrats,No,South,Male,50,High School Or Less,Republican,100 thousand or more,1.2108816
+100807,Republicans,No,Midwest,Female,42,Some College,Democrat,100 thousand or more,1.4238252
+100818,Republicans,No,Northeast,Female,58,Post-Graduate Degree,Democrat,50 to under 75 thousand,0.8727124
+101036,Democrats,No,West,Male,70,College Degree,Republican,75 to under 100 thousand,0.3799087
+101058,Democrats,No,South,Male,54,Post-Graduate Degree,Republican,100 thousand or more,0.6031447
+101064,Republicans,No,West,Male,21,College Degree,Democrat,50 to under 75 thousand,0.9762211
+100528,Republicans,No,South,Male,18,Some College,Democrat,20 to under 35 thousand,1.2583255
+100622,Republicans,No,West,Male,33,High School Or Less,Democrat,50 to under 75 thousand,2.1538011
+100663,Republicans,No,West,Female,42,Post-Graduate Degree,Democrat,75 to under 100 thousand,1.2775857
+100054,Democrats,No,South,Male,63,High School Or Less,Republican,50 to under 75 thousand,0.9388269
+100078,Democrats,No,South,Male,80,College Degree,Democrat,50 to under 75 thousand,0.4312793
+100163,Republicans,Yes,Midwest,Male,NA,High School Or Less,Democrat,NA,2.3372863
+100313,Republicans,No,West,Female,68,College Degree,Democrat,100 thousand or more,0.6675353
+100419,Republicans,Yes,South,Male,18,High School Or Less,Democrat,100 thousand or more,1.3997188
+100440,Republicans,No,Northeast,Female,69,Some College,Democrat,100 thousand or more,0.5836554
+100797,Republicans,No,South,Male,56,College Degree,Republican,100 thousand or more,0.6615115
+100819,Democrats,Yes,South,Male,53,High School Or Less,Republican,35 to under 50 thousand,0.4305891
+100843,Republicans,Yes,Northeast,Male,37,College Degree,Democrat,100 thousand or more,0.3530356
+101007,Republicans,No,South,Female,34,Some College,Democrat,NA,1.4894633
+101097,Republicans,No,Midwest,Male,21,Some College,Republican,20 to under 35 thousand,1.3010628
+100348,NA,No,West,Male,22,High School Or Less,Republican,NA,1.4968508
+100770,Democrats,No,Northeast,Male,43,Some College,Republican,NA,1.609017
+100911,NA,No,West,Male,55,College Degree,Republican,NA,0.7074164
+100966,Republicans,No,South,Female,66,Some College,Republican,NA,0.5838277
+100982,Republicans,No,South,Female,38,Post-Graduate Degree,Democrat,35 to under 50 thousand,1.396537
+101051,Republicans,Yes,South,Female,63,College Degree,Democrat,75 to under 100 thousand,0.7886752
+101069,Republicans,Yes,West,Female,54,Some College,Democrat,NA,1.4582623
+100020,Democrats,No,Northeast,Male,41,Some College,Republican,50 to under 75 thousand,1.0276077
+100057,Democrats,No,South,Male,63,Post-Graduate Degree,Republican,100 thousand or more,0.6031447
+100093,Republicans,Yes,South,Female,30,Some College,Democrat,75 to under 100 thousand,1.5389693
+100158,Democrats,No,Northeast,Male,18,High School Or Less,Republican,NA,2.8594289
+100166,Republicans,No,South,Female,24,High School Or Less,Democrat,20 to under 35 thousand,2.3654983
+100199,NA,No,Midwest,Male,62,Some College,Independent,50 to under 75 thousand,0.7188294
+100236,Republicans,No,South,Male,18,Some College,Democrat,Under 20 thousand dollars,1.1198453
+100341,NA,No,West,Female,50,College Degree,Independent,75 to under 100 thousand,1.2843112
+100359,Democrats,No,West,Male,45,Some College,Republican,50 to under 75 thousand,1.2351745
+100402,NA,No,Northeast,Male,49,High School Or Less,Independent,100 thousand or more,2.0111452
+100414,Republicans,No,South,Male,30,Post-Graduate Degree,Democrat,NA,0.9648828
+100508,NA,No,Midwest,Female,27,College Degree,Republican,100 thousand or more,1.6584822
+100536,Democrats,Yes,South,Male,42,College Degree,Republican,100 thousand or more,0.9052953
+100582,Democrats,No,Midwest,Male,28,Post-Graduate Degree,Republican,35 to under 50 thousand,1.310492
+100677,NA,No,Midwest,Male,53,High School Or Less,Democrat,35 to under 50 thousand,1.0907513
+100709,NA,No,West,Male,63,Some College,Republican,100 thousand or more,0.7434611
+100804,Republicans,No,Midwest,Male,28,Some College,Democrat,35 to under 50 thousand,1.3010628
+100872,Democrats,No,South,Female,NA,High School Or Less,Republican,35 to under 50 thousand,0.8858999
+100934,NA,No,West,Female,36,College Degree,Democrat,75 to under 100 thousand,1.7596222
+100955,Republicans,Yes,West,Female,55,College Degree,Democrat,35 to under 50 thousand,1.0238893
+100974,NA,No,Northeast,Male,33,Post-Graduate Degree,Republican,100 thousand or more,1.2935275
+100992,Democrats,No,Midwest,Male,43,Some College,Republican,100 thousand or more,1.1942516
+101016,Democrats,No,South,Male,52,Post-Graduate Degree,Republican,50 to under 75 thousand,0.4968262
+101029,NA,No,West,Female,81,High School Or Less,Democrat,35 to under 50 thousand,0.7803784
+101065,NA,Yes,West,Male,26,High School Or Less,Democrat,50 to under 75 thousand,1.4968508
+100146,Republicans,No,Northeast,Female,30,Some College,Democrat,100 thousand or more,1.4890234
+100176,Democrats,No,South,Male,57,Post-Graduate Degree,Democrat,50 to under 75 thousand,0.4968262
+100201,Democrats,Yes,Midwest,Male,65,Post-Graduate Degree,Independent,100 thousand or more,0.4568598
+100300,Republicans,No,West,Male,58,Some College,Independent,75 to under 100 thousand,0.7725511
+100764,Republicans,No,Midwest,Female,55,Post-Graduate Degree,Democrat,100 thousand or more,1.0142375
+100841,Republicans,No,South,Female,20,Some College,Democrat,50 to under 75 thousand,1.6208243
+100901,Democrats,No,South,Male,28,Some College,Independent,50 to under 75 thousand,1.1198453
+100927,Democrats,No,West,Male,66,Some College,Republican,35 to under 50 thousand,0.5236748
+100941,Democrats,No,West,Female,37,College Degree,Independent,NA,1.4028205
+100070,Republicans,No,Northeast,Female,72,Post-Graduate Degree,Democrat,50 to under 75 thousand,0.4686788
+100188,Democrats,No,Midwest,Male,35,Post-Graduate Degree,Republican,NA,0.9600877
+100506,Republicans,Yes,Northeast,Male,47,Some College,Democrat,20 to under 35 thousand,1.1998619
+100640,Democrats,No,South,Male,53,College Degree,Republican,50 to under 75 thousand,0.6615115
+101048,Democrats,No,West,Female,70,Post-Graduate Degree,Republican,35 to under 50 thousand,0.608637
+100075,Democrats,No,South,Male,70,High School Or Less,Republican,50 to under 75 thousand,1.2507586
+100157,Democrats,No,South,Male,44,Post-Graduate Degree,Republican,75 to under 100 thousand,1.06461
+100209,Republicans,Yes,South,Male,40,Post-Graduate Degree,Democrat,35 to under 50 thousand,0.6799192
+100269,Democrats,No,Midwest,Male,65,Post-Graduate Degree,Republican,100 thousand or more,0.4568598
+100353,Republicans,No,West,Male,70,Some College,Democrat,100 thousand or more,0.5236748
+100400,Democrats,No,South,Male,55,College Degree,Independent,NA,0.1999698
+100609,Republicans,No,South,Female,76,High School Or Less,Democrat,Under 20 thousand dollars,1.1112249
+100728,Republicans,Yes,West,Female,23,College Degree,Democrat,20 to under 35 thousand,1.2574513
+100787,Democrats,No,Midwest,Female,60,Some College,Republican,100 thousand or more,1.2630509
+100907,Democrats,No,West,Male,78,High School Or Less,Republican,100 thousand or more,0.5391721
+100942,NA,No,West,Male,18,High School Or Less,Democrat,Under 20 thousand dollars,1.6819516
+101005,NA,No,Northeast,Female,79,High School Or Less,Democrat,75 to under 100 thousand,0.7295235
+101060,Republicans,Yes,West,Female,38,High School Or Less,Democrat,Under 20 thousand dollars,4.0683377
+328,Democrats,No,NA,Male,71,Post-Graduate Degree,Republican,75 to under 100 thousand,0.323911
+381,Democrats,No,NA,Male,47,College Degree,Republican,100 thousand or more,1.0116197
+429,Democrats,No,NA,Female,72,College Degree,Republican,75 to under 100 thousand,0.514185
+205,NA,No,NA,Female,49,High School Or Less,Independent,35 to under 50 thousand,1.7796698
+100600,Republicans,Yes,Midwest,Female,50,College Degree,Democrat,50 to under 75 thousand,1.112386
+47,Democrats,No,NA,Male,78,High School Or Less,Independent,20 to under 35 thousand,0.373309
+388,Democrats,No,NA,Male,61,College Degree,Independent,100 thousand or more,0.7941048
+412,Democrats,No,NA,Female,67,Some College,Republican,NA,0.5838277
+464,Republicans,Yes,NA,Female,37,College Degree,Democrat,100 thousand or more,1.15554
+467,Republicans,No,NA,Female,48,College Degree,Democrat,NA,0.2561746
+100015,Democrats,No,Midwest,Male,21,College Degree,Republican,Under 20 thousand dollars,1.1458635
+100144,Democrats,Yes,South,Female,66,College Degree,Republican,75 to under 100 thousand,0.6242183
+100208,NA,No,Midwest,Female,21,High School Or Less,Republican,75 to under 100 thousand,2.9524073
+100,NA,Yes,NA,Male,45,High School Or Less,Democrat,20 to under 35 thousand,1.2353696
+147,Republicans,No,NA,Male,71,Post-Graduate Degree,Republican,100 thousand or more,0.323911
+285,Democrats,No,NA,Female,40,Some College,Republican,50 to under 75 thousand,1.4238252
+100390,Democrats,No,Northeast,Male,61,High School Or Less,Democrat,50 to under 75 thousand,0.7731079
+100403,Republicans,No,Northeast,Male,26,College Degree,Democrat,35 to under 50 thousand,0.9859716
+100511,Democrats,No,Midwest,Male,44,Some College,Republican,50 to under 75 thousand,0.9837364
+100597,Democrats,No,South,Female,NA,Post-Graduate Degree,Republican,35 to under 50 thousand,0.4688172
+100613,NA,No,South,Female,65,Some College,Republican,75 to under 100 thousand,0.7087644
+100756,Republicans,No,South,Female,67,High School Or Less,Democrat,75 to under 100 thousand,0.729739
+100762,Democrats,Yes,South,Male,50,College Degree,Republican,100 thousand or more,0.6615115
+100782,Republicans,Yes,South,Female,53,High School Or Less,Republican,Under 20 thousand dollars,1.3588247
+129,NA,No,NA,Male,85,Some College,Republican,NA,0.403373
+100407,Republicans,No,Northeast,Male,62,High School Or Less,Republican,50 to under 75 thousand,0.7731079
+100478,Democrats,No,South,Male,47,High School Or Less,Republican,35 to under 50 thousand,1.0583306
+100557,Republicans,Yes,South,Male,65,College Degree,Democrat,75 to under 100 thousand,0.355256
+100585,Democrats,No,South,Female,70,Some College,Independent,75 to under 100 thousand,0.5838277
+100630,NA,No,West,Female,19,High School Or Less,Republican,75 to under 100 thousand,2.434397
+36,Republicans,No,NA,Female,62,High School Or Less,Independent,50 to under 75 thousand,1.118969
+69,Democrats,No,NA,Male,84,High School Or Less,Republican,35 to under 50 thousand,0.5041847
+86,Democrats,No,NA,Female,85,College Degree,Democrat,Under 20 thousand dollars,0.5140332
+141,Democrats,Yes,NA,Male,64,Some College,Republican,50 to under 75 thousand,0.7188294
+158,Democrats,No,NA,Male,81,Some College,Republican,100 thousand or more,0.4313647
+100080,Republicans,No,South,Female,36,Some College,Independent,35 to under 50 thousand,1.4325722
+100136,NA,No,Midwest,Male,43,High School Or Less,NA,75 to under 100 thousand,1.4927211
+100282,Republicans,No,South,Female,28,Post-Graduate Degree,Democrat,35 to under 50 thousand,1.3015316
+100312,Democrats,No,West,Male,75,Some College,Republican,75 to under 100 thousand,0.5236748
+100421,Republicans,No,Northeast,Male,19,High School Or Less,Democrat,75 to under 100 thousand,1.1526446
+100460,NA,Yes,Northeast,Male,50,High School Or Less,Independent,35 to under 50 thousand,0.7731079
+100539,Democrats,No,South,Male,39,High School Or Less,Republican,100 thousand or more,1.2862774
+100612,Republicans,No,South,Female,38,College Degree,Democrat,100 thousand or more,1.3117903
+100817,Republicans,Yes,South,Male,21,Some College,Democrat,35 to under 50 thousand,1.0770722
+100897,Democrats,No,West,Male,70,Some College,Independent,50 to under 75 thousand,0.4313647
+335,Republicans,No,NA,Female,78,Some College,Democrat,50 to under 75 thousand,0.5865918
+347,Republicans,No,NA,Female,87,College Degree,Democrat,NA,0.514185
+355,Democrats,Yes,NA,Female,30,Some College,Republican,35 to under 50 thousand,1.2265475
+383,Republicans,Yes,NA,Female,58,High School Or Less,Democrat,50 to under 75 thousand,1.1192996
+399,Democrats,No,NA,Female,71,College Degree,Independent,100 thousand or more,0.514185
+441,Republicans,No,NA,Male,70,Some College,Democrat,50 to under 75 thousand,0.4686483
+480,Democrats,No,NA,Female,73,High School Or Less,Republican,35 to under 50 thousand,0.729739
+100066,Republicans,No,Midwest,Male,19,Some College,Republican,100 thousand or more,1.3010628
+100276,Republicans,No,Midwest,Female,33,College Degree,Democrat,50 to under 75 thousand,1.2554156
+100417,Democrats,Yes,South,Male,37,Some College,Republican,100 thousand or more,1.0290865
+100555,Republicans,No,Midwest,Male,19,High School Or Less,Democrat,100 thousand or more,1.3395654
+100664,NA,Yes,Midwest,Male,22,Some College,Democrat,75 to under 100 thousand,1.2042484
+34,Democrats,No,NA,Female,68,High School Or Less,Republican,Under 20 thousand dollars,0.8478281
+127,Democrats,No,NA,Female,83,High School Or Less,Republican,NA,0.1999698
+152,Republicans,No,NA,Female,63,Post-Graduate Degree,Democrat,20 to under 35 thousand,0.7689889
+100383,Republicans,Yes,South,Female,53,College Degree,Democrat,100 thousand or more,1.234899
+100441,NA,No,Northeast,Male,36,Some College,Democrat,Under 20 thousand dollars,1.2904491
+100495,Republicans,No,West,Male,34,Post-Graduate Degree,Independent,50 to under 75 thousand,0.8837071
+218,Republicans,No,NA,Female,67,Some College,Democrat,100 thousand or more,0.5838277
+250,Republicans,No,NA,Female,72,Post-Graduate Degree,Democrat,NA,0.403414
+8,Republicans,No,NA,Female,46,Some College,Democrat,35 to under 50 thousand,1.5367579
+35,NA,No,NA,Female,75,Some College,Republican,35 to under 50 thousand,0.5836554
+52,Democrats,No,NA,Male,85,College Degree,Republican,100 thousand or more,0.355256
+64,Democrats,Yes,NA,Male,62,Some College,Democrat,100 thousand or more,0.7222062
+89,Republicans,No,NA,Female,71,Post-Graduate Degree,Democrat,100 thousand or more,0.4686788
+103,Republicans,No,NA,Female,79,Some College,Independent,50 to under 75 thousand,0.5838277
+118,Democrats,No,NA,Female,68,Some College,Republican,35 to under 50 thousand,0.5838277
+126,Republicans,No,NA,Male,70,College Degree,Republican,50 to under 75 thousand,0.412745
+136,Republicans,Yes,NA,Female,73,Some College,Democrat,75 to under 100 thousand,0.6816927
+156,NA,Yes,NA,Male,60,College Degree,Democrat,100 thousand or more,0.5827173
+198,Republicans,No,NA,Female,83,Post-Graduate Degree,Democrat,50 to under 75 thousand,0.4688172
+211,Democrats,No,NA,Male,67,Post-Graduate Degree,Republican,100 thousand or more,0.4394098
+239,Republicans,No,NA,Male,NA,High School Or Less,Democrat,Under 20 thousand dollars,3.8981161
+248,Republicans,No,NA,Female,72,Post-Graduate Degree,Democrat,100 thousand or more,0.4688172
+344,Democrats,Yes,NA,Female,69,Some College,Republican,20 to under 35 thousand,0.5838277
+398,Democrats,Yes,NA,Male,24,High School Or Less,Republican,NA,1.3395654
+419,Republicans,No,NA,Male,58,Some College,Independent,20 to under 35 thousand,0.6616424
+206,Republicans,Yes,NA,Male,50,Post-Graduate Degree,Independent,100 thousand or more,0.5772243
+210,Republicans,No,NA,Female,75,High School Or Less,Democrat,75 to under 100 thousand,0.7295235
+231,Democrats,No,NA,Male,57,Some College,Republican,75 to under 100 thousand,0.2925733
+253,Republicans,Yes,NA,Male,75,Some College,Republican,100 thousand or more,0.403373
+259,Republicans,No,NA,Female,65,Some College,Democrat,NA,0.5023798
+331,Republicans,No,NA,Female,78,Some College,Independent,35 to under 50 thousand,0.6560239
+361,Democrats,No,NA,Female,NA,College Degree,Republican,NA,0.2432186
+379,Democrats,No,NA,Female,72,College Degree,Democrat,NA,0.514185
+386,NA,Yes,NA,Female,54,High School Or Less,Democrat,35 to under 50 thousand,1.6940265
+423,Democrats,No,NA,Male,73,College Degree,Republican,20 to under 35 thousand,0.3799087
+435,NA,No,NA,Female,88,College Degree,Republican,NA,0.514185
+100051,Democrats,No,South,Male,60,College Degree,Republican,50 to under 75 thousand,0.6615115
+100226,Republicans,No,Midwest,Male,22,College Degree,Democrat,100 thousand or more,1.4373091
+100309,Republicans,No,West,Female,33,College Degree,Democrat,50 to under 75 thousand,1.15554
+29,Republicans,No,NA,Male,94,Some College,Democrat,NA,0.4032539
+42,Democrats,No,NA,Male,75,Some College,Republican,Under 20 thousand dollars,0.403373
+54,Republicans,No,NA,Female,75,High School Or Less,Democrat,35 to under 50 thousand,0.8478281
+62,Democrats,No,NA,Female,56,College Degree,Republican,NA,0.1999698
+85,Democrats,No,NA,Female,80,Some College,Republican,50 to under 75 thousand,0.5838277
+107,Democrats,No,NA,Female,87,NA,NA,50 to under 75 thousand,0.4027896
+153,Republicans,Yes,NA,Female,71,Some College,Democrat,100 thousand or more,0.6243418
+168,Democrats,No,NA,Female,76,Some College,Republican,NA,0.6243418
+249,NA,No,NA,Female,67,College Degree,Republican,50 to under 75 thousand,0.5973924
+471,Democrats,No,NA,Female,62,High School Or Less,Republican,20 to under 35 thousand,1.1192996
+478,Republicans,Yes,NA,Male,54,Some College,Independent,Under 20 thousand dollars,0.7224195
+496,Republicans,No,NA,Male,48,Post-Graduate Degree,Democrat,100 thousand or more,0.7899462
+501,Republicans,No,NA,Male,71,Some College,Democrat,50 to under 75 thousand,0.4313647
+513,NA,Yes,NA,Male,63,College Degree,Democrat,50 to under 75 thousand,0.5449043
+296,Republicans,Yes,NA,Female,56,High School Or Less,Democrat,75 to under 100 thousand,2.8559766
+307,Republicans,No,NA,Female,70,Some College,Democrat,75 to under 100 thousand,0.6243418
+470,Republicans,No,NA,Female,60,College Degree,Democrat,100 thousand or more,0.7884422
+483,Democrats,No,NA,Female,67,Post-Graduate Degree,Republican,20 to under 35 thousand,0.4688172
+505,Republicans,No,NA,Female,68,Some College,Republican,75 to under 100 thousand,0.6243418
+100420,Democrats,No,South,Female,67,High School Or Less,Republican,100 thousand or more,0.729739
+100672,NA,No,West,Male,30,Some College,Independent,50 to under 75 thousand,1.2849713
+225,Democrats,No,NA,Male,47,Some College,Republican,Under 20 thousand dollars,0.8467174
+366,Republicans,Yes,NA,Male,82,Some College,Democrat,50 to under 75 thousand,0.403373
+449,Republicans,Yes,NA,Female,52,College Degree,Democrat,100 thousand or more,0.8434044
+100295,Democrats,No,West,Female,53,College Degree,Republican,75 to under 100 thousand,0.8434044
+17,Democrats,No,NA,Female,67,College Degree,Republican,NA,0.5140332
+48,Democrats,No,NA,Male,56,High School Or Less,Republican,20 to under 35 thousand,0.7731079
+74,Republicans,No,NA,Male,67,Some College,Democrat,20 to under 35 thousand,0.2987542
+120,Republicans,No,NA,Female,61,High School Or Less,Independent,35 to under 50 thousand,1.3004287
+135,Democrats,No,NA,Male,72,Some College,Republican,75 to under 100 thousand,0.4686483
+160,Democrats,No,NA,Male,67,Post-Graduate Degree,Republican,Under 20 thousand dollars,0.2565491
+58,Democrats,No,NA,Female,80,High School Or Less,Republican,50 to under 75 thousand,0.729739
+114,Democrats,No,NA,Male,65,Some College,Republican,NA,0.1999698
+159,Republicans,No,NA,Female,64,College Degree,Democrat,20 to under 35 thousand,0.3989452
+357,Republicans,No,NA,Male,47,College Degree,Republican,100 thousand or more,0.7454953
+372,Republicans,No,NA,Female,NA,College Degree,Republican,NA,0.7886752
+417,NA,Yes,NA,Male,NA,Some College,Democrat,NA,3.8565469
+437,Republicans,No,NA,Male,79,College Degree,Democrat,35 to under 50 thousand,0.445614
+100097,Republicans,No,South,Female,38,College Degree,Democrat,100 thousand or more,1.080556
+100150,NA,No,Northeast,Male,31,Some College,NA,35 to under 50 thousand,1.1560018
+100277,Republicans,Yes,South,Male,66,High School Or Less,Democrat,75 to under 100 thousand,0.5041847
+100464,NA,No,Midwest,Male,44,High School Or Less,Democrat,Under 20 thousand dollars,3.0503198
+100513,Republicans,No,South,Male,21,Some College,Independent,50 to under 75 thousand,1.1198453
+100538,Democrats,Yes,South,Female,47,Post-Graduate Degree,Democrat,100 thousand or more,1.4985445
+100587,Republicans,No,Midwest,Male,69,High School Or Less,Republican,35 to under 50 thousand,0.7111267
+100639,Democrats,No,Midwest,Male,59,College Degree,Republican,100 thousand or more,0.7685596
+100658,Democrats,No,West,Female,49,College Degree,Republican,35 to under 50 thousand,1.4012185
+100784,Republicans,No,South,Male,48,Some College,Democrat,75 to under 100 thousand,1.0279113
+100810,Republicans,No,South,Female,56,College Degree,Democrat,100 thousand or more,1.234899
+100837,Republicans,NA,South,Male,60,Some College,NA,100 thousand or more,0.6187079
+100865,Democrats,No,Midwest,Female,55,Some College,Republican,100 thousand or more,1.2630509
+287,Democrats,No,NA,Female,37,High School Or Less,Independent,35 to under 50 thousand,1.7817045
+288,Democrats,No,NA,Male,92,High School Or Less,Republican,NA,1.1970067
+299,Democrats,No,NA,Female,37,Some College,NA,50 to under 75 thousand,1.31205
+309,NA,Yes,NA,Female,31,Some College,NA,Under 20 thousand dollars,1.31205
+100031,Republicans,Yes,South,Female,68,High School Or Less,Democrat,20 to under 35 thousand,0.8858999
+100125,Republicans,Yes,Northeast,Female,44,College Degree,Republican,50 to under 75 thousand,1.0790033
+100159,Democrats,No,Midwest,Male,63,College Degree,Independent,NA,0.7941048
+100205,Republicans,No,South,Female,69,High School Or Less,Democrat,Under 20 thousand dollars,1.8103035
+100386,Republicans,No,South,Female,42,College Degree,Democrat,35 to under 50 thousand,2.0516414
+100433,Republicans,No,Northeast,Male,23,Some College,Democrat,20 to under 35 thousand,1.3071747
+100501,Democrats,No,South,Male,21,High School Or Less,Republican,35 to under 50 thousand,1.3997188
+100519,Democrats,No,Midwest,Female,38,College Degree,NA,50 to under 75 thousand,1.5747254
+100667,Democrats,No,Midwest,Male,55,High School Or Less,Republican,50 to under 75 thousand,0.8984804
+14,Republicans,No,NA,Female,NA,Post-Graduate Degree,Democrat,75 to under 100 thousand,0.4688172
+61,Democrats,Yes,NA,Male,31,Some College,Republican,100 thousand or more,0.6278298
+176,Republicans,No,NA,Male,77,High School Or Less,Democrat,35 to under 50 thousand,0.6763082
+178,Republicans,Yes,NA,Male,64,High School Or Less,Democrat,75 to under 100 thousand,0.6125101
+100173,Republicans,No,South,Male,22,College Degree,Republican,35 to under 50 thousand,0.8124106
+100326,Republicans,No,South,Male,32,Some College,Democrat,50 to under 75 thousand,1.2015884
+100416,Democrats,No,South,Female,53,Some College,Democrat,100 thousand or more,1.0871279
+119,Republicans,No,NA,Female,66,Some College,Democrat,NA,0.5838277
+358,Democrats,No,NA,Female,73,College Degree,Republican,100 thousand or more,0.514185
+427,Democrats,No,NA,Female,74,High School Or Less,Democrat,20 to under 35 thousand,0.7803784
+100052,Democrats,No,South,Male,60,High School Or Less,Republican,100 thousand or more,0.9388269
+100141,Republicans,No,South,Male,22,Some College,Democrat,35 to under 50 thousand,1.2583255
+100567,Republicans,No,South,Female,32,College Degree,Democrat,100 thousand or more,1.3117903
+100644,Republicans,Yes,West,Male,37,College Degree,Democrat,100 thousand or more,0.7983753
+70,Democrats,No,NA,Female,65,College Degree,Republican,50 to under 75 thousand,0.5140332
+98,Republicans,No,NA,Female,85,College Degree,Democrat,20 to under 35 thousand,0.6001987
+24,Democrats,No,NA,Male,83,High School Or Less,Republican,NA,1.0299784
+77,Republicans,No,NA,Female,68,High School Or Less,NA,NA,1.4911945
+140,Republicans,No,NA,Female,56,College Degree,Democrat,100 thousand or more,0.9163014
+223,Democrats,No,NA,Male,50,Post-Graduate Degree,Independent,100 thousand or more,0.5580988
+246,Republicans,No,NA,Male,48,High School Or Less,Democrat,100 thousand or more,1.0583306
+272,Republicans,No,NA,Male,65,Some College,Democrat,20 to under 35 thousand,0.3488333
+345,Republicans,No,NA,Female,NA,Post-Graduate Degree,Independent,35 to under 50 thousand,0.5474033
+408,Democrats,No,NA,Male,66,High School Or Less,Republican,50 to under 75 thousand,0.5041847
+91,Republicans,Yes,NA,Female,56,Post-Graduate Degree,NA,35 to under 50 thousand,0.9019856
+162,Republicans,Yes,NA,Male,61,High School Or Less,Democrat,NA,0.3911861
+173,NA,No,NA,Female,81,High School Or Less,Republican,20 to under 35 thousand,0.7803784
+177,Democrats,No,NA,Male,65,Some College,Republican,35 to under 50 thousand,0.4686483
+179,Republicans,Yes,NA,Female,64,Post-Graduate Degree,Republican,100 thousand or more,0.7689889
+192,Republicans,No,NA,Female,61,College Degree,Democrat,20 to under 35 thousand,0.9208778
+201,Republicans,No,NA,Female,76,High School Or Less,Democrat,Under 20 thousand dollars,0.6279354
+229,Republicans,Yes,NA,Male,50,College Degree,Independent,100 thousand or more,0.5447434
+247,Democrats,No,NA,Male,NA,College Degree,Republican,75 to under 100 thousand,1.0867527
+334,Republicans,No,NA,Female,56,High School Or Less,Democrat,35 to under 50 thousand,1.118969
+348,NA,No,NA,Female,64,Some College,Republican,75 to under 100 thousand,0.8952313
+373,Republicans,Yes,NA,Male,54,Post-Graduate Degree,Democrat,100 thousand or more,0.5801072
+395,Democrats,No,NA,Female,NA,Some College,Republican,NA,0.5838277
+100009,Republicans,No,South,Male,41,College Degree,Democrat,100 thousand or more,0.7457155
+100032,Republicans,Yes,South,Female,34,Some College,Democrat,50 to under 75 thousand,1.7391365
+100060,Democrats,No,South,Male,51,Post-Graduate Degree,Republican,100 thousand or more,0.6031447
+100102,NA,Yes,Northeast,Female,NA,Some College,NA,75 to under 100 thousand,0.8525011
+100126,Republicans,Yes,South,Female,21,Some College,Democrat,Under 20 thousand dollars,1.6208243
+100274,Democrats,No,South,Female,59,Some College,Republican,50 to under 75 thousand,0.8954958
+100290,Democrats,No,West,Female,47,High School Or Less,Republican,100 thousand or more,1.9886303
+100323,Democrats,No,Midwest,Male,47,Post-Graduate Degree,Republican,35 to under 50 thousand,0.7899462
+100330,Republicans,No,South,Male,20,Some College,Democrat,50 to under 75 thousand,1.3075608
+327,Democrats,No,NA,Male,84,High School Or Less,Republican,20 to under 35 thousand,0.5041847
+341,Democrats,No,NA,Male,46,College Degree,Republican,75 to under 100 thousand,0.7454953
+354,Democrats,No,NA,Male,48,Post-Graduate Degree,Republican,75 to under 100 thousand,0.7899462
+365,Republicans,No,NA,Male,68,High School Or Less,Democrat,20 to under 35 thousand,0.5040358
+378,Democrats,Yes,NA,Female,53,Some College,Republican,50 to under 75 thousand,0.8952313
+390,Republicans,No,NA,Male,70,High School Or Less,Democrat,75 to under 100 thousand,0.5857737
+409,Democrats,No,NA,Female,63,College Degree,Republican,35 to under 50 thousand,0.7886752
+425,Democrats,No,NA,Female,79,High School Or Less,Republican,NA,1.5946744
+476,Republicans,No,NA,Male,53,College Degree,Republican,20 to under 35 thousand,0.403578
+485,Democrats,No,NA,Female,73,College Degree,Republican,50 to under 75 thousand,0.514185
+511,Republicans,No,NA,Female,51,Post-Graduate Degree,Democrat,100 thousand or more,0.7689889
+100064,Republicans,No,South,Female,59,Some College,Democrat,100 thousand or more,1.0456044
+100315,Republicans,No,West,Male,40,High School Or Less,Independent,100 thousand or more,1.3739665
+40,Republicans,No,NA,Male,49,High School Or Less,Democrat,35 to under 50 thousand,1.063341
+49,NA,No,NA,Male,90,Some College,Independent,100 thousand or more,0.298666
+154,Democrats,No,NA,Female,82,High School Or Less,Republican,NA,0.3539315
+191,Republicans,No,NA,Female,88,High School Or Less,Republican,20 to under 35 thousand,0.6071295
+202,Democrats,No,NA,Male,77,Post-Graduate Degree,Republican,50 to under 75 thousand,0.323911
+208,Republicans,No,NA,Male,40,High School Or Less,Republican,50 to under 75 thousand,1.0583306
+221,NA,No,NA,Female,60,College Degree,Democrat,50 to under 75 thousand,1.2345343
+228,Republicans,No,NA,Female,26,Some College,Democrat,20 to under 35 thousand,1.5511687
+295,Democrats,No,NA,Male,75,High School Or Less,Republican,100 thousand or more,0.5391721
+300,Republicans,Yes,NA,Male,79,Post-Graduate Degree,NA,35 to under 50 thousand,0.3463884
+322,NA,No,NA,Male,73,High School Or Less,Republican,35 to under 50 thousand,0.5041847
+337,Republicans,Yes,NA,Male,64,High School Or Less,Democrat,100 thousand or more,0.7733363
+407,Democrats,No,NA,Male,66,Post-Graduate Degree,Republican,35 to under 50 thousand,0.2787231
+426,NA,No,NA,Male,73,Post-Graduate Degree,Independent,NA,0.3463884
+444,Democrats,Yes,NA,Male,59,Some College,Republican,50 to under 75 thousand,0.7188294
+450,Republicans,No,NA,Male,62,High School Or Less,Democrat,75 to under 100 thousand,0.8270011
+463,Democrats,Yes,NA,Female,89,Some College,Republican,Under 20 thousand dollars,0.4624126
+100044,Democrats,No,South,Female,61,Some College,Republican,100 thousand or more,1.0871279
+100195,Democrats,Yes,South,Male,40,Post-Graduate Degree,Independent,100 thousand or more,1.0353608
+100228,Republicans,No,Midwest,Female,63,High School Or Less,Republican,20 to under 35 thousand,1.5787147
+13,Republicans,No,NA,Female,80,High School Or Less,Democrat,20 to under 35 thousand,0.6308851
+32,Democrats,No,NA,Male,63,Some College,Independent,50 to under 75 thousand,0.6185251
+55,Republicans,No,NA,Female,85,College Degree,Independent,75 to under 100 thousand,0.7493365
+90,Democrats,No,NA,Female,89,High School Or Less,Republican,20 to under 35 thousand,0.6279354
+112,Democrats,No,NA,Male,66,High School Or Less,Republican,NA,1.1970067
+134,Democrats,No,NA,Female,63,Post-Graduate Degree,Republican,NA,0.5325857
+166,Democrats,No,NA,Male,38,High School Or Less,Republican,100 thousand or more,1.1330661
+242,NA,No,NA,Male,65,College Degree,Independent,75 to under 100 thousand,0.412745
+258,Republicans,No,NA,Male,53,Some College,Republican,100 thousand or more,0.6187079
+280,Republicans,No,NA,Female,87,High School Or Less,Democrat,Under 20 thousand dollars,1.2895712
+11,Democrats,No,NA,Male,51,Post-Graduate Degree,Republican,100 thousand or more,0.5772243
+23,Republicans,No,NA,Female,44,College Degree,Democrat,75 to under 100 thousand,1.2598728
+30,Democrats,No,NA,Female,54,Post-Graduate Degree,Republican,75 to under 100 thousand,0.7188761
+67,Republicans,No,NA,Female,58,High School Or Less,Democrat,35 to under 50 thousand,1.3004287
+99,Republicans,No,NA,Female,68,Some College,Democrat,Under 20 thousand dollars,0.678305
+115,Democrats,No,NA,Female,NA,College Degree,Republican,Under 20 thousand dollars,0.5841243
+130,Republicans,No,NA,Female,84,High School Or Less,Democrat,50 to under 75 thousand,0.6279354
+163,Democrats,No,NA,Male,69,High School Or Less,Republican,35 to under 50 thousand,0.5391721
+294,NA,No,NA,Male,70,Post-Graduate Degree,Independent,NA,0.2565491
+474,Republicans,No,NA,Female,73,College Degree,Independent,NA,0.514185
+477,Democrats,No,NA,Female,NA,High School Or Less,Republican,35 to under 50 thousand,0.5404739
+481,Republicans,No,NA,Female,71,Some College,Independent,NA,0.1999698
+499,Republicans,Yes,NA,Male,31,Some College,Republican,35 to under 50 thousand,0.7544224
+515,Democrats,No,NA,Female,64,Some College,Republican,50 to under 75 thousand,0.8954958
+100016,Republicans,No,South,Female,39,High School Or Less,Democrat,50 to under 75 thousand,2.1737843
+100048,Democrats,No,South,Male,61,High School Or Less,Republican,Under 20 thousand dollars,0.9388269
+100068,Republicans,Yes,South,Male,57,Post-Graduate Degree,Democrat,100 thousand or more,0.4968262
+100185,Democrats,No,South,Male,75,College Degree,Republican,100 thousand or more,0.355256
+100263,Republicans,Yes,Midwest,Male,66,Some College,Democrat,Under 20 thousand dollars,0.5689371
+100281,Democrats,No,South,Male,65,College Degree,Republican,50 to under 75 thousand,0.4312793
+100043,Democrats,Yes,South,Male,40,High School Or Less,Republican,100 thousand or more,1.2357345
+100090,NA,No,Northeast,Male,27,Some College,Independent,20 to under 35 thousand,1.1195145
+100220,Democrats,No,Midwest,Male,60,Some College,Republican,75 to under 100 thousand,0.8726557
+100250,Democrats,No,Midwest,Male,32,College Degree,NA,100 thousand or more,0.4980857
+100304,Republicans,No,West,Female,21,High School Or Less,Democrat,35 to under 50 thousand,2.434397
+100360,Republicans,No,West,Female,NA,College Degree,Democrat,NA,0.6675353
+100375,Democrats,No,South,Female,25,Some College,Democrat,100 thousand or more,1.6208243
+100380,Republicans,Yes,Northeast,Female,37,High School Or Less,Democrat,20 to under 35 thousand,2.0913142
+100396,Republicans,Yes,South,Male,41,Some College,Independent,35 to under 50 thousand,1.0279113
+100493,Republicans,Yes,South,Male,22,Some College,Democrat,100 thousand or more,1.1198453
+100578,Democrats,No,Midwest,Male,60,NA,Republican,75 to under 100 thousand,1.4159997
+100655,NA,No,South,Female,55,Some College,Republican,35 to under 50 thousand,1.702213
+100741,Democrats,No,Northeast,Male,50,College Degree,Republican,100 thousand or more,0.6613161
+100754,Democrats,No,Midwest,Female,53,Some College,Independent,100 thousand or more,1.0404082
+100800,Republicans,No,South,Male,82,College Degree,Republican,100 thousand or more,0.4312793
+100860,NA,Yes,Northeast,Male,29,College Degree,Democrat,100 thousand or more,0.9859716
+12,Republicans,No,NA,Female,90,High School Or Less,Democrat,Under 20 thousand dollars,1.1044383
+27,Republicans,No,NA,Female,94,High School Or Less,Democrat,35 to under 50 thousand,0.8478281
+31,Democrats,No,NA,Male,52,College Degree,Republican,100 thousand or more,0.5449043
+53,NA,No,NA,Male,50,High School Or Less,Independent,100 thousand or more,0.7731079
+80,Democrats,No,NA,Female,68,College Degree,Republican,NA,0.5140332
+109,Republicans,No,NA,Male,63,College Degree,Democrat,100 thousand or more,0.7941048
+132,Democrats,No,NA,Female,73,Some College,NA,Under 20 thousand dollars,0.4324062
+143,Democrats,No,NA,Male,70,College Degree,Republican,75 to under 100 thousand,0.412745
+389,Democrats,No,NA,Male,55,College Degree,Republican,100 thousand or more,0.6330828
+396,Republicans,No,NA,Female,69,College Degree,Democrat,Under 20 thousand dollars,0.514185
+100019,Democrats,No,South,Male,74,Some College,Republican,50 to under 75 thousand,0.489693
+100049,Democrats,No,Northeast,Male,18,Some College,Republican,50 to under 75 thousand,0.9221735
+100104,Democrats,No,South,Male,35,College Degree,Independent,35 to under 50 thousand,1.1368517
+100151,Republicans,No,South,Male,42,College Degree,Independent,75 to under 100 thousand,0.9052953
+100160,Democrats,No,Northeast,Male,22,Some College,Independent,NA,1.1195145
+100171,Republicans,Yes,South,Female,43,High School Or Less,Democrat,Under 20 thousand dollars,2.171302
+100225,Democrats,No,South,Male,72,College Degree,Republican,75 to under 100 thousand,0.355256
+100258,Democrats,No,South,Female,76,Some College,Republican,50 to under 75 thousand,0.5838277
+100387,Republicans,No,South,Female,69,Post-Graduate Degree,Democrat,50 to under 75 thousand,0.4688172
+100398,Democrats,No,Northeast,Male,44,High School Or Less,Democrat,100 thousand or more,2.9492519
+100415,Republicans,Yes,Midwest,Female,49,Post-Graduate Degree,Democrat,100 thousand or more,1.3880099
+100444,Republicans,No,Northeast,Female,62,High School Or Less,Republican,35 to under 50 thousand,1.118969
+100481,Republicans,Yes,Northeast,Male,35,High School Or Less,Independent,100 thousand or more,1.5014479
+100515,Republicans,No,Midwest,Female,60,Some College,Independent,100 thousand or more,1.2630509
+100611,Republicans,No,Midwest,Male,18,High School Or Less,Independent,100 thousand or more,1.5641119
+100642,Republicans,Yes,Midwest,Female,48,High School Or Less,Democrat,50 to under 75 thousand,4.4149244
+100742,Republicans,No,Northeast,Female,19,Some College,Democrat,50 to under 75 thousand,1.674202
+100803,Democrats,No,Northeast,Male,18,High School Or Less,Republican,Under 20 thousand dollars,2.8594289
+100830,Democrats,No,Northeast,Male,50,Some College,Independent,100 thousand or more,0.2925733
+100879,Democrats,No,South,Male,78,High School Or Less,NA,20 to under 35 thousand,0.6120781
+100906,Democrats,No,South,Male,50,High School Or Less,Independent,NA,2.4064097
+100920,Democrats,No,South,Female,47,College Degree,Republican,75 to under 100 thousand,1.0793221
+100005,Republicans,No,South,Female,74,Some College,Democrat,Under 20 thousand dollars,0.5838277
+100053,Democrats,No,Northeast,Male,55,Some College,Republican,100 thousand or more,0.7508868
+100076,NA,No,Northeast,Female,53,College Degree,Democrat,20 to under 35 thousand,0.9571654
+100128,Republicans,No,South,Female,61,High School Or Less,Democrat,Under 20 thousand dollars,1.3588247
+100179,Republicans,Yes,South,Female,53,High School Or Less,Democrat,Under 20 thousand dollars,1.5865995
+100267,Democrats,No,South,Female,68,College Degree,Independent,100 thousand or more,0.6242183
+100301,Republicans,No,West,Female,57,Some College,Democrat,75 to under 100 thousand,1.1625678
+100767,Democrats,No,Northeast,Male,40,Post-Graduate Degree,Independent,100 thousand or more,0.8251752
+100840,NA,No,South,Male,51,Some College,Republican,100 thousand or more,0.7511086
+100868,Democrats,No,South,Male,75,Some College,Republican,20 to under 35 thousand,0.489693
+100891,Republicans,Yes,South,Male,20,Some College,Democrat,20 to under 35 thousand,1.7534415
+100923,NA,No,South,Male,77,Post-Graduate Degree,Republican,100 thousand or more,0.323911
+317,Republicans,Yes,NA,Male,58,Post-Graduate Degree,Democrat,100 thousand or more,0.5801072
+100035,Democrats,No,South,Male,33,Some College,NA,75 to under 100 thousand,1.0290865
+100191,Democrats,No,Midwest,Female,NA,Some College,Independent,50 to under 75 thousand,0.678305
+100299,Democrats,Yes,Northeast,Female,29,College Degree,Democrat,50 to under 75 thousand,1.4270603
+100404,Republicans,Yes,South,Female,69,Some College,Democrat,35 to under 50 thousand,0.8275719
+100443,Republicans,No,Midwest,Male,68,College Degree,Independent,35 to under 50 thousand,0.412745
+100547,Republicans,No,Midwest,Female,36,High School Or Less,Democrat,Under 20 thousand dollars,2.1629814
+82,Democrats,No,NA,Female,NA,College Degree,Republican,NA,0.7886752
+350,NA,No,NA,Male,25,Some College,Independent,20 to under 35 thousand,0.9221735
+403,Republicans,Yes,NA,Female,57,Some College,Democrat,Under 20 thousand dollars,0.7744164
+431,Republicans,No,NA,Male,69,College Degree,Democrat,35 to under 50 thousand,0.355256
+100140,Republicans,No,Midwest,Female,23,College Degree,Democrat,NA,1.6584822
+100192,Democrats,No,Midwest,Male,29,College Degree,Republican,50 to under 75 thousand,1.1458635
+100240,Republicans,No,Midwest,Male,48,Some College,Democrat,Under 20 thousand dollars,1.1053854
+100275,Republicans,Yes,South,Female,32,Some College,Democrat,Under 20 thousand dollars,1.868302
+100458,Republicans,No,Midwest,Male,85,High School Or Less,Democrat,Under 20 thousand dollars,0.8303303
+100503,Democrats,No,South,Male,23,College Degree,Republican,35 to under 50 thousand,1.2371148
+100627,Democrats,No,West,Female,36,College Degree,Republican,100 thousand or more,1.15554
+172,Democrats,No,NA,Female,83,High School Or Less,Republican,Under 20 thousand dollars,0.8478281
+174,Democrats,No,NA,Male,58,High School Or Less,Independent,75 to under 100 thousand,0.8270011
+180,Republicans,Yes,NA,Female,79,College Degree,Democrat,75 to under 100 thousand,0.5498663
+182,Republicans,No,NA,Female,47,Some College,Democrat,NA,0.3648537
+338,Democrats,Yes,NA,Female,65,High School Or Less,Republican,NA,0.729739
+359,Democrats,No,NA,Male,90,Some College,Republican,35 to under 50 thousand,0.403373
+391,NA,No,NA,Female,84,Some College,Republican,35 to under 50 thousand,0.5838277
+401,Democrats,No,NA,Female,68,High School Or Less,Democrat,35 to under 50 thousand,0.8478281
+422,Democrats,No,NA,Female,82,Some College,Republican,Under 20 thousand dollars,0.4624126
+100132,Republicans,Yes,South,Female,23,College Degree,Democrat,NA,0.2468926
+100172,Democrats,Yes,South,Male,20,Some College,Republican,35 to under 50 thousand,1.1198453
+100288,Republicans,Yes,West,Male,50,Some College,NA,50 to under 75 thousand,0.8032309
+100316,Democrats,No,West,Female,50,Post-Graduate Degree,Republican,100 thousand or more,0.8978916
+100329,Democrats,No,Midwest,Female,57,College Degree,Republican,20 to under 35 thousand,1.112386
+100533,Democrats,No,West,Male,28,College Degree,Republican,75 to under 100 thousand,1.0547034
+100646,Republicans,Yes,West,Female,40,Post-Graduate Degree,Democrat,100 thousand or more,1.0523808
+21,Democrats,No,NA,Female,81,Some College,Republican,NA,0.4322785
+26,Republicans,No,NA,Female,50,Some College,Democrat,NA,0.8952313
+33,Democrats,No,NA,Female,83,High School Or Less,Republican,Under 20 thousand dollars,0.729739
+108,Democrats,No,NA,Male,69,High School Or Less,Republican,20 to under 35 thousand,0.4338474
+123,NA,No,NA,Male,39,High School Or Less,Democrat,20 to under 35 thousand,2.5155009
+149,Democrats,No,NA,Male,67,High School Or Less,Republican,50 to under 75 thousand,0.5857737
+184,Democrats,Yes,NA,Female,80,High School Or Less,Republican,20 to under 35 thousand,0.8478281
+219,Democrats,No,NA,Male,NA,Post-Graduate Degree,Republican,100 thousand or more,0.3238153
+224,Democrats,No,NA,Female,76,High School Or Less,Republican,Under 20 thousand dollars,1.4911945
+252,Republicans,No,NA,Male,74,Some College,Democrat,50 to under 75 thousand,0.470989
+261,Republicans,No,NA,Female,79,Some College,Democrat,20 to under 35 thousand,0.6243418
+268,Democrats,No,NA,Male,73,Some College,Republican,100 thousand or more,0.4313647
+274,Republicans,Yes,NA,Male,69,Post-Graduate Degree,Democrat,50 to under 75 thousand,0.3463884
+282,Republicans,Yes,NA,Male,64,College Degree,Democrat,75 to under 100 thousand,0.4315837
+339,Democrats,No,NA,Female,73,Some College,Republican,20 to under 35 thousand,0.5838277
+349,Republicans,No,NA,Female,45,Post-Graduate Degree,Democrat,100 thousand or more,0.9840909
+375,Democrats,Yes,NA,Male,42,NA,Republican,20 to under 35 thousand,1.6679224
+440,Republicans,No,NA,Male,74,Some College,Democrat,75 to under 100 thousand,0.5472062
+6,Republicans,Yes,NA,Male,82,High School Or Less,Democrat,50 to under 75 thousand,0.5041847
+25,NA,No,NA,Female,88,Post-Graduate Degree,Democrat,20 to under 35 thousand,0.4688172
+71,Republicans,No,NA,Male,20,High School Or Less,NA,Under 20 thousand dollars,1.7444933
+96,Republicans,Yes,NA,Female,51,Some College,Democrat,Under 20 thousand dollars,1.0452956
+128,Democrats,No,NA,Female,69,Post-Graduate Degree,Republican,75 to under 100 thousand,0.5446829
+167,Republicans,No,NA,Female,82,Some College,NA,NA,0.1999698
+186,Republicans,No,NA,Female,61,Some College,Democrat,100 thousand or more,1.0456044
+193,Republicans,No,NA,Female,82,College Degree,Democrat,50 to under 75 thousand,0.5140332
+196,Democrats,Yes,NA,Male,42,College Degree,Independent,75 to under 100 thousand,0.7454953
+212,Republicans,No,NA,Female,67,Some College,Independent,50 to under 75 thousand,0.5048889
+222,Democrats,No,NA,Female,93,College Degree,Republican,Under 20 thousand dollars,0.380826
+230,Democrats,No,NA,Male,84,Post-Graduate Degree,Republican,50 to under 75 thousand,0.3763275
+237,Democrats,No,NA,Female,66,High School Or Less,Republican,20 to under 35 thousand,0.729739
+277,NA,No,NA,Female,89,Some College,Democrat,Under 20 thousand dollars,0.4624126
+284,NA,No,NA,Male,72,College Degree,Republican,50 to under 75 thousand,0.412745
+290,Republicans,No,NA,Female,65,Some College,Democrat,100 thousand or more,0.7015481
+293,Democrats,No,NA,Female,24,High School Or Less,Republican,75 to under 100 thousand,1.7845935
+306,Republicans,No,NA,Female,62,High School Or Less,Independent,100 thousand or more,1.8742058
+473,Democrats,No,NA,Male,28,High School Or Less,Republican,35 to under 50 thousand,1.1529852
+475,Democrats,No,NA,Female,82,Post-Graduate Degree,Republican,NA,0.4688172
+482,Republicans,No,NA,Female,64,Some College,Democrat,20 to under 35 thousand,0.8954958
+493,Democrats,Yes,NA,Male,86,College Degree,Republican,100 thousand or more,0.445614
+497,Republicans,No,NA,Male,88,High School Or Less,Democrat,NA,0.5391721
+504,Republicans,No,NA,Male,19,Some College,Democrat,20 to under 35 thousand,1.1084435
+100008,Republicans,No,South,Female,34,College Degree,Republican,100 thousand or more,1.3117903
+100296,Democrats,No,West,Male,46,High School Or Less,Republican,Under 20 thousand dollars,1.7234291
+45,Republicans,Yes,NA,Female,NA,Some College,Democrat,NA,0.5478166
+60,Republicans,No,NA,Male,77,Some College,Democrat,75 to under 100 thousand,0.403373
+79,Democrats,No,NA,Male,75,Some College,Independent,35 to under 50 thousand,0.298666
+116,NA,No,NA,Female,67,High School Or Less,Democrat,20 to under 35 thousand,0.8199786
+137,Republicans,No,NA,Female,64,Post-Graduate Degree,Republican,100 thousand or more,0.835454
+217,Republicans,No,NA,Female,82,College Degree,Democrat,50 to under 75 thousand,0.514185
+227,Democrats,No,NA,Male,65,Some College,Republican,100 thousand or more,0.470989
+241,Republicans,No,NA,Female,78,College Degree,Democrat,100 thousand or more,0.8051053
+273,Republicans,No,NA,Female,80,Some College,Independent,NA,0.732322
+50,Republicans,No,NA,Female,80,High School Or Less,Democrat,20 to under 35 thousand,0.729739
+106,Democrats,No,NA,Male,NA,High School Or Less,Republican,35 to under 50 thousand,0.5041847
+138,Democrats,No,NA,Female,64,College Degree,Republican,NA,0.7886752
+157,Democrats,No,NA,Male,44,High School Or Less,Republican,100 thousand or more,1.1317722
+235,Democrats,No,NA,Male,65,Some College,Republican,35 to under 50 thousand,0.4686483
+254,Republicans,No,NA,Male,92,Some College,Democrat,20 to under 35 thousand,0.4686483
+264,Republicans,Yes,NA,Female,93,Post-Graduate Degree,Democrat,20 to under 35 thousand,0.5446829
+169,Republicans,No,NA,Female,61,Some College,Democrat,35 to under 50 thousand,1.0760592
+100154,Democrats,No,Northeast,Male,59,Some College,Republican,100 thousand or more,0.6185251
+175,Democrats,Yes,NA,Female,34,Some College,Democrat,50 to under 75 thousand,1.31205
+319,Democrats,No,NA,Female,54,High School Or Less,Republican,50 to under 75 thousand,1.118969
+353,Republicans,No,NA,Female,74,Post-Graduate Degree,Democrat,100 thousand or more,0.4686788
+374,Democrats,No,NA,Female,76,Some College,Independent,NA,0.1999698
+400,Republicans,No,NA,Female,58,Some College,Democrat,100 thousand or more,1.0404082
+416,Democrats,No,NA,Male,79,High School Or Less,Republican,50 to under 75 thousand,0.5391721
+457,Democrats,No,NA,Male,74,Some College,Republican,100 thousand or more,0.4313647
+462,Republicans,Yes,NA,Male,29,College Degree,Democrat,50 to under 75 thousand,0.9762211
+472,NA,Yes,NA,Female,26,College Degree,Democrat,20 to under 35 thousand,1.1758541
+484,Republicans,No,NA,Male,56,College Degree,Republican,NA,0.5447434
+490,Democrats,No,NA,Male,36,High School Or Less,Democrat,20 to under 35 thousand,0.784738
+500,Democrats,No,NA,Male,56,High School Or Less,Republican,75 to under 100 thousand,1.0373455
+502,Democrats,No,NA,Male,70,Some College,Republican,50 to under 75 thousand,0.4313647
+516,Democrats,No,NA,Female,62,Some College,Republican,100 thousand or more,0.9576377
+100395,NA,No,South,Female,52,College Degree,Democrat,NA,0.9892714
+100424,Republicans,No,South,Male,64,High School Or Less,Democrat,NA,0.5375005
+100535,NA,Yes,South,Male,23,College Degree,Republican,100 thousand or more,1.1082241
+100645,Republicans,Yes,West,Male,37,Some College,Democrat,20 to under 35 thousand,1.1004988
+100071,Democrats,No,South,Female,63,High School Or Less,Independent,Under 20 thousand dollars,1.5865995
+100234,Republicans,No,Midwest,Male,30,Post-Graduate Degree,Democrat,100 thousand or more,1.2042819
+100257,NA,No,Midwest,Male,76,High School Or Less,Republican,20 to under 35 thousand,0.7111267
+100405,Democrats,No,South,Male,NA,Some College,Republican,NA,1.7058398
+100455,Republicans,No,Northeast,Female,57,High School Or Less,Democrat,Under 20 thousand dollars,1.586131
+100551,Republicans,No,South,Male,64,College Degree,Republican,100 thousand or more,0.6122872
+100633,NA,Yes,West,Male,35,Post-Graduate Degree,Democrat,50 to under 75 thousand,0.8837071
+100665,NA,No,South,Male,72,Post-Graduate Degree,Republican,100 thousand or more,0.3932265
+100117,Republicans,No,South,Male,36,Some College,Democrat,100 thousand or more,0.8476855
+100211,NA,No,Midwest,Female,31,College Degree,Democrat,50 to under 75 thousand,1.5240691
+100249,Democrats,No,South,Female,40,High School Or Less,Republican,35 to under 50 thousand,1.8595863
+100471,Republicans,No,Northeast,Male,57,Some College,Republican,35 to under 50 thousand,0.6185251
+100556,Republicans,Yes,Midwest,Male,30,Post-Graduate Degree,Democrat,100 thousand or more,0.9600877
+333,NA,Yes,NA,Male,75,College Degree,NA,NA,0.412745
+352,Democrats,No,NA,Male,81,College Degree,Republican,75 to under 100 thousand,0.355256
+376,Democrats,No,NA,Male,48,College Degree,Republican,100 thousand or more,0.86639
+402,Democrats,No,NA,Female,88,High School Or Less,Republican,20 to under 35 thousand,0.6279354
+424,Republicans,No,NA,Female,75,Some College,Independent,35 to under 50 thousand,0.6243418
+455,Republicans,Yes,NA,Female,79,Post-Graduate Degree,Democrat,75 to under 100 thousand,0.5013503
+456,Republicans,Yes,NA,Female,66,College Degree,Democrat,Under 20 thousand dollars,0.5498663
+460,Democrats,No,NA,Male,67,Post-Graduate Degree,Republican,100 thousand or more,0.3463884
+466,Republicans,Yes,NA,Male,67,Post-Graduate Degree,Independent,100 thousand or more,0.3463884
+100081,NA,No,South,Female,59,High School Or Less,Democrat,75 to under 100 thousand,1.1192996
+100247,Republicans,No,Midwest,Female,68,College Degree,Democrat,35 to under 50 thousand,0.7252317
+100499,Democrats,No,Northeast,Male,25,High School Or Less,Republican,35 to under 50 thousand,1.3993055
+100517,Democrats,No,Midwest,Male,67,Some College,Republican,35 to under 50 thousand,0.5689371
+100569,Democrats,No,South,Male,44,College Degree,Republican,75 to under 100 thousand,1.0570467
+100603,NA,Yes,South,Male,28,Some College,Democrat,20 to under 35 thousand,1.3075608
+100034,Republicans,No,Midwest,Male,43,College Degree,Democrat,75 to under 100 thousand,1.0517936
+100170,Republicans,No,South,Female,46,Post-Graduate Degree,Democrat,75 to under 100 thousand,1.1490505
+100198,Democrats,No,Midwest,Female,38,Some College,Republican,75 to under 100 thousand,1.7304937
+37,Republicans,No,NA,Female,70,Some College,NA,35 to under 50 thousand,0.678305
+81,Republicans,No,NA,Male,72,Some College,Democrat,50 to under 75 thousand,0.4686483
+133,Republicans,No,NA,Female,28,Some College,Democrat,50 to under 75 thousand,1.5511687
+150,Democrats,No,NA,Female,78,NA,Republican,35 to under 50 thousand,1.1500641
+165,Republicans,No,NA,Female,71,Some College,Democrat,20 to under 35 thousand,0.4624126
+185,Democrats,No,NA,Female,84,High School Or Less,Republican,20 to under 35 thousand,0.5404739
+220,NA,No,NA,Female,64,High School Or Less,Democrat,20 to under 35 thousand,1.1192996
+255,Republicans,No,NA,Female,72,Some College,Democrat,NA,0.678305
+266,Republicans,No,NA,Female,69,Some College,Independent,NA,0.678305
+324,Republicans,No,NA,Female,67,High School Or Less,Democrat,50 to under 75 thousand,0.729739
+336,Republicans,No,NA,Male,40,College Degree,Democrat,20 to under 35 thousand,0.7454953
+362,NA,Yes,NA,Female,78,Some College,Democrat,Under 20 thousand dollars,0.5048889
+384,Republicans,No,NA,Female,81,High School Or Less,Independent,NA,0.8478281
+404,Democrats,No,NA,Female,78,High School Or Less,Republican,35 to under 50 thousand,0.729739
+433,Democrats,No,NA,Female,93,High School Or Less,Republican,20 to under 35 thousand,0.5404739
+453,Republicans,No,NA,Female,65,Some College,Democrat,20 to under 35 thousand,0.6243418
+459,Republicans,No,NA,Male,21,High School Or Less,Democrat,50 to under 75 thousand,1.3854675
+487,Republicans,Yes,NA,Female,60,College Degree,Democrat,NA,0.9208778
+488,NA,No,NA,Female,42,High School Or Less,Independent,50 to under 75 thousand,1.53179
+494,Democrats,No,NA,Male,86,High School Or Less,Republican,35 to under 50 thousand,0.5041847
+498,Democrats,No,NA,Male,61,College Degree,Republican,100 thousand or more,0.5827173
+514,Republicans,Yes,NA,Female,71,College Degree,Democrat,100 thousand or more,0.5498663
+100046,Democrats,No,Northeast,Male,62,Post-Graduate Degree,Republican,100 thousand or more,0.4966794
+100115,Democrats,No,South,Female,70,Post-Graduate Degree,Republican,100 thousand or more,0.569142
+100139,NA,No,Northeast,Male,23,Some College,Independent,75 to under 100 thousand,0.9221735
+100219,NA,No,South,Male,86,High School Or Less,Independent,35 to under 50 thousand,0.6120781
+100242,NA,No,Midwest,Male,71,Some College,Republican,75 to under 100 thousand,0.5689371
+100265,Republicans,No,South,Male,22,Some College,Democrat,35 to under 50 thousand,1.7534415
+100311,Republicans,No,West,Female,38,College Degree,Republican,75 to under 100 thousand,1.4028205
+75,NA,No,NA,Male,67,High School Or Less,NA,35 to under 50 thousand,0.5041847
+101,Republicans,Yes,NA,Female,64,Some College,Republican,50 to under 75 thousand,0.8954958
+142,Republicans,Yes,NA,Female,NA,Some College,Independent,50 to under 75 thousand,0.5838277
+2,Republicans,No,NA,Male,53,Post-Graduate Degree,Democrat,75 to under 100 thousand,0.5801072
+5,Republicans,No,NA,Male,59,High School Or Less,NA,Under 20 thousand dollars,1.3598233
+68,Republicans,No,NA,Male,52,Post-Graduate Degree,Democrat,100 thousand or more,0.6230077
+83,Democrats,No,NA,Female,59,High School Or Less,Republican,75 to under 100 thousand,1.4039888
+105,Republicans,No,NA,Male,91,Some College,Democrat,50 to under 75 thousand,0.298666
+113,Republicans,No,NA,Female,87,Some College,Republican,NA,0.678305
+155,Republicans,No,NA,Female,65,Post-Graduate Degree,Democrat,NA,0.6288666
+188,Republicans,Yes,NA,Female,67,College Degree,Republican,NA,0.5140332
+203,Democrats,No,NA,Male,80,High School Or Less,Democrat,35 to under 50 thousand,0.373309
+243,Democrats,No,NA,Female,78,High School Or Less,Republican,20 to under 35 thousand,0.5404739
+257,NA,No,NA,Male,58,High School Or Less,NA,NA,1.315156
+270,Democrats,No,NA,Female,80,Some College,Republican,20 to under 35 thousand,0.4624126
+281,Democrats,No,NA,Male,67,High School Or Less,Republican,35 to under 50 thousand,0.5391721
+325,Republicans,Yes,NA,Female,65,High School Or Less,Democrat,20 to under 35 thousand,1.2895712
+346,NA,Yes,NA,Female,79,Some College,Independent,20 to under 35 thousand,0.4324062
+405,Republicans,No,NA,Female,65,College Degree,Democrat,50 to under 75 thousand,0.3807135
+413,Republicans,No,NA,Female,64,Some College,Democrat,20 to under 35 thousand,1.0456044
+414,Republicans,No,NA,Male,74,Post-Graduate Degree,Democrat,NA,0.2787231
+418,Democrats,No,NA,Male,94,College Degree,Republican,50 to under 75 thousand,0.3799087
+436,NA,Yes,NA,Female,36,Post-Graduate Degree,NA,100 thousand or more,1.1503641
+492,Republicans,Yes,NA,Female,70,Some College,Republican,50 to under 75 thousand,0.5838277
+517,Democrats,No,NA,Female,83,College Degree,Republican,35 to under 50 thousand,0.5498663
+100062,Democrats,No,Northeast,Female,57,Some College,Republican,100 thousand or more,0.8952313
+100120,NA,No,Northeast,Female,83,Post-Graduate Degree,Democrat,100 thousand or more,0.4686788
+100121,Democrats,No,Midwest,Female,64,Some College,Republican,50 to under 75 thousand,1.0404082
+100193,Democrats,Yes,Midwest,Male,62,Some College,Independent,NA,0.4127816
+100229,Republicans,Yes,South,Male,18,Some College,Independent,Under 20 thousand dollars,1.2583255
+100744,Republicans,No,Northeast,Female,51,College Degree,Democrat,35 to under 50 thousand,0.9571654
+100769,Democrats,No,South,Male,71,Some College,Republican,50 to under 75 thousand,0.403373
+100853,Republicans,No,Northeast,Male,63,College Degree,Democrat,100 thousand or more,0.5447434
+100876,Republicans,No,Midwest,Female,27,College Degree,Democrat,20 to under 35 thousand,1.6584822
+65,Democrats,No,NA,Male,58,High School Or Less,Republican,Under 20 thousand dollars,0.8984804
+434,Republicans,No,NA,Male,53,High School Or Less,Democrat,NA,0.9029678
+100098,Republicans,Yes,Midwest,Female,60,Some College,Democrat,20 to under 35 thousand,1.4747716
+100212,Democrats,No,South,Male,37,High School Or Less,Republican,75 to under 100 thousand,1.2862774
+100261,Republicans,No,Midwest,Male,57,Post-Graduate Degree,Democrat,75 to under 100 thousand,0.7007478
+100306,Republicans,No,West,Female,62,Post-Graduate Degree,Democrat,100 thousand or more,0.7689889
+100482,NA,No,Northeast,Male,34,College Degree,Independent,NA,0.4155618
+100504,Republicans,No,South,Male,93,High School Or Less,Democrat,35 to under 50 thousand,0.6120781
+100624,Democrats,No,West,Male,32,High School Or Less,Independent,75 to under 100 thousand,1.3755372
