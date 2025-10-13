@@ -32,7 +32,7 @@ library(tidyverse)
 # |`weights`|Survey weights to make the data nationally representative.|
 
 # You can load the data I've provided to you.
-anes <- read_csv("anes_2024.csv")
+anes <- read_csv("scripts/political_polling/anes_2024.csv")
 
 # Survey Weights ----------------------------------------------------------
 
@@ -45,7 +45,9 @@ anes <- read_csv("anes_2024.csv")
 # Using just the tidyverse, we can generate both the unweighted and weighted presidential vote. To make this easier, let's introduce a new function: count().
 
 
+
 # What if we want proportions instead of counts?
+
 
 
 # This is known as a "topline" result, because it includes everyone in the sample.
@@ -80,6 +82,7 @@ anes_age <-
       TRUE ~ NA
     )
   )
+
 
 
 # One of the challenges of count() is that it does not leave your data frame "grouped", so we need to add another group_by() function before calculating our proportions and margins of error.
