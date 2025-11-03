@@ -1,0 +1,62 @@
+---
+title: "Lab #4 - Class Survey Project"
+author: "SMPA 2152 (Prof. Bell)"
+# format:
+#   pdf:
+#     mainfont: "Arial"
+#     keep-tex: true
+#     include-in-header:
+#        text: |
+#          \usepackage{fvextra}
+#          \DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines=true, breakanywhere=true, breaksymbol=, breakanywheresymbolpre=,commandchars=\\\{\}}
+#          \DefineVerbatimEnvironment{OutputCode}{Verbatim}{breaklines=true, breakanywhere=true, breaksymbol=, breakanywheresymbolpre=,commandchars=\\\{\}}
+format: gfm
+execute:
+  echo: false
+  include: false
+  warning: false
+  message: false
+editor_options: 
+  chunk_output_type: console
+---
+\vspace{-3em}
+
+For this lab, we are going to work with the survey data you collected for the class project. You have been provided with a codebook and a data file (`survey_data.csv`). There are two weighting variables included with the data:
+
+* `year_gender_weight`: This weighting variable uses only the respondents' year in school and gender.
+* `year_gender_x_major_weight`: This weighting variable uses the respondents' year in school as well as the interaction of their gender and major (i.e., how likely were you to survey a male psychology major)?
+
+I've found that `year_gender` is a little more stable than `year_gender_x_major`, but you are welcome to use either (or try both!).
+
+There is no `.R` script template for this assignment, but please submit your completed `.R` script via Blackboard. In addition, please submit a Word document or PDF containing the visualizations and your written responses.
+
+All graphs must be properly labeled with titles, axis labels, margins of error, and a caption. You must use a `theme` function to improve the appearance of your graphs, but you may choose which theme you prefer.
+
+You may complete the assignments on your own or in collaboration with other students. This means that you may work together to write code and/or solve problems. **Do not split up the questions or combine independent work.**
+
+As a reminder, this course permits virtually unlimited use of AI tools on **code**. However, the use of AI tools for **written text** (e.g., explanations, analysis, etc.) is not permitted.
+
+If you work with other students, please indicate their names at the top of your submission. Each student must submit an assignment on Blackboard.
+\vspace{-1em}
+
+---
+
+1. Present **one** graph that shows the distribution of weights for either `year` or `gender`. Provide a possible explanation for why certain group(s) were hard to reach, drawing on your experience collecting survey responses.
+
+2. Show a weighted topline result (in percentages) from this survey. Be sure to include the margins of error on the graph. Interpret your results. What have you learned from this analysis?
+
+3. Show a weighted cross-tab (in percentages) from this survey. Be sure to include the margins of error on the graph. Interpret your results. What have you learned from this analysis?
+
+4. Please reflect on your experience in your survey role. For example,
+
+* If you are a survey designer, what were some of the challenges in writing this survey? What aspects of the survey were you pleased with? Is there anything you would have changed?
+
+* If you are a Principal Investigator, what were some of the potential ethical issues that required special consideration? Were there any challenges in figuring out how to handle potential ethical issues?
+
+* If you are an IRB Member, how did your perspective change as you reviewed the PIs human subjects protection protocol? Were there any disagreements among the IRB members? What were the hardest recommendations to come to as an IRB?
+
+* If you are a survey manager, what is it like to enter survey results? Were there any surprising ways in which people recorded their survey responses?
+
+* If you are a survey analyst, do not answer this question right now. You will have an opportunity to answer this question at a later time.
+
+Your answer should consist of at least one paragraph.
