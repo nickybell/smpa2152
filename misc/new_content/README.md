@@ -8,6 +8,7 @@
 ### Images
 * `fireworks_injuries.jpeg` (from Vox) and `ufo_sightings.png` (from Economist): both great examples of confounders (July -> DV confounded by July 4 fireworks)
 * `catholic_church_attendance.jpeg`: good example of selection bias - weak Catholics are selecting out of the Catholic sample
+* `lowercase_text_survey`: Chaz Nuttycombe: "Made our custom text message for 18-29s yesterday all lowercase and increased our sample from 1% 18-29 to 9% lol"
 
 ### Lecture materials
 * [Linear regression explainer](https://mlu-explain.github.io/linear-regression/)
