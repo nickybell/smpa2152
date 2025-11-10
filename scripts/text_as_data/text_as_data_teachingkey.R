@@ -1,5 +1,5 @@
 # fmt: skip file
-# File Name: 	  	  text_as_data_teachingkey.R
+# File Name: 	  	  text_as_data_unfilled.R
 # File Purpose:  	  Pre-lab video lecture on text-as-data
 # Author: 	    	  Nicholas Bell (nicholasbell@gwu.edu)
 # Last Modified:    2025-11-09
@@ -18,7 +18,7 @@ glimpse(df)
 
 # Looking at this data set, we will want to filter to only the cases that we are interested: presidential debates where the speaker is a candidate. Let's also limit the data to the modern era (1976 and on).
 
-df_pres <- filter(df, candidate == 1, type == "Pres", election_year >= 1976)
+df_pres <- filter(df, candidate == 1 & type == "Pres" & election_year >= 1976)
 
 # Each row represents a "statement" - a piece of what the candidate said in the debate. We want to combine all of the statements in each year into a single "document", since we are going to examine changes in topics over time.
 
@@ -30,10 +30,7 @@ df_pres_year <-
 # Generating text files from a data frame that we can use in Voyant Tools is a bit tricky. It involves using a loop, where we do some operation to each row of the data frame individually, one at a time. This is a more advanced R technique that we won't cover in detail. However, this loop will work anytime you have a column of text that you want to convert into individual text files.
 
 for (row in 1:nrow(df_pres_year)) {
-  # Construct the full file path for the output file
-  file_name <- paste0(df_pres_year$election_year[row], ".txt")
-
-  # Write the text content to the file
+  file_name <- paste(df_pres_year$election_year[row], ".txt", sep = "")
   cat(df_pres_year$text[row], file = file_name)
 }
 
@@ -44,30 +41,30 @@ for (row in 1:nrow(df_pres_year)) {
 # Now let's read the data from Voyant Data into R.
 
 voyant <- read_tsv(
-  "scripts/text_as_data/voyant_results.tsv",
+  "scripts/text_as_data/debates_topic_models.tsv",
   name_repair = "universal"
 )
 
 # Now we can make graphs showing the change in "weight", which is the degree to which a specific document is about that topic
 
-ggplot(voyant, aes(x = Document.Title, y = Topic.5.Weight)) +
+ggplot(voyant, aes(x = Document.Title, y = Topic.1.Weight)) +
   geom_line() +
   geom_point() +
   labs(
     x = "Year",
     y = "Topic Weight",
-    title = "Weight of Cold War Topic in Presidential Debates Over Time",
-    caption = "Source: {debates} package\nWords: uh, mr, people, government, believe, president,\ncontrol, soviet, united, administration"
+    title = "Frequency of China Topic in Pres. Debates",
+    caption = "Source: debates package\nWords: going, people, said, say, fact, way, it's, china, talking"
   ) +
   theme_classic()
 
-ggplot(voyant, aes(x = Document.Title, y = Topic.0.Weight)) +
+ggplot(voyant, aes(x = Document.Title, y = Topic.3.Weight)) +
   geom_line() +
   geom_point() +
   labs(
     x = "Year",
     y = "Topic Weight",
-    title = "Weight of Taxation Topic in Presidential Debates Over Time",
-    caption = "Source: {debates} package\nWords: thats, dont, people, going, want, got, tax, weve, need, america"
+    title = "Frequency of Military Strength Topic in Pres. Debates",
+    caption = "Source: debates package\nWords: president, believe, ive country, world, kind, nation, strong, way, weapons"
   ) +
   theme_classic()
