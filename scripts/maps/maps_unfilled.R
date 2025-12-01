@@ -1,4 +1,4 @@
-# fmt: skip file
+# fmt: skip
 # File Name: 	  	  maps.R
 # File Purpose:  	  Maps in R
 # Author: 	    	  Nicholas Bell (nicholasbell@gwu.edu)
@@ -71,8 +71,6 @@ ggplot(state_w_pov) +
 # 1. The columns of data you want to display (in our case, poverty rate) must include a column called either "fips" or "state" (lowercase, and not both).
 # 2. If the map uses states, the "state" variable can be either a state name, abbreviation or FIPS code. For counties, the FIPS must be provided as there can be multiple counties with the same name.
 
-
-
 # Real-World Example: Trade Adjustment Assistance and Job Losses
 
 # The Trade Adjustment Assistance (TAA) program provides aid to workers who have lost their jobs as a result of increased imports, outsourcing, or foreign competition. When a TAA petition is filed, the Department of Labor estimates the number of workers affected. We can use these petitions to estimate the number of trade-related job losses in each county in the United States.
@@ -84,12 +82,9 @@ trade_losses <- read_csv("scripts/maps/trade_job_losses.csv")
 
 # Examine the data structure
 
-
 # Create a FIPS code by combining state and county FIPS
 # The plot_usmap() function requires a single "fips" column for county-level maps
 
-
 # Map 1: Proportion of Manufacturing Workers Lost to Trade
-
 
 # Map 2: Counties with Major Losses due to Trade

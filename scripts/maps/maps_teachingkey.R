@@ -102,6 +102,9 @@ glimpse(trade_losses)
 trade_losses_map <- trade_losses |>
   mutate(fips = paste0(state_fips, county_fips))
 
+trade_losses_map |>
+  mutate(fips_padded = str_pad(as.numeric(fips), 5, "left", 0))
+
 # Map 1: Proportion of Manufacturing Workers Lost to Trade
 plot_usmap(
   "counties",
@@ -127,7 +130,7 @@ plot_usmap(
 trade_losses_map_binary <-
   trade_losses_map |>
   mutate(
-    major_loss = ifelse(prop_total_loss > .03, TRUE, FALSE)
+    major_loss = factor(ifelse(prop_total_loss >= .03, 1, 0))
   )
 
 plot_usmap(
@@ -139,13 +142,13 @@ plot_usmap(
 ) +
   scale_fill_manual(
     values = c("#ffffff", "#e22c10"),
-    breaks = c(FALSE, TRUE),
+    breaks = c("0", "1"),
     labels = c("No", "Yes"),
     na.value = "gray90"
   ) +
+  theme(legend.position = "right") +
   labs(
     title = "Major Trade-Related Job Losses (2009-2019)",
     fill = "",
-    caption = "Source: Trade Adjustment Assistance petitions"
-  ) +
-  theme(legend.position = "right")
+    caption = "Source: Trade Adjustment Assistance Petitions"
+  )
