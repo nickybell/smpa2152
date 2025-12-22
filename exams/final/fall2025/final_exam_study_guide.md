@@ -5,8 +5,8 @@ output:
     latex_engine: xelatex
 ---
 
-## Mid-term Exam Study Guide
-### SMPA 2152 (Fall 2024)
+## Final Exam Study Guide
+### SMPA 2152 (Fall 2025)
 <br>
 The mid-term exam will consist of three parts:
 
@@ -19,8 +19,9 @@ The mid-term exam will consist of three parts:
     * Evaluating causal claims
     * Conducting ethical research
     * Writing good survey questions
+    * Compare and contrast (e.g., experimental vs. observational, inference vs. prediction, quantitative vs. qualitative)
 
-* Part III will consist of a short essay (2-3 paragraphs) that asks you to make an argument about a contemporary issue in data analysis.
+* Part III will consist of an essay (3-4 paragraphs) that asks you to make an argument about a contemporary issue in data analysis.
 
 **Key Terms and Concepts**
 
@@ -28,34 +29,38 @@ The mid-term exam will consist of three parts:
 * Data visualization designers vs. engineers
 * Science of data visualization (sight, perception)
 * Type I and Type II error
-* P-values (and misuses)
+* P-values
+* Operationalization
+* Data generating process
 * Random sample
 * Selection bias
-* Confirmation bias
-* Desirability bias
-* Authority bias
-* Availability bias
-* Certainty bias
-* Correlation (positive and negative)
-* Causation
-* Fundamental Problem of Causal Inference
-* John Snow's Cholera Experiment
-* Confounders
-* Reverse causation
 * Tuskegee Syphilis Study
 * Belmont Report
 * Informed Consent
 * Anonymity vs. confidentiality
 * De-identification
-* Estimate
-* Margin of error (do not memorize the formula)
-* Systematic sampling
-* List-based sampling
-* Address-based sampling
-* Random digit dialing (RDD)
-* Quota sampling
+* Confidence intervals and margins of error
 * George Gallup
 * Missing data (MCAR, MAR, and MNAR)
 * Weighting
-* Herding
+* Survey sampling
+* Survey and question design
 * Satisficing
+* Correlation vs. causation
+* Fundamental Problem of Causal Inference
+* Experiments
+* John Snow's Cholera study
+* Confounders
+* Reverse causation
+* $H_0$ and $H_A$
+* Election prediction models
+* Wisdom of the crowds
+* Inference vs. prediction
+* Overfitting
+* LLMs
+* Authors Guild v. OpenAI \& NYT v. OpenAI and Microsoft
+* Qualitative data
+* Text analysis
+* LDA
+* Projection (maps)
+* Chloropleth maps
