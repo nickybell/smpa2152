@@ -1,0 +1,20 @@
+TUFTE : Edward ___, author of "The Visual Display of Quantitative Information"
+GALLUP : Organization that correctly predicted Roosevelt's 1936 victory using scientific polling
+BELMONT : The ___ Report (1978) outlines ethical principles for human subject research
+CONFOUNDER : A variable that explains change in both the independent and dependent variable
+SATISFICING : When survey respondents expend minimal effort, such as "straight-lining" answers
+WEIGHTING : Statistical technique to adjust for non-response bias by counting underrepresented groups more
+CAUSATION : Exists when a change in the value of one variable would not be observed without a preceding change in another
+CORRELATION : When the absolute rate of change in the values of two variables are similar
+HERDING : When pollsters adjust results to match other polls to avoid being an outlier
+SAMPLE : A subset of the population selected for study
+NULL : The ___ hypothesis (H0) assumes "not" or no effect
+SNOW : John ___, who used a natural experiment to identify the source of a cholera outbreak in London
+MINARD : Charles ___, creator of the famous visualization of Napoleon's march to Moscow
+ETHICS : The domain of data analysis concerned with beneficence, justice, and respect for persons
+ANONYMITY : What researchers promise to participants to reduce the risks of participating in research
+OPERATIONALIZATION : The process of defining a measurable version of a concept
+PVALUE : The probability that we would get a particular result if the true answer (null hypothesis) is false (two words, no space)
+EXPERIMENT : A research method where cases are randomly assigned to treatment and control groups
+TOPIC : In LDA analysis, a theme made up of words that appear together frequently
+BIAS : Systematic error, such as selection, confirmation, or desirability
