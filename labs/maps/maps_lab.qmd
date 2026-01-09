@@ -1,0 +1,47 @@
+---
+title: "Lab #6 - Maps"
+author: "SMPA 2152 (Prof. Bell)"
+# format:
+#   pdf:
+#     mainfont: "Arial"
+#     keep-tex: true
+#     include-in-header:
+#        text: |
+#          \usepackage{fvextra}
+#          \DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines=true, breakanywhere=true, breaksymbol=, breakanywheresymbolpre=,commandchars=\\\{\}}
+#          \DefineVerbatimEnvironment{OutputCode}{Verbatim}{breaklines=true, breakanywhere=true, breaksymbol=, breakanywheresymbolpre=,commandchars=\\\{\}}
+format: gfm
+execute:
+  echo: true
+  include: true
+  warning: false
+  message: false
+editor_options: 
+  chunk_output_type: console
+---
+\vspace{-3em}
+
+For this assignment, we will be using data from the MIT Election Data and Science Lab on county-level election results for U.S. presidential elections, provided to you as `countypres.csv`.
+
+Please use the `lab6_template.R` script. Please submit your completed `.R` script via Blackboard. In addition, please submit a Word document or PDF containing the visualizations and your written responses to each question.
+
+You may complete the assignments on your own or in collaboration with other students. This means that you may work together to write code and/or solve problems. **Do not split up the questions or combine independent work.**
+
+As a reminder, this course permits virtually unlimited use of AI tools on **code**. However, the use of AI tools for **written text** (e.g., explanations, analysis, etc.) is not permitted.
+
+If you work with other students, please indicate their names at the top of your submission. Each student must submit an assignment on Blackboard.
+\vspace{-1em}
+
+---
+
+1. Load the `countypres.csv` data and calculate the two-party vote share for Democratic candidates in each county in each election. Save this as a new variable called `dem_voteshare`.
+
+    *Hint: Make sure that your FIPS column is an integer using `as.integer()`, not `double` or `character`.*
+
+2. Use the `plot_usmap()` function to show the results of the 2024 presidential election by county, with strong Harris counties as "Democrat blue" (`#3344C9`) and strong Trump counties as "Republican red" (`"#D63333"`). Briefly comment on the geographic patterns you observe.
+
+3. Create the same map, but this time show which counties Harris won (Democratic vote share >= 50%) and which counties Trump won (Democratic vote share < 50%). Briefly comment on what this map reveals compared to the previous map.
+
+4. Using `first()` and `last()` functions along with `dplyr` verbs, calculate the change in Democratic vote share between the 2020 and 2024 elections for each county. Save this as a new variable called `dem_shift`.
+
+5. Make a map showing the shift in Democratic vote share between the 2020 and 2024 elections, with strong Democratic shifts (counties that became more Democratic) as "Democrat blue" and strong Republican shifts (counties that became more Republican) as "Republican red". Briefly comment on the geographic patterns in the shift toward or away from Democrats.
