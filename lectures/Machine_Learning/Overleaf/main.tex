@@ -1,0 +1,165 @@
+% The dvipsnames option is passed to the xcolor package, which beamer loads
+\documentclass[xcolor={dvipsnames}]{beamer}
+
+\usepackage{smpa2152-style}
+
+\title[Machine Learning]{Machine Learning}
+\author[SMPA 2152]{Data Analysis for Journalism and Political Communication (Spring 2026)}
+\date{Prof. Bell}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\titlegraphic{\includegraphics[width=.8\textwidth]{statistics_to_ai.png}}
+\frame{
+\titlepage
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{\frametitle{Machine Learning vs. Statistics}
+
+\begin{itemize}[<+->]
+    \item Both fields use data and algorithms to find patterns. The main difference lies in their primary goal: \textbf{inference} or \textbf{prediction}.
+
+    \item \textbf{Statistics} primarily focuses on \textbf{inference}.
+    \begin{itemize}
+        \item Goal: To use a sample to understand and draw conclusions about the broader population it came from.
+    \end{itemize}
+
+    \item \textbf{Machine Learning} primarily focuses on \textbf{prediction}.
+    \begin{itemize}
+        \item Goal: To build a model on a sample of ``training'' data that makes the most accurate predictions possible on new, unseen ``test'' data.
+    \end{itemize}
+
+    \item Despite different goals, core principles like avoiding selection bias, ensuring data quality, and understanding sample limitations are critical in both fields.
+\end{itemize}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{\frametitle{A Key ML Practice: Training and Testing}
+\begin{itemize}[<+->]
+    \item In ML, we split our data into a \textbf{training set} to build the model and a separate \textbf{test set} to evaluate its predictive performance.
+
+    \item A flexible model can learn the deep, underlying patterns (\textbf{signal}) in the training data, but it can also learn the random, irrelevant quirks (\textbf{noise}).
+
+    \item \textbf{Overfitting} occurs when the model learns the noise instead of just the signal. It memorizes the training data too closely.
+    \begin{itemize}
+        \item An overfit model performs great on the training data but fails to make accurate predictions on the new test data. It doesn't \textbf{generalize} well.
+    \end{itemize}
+    
+    \item \textbf{Underfitting} is the opposite problem: the model is too simple and fails to capture the underlying signal in the data.
+
+\end{itemize}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{\frametitle{Machine Learning and AI}
+
+\begin{itemize}[<+->]
+    \item Machine learning models learn patterns directly from data, rather than being explicitly programmed with rules. This process is often categorized into three main types:
+    \begin{itemize}
+        \item \textbf{Supervised Learning}: The model learns from \textbf{labeled} data (data with known outcomes) to predict outcomes for new data.
+        
+        \item<.-> \textbf{Unsupervised Learning}: The model works with \textbf{unlabeled} data to discover hidden patterns or structures on its own.
+        
+        \item<.-> \textbf{Reinforcement Learning}: A model (or ``agent'') learns by interacting with an environment. It performs actions and receives rewards or penalties, learning the best strategy over time (e.g., an AI learning to play chess).
+    \end{itemize}
+    \item As models become more complex, it can be difficult to understand \textit{why} they make a specific prediction. This challenge is known as \textbf{explainability} or the ``black box'' problem.
+\end{itemize}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{\frametitle{Bias in ML Models}
+\begin{itemize}[<+->]
+    \item ML models learn from the data they are given. If that data reflects historical human biases, the model will learn and often \textbf{amplify} those biases.
+
+    \item This is a supercharged version of the ``Garbage In, Garbage Out'' principle. The model treats biased historical patterns as the truth to be optimized.
+    
+    \item \textbf{Public Policy Example: Criminal Justice}: The COMPAS algorithm, used to predict the likelihood of a defendant re-offending, was found to be biased against Black defendants. It was more likely to incorrectly flag them as high-risk compared to white defendants.
+    
+
+    \item \textbf{Other Examples}: AI-powered hiring tools that discriminate against female candidates because they were trained on historical hiring data from a male-dominated industry, or mortgage approval algorithms that perpetuate racial redlining.
+\end{itemize}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{\frametitle{Large Language Models (LLMs)}
+\begin{itemize}[<+->]
+    \item LLMs are a type of deep learning model trained on vast amounts of text data. At their core, they are sophisticated pattern-matching systems.
+    
+    \item They generate output by probabilistically predicting the next ``token'' (a word or part of a word) in a sequence, given the text that came before it.
+    
+    \item A key limitation is that an LLM's knowledge is frozen in time; it ends when its training data ends. It has no inherent knowledge of events that occur after its training is complete.
+    
+    \item To overcome this, LLMs can be used as part of an \textbf{agent} system. These agents can use \textbf{tool calls} to access external, real-time information (like a search engine) or perform actions, allowing them to provide up-to-date responses.
+\end{itemize}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{\frametitle{Key Challenges and Risks with LLMs}
+\begin{itemize}[<+->]
+    \item \textbf{Hallucinations}: LLMs can confidently invent facts, sources, and quotes. This is not a bug, but a natural result of how they work.
+    
+    \item \textbf{Bias at Scale}: LLMs are trained on vast sections of the internet, which contains immense amounts of bias. They absorb and can reproduce racism, sexism, and other biases.
+    
+    \item \textbf{Misinformation}: Because they are so good at generating plausible text, LLMs are powerful tools for creating and spreading disinformation and propaganda cheaply and at massive scale.
+    
+    \item \textbf{Data Provenance}: The data used to train these models is often scraped from the web without permission, raising major copyright and ethical questions that are still being debated in court.
+\end{itemize}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{\frametitle{LLMs and Copyright: Key Lawsuits}
+\begin{itemize}[<+->]
+    \item The training of LLMs on vast datasets of internet content, including copyrighted material, has led to significant legal challenges.
+
+    \item \textbf{Authors Guild v. OpenAI (and others)}
+    \begin{itemize}
+        \item<.-> \textbf{Who}: Prominent authors (e.g., George R.R. Martin, John Grisham) and the Authors Guild against OpenAI and other AI developers.
+        \item<.-> \textbf{Claim}: AI companies copied copyrighted books without permission to train LLMs, and these LLMs can generate content that competes with or is derivative of their work.
+    \end{itemize}
+
+    \item \textbf{The New York Times Co. v. OpenAI and Microsoft}
+    \begin{itemize}
+        \item<.-> \textbf{Who}: The New York Times Company against OpenAI and Microsoft.
+        \item<.-> \textbf{Claim}: Defendants used millions of NYT articles to train LLMs, which now produce output that closely mimics NYT content, sometimes reproducing it verbatim, and could draw readers away from the newspaper.
+    \end{itemize}
+\end{itemize}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{\frametitle{Build Your Own ML Model}
+\textbf{Goal}: Can we predict the tone of a campaign ad about a candidate based on how the candidate is portrayed in the ad?\\
+~\\
+\textbf{Step 1: Gather Your Training Data}
+\begin{itemize}
+    \item Go to The Living Room Candidate (https://www.livingroomcandidate.org/)
+    \item Select ads from any election(s) \textbf{except} 2024.
+    \item Take 10-15 screen grabs that clearly feature a candidate.
+    \item Create two folders: ``Positive Tone'' and ``Negative Tone.'' Place each screen grab in the appropriate folder based on whether the image portrays the candidate positively or negatively within the ad.
+\end{itemize}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{\frametitle{Build Your Own ML Model}
+\textbf{Step 2: Train Your Model}
+\begin{itemize}
+    \item Go to Teachable Machine (https://teachablemachine.withgoogle.com)
+    \item Go to Image Project \(\rightarrow\) Standard Image Model.
+    \item Upload your ``Positive Tone'' images to Class 1, and your ``Negative Tone'' images to Class 2.
+    \item Click ``Train Model.''
+\end{itemize}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{\frametitle{Build Your Own ML Model}
+\textbf{Step 3: Test and Evaluate}
+\begin{itemize}
+    \item I will provide you with a test set of 10 images from 2024 campaign ads.
+    \item Use Teachable Machine's file upload feature to test your model on each of these 10 images.
+    \item How did your model do? Where did it do well, and where did it struggle? Why do you think this happened?
+\end{itemize}
+}
+
+\end{document}
