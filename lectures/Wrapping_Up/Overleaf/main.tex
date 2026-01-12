@@ -1,26 +1,10 @@
-\documentclass[xcolor={dvipsnames}]{beamer} % dvipsnames gives more built-in colors
-\mode<presentation>
+% The dvipsnames option is passed to the xcolor package, which beamer loads
+\documentclass[xcolor={dvipsnames}]{beamer}
 
-\usetheme{Boadilla}
-
-\definecolor{GWdarkblue}{HTML}{033C5A}
-
-\usecolortheme[named=GWdarkblue]{structure}
-
-% Sets the font
-\usepackage[defaultfam,tabular,lining]{montserrat}
-% Capital case titles
-\setbeamerfont{title}{shape=\scshape}
-\setbeamerfont{frametitle}{shape=\scshape}
-
-%Remove "Figure" from captions
-\setbeamertemplate{caption}{\raggedright\insertcaption\par}
-
-\usepackage{graphicx}
-\usepackage{hyperref}
+\usepackage{smpa2152-style}
 
 \title[Wrapping Up]{Wrapping Up}
-\author[SMPA 2152]{Data Analysis for Journalism and Political Communication (Spring 2025)}
+\author[SMPA 2152]{Data Analysis for Journalism and Political Communication (Spring 2026)}
 \date{Prof. Bell}
 
 \begin{document}
@@ -28,20 +12,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \frame{
     \titlepage
-}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\frame{\frametitle{Canadian Election Predictions}
-
-\only<1>{
-    \centering
-    \includegraphics[width = .9\textwidth]{Canadian Election Predictions.png}
-}
-
-\only<2>{
-    \centering
-    \includegraphics[height = .8\textheight]{cbc_apr27.png}
-}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -124,39 +94,13 @@
         \centering
         \includegraphics[width = .8\textwidth]{prob_vs_nonprob.png}
     }
-    \only<4> {
-        \centering
-        \includegraphics[height = .8\textheight]{news_consumption.png}
-    }
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \frame{
-    \frametitle{You Learned R!}
-    \begin{columns}
-    \begin{column}{0.5\textwidth}
-       \begin{itemize}
-            \item Base R functions
-            \item Make charts for 3+ variables
-            \item Load data
-            \item Filter data
-            \item Create and change data
-            \item Summarize data
-            \item Pivot data (tidy data)
-       \end{itemize}
-    \end{column}
-    \begin{column}{0.5\textwidth}  %%<--- here
-        \begin{itemize}
-            \item Join data
-            \item Weight poll data
-            \item Calculate margins of error
-            \item Conduct t-tests of means
-            \item Conduct t-tests of proportions
-            \item Run regressions
-            \item Create reports
-       \end{itemize}
-    \end{column}
-    \end{columns}
+    \frametitle{Course Evaluations}
+    \centering
+    \includegraphics[height = .7\textheight]{qrf2025.png}
 }
 
 \end{document}
