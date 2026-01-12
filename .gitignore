@@ -63,5 +63,6 @@ rsconnect/
 !lectures/*/*.pdf
 !lectures/*/Overleaf/main.tex
 # with exceptions for syllabus files
+!syllabus/*/main.tex
 !syllabus/*/*.pdf
 !syllabus/*/Overleaf/main.tex

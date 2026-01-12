@@ -1,0 +1,695 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{multirow}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[colorlinks,allcolors=Blue]{hyperref}
+\usepackage[rm,light]{roboto}
+\usepackage[T1]{fontenc}
+\usepackage{soul}
+\usepackage{array}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\usepackage{ltablex}
+\usepackage{arydshln}
+
+\frenchspacing
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1em}
+
+\begin{document}
+
+\begin{center}
+  \large
+  \textbf{Syllabus\\
+    \bigskip
+    SMPA 2152: Data Analysis for Journalism and Political Communication
+  (Spring 2026)}
+\end{center}
+
+\begin{tabularx}{\textwidth}{l>{\raggedright\arraybackslash}X}
+  Meeting Times: & Mondays and Wednesdays, 8:00-9:15am \\
+  \\
+  Classroom: & MPA 307 \\
+  \\
+  Professor: & Nicholas Bell, Ph.D. (he/him) \\
+  & \href{mailto:nicholasbell@gwu.edu}{nicholasbell@gwu.edu} \\
+  \\
+  Office Hours: & Tuesdays 5:45 - 6:45pm \\
+  & MPA 425 \\
+  & \\
+  & By appointment only. Appointments must be made at least three
+  hours prior to office hours. The scheduling link is
+  \href{https://tinyurl.com/smpa2152officehours}{https://tinyurl.com/smpa2152officehours}
+  \\
+  & \\
+  & If you would like to meet outside of office hours, please email
+  me to schedule an appointment. I try to respond to emails by the
+  end of the next business day (M-F).\\
+  \\
+  \hline
+\end{tabularx}
+
+\subsection*{Course Description}
+
+Data has been democratized. More data is available to the ordinary
+person than ever before, and leaders in every industry -- including
+journalism and political communication -- want to join the big data
+revolution. However, most of us lack the data literacy skills to make
+good use of these resources, and this can lead to the misapplication
+and misuse of data. To fully leverage the promise of big data, we
+must become familiar with the basic challenges inherent in data
+analysis and how to overcome them. This course is an introduction to
+the principles and practices of data analysis. The goal is for
+students to become responsible consumers and producers of data.
+Students will learn how to critically evaluate claims derived from
+data. Students will also learn how to ethically present data in
+compelling and persuasive ways to non-expert audiences. This class
+includes a special discussion of political polling, which is widely
+used in journalism and political communication but has come under
+increasing scrutiny in recent years. Students require only a basic
+aptitude in numeracy (e.g. percentages and averages) for this course. \par
+
+In addition to developing data literacy, students will be introduced
+to the \textit{R} programming language. There are many advantages to
+learning \textit{R}: it is free and open-source, meaning that
+developers are continually releasing new tools to make coding easier;
+it is widely used by news organizations and researchers around the
+world; and \textit{R} is one of the most powerful programming
+languages for statistical analysis. Students will learn data literacy
+by applying the same tools and techniques used by professional data scientists.
+
+\subsection*{Learning Objectives}
+
+\begin{enumerate}
+  \item You will be able to assess the pragmatic and ethical issues
+    in collecting, manipulating, and analyzing data, known as ``data literacy.''
+  \item You will be able to obtain publicly-available data and
+    perform basic manipulations on that data using the programming
+    language \textit{R}.
+  \item You will be able to visualize and present data in accurate
+    and persuasive ways.
+  \item You will be familiar with the statistical concepts of
+    sampling, uncertainty, hypothesis testing, and linear regression
+    and how to conduct basic statistical analyses in \textit{R}.
+\end{enumerate}
+\vspace{-.5em}
+
+\subsection*{Course Materials}
+
+We will be using \href{https://colab.research.google.com/}{Google
+Colab} in this course. Currently, Google is offering a free
+\href{https://colab.research.google.com/signup}{Colab Pro}
+subscription for one year to university students. Although a
+subscription is not strictly required, it will ensure that Colab is
+always available to you (free users may experience usage limits in
+order to keep the service available to subscribed users).\\
+\\
+In addition, I recommend purchasing a
+\href{https://chatgpt.com/plans/plus/}{ChatGPT Pro},
+\href{https://claude.com/pricing}{Claude Pro}, or
+\href{https://gemini.google/students/}{Gemini Pro} plan. Google is
+currently offer one year free of Gemini Pro for university students.
+
+\subsection*{Time Required}
+
+This course requires 2.5 hours of direct instruction and a minimum of
+5 hours of independent learning per week for a combined minimum total
+of 7.5 hours per week or 112.5 hours per semester.
+
+\subsection*{How the Course Will Work}
+
+This course is primarily an introduction to the principles and
+practices of data analysis. Most class days will consist of a lecture
+on a topic related to consuming and producing data. However, there
+are seven class days reserved as ``Lab Days'' for students to be
+introduced to the R statistical programming language. The purpose of
+learning R is so that students can apply the principles learned
+during lecture to real-world data and gain exposure to the types of
+tasks undertaken by professional data analysts in their chosen career field.
+
+To prepare for the Lab Days, students should watch the associated
+video lecture \textbf{before} attending that class. Failure to watch
+the video lecture will significantly hinder the student's ability to
+complete the lab assignment. During Lab Days, the instructor will
+provide a brief review of the material covered during the video
+lecture, and then be available to answer student questions as they
+work through their lab assignment in class. Students will then
+complete the lab assignment on their own for credit.
+
+In addition, students will participate in a class project to conduct
+a survey of their fellow GW students. Each student will be assigned a
+role (based on their preference) in designing, executing, and
+analyzing the survey, and their participation will make up a portion
+of their final course grade. In addition, there is a Lab Day
+assignment which uses the survey data collected by students.
+
+On January 26, students will be provided instructions to complete
+CITI Research Ethics training. This training is required by the
+university in order to be able to participate in the class survey
+project. Failing to complete CITI training will result in a 0 grade
+for the class project and the associated lab assignment.
+
+There is a final exam in this course (see below).
+
+\subsection*{Assessment}
+
+Your course grade is calculated as your grade on each of the
+following course components weighted by:
+
+\begin{tabular}{l|l}
+  Lab assignments & 35\% \\
+  \hline
+  Class project & 20\% \\
+  \hline
+  Final exam & 35\% \\
+  \hline
+  Attendance & 10\%
+\end{tabular}
+\newpage
+Course grades are converted into letter grades according to the
+following rubric:\\
+\\
+93-100 = A (4.0 GPA points)\\
+90-92 = A- (3.7 GPA points)\\
+87-89 = B+ (3.3 GPA points)\\
+83-86 = B (3.0 GPA points)\\
+80-82 = B- (2.7 GPA points)\\
+77-79 = C+ (2.3 GPA points)\\
+73-76 = C (2.0 GPA points)\\
+70-72 = C- (1.7 GPA points)\\
+67-69 = D+ (1.3 GPA points)\\
+63-66 = D (1.0 GPA points) \\
+60-62 = D- (0.7 GPA points)
+
+\subsection*{Lab Assignments}
+
+There are seven lab assignments in this course that will ask you to
+apply the R skills that you learn in the video lectures. I will be
+available to help you get started on your lab assignment during class
+Lab Days, and then you will finish the lab assignment on your own.
+You may complete these assignments on your own or in collaboration
+with other students. This means that you may work together to write
+code and/or solve problems. Do not split up the questions or combine
+independent work. \textbf{It is a violation of the academic integrity
+  policy to submit any code to which you did not contribute as your
+own.} If you work with other students, please indicate their names at
+the top of your submission. Each student must submit an assignment on
+Blackboard. \par
+
+Assignments are typically due by 11:59pm Eastern of the day following
+the lab day. Late assignments are deduced 25\% per day. \par
+
+\subsection*{Final Exam}
+
+The final exam will be held at the University-prescribed time on
+Blackboard and may be completed from the location of your choosing.
+The final exam will consist of true-false/multiple choice questions,
+short answer questions, and an essay prompt. There is no coding
+required for the final exam.
+
+\subsection*{Attendance}
+
+Attendance is mandatory. Each student is permitted two excused
+absences; the third and subsequent absences are only permitted due to
+due to illness, family emergencies, University-scheduled events, and
+other unusual circumstances. If you will be absent for the third or
+subsequent time, you must email me and let me know the reason for
+your absence. You do not need to provide proof of your reason for
+missing class, but misrepresentation of your reason for excusal is a
+violation of the
+\href{https://students.gwu.edu/code-student-conduct}{Code of Student
+Conduct}. \par
+
+Your attendance grade is the percentage of class meetings with an
+unexcused absence deducted from 100 (rounded up). For example, if you
+have two unexcused absences, your attendance grade is
+$100-((2/27)*100) = 93$. \par
+
+\textbf{University Policy on Observance of Religious Holidays} \par
+
+Students must notify faculty during the first week of the semester in
+which they are enrolled in the course, or as early as possible, but
+no later than three weeks prior to the absence, of their intention to
+be absent from class on their day(s) of religious observance. If the
+holiday falls within the first three weeks of class, the student must
+inform faculty in the first week of the semester. For details and
+policy, see ``Religious Observance Policy'' at
+\href{https://provost.gwu.edu/policies-procedures-and-guidelines}{provost.gwu.edu/policies-procedures-and-guidelines}.
+
+\subsection*{Support for Students with Disabilities}
+
+Any student who may need an accommodation based on the impact of a
+disability should contact the Office of Disability Support Services
+(DSS) to inquire about the documentation necessary to establish
+eligibility and to coordinate a plan of reasonable and appropriate
+accommodations. DSS is located in Rome Hall, Suite 102. For
+additional information, please call DSS at 202-994-8250, or consult
+\href{https://disabilitysupport.gwu.edu/}{disabilitysupport.gwu.edu/}.
+
+\subsection*{Academic Integrity}
+
+Academic integrity is an essential part of the educational process,
+and all members of the GW community take these matters very
+seriously. As the instructor for this course, my role is to provide
+clear expectations and uphold them in all assessments. Violations of
+academic integrity occur when students fail to cite research sources
+properly, engage in unauthorized collaboration, falsify data, and
+otherwise violate the
+\href{https://students.gwu.edu/code-academic-integrity}{Code of
+Academic Integrity}. If you have any questions about whether or not
+particular academic practices or resources are permitted, you should
+ask me for clarification. If you are reported for an academic
+integrity violation, you should contact Conflict Education and
+Student Accountability (CESA), formerly known as Student Rights and
+Responsibilities (SRR), to learn more about your rights and options
+in the process. Consequences can range from failure of assignment to
+expulsion from the university and may include a transcript notation.
+For more information, please refer to the
+\href{https://students.gwu.edu/cesa}{CESA website}, email
+\href{mailto:cesa@gwu.edu}{cesa@gwu.edu}, or call 202-994-6757.
+
+\subsection*{Course Policy on Generative AI}
+
+Generative Artificial Intelligence (GAI) tools like Gemini, ChatGPT,
+and Claude are increasingly used in academic and professional
+settings to make certain non-analytical tasks more efficient.
+Therefore, this course permits the use of GAI tools on \textbf{code}
+submitted for evaluation. However, the use of GAI tools for
+\textbf{written text} (e.g., exposition, analysis, etc.) is not permitted.
+
+By submitting written work for evaluation in this course, you
+represent it as your own intellectual product. Impermissible use of
+GAI tools for written work submitted for evaluation constitutes
+cheating under the GW's
+\href{https://students.gwu.edu/code-academic-integrity}{Code of
+Academic Integrity}. If you have any questions about the application
+of this policy (or any other questions about academic integrity in
+this course), please email the instructor.
+
+\subsection*{Class Recordings and Use of Electronic Course Materials}
+
+Class meetings will be audio/video recorded and made available to
+other students in this course. As part of your participation in this
+course, you may be recorded. If you do not wish to be recorded,
+please contact me during the first week of class to discuss
+alternative arrangements. \par
+
+Students are encouraged to use electronic course materials, including
+recorded class sessions, for private personal use in connection with
+their academic program of study. Electronic course materials and
+recorded class sessions should not be shared or used for non-course
+related purposes unless express permission has been granted by the
+instructor. Students who impermissibly share any electronic course
+materials are subject to discipline under the
+\href{https://studentconduct.gwu.edu/code-student-conduct}{Code of
+Student Conduct}. Please contact the instructor if you have questions
+regarding what constitutes permissible or impermissible use of
+electronic course materials and/or recorded class sessions. Please
+contact \href{https://disabilitysupport.gwu.edu/}{Disability Support
+Services} if you have questions or need assistance in accessing
+electronic course materials.
+
+\subsection*{Additional Resources for Students}
+
+\textbf{Academic Support}
+
+\begin{itemize}
+  \item \textbf{Academic Commons} \\
+    Academic Commons is the central location for academic support
+    resources for GW students. To schedule a peer tutoring session
+    for a variety of courses visit
+    \href{https://go.gwu.edu/tutoring}{go.gwu.edu/tutoring}. Visit
+    \href{https://academiccommons.gwu.edu}{academiccommons.gwu.edu}
+    for study skills tips, finding help with research, and connecting
+    with other campus resources. For questions email
+    \href{mailto:academiccommons@gwu.edu}{academiccommons@gwu.edu}.
+  \item \textbf{Writing Center} \\
+    GW’s Writing Center cultivates confident writers in the
+    University community by facilitating collaborative, critical, and
+    inclusive conversations at all stages of the writing process.
+    Working alongside peer mentors, writers develop strategies to
+    write independently in academic and public settings. Appointments
+    can be booked online at
+    \href{https://gwu.mywconline.com}{gwu.mywconline.com}.
+\end{itemize}
+
+\textbf{Health and Wellness Support}
+
+\begin{itemize}
+  \item \textbf{Disability Support Services} \\
+    202-994-8250 \\
+    Any student who may need an accommodation based on the potential
+    impact of a disability should contact Disability Support Services
+    at
+    \href{https://disabilitysupport.gwu.edu}{disabilitysupport.gwu.edu}
+    to establish eligibility and to coordinate reasonable accommodations.
+  \item \textbf{Student Health Center} \\
+    202-994-5300\\
+    The Student Health Center (SHC) offers medical,
+    counseling/psychological, and psychiatric services to GW
+    students. More information about the SHC is available at
+    \href{https://healthcenter.gwu.edu}{healthcenter.gwu.edu}.
+    Students experiencing a medical or mental health emergency on
+    campus should contact GW Emergency Services at 202-994-6111, or
+    off campus at 911.
+\end{itemize}
+\vspace{-.5em}
+
+\subsection*{GW Campus Emergency Information}
+GW Emergency Services: 202-994-6111
+For situation-specific instructions, refer to
+\href{https://safety.gwu.edu/emergency-response-handbook}{GW's
+Emergency Procedures guide}.
+
+\textbf{GW Alert}
+
+GW Alert is an emergency notification system that sends alerts to the
+GW community. GW requests students, faculty, and staff maintain
+current contact information by logging on to
+\href{https://alert.gwu.edu}{alert.gwu.edu}. Alerts are sent via
+email, text, social media, and other means, including the Guardian
+app. The Guardian app is a safety app that allows you to communicate
+quickly with GW Emergency Services, 911, and other resources. Learn
+more at \href{https://safety.gwu.edu}{safety.gwu.edu}.
+
+\textbf{Protective Actions}
+
+GW prescribes four protective actions that can be issued by
+university officials depending on the type of emergency. All GW
+community members are expected to follow directions according to the
+specified protective action. The protective actions are Shelter,
+Evacuate, Secure, and Lockdown (details below). Learn more at
+\href{https://safety.gwu.edu/gw-standard-emergency-statuses}{safety.gwu.edu/gw-standard-emergency-statuses}.
+
+\begin{itemize}
+  \item Shelter
+    \begin{itemize}
+      \item Protection from a specific hazard.
+      \item The hazard could be a tornado, earthquake, hazardous
+        material spill, or other environmental emergency.
+      \item Specific safety guidance will be shared on a case-by-case basis.
+      \item \textbf{Action:}
+        \begin{itemize}
+          \item Follow safety guidance for the hazard.
+        \end{itemize}
+    \end{itemize}
+  \item Evacuate
+    \begin{itemize}
+      \item Need to move people from one location to another.
+      \item Students and staff should be prepared to follow specific
+        instructions given by first responders and University officials.
+      \item \textbf{Action:}
+        \begin{itemize}
+          \item Evacuate to a designated location.
+          \item Leave belongings behind.
+          \item Follow additional instructions from first responders.
+        \end{itemize}
+    \end{itemize}
+  \item Secure
+    \begin{itemize}
+      \item Threat or hazard outside of buildings or around campus.
+      \item Increased security, secured building perimeter, increased
+        situational awareness, and restricted access to entry doors.
+      \item \textbf{Action:}
+        \begin{itemize}
+          \item Go inside and stay inside.
+          \item Activities inside may continue.
+        \end{itemize}
+    \end{itemize}
+  \item Lockdown
+    \begin{itemize}
+      \item Threat or hazard with the potential to impact individuals
+        inside buildings.
+      \item Room-based protocol that requires locking interior doors,
+        turning off lights, and staying out of sight of corridor window.
+      \item \textbf{Action:}
+        \begin{itemize}
+          \item Locks, lights, out of sight.
+          \item Consider Run, Hide, Fight.
+        \end{itemize}
+    \end{itemize}
+\end{itemize}
+
+\textbf{Classroom emergency lockdown buttons}
+
+Some classrooms have been equipped with classroom emergency lockdown
+buttons. If the button is pushed, GWorld Card access to the room will
+be disabled, and GW Dispatch will be alerted. The door must be
+manually closed if it is not closed when the button is pushed. Anyone
+in the classroom will be able to exit, but no one will be able to get in.
+
+\subsection*{Course Outline}
+
+Readings with an embedded link can be accessed online. All other
+readings are available on Blackboard.
+
+\begin{tabularx}{\textwidth}{|p{.06\textwidth}p{.94\textwidth}|}
+  \hline
+  \textbf{Week} & \textbf{Course Material} \\
+
+  %%% WEEK 1 %%%
+
+  \hline
+  \multirow{18}{*}{1} &
+
+  January 12: Introduction \newline \newline
+  \ul{Homework (all for Jan. 14)} \newline
+  $\bullet$ Brown (2025),
+  \href{https://reason.com/2025/08/18/is-conscientiousness-cratering-it-depends-on-how-you-twist-the-data/}{``Is
+    Conscientiousness Cratering? It Depends on How You Twist the
+  Data.''} (Reason) for class on Sept. 3 \newline
+  $\bullet$ Dattani (2024),
+  \href{https://ourworldindata.org/rise-us-maternal-mortality-rates-measurement}{``The
+    rise in reported maternal mortality rates in the US is largely due
+  to a change in measurement''} (Our World in Data) \newline
+  $\bullet$ Steier (2025),
+  \href{https://www.nytimes.com/interactive/2025/08/19/opinion/vaccines-autism-evidence.html?unlocked_article_code=1.fU8.g3du.FAXwl-X3uBVo\&smid=url-share}{``The
+  Playbook Used to `Prove' Vaccines Cause Autism''} (New York Times
+  Opinion) \newline \\
+  \cdashline{2-2}
+  & January 14: Researcher Choices \newline \newline
+  \ul{Homework (all for Jan. 21)} \newline
+  $\bullet$ Fry (2021), ``When Graphs Are a Matter of Life and
+  Death'' (The New Yorker) (on Blackboard) \newline
+  $\bullet$ Bugden (2019),
+  \href{https://chezvoila.com/blog/warmingstripes/}{``Do you really
+  understand the influential warming stripes?''} \newline
+  $\bullet$ Watch the video lecture on Google Colab \newline \\
+
+  %%% WEEK 2 %%%
+
+  \hline
+  & January 19: No Class (MLK, Jr. Day) \newline \\
+  \cdashline{2-2}
+  \multirow{5}{*}{2} & January 21: Data Visualization \newline \newline
+  \ul{Homework} \newline
+  $\bullet$ Watch the video lecture on data visualization for class
+  on Jan. 26 \newline \\
+
+  %%% WEEK 3 %%%
+
+  \hline
+  \multirow{11}{*}{3} &
+
+  \textbf{January 26: Lab Day - data visualization} \newline \newline
+  \ul{Homework} \newline
+  $\bullet$ Complete lab assignment by Jan. 27 at 11:59pm \newline
+  $\bullet$ Complete CITI Research Ethics training by Jan. 27 at
+  11:59pm \newline \\
+  \cdashline{2-2}
+  & January 28: Data Ethics \newline \newline
+  \ul{Homework} \newline
+  $\bullet$ Watch the video lecture on data wrangling for class on
+  Feb. 2 \newline \\
+
+  %%% WEEK 4 %%%
+
+  \hline
+  \multirow{11}{*}{4} &
+
+  \textbf{February 2: Lab Day - data wrangling} \newline \newline
+  \ul{Homework} \newline
+  $\bullet$ Complete lab assignment by Feb. 3 at 11:59pm \newline
+  $\bullet$ Aviv (2024), ``Conviction'' (New Yorker) (on Blackboard)
+  for class on Feb. 4 \newline \\
+  \cdashline{2-2}
+  & February 4: Correlation vs. Causation \newline \newline
+  \ul{Homework} \newline
+  $\bullet$ None \newline \\
+
+  %%% WEEK 5 %%%
+
+  \hline
+  \multirow{13}{*}{5} &
+
+  February 9: Sampling \newline \newline
+  \ul{Homework} \newline
+  $\bullet$ Excerpt of Morris (2022), \emph{Strength in Numbers} (on
+  Blackboard) for class on Feb. 11 \newline \\
+  \cdashline{2-2}
+  & February 11: Political Polling I \newline \newline
+  \ul{Homework (all for Feb. 18)} \newline
+  $\bullet$ Excerpt of
+  \href{https://aapor.org/wp-content/uploads/2025/10/AAPOR-Task-Force-on-2024-Pre-Election-Polling_Report.pdf}{AAPOR's
+  Task Force on 2024 Pre-Election Polling Report} \newline
+  $\bullet$ Morris (2025), ``The best pollsters of 2024 are doing a
+  lot of things that just don't add up'' (Strength in Numbers) (on
+  Blackboard) \newline \\
+
+  %%% WEEK 6 %%%
+
+  \hline
+  &
+  February 16: No Class (Presidents' Day) \newline \newline \newline \\
+  \cdashline{2-2}
+  \multirow{5}{*}{6} & February 18: Political Polling II \newline \newline
+  \ul{Homework} \newline
+  TBD \newline \\
+
+  % %%% WEEK 7 %%%
+
+  % \hline
+  % \multirow{10}{*}{7} &
+
+  % October 6: Correlation vs. Causation \newline \newline
+  % \ul{Homework} \newline
+  % $\bullet$ Excerpt of Reinhart (2015), \ul{Statistics Done Wrong}
+  % (on Blackboard) for Oct. 8 \newline \\
+  % \cdashline{2-2}
+  % & October 8: Hypothesis testing \newline \newline
+  % \ul{Homework} \newline
+  % $\bullet$ Watch the video lecture on analyzing political polls
+  % for class on Oct. 13 \newline \\
+
+  % %%% WEEK 8 %%%
+
+  % \hline
+  % \multirow{14}{*}{8} &
+
+  % \textbf{October 13: Lab Day - political polling} \newline \newline
+  % \ul{Homework} \newline
+  % $\bullet$ Complete lab assignment by Oct. 14 at 11:59pm \newline
+  % $\bullet$ Excerpt of Tetlock and Gardner (2015),
+  % \ul{Superforecasting: The Art and Science of Prediction} (on
+  % Blackboard) for class on Oct. 15 \newline \\
+  % \cdashline{2-2}
+  % & October 15: Predictive Election Models \newline \newline
+  % \ul{Homework} \newline
+  % $\bullet$ Cools, Hannes, and Michael Koliska. 2024. ``News
+  % Automation and Algorithmic Transparency in the Newsroom: The Case
+  % of the Washington Post.'' \underline{Journalism Studies} 25(6):
+  % 662–80. (on Blackboard) for class on Oct. 20 \newline \\
+
+  % %%% WEEK 9 %%%
+
+  % \hline
+  % \multirow{11}{*}{9} &
+
+  % October 20: Machine Learning \newline \newline
+  % \ul{Homework} \newline
+  % $\bullet$ None \newline \\
+  % \cdashline{2-2}
+  % & \textbf{October 22: Guest Speaker - G. Elliott Morris, author
+  % of \textit{Strength in Numbers} and former Editorial Director of
+  % \textit{FiveThirtyEight}} \newline \newline
+  % \ul{Homework} \newline
+  % $\bullet$ Watch the video lecture on hypothesis testing for class
+  % on Oct. 27 \newline \\
+
+  % %%% WEEK 10 %%%
+
+  % \hline
+  % \multirow{10}{*}{10} &
+
+  % \textbf{October 27: Lab Day - hypothesis testing} \newline \newline
+  % \ul{Homework} \newline
+  % $\bullet$ Complete lab assignment by Oct. 28 at 11:59pm  \newline \\
+  % \cdashline{2-2}
+  % & October 29: Regression \newline \newline
+  % \ul{Homework} \newline
+  % $\bullet$ None  \newline \\
+
+  % %%% WEEK 11 %%%
+
+  % \hline
+  % \multirow{10}{*}{11} &
+
+  % \textbf{November 3: Lab Day - class polling project} \newline \newline
+  % \ul{Homework} \newline
+  % $\bullet$ Complete lab assignment by Nov. 4 at 11:59pm  \newline \\
+  % \cdashline{2-2}
+  % & November 5: Qualitative Data \newline \newline
+  % \ul{Homework} \newline
+  % $\bullet$ Watch the video lecture on text-as-data for class on
+  % Nov. 10 \newline \\
+
+  % %%% WEEK 12 %%%
+
+  % \hline
+  % \multirow{11}{*}{12} &
+
+  % \textbf{November 10: Lab Day - text-as-data} \newline \newline
+  % \ul{Homework} \newline
+  % $\bullet$ Complete lab assignment by Nov. 11 at 11:59pm \newline \\
+  % \cdashline{2-2}
+  % & \textbf{November 12: Guest Speaker - John Kropf, fmr. Deputy
+  % Chief Privacy Officer, U.S. Department of Homeland Security}
+  % \newline \newline
+  % \ul{Homework} \newline
+  % $\bullet$ None \newline \\
+
+  % %%% WEEK 13 %%%
+
+  % \hline
+  % \multirow{11}{*}{13} &
+
+  % \textbf{November 17: Guest Speaker - Clayton Perry, Data
+  % Scientist at Blue Rose Research} \newline \newline
+  % \ul{Homework} \newline
+  % $\bullet$ None \newline \\
+  % \cdashline{2-2}
+  % & \textbf{November 19: Aidan Hughes, Reporter at Inside Climate
+  % News} \newline \newline
+  % \ul{Homework} \newline
+  % $\bullet$ Watch the video lecture on maps for class on Dec. 1 \newline \\
+
+  % %%% WEEK 13 %%%
+
+  % \hline
+  % \multirow{10}{*}{14} &
+
+  % \textbf{December 1: Lab Day - maps} \newline \newline
+  % \ul{Homework} \newline
+  % $\bullet$ Complete lab assignment by Dec. 2 at 11:59pm \newline \\
+  % \cdashline{2-2}
+  % & December 3: Potpourri \newline \newline
+  % \ul{Homework} \newline
+  % $\bullet$ None \newline \\
+
+  % %%% WEEK 15 %%%
+
+  % \hline
+  % \multirow{1}{*}{15} &
+
+  % December 8: Putting It All Together \\
+
+  \hline
+
+\end{tabularx}
+
+The schedule for the remainder of the semester will be provided once
+guest speaker dates are confirmed. Additional course topics that will
+be covered include:
+\begin{itemize}
+  \item Predictive election models
+  \item Machine learning
+  \item Qualitative data
+  \item Hypothesis testing and regression
+  \item Data storytelling
+\end{itemize}
+
+\centering
+Version: 1\\
+Last Updated: January 11, 2026 \\
+Subject to change.
+
+\end{document}
