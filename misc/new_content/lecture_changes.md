@@ -10,3 +10,18 @@
 * regression lecture should no longer start with t-test
 * wrapping up needs new QR code
 * update dates on class project deadlines
+
+  Introduction_to_Data_Analysis                                                 
+  - piazza.png                                                                  
+                                                                                
+  Political_Polling_I                                                           
+  - survey_types.png (Note: This image IS referenced in Political_Polling_II,   
+  suggesting it may be in the wrong folder)                                     
+                                                                                
+  Researcher_Choices                                                            
+  - retro_report.png                                                            
+                                                                                
+  Wrapping_Up (has the most unreferenced images)                                
+  - Canadian Election Predictions.png                                           
+  - cbc_apr27.png                                                               
+  - news_consumption.png 

@@ -66,3 +66,6 @@ rsconnect/
 !syllabus/*/main.tex
 !syllabus/*/*.pdf
 !syllabus/*/Overleaf/main.tex
+
+# LORs
+letters_of_rec/
