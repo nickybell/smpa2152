@@ -34,13 +34,13 @@ You will find the following columns in the data:
 |member     |double    | Employed workers who are union members |
 |year               |double    |Year of the survey |
 
-Please use the `lab2_template.R` script. Please submit your completed `.R` script via Blackboard. In addition, please submit a Word document or PDF containing the visualizations and your written responses to each question.
+You must submit your lab assignment as a PDF file via Blackboard. In Google Colab, use the "Print" option under "File". But first, be sure to clear any cells and outputs that are not part of your answers to the lab assignment. Points will be deducted for "messy" submissions.
 
 All graphs must be properly labeled with titles, axis labels, and a caption. You must use a `theme` function to improve the appearance of your graphs, but you may choose which theme you prefer.
 
 You may complete the assignments on your own or in collaboration with other students. This means that you may work together to write code and/or solve problems. **Do not split up the questions or combine independent work.**
 
-As a reminder, this course permits virtually unlimited use of AI tools on **code**. However, the use of AI tools for **written text** (e.g., explanations, analysis, etc.) is not permitted.
+As a reminder, this course has no restriction on the use of AI tools for **code**. However, the use of AI tools for **written text** (e.g., explanations, analysis, etc.) is not permitted. In addition, a portion of your lab grade will be based on your application of the materials covered in the video lecture.
 
 If you work with other students, please indicate their names at the top of your submission. Each student must submit an assignment on Blackboard.
 \vspace{-1em}
