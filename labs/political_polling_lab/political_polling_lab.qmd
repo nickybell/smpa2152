@@ -21,17 +21,38 @@ editor_options:
 ---
 \vspace{-3em}
 
-For this lab, we are going to work with data from an [ABC News/Washington Post poll](https://ropercenter.cornell.edu/ipoll/study/31115721) conducted in 2019. You may recall that from December 2018 - January 2019, the U.S. federal government was partially shut down for a record 35 days. The poll asked respondents about their opinions on the shutdown and its effects on them personally. We will use this data to get an idea of how the politics of the current government shutdown might play out (the politics being secondary to the human impacts, of course, but I'm a political scientist).
+For this lab, we are going to work with data from an [ABC
+News/Washington Post
+poll](https://ropercenter.cornell.edu/ipoll/study/31115721) conducted in
+2019. You may recall that from December 2018 - January 2019, the U.S.
+federal government was partially shut down for a record 35 days. The
+poll asked respondents about their opinions on the shutdown and its
+effects on them personally. We will use this data to explore
+the politics of (increasingly common) government shutdowns.
 
-Please use the `lab3_template.R` script. Please submit your completed `.R` script via Blackboard. In addition, please submit a Word document or PDF containing the visualizations and your written responses to each question.
+You must submit your lab assignment as a PDF file via Blackboard. In
+Google Colab, use the “Print” option under “File”. But first, be sure to
+clear any cells and outputs that are not part of your answers to the lab
+assignment. Points will be deducted for “messy” submissions.
 
-All graphs must be properly labeled with titles, axis labels, and a caption. You must use a `theme` function to improve the appearance of your graphs, but you may choose which theme you prefer.
+All graphs must be properly labeled with titles, axis labels, and a
+caption. You must use a `theme` function to improve the appearance of
+your graphs, but you may choose which theme you prefer.
 
-You may complete the assignments on your own or in collaboration with other students. This means that you may work together to write code and/or solve problems. **Do not split up the questions or combine independent work.**
+You may complete the assignments on your own or in collaboration with
+other students. This means that you may work together to write code
+and/or solve problems. **Do not split up the questions or combine
+independent work.**
 
-As a reminder, this course permits virtually unlimited use of AI tools on **code**. However, the use of AI tools for **written text** (e.g., explanations, analysis, etc.) is not permitted.
+As a reminder, this course has no restriction on the use of AI tools for
+**code**. However, the use of AI tools for **written text** (e.g.,
+explanations, analysis, etc.) is not permitted. In addition, a portion
+of your lab grade will be based on your application of the materials
+covered in the video lecture.
 
-If you work with other students, please indicate their names at the top of your submission. Each student must submit an assignment on Blackboard.
+If you work with other students, please indicate their names at the top
+of your submission. Each student must submit an assignment on
+Blackboard.
 \vspace{-1em}
 
 ---
@@ -55,5 +76,3 @@ In your submission, present **one** graph that shows the distribution of weights
 4. Create a graph that shows a cross-tab of the weighting variable that you identified in \#2 with the survey question on blame for the shutdown. Based on these results, is it important to weight the data on this variable when analyzing opinions on the shutdown? Why or why not?
 
     *Hint: To determine whether weighting variables matter for the results, think about why education became an important weighting variable for pollsters in the 2016 presidential election, but was not an important weighting variable in previous elections.*
-
-5. *BONUS: Write three thoughtful questions for our next guest speaker, [G. Elliott Morris](https://www.gelliottmorris.com/about). Questions can be about his career, work, election prediction, polling, or anything else you are curious about.*
