@@ -3,7 +3,7 @@
 Name: __________________________________________________________
 <br>
 
-Please rank the following roles in order of your preference for this class project (1 = most preferred, 5 = least preferred):
+Please rank the following roles in order of your preference for this class project (1 = most preferred, 4 = least preferred):
 <br>
 <br>
 
@@ -13,10 +13,7 @@ ______ Survey Designer
 ______ Principal Investigator
 <br>
 <br>
-______ IRB Member
-<br>
-<br>
-______ Survey Manager
+______ Field Operations Team
 <br>
 <br>
 ______ Survey Analyst
@@ -29,7 +26,7 @@ ______ Survey Analyst
 Name: __________________________________________________________
 <br>
 
-Please rank the following roles in order of your preference for this class project (1 = most preferred, 5 = least preferred):
+Please rank the following roles in order of your preference for this class project (1 = most preferred, 4 = least preferred):
 <br>
 <br>
 
@@ -39,10 +36,7 @@ ______ Survey Designer
 ______ Principal Investigator
 <br>
 <br>
-______ IRB Member
-<br>
-<br>
-______ Survey Manager
+______ Field Operations Team
 <br>
 <br>
 ______ Survey Analyst
