@@ -1,5 +1,5 @@
 ---
-title: "Lab #4 - Class Survey Project"
+title: "Lab #5 - Class Survey Project"
 author: "SMPA 2152 (Prof. Bell)"
 # format:
 #   pdf:
@@ -21,42 +21,41 @@ editor_options:
 ---
 \vspace{-3em}
 
-For this lab, we are going to work with the survey data you collected for the class project. You have been provided with a codebook and a data file (`survey_data.csv`). There are two weighting variables included with the data:
+It's time to analyze the survey data that you collected!. You have access to the raw data for your survey group at [https://drive.google.com/drive/folders/1oXeXa9G13DxlPVJFWNmmDnGGJqed4lv1?usp=drive_link](https://drive.google.com/drive/folders/1oXeXa9G13DxlPVJFWNmmDnGGJqed4lv1?usp=drive_link) (you must use your GWU email address to access the folder). To get the data into Google Colab, go to `Files` -> `Download` -> `Comma Separated Values (.csv)` and then upload the file to Colab.
 
-* `year_gender_weight`: This weighting variable uses only the respondents' year in school and gender.
-* `year_gender_x_major_weight`: This weighting variable uses the respondents' year in school as well as the interaction of their gender and major (i.e., how likely were you to survey a male psychology major)?
+Please note that there are **no weights** for this survey. That means you should not provide any values to the `wt = ...` argument in `count()`.
 
-I've found that `year_gender` is a little more stable than `year_gender_x_major`, but you are welcome to use either (or try both!).
+You must submit your lab assignment as a PDF file via Blackboard. In
+Google Colab, use the “Print” option under “File”. But first, be sure to
+clear any cells and outputs that are not part of your answers to the lab
+assignment. Points will be deducted for “messy” submissions.
 
-There is no `.R` script template for this assignment, but please submit your completed `.R` script via Blackboard. In addition, please submit a Word document or PDF containing the visualizations and your written responses.
+All graphs must be properly labeled with titles, axis labels, and a
+caption. You must use a `theme` function to improve the appearance of
+your graphs, but you may choose which theme you prefer.
 
-All graphs must be properly labeled with titles, axis labels, margins of error, and a caption. You must use a `theme` function to improve the appearance of your graphs, but you may choose which theme you prefer.
+You may complete the assignments on your own or in collaboration with
+other students. This means that you may work together to write code
+and/or solve problems. **Do not split up the questions or combine
+independent work.**
 
-You may complete the assignments on your own or in collaboration with other students. This means that you may work together to write code and/or solve problems. **Do not split up the questions or combine independent work.**
+As a reminder, this course has no restriction on the use of AI tools for
+**code**. However, the use of AI tools for **written text** (e.g.,
+explanations, analysis, etc.) is not permitted. In addition, a portion
+of your lab grade will be based on your application of the materials
+covered in the video lecture.
 
-As a reminder, this course permits virtually unlimited use of AI tools on **code**. However, the use of AI tools for **written text** (e.g., explanations, analysis, etc.) is not permitted.
-
-If you work with other students, please indicate their names at the top of your submission. Each student must submit an assignment on Blackboard.
+If you work with other students, please indicate their names at the top
+of your submission. Each student must submit an assignment on
+Blackboard.
 \vspace{-1em}
 
 ---
 
-1. Present **one** graph that shows the distribution of weights for either `year` or `gender`. Provide a possible explanation for why certain group(s) were hard to reach, drawing on your experience collecting survey responses.
+1. Use a graph to show **one** topline result (in percentages) from this survey. Be sure to include the margins of error on the graph. Interpret your results. What have you learned from this analysis?
 
-2. Show a weighted topline result (in percentages) from this survey. Be sure to include the margins of error on the graph. Interpret your results. What have you learned from this analysis?
+2. Use a graph to show **one** cross-tab (in percentages) from this survey. Be sure to include the margins of error on the graph. Interpret your results. What have you learned from this analysis?
 
-3. Show a weighted cross-tab (in percentages) from this survey. Be sure to include the margins of error on the graph. Interpret your results. What have you learned from this analysis?
+3. Use a graph to explore **one** demographic variable (e.g., age, gender, etc. but **not** class year) in your survey. Use the public [GWU Enrollment Dashboard](https://irp.gwu.edu/enrollment-dashboard-0) to find the composition of the entire student body for that variable. Compare that to the distribution in your survey. Which groups were easier or harder to reach in this survey? Why do you think that might be?
 
-4. Please reflect on your experience in your survey role. For example,
-
-* If you are a survey designer, what were some of the challenges in writing this survey? What aspects of the survey were you pleased with? Is there anything you would have changed?
-
-* If you are a Principal Investigator, what were some of the potential ethical issues that required special consideration? Were there any challenges in figuring out how to handle potential ethical issues?
-
-* If you are an IRB Member, how did your perspective change as you reviewed the PIs human subjects protection protocol? Were there any disagreements among the IRB members? What were the hardest recommendations to come to as an IRB?
-
-* If you are a survey manager, what is it like to enter survey results? Were there any surprising ways in which people recorded their survey responses?
-
-* If you are a survey analyst, do not answer this question right now. You will have an opportunity to answer this question at a later time.
-
-Your answer should consist of at least one paragraph.
+4. Please reflect on your experience collecting survey responses from your fellow students. What did you learn about the process of collecting survey data? What challenges did you encounter? How would you approach this differently if you were to do it again? You answer should consist of at least one paragraph.
