@@ -1,5 +1,5 @@
 ---
-title: "Data Visualization Lab #1"
+title: "Data Wrangling Lab #2"
 format:
   revealjs:
     embed-resources: true
@@ -9,7 +9,6 @@ lightbox: true
 ```{r}
 #| label: setup
 #| include: false
-
 library(tidyverse)
 library(palmerpenguins)
 data(penguins)
@@ -22,7 +21,6 @@ Let's say that I'm only interested in Chinstrap penguins. What function would I 
 ```{r}
 #| eval: false
 #| echo: true
-
 _______(penguins, species == "Chinstrap")
 ```
 
@@ -33,14 +31,12 @@ Let's say that I'm only interested in Chinstrap penguins. What function would I 
 ```{r}
 #| eval: false
 #| echo: true
-
 filter(penguins, species == "Chinstrap") |>
   slice_head(n = 5)
 ```
 
 ```{r}
 #| echo: false
-
 filter(penguins, species == "Chinstrap") |>
   slice_head(n = 5) |>
   knitr::kable()
@@ -64,7 +60,6 @@ What logical operator would I use if I wanted to filter for penguins on Biscoe a
 ```{r}
 #| eval: false
 #| echo: true
-
 filter(penguins, island %in% c("Biscoe", "Dream")) |>
   slice_head(n = 5)
 ```
@@ -72,7 +67,6 @@ filter(penguins, island %in% c("Biscoe", "Dream")) |>
 ```{r}
 #| eval: true
 #| echo: false
-
 filter(penguins, island %in% c("Biscoe", "Dream")) |>
   slice_head(n = 5) |>
   knitr::kable()
@@ -85,7 +79,6 @@ How would I sort the male penguins by largest to smallest body mass?
 ```{r}
 #| eval: false
 #| echo: true
-
 penguins |>
   filter(sex == "male") |>
   ________(_____(body_mass_g))
@@ -98,7 +91,6 @@ How would I sort the male penguins by largest to smallest body mass?
 ```{r}
 #| eval: false
 #| echo: true
-
 penguins |>
   filter(sex == "male") |>
   arrange(desc(body_mass_g)) |>
@@ -108,7 +100,6 @@ penguins |>
 ```{r}
 #| eval: true
 #| echo: false
-
 penguins |>
   filter(sex == "male") |>
   arrange(desc(body_mass_g)) |>
@@ -123,7 +114,6 @@ How would I sort the male penguins by largest to smallest body mass?
 ```{r}
 #| eval: false
 #| echo: true
-
 penguins |>
   filter(sex == "male") |>
   arrange(desc(body_mass_g)) |>
@@ -134,7 +124,6 @@ penguins |>
 ```{r}
 #| eval: true
 #| echo: false
-
 penguins |>
   filter(sex == "male") |>
   arrange(desc(body_mass_g)) |>
@@ -150,7 +139,6 @@ How would I change the body mass column to be in kilograms rather than grams?
 ```{r}
 #| eval: false
 #| echo: true
-
 penguins_kg <- _______(penguins, body_mass_kg = body_mass_g / 1000) |>
   select(species, island, body_mass_kg)
 ```
@@ -162,7 +150,6 @@ How would I change the body mass column to be in kilograms rather than grams?
 ```{r}
 #| eval: false
 #| echo: true
-
 penguins_kg <- mutate(penguins, body_mass_kg = body_mass_g / 1000) |>
   select(species, island, body_mass_kg)
 slice_head(penguins_kg, n = 5)
@@ -171,7 +158,6 @@ slice_head(penguins_kg, n = 5)
 ```{r}
 #| eval: true
 #| echo: false
-
 penguins_kg <- mutate(penguins, body_mass_kg = body_mass_g / 1000) |>
   select(species, island, body_mass_kg)
 slice_head(penguins_kg, n = 5) |>
@@ -185,7 +171,6 @@ How would I calculate the largest body mass in kilograms per species?
 ```{r}
 #| eval: false
 #| echo: true
-
 penguins |>
   mutate(penguins, body_mass_kg = body_mass_g / 1000) |>
   ________(species) |>
@@ -199,7 +184,6 @@ How would I calculate the largest body mass in kilograms per species?
 ```{r}
 #| eval: false
 #| echo: true
-
 penguins |>
   mutate(penguins, body_mass_kg = body_mass_g / 1000) |>
   group_by(species) |>
@@ -209,7 +193,6 @@ penguins |>
 ```{r}
 #| eval: true
 #| echo: false
-
 penguins |>
   mutate(penguins, body_mass_kg = body_mass_g / 1000) |>
   group_by(species) |>
@@ -224,7 +207,6 @@ penguins |>
 ```{r}
 #| eval: true
 #| echo: true
-
 penguins |>
   mutate(penguins, body_mass_kg = body_mass_g / 1000) |>
   group_by(species) |>

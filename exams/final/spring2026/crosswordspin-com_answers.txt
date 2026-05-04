@@ -1,0 +1,17 @@
+CONFOUND : To explain (away) the relationship between the independent and dependent variables
+ADDRESS : ABC News uses this type of sampling, as opposed to list-based sampling or random-digit dialing.
+CAUSATION : Exists when a change in the value of one variable would not be observed without a preceding change in another
+CORRELATION : When the absolute rate of change in the values of two variables are similar
+SAMPLE : A subset of the population selected for study
+MINARD : Charles ___, creator of the famous visualization of Napoleon's march to Moscow
+ANONYMITY : Offered to research subjects when not even the researcher knows their identity
+EXPERIMENT : A research method where cases are randomly assigned to treatment and control groups
+HONESTY : The topic of study of Francesca Gino and Dan Ariely, who were credibly accused of fabricating their data
+INDUCTIVE : In this type of thematic coding, the researcher identifies themes as they explore their data
+TOKEN : A single unit of data ingested or output by a Large Language Model (LLM)
+FORECAST : What "foxes" tend to do better than "hedgehogs," per Philip Tetlock's research on expert political judgment
+YOUTUBE : The most popular online source for political information in the United States
+EXCEL : Spreadsheet program whose row-selection error in Reinhart and Rogoff's debt research was caught by graduate student Thomas Herndon
+MASK : What Joy Buolamwini put on in order for a facial recognition algorithm to properly track her
+VIETNAM : The 1970 draft lottery for this war was famously not actually random — used to motivate why true random sampling is hard
+DEBRIEF : Required follow-up with research subjects after a study involving deception

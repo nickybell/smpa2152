@@ -67,7 +67,8 @@ rsconnect/
 !syllabus/*/*.pdf
 !syllabus/*/Overleaf/main.tex
 # with exception for html presentations
-!labs/data_visualization_lab/classroom_exercise/*
+!labs/*/classroom_exercise/*.html
+!labs/*/classroom_exercise/*.qmd
 
 # LORs
 letters_of_rec/

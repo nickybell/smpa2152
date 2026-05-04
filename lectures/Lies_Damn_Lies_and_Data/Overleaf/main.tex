@@ -1,0 +1,93 @@
+% The dvipsnames option is passed to the xcolor package, which beamer loads
+\documentclass[xcolor={dvipsnames}]{beamer}
+
+\usepackage{smpa2152-style}
+
+\title[Data Stories]{Lies, Damn Lies, and Data}
+\author[SMPA 2152]{Data Analysis for Journalism and Political
+Communication (Spring 2026)}
+\date{Prof. Bell}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{
+  \titlepage
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{\frametitle{Story \#1: The Challenger Disaster}
+
+  \centering
+  \only<1>{
+    \href{https://www.youtube.com/watch?v=Ds6ie8IV-LI}{\includegraphics[width
+    = .8\textwidth]{retro_reports_challenger.png}}
+  }
+  \only<2>{
+    \includegraphics[width = .7\textwidth]{challenger_table.png}
+  }
+  \only<3>{
+    \includegraphics[width = .8\textwidth]{damaged_o_rings.png}
+  }
+  \only<4>{
+    \includegraphics[width = .8\textwidth]{all_missions_o_rings.png}
+  }
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{\frametitle{Story \#2: In``debt''ed to Excel}
+
+  \centering
+  \only<1>{
+    \includegraphics[width = .8\textwidth]{herndon.png}
+  }
+  \only<2>{
+    \includegraphics[height = .8\textheight]{excel_reinhart_rogoff.png}
+  }
+  \only<3>{
+    \includegraphics[width = .7\textwidth]{wsj_reinhart_rogoff.jpg}
+  }
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{\frametitle{Story \#3\only<2->{: Lying About Lying}}
+
+  \centering
+  \only<1>{
+    \href{https://www.youtube.com/watch?v=2KyavuKmdNE}{\includegraphics[width
+    = .8\textwidth]{dan_ariely.png}}
+  }
+  \only<2>{
+    \includegraphics[width = .8\textwidth]{gino_retracted.png}
+  }
+  \only<3>{
+    \includegraphics[width = .9\textwidth]{colada1.png}
+  }
+  \only<4>{
+    \includegraphics[width = .9\textwidth]{colada2.png}
+  }
+  \only<5>{
+    \includegraphics[width = .9\textwidth]{colada3.png}
+  }
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{\frametitle{Story \#4: New Is Not Always Better}
+
+  \centering
+  \href{https://www.youtube.com/watch?v=a8j97dOLsyk}{\includegraphics[height
+  = .8\textheight]{new_coke_ad.png}}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{\frametitle{Story \#5: Zillow's \$880 Million Mistake}
+
+  \centering
+  \only<1>{
+    \includegraphics[height = .8\textheight]{owned_by_zillow.png}
+  }
+  \only<2>{
+    \includegraphics[width = .9\textwidth]{zillow_ibuying.png}
+  }
+}
+
+\end{document}
